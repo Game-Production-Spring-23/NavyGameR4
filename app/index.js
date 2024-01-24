@@ -9,7 +9,7 @@ function setup() {
 function draw() {
     background(220);
     textSize(50);
-    if (textY >= 300) {
+    if (textY >= 400) {
         textDown = false
     }
 
