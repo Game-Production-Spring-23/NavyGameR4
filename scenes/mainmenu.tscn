@@ -1,0 +1,35 @@
+[gd_scene load_steps=2 format=3 uid="uid://clptudfd3wwdj"]
+
+[ext_resource type="Theme" uid="uid://bajr2k60ueqkc" path="res://assets/themes/default_theme.tres" id="1_cokg0"]
+
+[node name="main" type="Node2D"]
+
+[node name="UI" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="title" type="RichTextLabel" parent="UI"]
+layout_mode = 0
+offset_left = 463.0
+offset_top = 161.0
+offset_right = 739.0
+offset_bottom = 246.0
+theme = ExtResource("1_cokg0")
+text = "Ranger Roger's Radar Rescue"
+fit_content = true
+
+[node name="startButton" type="Button" parent="UI"]
+offset_left = 543.0
+offset_top = 281.0
+offset_right = 649.0
+offset_bottom = 312.0
+text = "start"
+
+[node name="startButton2" type="Button" parent="UI"]
+offset_left = 544.0
+offset_top = 329.0
+offset_right = 650.0
+offset_bottom = 360.0
+text = "end"

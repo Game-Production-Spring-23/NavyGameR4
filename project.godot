@@ -11,8 +11,13 @@ config_version=5
 [application]
 
 config/name="NavyGameR4"
+run/main_scene="res://scenes/mainmenu.tscn"
 config/features=PackedStringArray("4.2", "GL Compatibility")
 config/icon="res://icon.svg"
+
+[autoload]
+
+GameController="*res://scripts/gameController.gd"
 
 [rendering]
 
