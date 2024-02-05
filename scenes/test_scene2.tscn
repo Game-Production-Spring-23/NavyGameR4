@@ -1,0 +1,234 @@
+[gd_scene load_steps=13 format=3 uid="uid://cryw388wp2lei"]
+
+[ext_resource type="Texture2D" uid="uid://k6b30dihjv5s" path="res://assets/sprites/block_large.png" id="1_eqlfk"]
+[ext_resource type="Script" path="res://scripts/player.gd" id="2_5pli4"]
+[ext_resource type="Texture2D" uid="uid://fppm45fgasb7" path="res://assets/sprites/icon.svg" id="3_nhdr6"]
+[ext_resource type="AudioStream" uid="uid://cka6efe0vfq5c" path="res://assets/sounds/game_ost_mockup_wip.mp3" id="4_ri3ig"]
+[ext_resource type="Script" path="res://scripts/UI.gd" id="5_gkx8e"]
+[ext_resource type="Shader" path="res://scripts/pixelate.gdshader" id="6_rp5wt"]
+[ext_resource type="Script" path="res://scripts/textUpdaterButton.gd" id="7_4q1b5"]
+[ext_resource type="Script" path="res://scripts/sceneChange.gd" id="9_o70rk"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_tqxjc"]
+size = Vector2(1150, 20)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_htuj5"]
+size = Vector2(64, 64)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_dtlh4"]
+shader = ExtResource("6_rp5wt")
+shader_parameter/pixelSize = 6
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_qx8x7"]
+size = Vector2(67, 224)
+
+[node name="testScene" type="Node2D"]
+
+[node name="Wall3" type="StaticBody2D" parent="."]
+position = Vector2(1152, 561)
+rotation = 1.5708
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Wall3"]
+shape = SubResource("RectangleShape2D_tqxjc")
+
+[node name="TextureRect" type="TextureRect" parent="Wall3"]
+offset_left = -575.0
+offset_top = 10.0
+offset_right = -510.0
+offset_bottom = 3850.0
+rotation = 4.71239
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_eqlfk")
+stretch_mode = 1
+
+[node name="Wall" type="StaticBody2D" parent="."]
+position = Vector2(575, 450)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Wall"]
+shape = SubResource("RectangleShape2D_tqxjc")
+
+[node name="TextureRect" type="TextureRect" parent="Wall"]
+offset_left = -575.0
+offset_top = 10.0
+offset_right = -510.0
+offset_bottom = 3850.0
+rotation = 4.71239
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_eqlfk")
+stretch_mode = 1
+
+[node name="Wall2" type="StaticBody2D" parent="."]
+position = Vector2(575, 648)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Wall2"]
+position = Vector2(0, 10)
+shape = SubResource("RectangleShape2D_tqxjc")
+
+[node name="Player" type="CharacterBody2D" parent="."]
+position = Vector2(67, 548)
+script = ExtResource("2_5pli4")
+
+[node name="Icon" type="Sprite2D" parent="Player"]
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("3_nhdr6")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Player"]
+shape = SubResource("RectangleShape2D_htuj5")
+
+[node name="MusicPlayer" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("4_ri3ig")
+autoplay = true
+
+[node name="UI" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("5_gkx8e")
+
+[node name="titleText" type="RichTextLabel" parent="UI"]
+layout_mode = 0
+offset_left = 482.0
+offset_top = 4.0
+offset_right = 667.0
+offset_bottom = 27.0
+text = "Optional Components"
+fit_content = true
+
+[node name="musicText" type="RichTextLabel" parent="UI"]
+offset_left = 468.0
+offset_top = 29.0
+offset_right = 675.0
+offset_bottom = 75.0
+theme_override_font_sizes/normal_font_size = 12
+text = "(different music should be playing)"
+fit_content = true
+
+[node name="bbCodeTest" type="Control" parent="UI"]
+layout_mode = 3
+anchors_preset = 0
+offset_left = -441.0
+offset_top = -154.0
+offset_right = -401.0
+offset_bottom = -114.0
+
+[node name="Background" type="ColorRect" parent="UI/bbCodeTest"]
+layout_mode = 0
+offset_left = 507.0
+offset_top = 169.0
+offset_right = 747.0
+offset_bottom = 280.0
+color = Color(0, 0, 0, 0.196078)
+
+[node name="funkyText" type="RichTextLabel" parent="UI/bbCodeTest"]
+layout_mode = 0
+offset_left = 519.0
+offset_top = 178.0
+offset_right = 738.0
+offset_bottom = 283.0
+theme_override_font_sizes/normal_font_size = 32
+bbcode_enabled = true
+text = "[shake rate=20.0 level=5 connected=1]This should be shaky text"
+fit_content = true
+
+[node name="AutoloadTest" type="Control" parent="UI"]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Background" type="ColorRect" parent="UI/AutoloadTest"]
+layout_mode = 0
+offset_left = 378.0
+offset_top = 58.0
+offset_right = 676.0
+offset_bottom = 180.0
+color = Color(0, 0, 0, 0.196078)
+
+[node name="textUpdaterButton" type="Button" parent="UI/AutoloadTest"]
+layout_mode = 0
+offset_left = 444.0
+offset_top = 110.0
+offset_right = 608.0
+offset_bottom = 164.0
+text = "Press to update text
+(happens once)"
+script = ExtResource("7_4q1b5")
+
+[node name="singletonText" type="RichTextLabel" parent="UI/AutoloadTest"]
+layout_mode = 0
+offset_left = 390.0
+offset_top = 71.0
+offset_right = 664.0
+offset_bottom = 101.0
+text = "This button has not been pressed."
+fit_content = true
+
+[node name="ShaderTest" type="Control" parent="UI"]
+anchors_preset = 0
+offset_top = -14.0
+offset_right = 40.0
+offset_bottom = 26.0
+
+[node name="Background" type="ColorRect" parent="UI/ShaderTest"]
+layout_mode = 0
+offset_left = 50.0
+offset_top = 169.0
+offset_right = 327.0
+offset_bottom = 432.0
+color = Color(0, 0, 0, 0.196078)
+
+[node name="TextureRect" type="TextureRect" parent="UI/ShaderTest"]
+material = SubResource("ShaderMaterial_dtlh4")
+layout_mode = 0
+offset_left = 77.0
+offset_top = 180.0
+offset_right = 298.0
+offset_bottom = 401.0
+texture = ExtResource("3_nhdr6")
+expand_mode = 4
+stretch_mode = 5
+
+[node name="titleText" type="RichTextLabel" parent="UI/ShaderTest"]
+layout_mode = 0
+offset_left = 69.0
+offset_top = 405.0
+offset_right = 310.0
+offset_bottom = 451.0
+text = "This image should be pixelated"
+fit_content = true
+
+[node name="TilemapTest" type="Control" parent="UI"]
+visible = false
+anchors_preset = 0
+offset_left = 714.0
+offset_top = -30.0
+offset_right = 754.0
+offset_bottom = 10.0
+
+[node name="Background" type="ColorRect" parent="UI/TilemapTest"]
+layout_mode = 0
+offset_left = 50.0
+offset_top = 169.0
+offset_right = 327.0
+offset_bottom = 432.0
+color = Color(0, 0, 0, 0.196078)
+
+[node name="titleText" type="RichTextLabel" parent="UI/TilemapTest"]
+layout_mode = 0
+offset_left = 62.0
+offset_top = 405.0
+offset_right = 333.0
+offset_bottom = 451.0
+text = "This should be a little pixel scene"
+fit_content = true
+
+[node name="toNextScene" type="Area2D" parent="."]
+position = Vector2(-65, 553)
+script = ExtResource("9_o70rk")
+nextScene = "test_scene"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="toNextScene"]
+shape = SubResource("RectangleShape2D_qx8x7")
+
+[connection signal="pressed" from="UI/AutoloadTest/textUpdaterButton" to="UI/AutoloadTest/textUpdaterButton" method="_on_pressed"]
+[connection signal="body_entered" from="toNextScene" to="toNextScene" method="_on_body_entered"]

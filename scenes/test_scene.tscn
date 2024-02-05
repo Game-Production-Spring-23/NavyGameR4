@@ -1,0 +1,227 @@
+[gd_scene load_steps=13 format=3 uid="uid://b8obmafdevxjp"]
+
+[ext_resource type="Script" path="res://scripts/player.gd" id="1_rlq3s"]
+[ext_resource type="Texture2D" uid="uid://k6b30dihjv5s" path="res://assets/sprites/block_large.png" id="1_tq88l"]
+[ext_resource type="Texture2D" uid="uid://fppm45fgasb7" path="res://assets/sprites/icon.svg" id="2_i5yyx"]
+[ext_resource type="AudioStream" uid="uid://b7qdikhg12faa" path="res://assets/sounds/Space Jazz.mp3" id="3_d56es"]
+[ext_resource type="Script" path="res://scripts/UI.gd" id="4_4su3f"]
+[ext_resource type="Texture2D" uid="uid://bkt8663f7namg" path="res://assets/images/Fauna_Concept1.png" id="5_ytqgf"]
+[ext_resource type="AudioStream" uid="uid://66j063yq2hwv" path="res://assets/sounds/328675__padsterpat__onenotethenanother.mp3" id="7_qvijm"]
+[ext_resource type="Theme" uid="uid://c4lkado257wqx" path="res://assets/funkyTheme.tres" id="7_r2fpr"]
+[ext_resource type="Script" path="res://scripts/sceneChange.gd" id="9_qcgd8"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_tqxjc"]
+size = Vector2(1150, 20)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_htuj5"]
+size = Vector2(64, 64)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_qx8x7"]
+size = Vector2(67, 224)
+
+[node name="testScene" type="Node2D"]
+
+[node name="Wall" type="StaticBody2D" parent="."]
+position = Vector2(575, 450)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Wall"]
+shape = SubResource("RectangleShape2D_tqxjc")
+
+[node name="TextureRect" type="TextureRect" parent="Wall"]
+offset_left = -575.0
+offset_top = 10.0
+offset_right = -510.0
+offset_bottom = 3850.0
+rotation = 4.71239
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_tq88l")
+stretch_mode = 1
+
+[node name="Wall2" type="StaticBody2D" parent="."]
+position = Vector2(575, 648)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Wall2"]
+position = Vector2(0, 10)
+shape = SubResource("RectangleShape2D_tqxjc")
+
+[node name="Wall3" type="StaticBody2D" parent="."]
+position = Vector2(-10, 561)
+rotation = 1.5708
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Wall3"]
+shape = SubResource("RectangleShape2D_tqxjc")
+
+[node name="Player" type="CharacterBody2D" parent="."]
+position = Vector2(75, 547)
+script = ExtResource("1_rlq3s")
+
+[node name="Icon" type="Sprite2D" parent="Player"]
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("2_i5yyx")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Player"]
+shape = SubResource("RectangleShape2D_htuj5")
+
+[node name="MusicPlayer" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("3_d56es")
+autoplay = true
+
+[node name="UI" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("4_4su3f")
+
+[node name="titleText" type="RichTextLabel" parent="UI"]
+layout_mode = 0
+offset_left = 482.0
+offset_top = 4.0
+offset_right = 667.0
+offset_bottom = 27.0
+text = "Important Components"
+fit_content = true
+
+[node name="ImageTest" type="Control" parent="UI"]
+anchors_preset = 0
+offset_left = -34.0
+offset_top = -8.0
+offset_right = 6.0
+offset_bottom = 32.0
+
+[node name="Background" type="ColorRect" parent="UI/ImageTest"]
+layout_mode = 0
+offset_left = 57.0
+offset_top = 54.0
+offset_right = 484.0
+offset_bottom = 402.0
+color = Color(0, 0, 0, 0.196078)
+
+[node name="imageButton" type="CheckButton" parent="UI/ImageTest"]
+layout_mode = 0
+offset_left = 174.0
+offset_top = 350.0
+offset_right = 393.0
+offset_bottom = 395.0
+focus_mode = 1
+text = "Click to Change Image"
+
+[node name="Image" type="TextureRect" parent="UI/ImageTest"]
+layout_mode = 0
+offset_left = 64.0
+offset_top = 87.0
+offset_right = 474.0
+offset_bottom = 348.0
+texture = ExtResource("5_ytqgf")
+expand_mode = 2
+stretch_mode = 5
+
+[node name="imageText" type="RichTextLabel" parent="UI/ImageTest"]
+layout_mode = 0
+offset_left = 158.0
+offset_top = 57.0
+offset_right = 381.0
+offset_bottom = 80.0
+text = "Image should be below here"
+fit_content = true
+
+[node name="SoundTest" type="Control" parent="UI"]
+anchors_preset = 0
+offset_left = 89.0
+offset_top = -29.0
+offset_right = 129.0
+offset_bottom = 11.0
+
+[node name="Background" type="ColorRect" parent="UI/SoundTest"]
+layout_mode = 0
+offset_left = 703.0
+offset_top = 106.0
+offset_right = 921.0
+offset_bottom = 413.0
+color = Color(0, 0, 0, 0.196078)
+
+[node name="SoundPlayer" type="AudioStreamPlayer" parent="UI/SoundTest"]
+stream = ExtResource("7_qvijm")
+
+[node name="soundButton" type="Button" parent="UI/SoundTest"]
+layout_mode = 0
+offset_left = 730.0
+offset_top = 317.0
+offset_right = 887.0
+offset_bottom = 348.0
+text = "Click to Play Sound"
+
+[node name="soundText" type="RichTextLabel" parent="UI/SoundTest"]
+layout_mode = 0
+offset_left = 719.0
+offset_top = 157.0
+offset_right = 903.0
+offset_bottom = 247.0
+theme_override_font_sizes/normal_font_size = 32
+text = "Sound is
+not Playing"
+fit_content = true
+
+[node name="musicText" type="RichTextLabel" parent="UI/SoundTest"]
+layout_mode = 0
+offset_left = 737.0
+offset_top = 357.0
+offset_right = 884.0
+offset_bottom = 403.0
+text = "(music should already be playing)"
+fit_content = true
+
+[node name="FontTest" type="Control" parent="UI"]
+anchors_preset = 0
+offset_left = -5.0
+offset_right = 35.0
+offset_bottom = 40.0
+
+[node name="Background" type="ColorRect" parent="UI/FontTest"]
+layout_mode = 0
+offset_left = 507.0
+offset_top = 169.0
+offset_right = 734.0
+offset_bottom = 260.0
+color = Color(0, 0, 0, 0.196078)
+
+[node name="funkyFontText" type="RichTextLabel" parent="UI/FontTest"]
+layout_mode = 0
+offset_left = 519.0
+offset_top = 178.0
+offset_right = 718.0
+offset_bottom = 283.0
+theme = ExtResource("7_r2fpr")
+text = "This should be a funky font "
+fit_content = true
+
+[node name="Background" type="ColorRect" parent="UI"]
+layout_mode = 0
+offset_left = 996.0
+offset_top = 522.0
+offset_right = 1133.0
+offset_bottom = 598.0
+color = Color(0, 0, 0, 0.196078)
+
+[node name="sceneSwitchText" type="RichTextLabel" parent="UI"]
+layout_mode = 0
+offset_left = 1002.0
+offset_top = 525.0
+offset_right = 1131.0
+offset_bottom = 594.0
+text = "scene should change this way
+--------------------->"
+fit_content = true
+
+[node name="toNextScene" type="Area2D" parent="."]
+position = Vector2(1199, 555)
+script = ExtResource("9_qcgd8")
+nextScene = "test_scene2"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="toNextScene"]
+shape = SubResource("RectangleShape2D_qx8x7")
+
+[connection signal="pressed" from="UI/ImageTest/imageButton" to="UI" method="_on_button_pressed"]
+[connection signal="finished" from="UI/SoundTest/SoundPlayer" to="UI" method="_on_sound_player_finished"]
+[connection signal="pressed" from="UI/SoundTest/soundButton" to="UI" method="_on_sound_button_pressed"]
+[connection signal="body_entered" from="toNextScene" to="toNextScene" method="_on_body_entered"]

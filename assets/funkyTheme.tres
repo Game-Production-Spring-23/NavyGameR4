@@ -1,0 +1,7 @@
+[gd_resource type="Theme" load_steps=2 format=3 uid="uid://c4lkado257wqx"]
+
+[ext_resource type="FontFile" uid="uid://4u2d7u8hsxly" path="res://assets/fonts/Wariowareincv2-2OOBw.ttf" id="1_6ek0t"]
+
+[resource]
+default_font = ExtResource("1_6ek0t")
+default_font_size = 32
