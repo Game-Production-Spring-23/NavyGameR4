@@ -7,6 +7,7 @@
 [node name="main" type="Node2D"]
 script = ExtResource("1_yyo8n")
 sceneName = "introCutscene"
+metadata/_edit_vertical_guides_ = [-145.0]
 
 [node name="UI" type="Control" parent="."]
 layout_mode = 3
@@ -58,8 +59,8 @@ text = "Chapter Select"
 
 [node name="Sprite2D" type="Sprite2D" parent="UI"]
 visibility_layer = 2
-position = Vector2(576.75, 322.75)
-scale = Vector2(0.612036, 0.611675)
+position = Vector2(575, 325)
+scale = Vector2(0.601042, 0.598891)
 texture = ExtResource("3_wj3nn")
 
 [connection signal="pressed" from="UI/startButton" to="." method="_on_start_button_pressed"]
