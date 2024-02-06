@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://71ymv4gjcpwo"]
 
-[ext_resource type="Theme" uid="uid://bajr2k60ueqkc" path="res://Assets/themes/default_theme.tres" id="1_6bui0"]
+[ext_resource type="Theme" uid="uid://bajr2k60ueqkc" path="res://assets/themes/default_theme.tres" id="1_6bui0"]
 
 [node name="IntroCutscene" type="Node2D"]
 

@@ -11,3 +11,9 @@ func _on_start_button_pressed():
 
 func _on_end_button_pressed():
 	get_tree().quit()	
+
+
+func _on_chapter_select_button_pressed():
+	#sceneName will not update when pressing on chapterSelect Button. 
+	sceneName = "chapterSelect"
+	sceneTransition.loadScene(sceneName)
