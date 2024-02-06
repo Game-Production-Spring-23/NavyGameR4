@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://clptudfd3wwdj"]
+[gd_scene load_steps=4 format=3 uid="uid://clptudfd3wwdj"]
 
 [ext_resource type="Script" path="res://Scripts/mainmenu.gd" id="1_yyo8n"]
 [ext_resource type="Theme" uid="uid://bajr2k60ueqkc" path="res://assets/themes/default_theme.tres" id="2_iqo1g"]
+[ext_resource type="Texture2D" uid="uid://8epkpuji2qwp" path="res://assets/images/Planet-Placeholder.webp" id="3_wj3nn"]
 
 [node name="main" type="Node2D"]
 script = ExtResource("1_yyo8n")
@@ -14,25 +15,28 @@ offset_right = 40.0
 offset_bottom = 40.0
 
 [node name="title" type="RichTextLabel" parent="UI"]
+z_index = 1
 layout_mode = 0
 offset_left = 322.0
 offset_top = 24.0
-offset_right = 964.0
+offset_right = 844.0
 offset_bottom = 109.0
 theme = ExtResource("2_iqo1g")
 text = "Ranger Roger's Radar Rescue"
 fit_content = true
 
 [node name="startButton" type="Button" parent="UI"]
+z_index = 1
 layout_mode = 0
 offset_left = 438.0
-offset_top = 474.0
+offset_top = 476.0
 offset_right = 696.0
-offset_bottom = 522.0
+offset_bottom = 524.0
 theme = ExtResource("2_iqo1g")
 text = "Start"
 
 [node name="endButton" type="Button" parent="UI"]
+z_index = 1
 layout_mode = 0
 offset_left = 439.0
 offset_top = 587.0
@@ -43,6 +47,7 @@ text = "Quit
 "
 
 [node name="chapterSelectButton" type="Button" parent="UI"]
+z_index = 1
 layout_mode = 0
 offset_left = 436.0
 offset_top = 531.0
@@ -50,6 +55,12 @@ offset_right = 697.0
 offset_bottom = 579.0
 theme = ExtResource("2_iqo1g")
 text = "Chapter Select"
+
+[node name="Sprite2D" type="Sprite2D" parent="UI"]
+visibility_layer = 2
+position = Vector2(576.75, 322.75)
+scale = Vector2(0.612036, 0.611675)
+texture = ExtResource("3_wj3nn")
 
 [connection signal="pressed" from="UI/startButton" to="." method="_on_start_button_pressed"]
 [connection signal="pressed" from="UI/endButton" to="." method="_on_end_button_pressed"]
