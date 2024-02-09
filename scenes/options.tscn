@@ -1,0 +1,13 @@
+[gd_scene load_steps=2 format=3 uid="uid://5u0dpum6qwvo"]
+
+[ext_resource type="Theme" uid="uid://bajr2k60ueqkc" path="res://assets/themes/default_theme.tres" id="1_5knui"]
+
+[node name="options" type="Node2D"]
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+offset_left = 334.0
+offset_top = 267.0
+offset_right = 748.0
+offset_bottom = 375.0
+theme = ExtResource("1_5knui")
+text = "Option Screen Goes Here"
