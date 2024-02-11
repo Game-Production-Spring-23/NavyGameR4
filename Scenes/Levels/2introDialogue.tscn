@@ -1,0 +1,19 @@
+[gd_scene load_steps=2 format=3 uid="uid://fopof7how"]
+
+[ext_resource type="Theme" uid="uid://bajr2k60ueqkc" path="res://Assets/themes/headerTheme.tres" id="1_smqkv"]
+
+[node name="introDialogue" type="Node2D"]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Control" type="CenterContainer" parent="CanvasLayer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="CanvasLayer/Control"]
+layout_mode = 2
+theme = ExtResource("1_smqkv")
+text = "ADD INTRO DIALOUGE HERE"

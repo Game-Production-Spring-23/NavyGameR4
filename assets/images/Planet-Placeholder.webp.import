@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://8epkpuji2qwp"
-path="res://.godot/imported/Planet-Placeholder.webp-8feb0c78eacf5e2f555139b5c86f7b78.ctex"
+path="res://.godot/imported/Planet-Placeholder.webp-0fd651adc9c67fb8e8fc1584f14c6188.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/images/Planet-Placeholder.webp"
-dest_files=["res://.godot/imported/Planet-Placeholder.webp-8feb0c78eacf5e2f555139b5c86f7b78.ctex"]
+source_file="res://Assets/images/Planet-Placeholder.webp"
+dest_files=["res://.godot/imported/Planet-Placeholder.webp-0fd651adc9c67fb8e8fc1584f14c6188.ctex"]
 
 [params]
 

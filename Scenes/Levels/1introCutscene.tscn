@@ -1,0 +1,21 @@
+[gd_scene load_steps=3 format=3 uid="uid://71ymv4gjcpwo"]
+
+[ext_resource type="Script" path="res://Scripts/Levels/introCutscene.gd" id="1_ljok5"]
+[ext_resource type="VideoStream" path="res://Assets/videos/placeholderIntro.ogv" id="2_1gwyy"]
+
+[node name="IntroCutscene" type="Node2D"]
+script = ExtResource("1_ljok5")
+
+[node name="UI" type="CanvasLayer" parent="."]
+
+[node name="VideoStreamPlayer" type="VideoStreamPlayer" parent="UI"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+stream = ExtResource("2_1gwyy")
+autoplay = true
+expand = true
+
+[connection signal="finished" from="UI/VideoStreamPlayer" to="." method="_on_video_stream_player_finished"]
