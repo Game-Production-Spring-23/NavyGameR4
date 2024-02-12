@@ -1,7 +1,7 @@
-[gd_scene load_steps=6 format=3 uid="uid://bjaxd6el85p4r"]
+[gd_scene load_steps=3 format=3 uid="uid://bjaxd6el85p4r"]
 
-[ext_resource type="Texture2D" uid="uid://bs386d8grwo8f" path="res://assets/images/R4LogoV1.webp" id="1_qxdmh"]
-[ext_resource type="Theme" uid="uid://dctbregm4ijln" path="res://assets/themes/buttonTheme.tres" id="2_m5j2y"]
+[ext_resource type="Texture2D" uid="uid://bs386d8grwo8f" path="res://Assets/images/R4LogoV1.webp" id="1_qxdmh"]
+[ext_resource type="Theme" uid="uid://dctbregm4ijln" path="res://Assets/themes/buttonTheme.tres" id="2_m5j2y"]
 
 [node name="MainMenuScreen" type="Control"]
 layout_mode = 3
@@ -33,37 +33,26 @@ offset_left = 750.0
 offset_right = -750.0
 grow_horizontal = 2
 grow_vertical = 0
-theme_override_constants/separation = 30
+theme_override_constants/separation = 25
 alignment = 1
 
-[node name="startButton" type="Button" parent="VBoxContainer" groups=["MainMenuButtons"]]
+[node name="startButton" type="Button" parent="VBoxContainer" groups=["ChapterSelectButtons"]]
 layout_mode = 2
 theme = ExtResource("2_m5j2y")
 text = "Start"
 
-[node name="chapterSelectButton" type="Button" parent="VBoxContainer" groups=["MainMenuButtons"]]
+[node name="chapterSelectButton" type="Button" parent="VBoxContainer" groups=["ChapterSelectButtons"]]
 layout_mode = 2
 theme = ExtResource("2_m5j2y")
 text = "Chapter Select"
 
-[node name="optionButton" type="Button" parent="VBoxContainer" groups=["MainMenuButtons"]]
+[node name="optionButton" type="Button" parent="VBoxContainer" groups=["ChapterSelectButtons"]]
 layout_mode = 2
 theme = ExtResource("2_m5j2y")
-text = "Options
-"
+text = "Options"
 
-[node name="endButton" type="Button" parent="VBoxContainer" groups=["MainMenuButtons"]]
+[node name="endButton" type="Button" parent="VBoxContainer" groups=["ChapterSelectButtons"]]
 layout_mode = 2
 theme = ExtResource("2_m5j2y")
 text = "Quit
 "
-
-[node name="intro" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("3_dic20")
-autoplay = true
-
-[node name="body" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("4_35ht3")
-script = ExtResource("4_wfbdf")
-
-[connection signal="finished" from="intro" to="body" method="_on_intro_finished"]

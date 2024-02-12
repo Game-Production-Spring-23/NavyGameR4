@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://bspyw2aqtsnif"]
 
-[ext_resource type="Theme" path="res://Assets/themes/buttonTheme.tres" id="1_3yfog"]
-[ext_resource type="Theme" path="res://Assets/themes/headerTheme.tres" id="2_nt2cb"]
+[ext_resource type="Theme" uid="uid://dctbregm4ijln" path="res://Assets/themes/buttonTheme.tres" id="1_3yfog"]
+[ext_resource type="Theme" uid="uid://bajr2k60ueqkc" path="res://Assets/themes/headerTheme.tres" id="2_nt2cb"]
 
 [node name="ChapterSelectScreen" type="Control"]
 layout_mode = 3
