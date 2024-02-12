@@ -1,0 +1,10 @@
+~ this_is_a_node_title
+R.O.G.E.R: [[Hello|Good day|Hi there]] Ranger! This is a test to see if the dialogue works! Does it?
+- Yes it does
+	R.O.G.E.R: Great!
+	 => END
+- No it doesn't
+	R.O.G.E.R: Not Great! 
+	=> END
+
+=> END
