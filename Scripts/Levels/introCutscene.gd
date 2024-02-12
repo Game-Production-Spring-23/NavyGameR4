@@ -5,14 +5,6 @@ extends Node2D
 	description: This script manages the intro cutscene and loads the intro dialouge afterwards
 
 """
-var scene_transition
-
-# SETUP FUNCTIONS
-# Called when the node enters the scene tree for the first time.
-func _ready():
-	# Gets autoloads
-	scene_transition = get_node("/root/SceneTransition");
-
 #		FUNCTIONS
 # Called whenever a key is pressed.
 func _input(event):
@@ -23,4 +15,4 @@ func _input(event):
 
 # Switches to intro dialouge as soon as intro cutscene finishes
 func _on_video_stream_player_finished():
-	scene_transition.loadScene("2introDialogue")
+	gameController.changeScene("2introDialogue")

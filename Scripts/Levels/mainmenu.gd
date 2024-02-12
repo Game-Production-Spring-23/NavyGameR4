@@ -4,15 +4,11 @@ extends Node2D
 name: mainmenu.gd
 description: This script controls the functions and screens of the main menu
 """
-var scene_transition
 var menuScreens = []
 
 # SETUP FUNCTIONS
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	# Gets autoloads
-	scene_transition = get_node("/root/SceneTransition");
-
 	# Adds all menu screens to list
 	menuScreens.append(get_node("UI/MainMenuScreen"))
 	menuScreens.append(get_node("UI/ChapterSelectScreen"))
@@ -30,7 +26,7 @@ func _ready():
 # Called when a button is pressed from main menu
 func on_button_pressed(button_pressed):
 	if(button_pressed.name == "startButton"): # Loads the options cutscene
-		scene_transition.loadScene("1introCutscene")
+		gameController.changeScene("1introCutscene")
 	elif(button_pressed.name == "chapterSelectButton"): # Displays the chapter select screen
 		displayMenuScreen(1)
 	elif(button_pressed.name == "optionButton"): # Displays the options screen

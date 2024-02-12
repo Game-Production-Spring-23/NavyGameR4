@@ -1,6 +1,9 @@
-[gd_scene load_steps=5 format=3 uid="uid://dplviy6lajgrp"]
+[gd_scene load_steps=8 format=3 uid="uid://bakaqooqd02sv"]
 
-[ext_resource type="Script" path="res://Scripts/scene_transition.gd" id="1_p67r5"]
+[ext_resource type="Script" path="res://scripts/gameController.gd" id="1_6lwvo"]
+[ext_resource type="Script" path="res://scripts/music_controller.gd" id="2_7r1b8"]
+[ext_resource type="AudioStream" uid="uid://d2l22sb545024" path="res://assets/audio/music/title-intro.ogg" id="3_2vvp4"]
+[ext_resource type="AudioStream" uid="uid://dko8hcsgvw08n" path="res://assets/audio/music/title-body.ogg" id="4_xxu8g"]
 
 [sub_resource type="Animation" id="Animation_a5gqd"]
 resource_name = "Fade"
@@ -39,11 +42,22 @@ _data = {
 "RESET": SubResource("Animation_4hiwk")
 }
 
-[node name="ScreenTransition" type="CanvasLayer"]
-layer = 50
-script = ExtResource("1_p67r5")
+[node name="GameController" type="Node"]
+script = ExtResource("1_6lwvo")
 
-[node name="FadeScreen" type="ColorRect" parent="."]
+[node name="music" type="Node" parent="."]
+script = ExtResource("2_7r1b8")
+
+[node name="intro" type="AudioStreamPlayer" parent="music"]
+stream = ExtResource("3_2vvp4")
+
+[node name="body" type="AudioStreamPlayer" parent="music"]
+stream = ExtResource("4_xxu8g")
+
+[node name="ScreenTransition" type="CanvasLayer" parent="."]
+layer = 50
+
+[node name="FadeScreen" type="ColorRect" parent="ScreenTransition"]
 self_modulate = Color(1, 1, 1, 0)
 anchors_preset = 15
 anchor_right = 1.0
@@ -53,7 +67,9 @@ grow_vertical = 2
 mouse_filter = 2
 color = Color(0, 0, 0, 1)
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="FadeScreen"]
+[node name="AnimationPlayer" type="AnimationPlayer" parent="ScreenTransition/FadeScreen"]
 libraries = {
 "": SubResource("AnimationLibrary_rem3y")
 }
+
+[connection signal="finished" from="music/intro" to="music" method="_on_intro_finished"]

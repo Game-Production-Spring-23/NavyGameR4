@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://dvwpsvyo1m2vd"]
 
-[ext_resource type="Theme" uid="uid://bajr2k60ueqkc" path="res://Assets/themes/headerTheme.tres" id="1_gucb5"]
-[ext_resource type="Theme" uid="uid://dctbregm4ijln" path="res://Assets/themes/buttonTheme.tres" id="2_njyt3"]
+[ext_resource type="Theme" uid="uid://bajr2k60ueqkc" path="res://assets/themes/headerTheme.tres" id="1_gucb5"]
+[ext_resource type="Theme" uid="uid://dctbregm4ijln" path="res://assets/themes/buttonTheme.tres" id="2_njyt3"]
 
 [node name="OptionsScreen" type="Control"]
 layout_mode = 3
