@@ -1,7 +1,10 @@
-[gd_scene load_steps=3 format=3 uid="uid://bjaxd6el85p4r"]
+[gd_scene load_steps=6 format=3 uid="uid://bjaxd6el85p4r"]
 
-[ext_resource type="Texture2D" uid="uid://bs386d8grwo8f" path="res://Assets/images/R4LogoV1.webp" id="1_qxdmh"]
-[ext_resource type="Theme" uid="uid://dctbregm4ijln" path="res://Assets/themes/buttonTheme.tres" id="2_m5j2y"]
+[ext_resource type="Texture2D" uid="uid://bs386d8grwo8f" path="res://assets/images/R4LogoV1.webp" id="1_qxdmh"]
+[ext_resource type="Theme" uid="uid://dctbregm4ijln" path="res://assets/themes/buttonTheme.tres" id="2_m5j2y"]
+[ext_resource type="AudioStream" uid="uid://d2l22sb545024" path="res://assets/audio/music/title-intro.ogg" id="3_dic20"]
+[ext_resource type="AudioStream" uid="uid://dko8hcsgvw08n" path="res://assets/audio/music/title-body.ogg" id="4_35ht3"]
+[ext_resource type="Script" path="res://Scripts/titleMusic.gd" id="4_wfbdf"]
 
 [node name="MainMenuScreen" type="Control"]
 layout_mode = 3
@@ -12,6 +15,7 @@ grow_horizontal = 2
 grow_vertical = 2
 
 [node name="Title" type="TextureRect" parent="."]
+texture_filter = 1
 layout_mode = 1
 anchors_preset = -1
 anchor_right = 1.0
@@ -56,3 +60,13 @@ layout_mode = 2
 theme = ExtResource("2_m5j2y")
 text = "Quit
 "
+
+[node name="intro" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_dic20")
+autoplay = true
+
+[node name="body" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("4_35ht3")
+script = ExtResource("4_wfbdf")
+
+[connection signal="finished" from="intro" to="body" method="_on_intro_finished"]
