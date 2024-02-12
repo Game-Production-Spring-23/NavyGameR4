@@ -1,10 +1,10 @@
 [gd_scene load_steps=6 format=3 uid="uid://bp3ym5chah6ee"]
 
 [ext_resource type="Script" path="res://Scripts/Levels/mainmenu.gd" id="1_isdwb"]
-[ext_resource type="Texture2D" uid="uid://8epkpuji2qwp" path="res://assets/images/Planet-Placeholder.webp" id="2_ryqsy"]
-[ext_resource type="PackedScene" uid="uid://bjaxd6el85p4r" path="res://scenes/UI/MainMenuScreen.tscn" id="3_g4i66"]
-[ext_resource type="PackedScene" uid="uid://bspyw2aqtsnif" path="res://scenes/UI/ChapterSelectScreen.tscn" id="4_w2687"]
-[ext_resource type="PackedScene" uid="uid://dvwpsvyo1m2vd" path="res://scenes/UI/OptionsScreen.tscn" id="5_r520f"]
+[ext_resource type="Texture2D" uid="uid://8epkpuji2qwp" path="res://Assets/images/Planet-Placeholder.webp" id="2_ryqsy"]
+[ext_resource type="PackedScene" uid="uid://bjaxd6el85p4r" path="res://Scenes/UI/MainMenuScreen.tscn" id="3_g4i66"]
+[ext_resource type="PackedScene" uid="uid://bspyw2aqtsnif" path="res://Scenes/UI/ChapterSelectScreen.tscn" id="4_w2687"]
+[ext_resource type="PackedScene" uid="uid://dvwpsvyo1m2vd" path="res://Scenes/UI/OptionsScreen.tscn" id="5_r520f"]
 
 [node name="mainMenu" type="Node2D"]
 script = ExtResource("1_isdwb")
