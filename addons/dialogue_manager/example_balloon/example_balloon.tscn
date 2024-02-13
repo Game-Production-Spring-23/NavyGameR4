@@ -84,8 +84,8 @@ anchors_preset = 12
 anchor_top = 1.0
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = 21.0
-offset_top = -183.0
+offset_left = 19.0
+offset_top = -381.0
 offset_right = -19.0
 offset_bottom = -19.0
 grow_horizontal = 2
@@ -121,15 +121,15 @@ text = "Dialogue..."
 
 [node name="Responses" type="MarginContainer" parent="Balloon"]
 layout_mode = 1
-anchors_preset = 7
-anchor_left = 0.5
-anchor_top = 1.0
-anchor_right = 0.5
-anchor_bottom = 1.0
-offset_left = -147.0
-offset_top = -558.0
-offset_right = 494.0
-offset_bottom = -154.0
+anchors_preset = -1
+anchor_left = 0.015
+anchor_top = 0.73
+anchor_right = 0.515
+anchor_bottom = 0.978
+offset_left = -0.800001
+offset_top = -0.400024
+offset_right = -0.80011
+offset_bottom = -0.23999
 grow_horizontal = 2
 grow_vertical = 0
 
@@ -138,6 +138,7 @@ unique_name_in_owner = true
 layout_mode = 2
 size_flags_vertical = 8
 theme_override_constants/separation = 2
+alignment = 1
 script = ExtResource("3_72ixx")
 response_template = NodePath("ResponseExample")
 

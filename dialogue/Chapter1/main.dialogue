@@ -1,0 +1,28 @@
+import "res://dialogue/test/main.dialogue" as test3
+~ nodeTest
+
+R.O.G.E.R: [[Hello|Good day|Hi there]] [rainbow] Ranger! [/rainbow] This is a test to see if the dialogue works! Does it?
+- Yes it does
+	R.O.G.E.R: Great!
+	 => END
+- No it doesn't
+	R.O.G.E.R: [shake]Not Great! 
+	=> END
+- It might
+	R.O.G.E.R: It might?
+	=> nodeTest2
+- go Back to Home Screen
+	R.O.G.E.R:Okay!
+	do gameController.changeScene("0mainMenu")
+
+=> END
+
+
+~ nodeTest2
+R.O.G.E.R: Does it work or not?
+- Yes
+	R.O.G.E.R: Lorem Ipsum
+	=> test3/test3
+- No
+	R.O.G.E.R: Ipsum Lorem
+

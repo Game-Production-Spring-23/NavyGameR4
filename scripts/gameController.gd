@@ -1,6 +1,6 @@
 extends Node
 
-var textSpeed = 1
+var textSpeed = 100
 @onready var animationPlayer = $ScreenTransition/FadeScreen/AnimationPlayer
 
 func changeScene(scenePath, intro = null, body = null):
@@ -31,3 +31,7 @@ func playMusic():
 func pauseMusic():
 	$music/intro.stream_paused = true
 	$music/body.stream_paused = true
+
+
+func triggerDialogue(path, dialogName) :
+	DialogueManager.show_example_dialogue_balloon(load("res://dialogue/"+path + "/main.dialogue"), dialogName)
