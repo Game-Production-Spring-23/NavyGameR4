@@ -15,4 +15,4 @@ func _input(event):
 
 # Switches to intro dialouge as soon as intro cutscene finishes
 func _on_video_stream_player_finished():
-	gameController.changeScene("2introDialogue")
+	gameController.changeScene("2characterCreation")

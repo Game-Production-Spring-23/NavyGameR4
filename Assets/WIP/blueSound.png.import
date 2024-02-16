@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://8epkpuji2qwp"
-path="res://.godot/imported/Planet-Placeholder.webp-0fd651adc9c67fb8e8fc1584f14c6188.ctex"
+uid="uid://bvkdu82e0teyg"
+path="res://.godot/imported/blueSound.png-945531a796cd09a0311d16eed0a96b71.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/images/Planet-Placeholder.webp"
-dest_files=["res://.godot/imported/Planet-Placeholder.webp-0fd651adc9c67fb8e8fc1584f14c6188.ctex"]
+source_file="res://Assets/WIP/blueSound.png"
+dest_files=["res://.godot/imported/blueSound.png-945531a796cd09a0311d16eed0a96b71.ctex"]
 
 [params]
 

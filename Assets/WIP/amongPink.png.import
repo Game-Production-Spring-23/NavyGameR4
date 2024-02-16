@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://8epkpuji2qwp"
-path="res://.godot/imported/Planet-Placeholder.webp-0fd651adc9c67fb8e8fc1584f14c6188.ctex"
+uid="uid://bfr73tvtjs2ig"
+path="res://.godot/imported/amongPink.png-ee41558625be4bf76b195329f03c9bbd.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/images/Planet-Placeholder.webp"
-dest_files=["res://.godot/imported/Planet-Placeholder.webp-0fd651adc9c67fb8e8fc1584f14c6188.ctex"]
+source_file="res://Assets/WIP/amongPink.png"
+dest_files=["res://.godot/imported/amongPink.png-ee41558625be4bf76b195329f03c9bbd.ctex"]
 
 [params]
 

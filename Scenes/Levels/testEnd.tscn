@@ -1,0 +1,33 @@
+[gd_scene load_steps=3 format=3 uid="uid://b21psc2icrv5h"]
+
+[ext_resource type="Theme" uid="uid://bajr2k60ueqkc" path="res://Assets/themes/headerTheme.tres" id="1_83spl"]
+[ext_resource type="Texture2D" uid="uid://8epkpuji2qwp" path="res://Assets/images/Planet-Placeholder.webp" id="1_wyw12"]
+
+[node name="TestEnd" type="Node2D"]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_wyw12")
+
+[node name="CenterContainer" type="CenterContainer" parent="CanvasLayer/TextureRect"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = 1.0
+offset_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="CanvasLayer/TextureRect/CenterContainer"]
+layout_mode = 2
+theme = ExtResource("1_83spl")
+text = "End of demo"
+horizontal_alignment = 1
+vertical_alignment = 1
