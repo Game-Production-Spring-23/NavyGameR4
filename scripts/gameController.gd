@@ -34,4 +34,4 @@ func pauseMusic():
 
 
 func triggerDialogue(path, dialogName) :
-	DialogueManager.show_example_dialogue_balloon(load("res://dialogue/"+path + "/main.dialogue"), dialogName)
+	DialogueManager.show_dialogue_balloon(load("res://dialogue/"+path + "/main.dialogue"), dialogName)

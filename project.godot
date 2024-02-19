@@ -23,6 +23,7 @@ gameController="*res://scenes/gameController.tscn"
 [dialogue_manager]
 
 general/balloon_path="res://dialogue/balloon.tscn"
+general/states=["gameController"]
 
 [display]
 
