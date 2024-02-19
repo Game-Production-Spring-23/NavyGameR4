@@ -1,4 +1,6 @@
+
 import "res://dialogue/test/main.dialogue" as test3
+import "res://dialogue/test/test2.dialogue" as test4
 ~ nodeTest
 
 R.O.G.E.R: [[Hello|Good day|Hi there]] [rainbow] Ranger! [/rainbow] This is a test to see if the dialogue works! Does it?
@@ -8,8 +10,8 @@ R.O.G.E.R: [[Hello|Good day|Hi there]] [rainbow] Ranger! [/rainbow] This is a te
 - No it doesn't
 	R.O.G.E.R: [shake]Not Great! 
 	=> END
-- It might
-	R.O.G.E.R: It might?
+- Switch to second text
+	R.O.G.E.R: Okay! Switching Now.
 	=> nodeTest2
 - go Back to Home Screen
 	R.O.G.E.R:Okay!
@@ -21,8 +23,9 @@ R.O.G.E.R: [[Hello|Good day|Hi there]] [rainbow] Ranger! [/rainbow] This is a te
 ~ nodeTest2
 R.O.G.E.R: Does it work or not?
 - Yes
-	R.O.G.E.R: Lorem Ipsum
+	R.O.G.E.R: Switching to second file.
 	=> test3/test3
 - No
-	R.O.G.E.R: Ipsum Lorem
+	R.O.G.E.R: Switching to third file.
+	=> test4/test4
 
