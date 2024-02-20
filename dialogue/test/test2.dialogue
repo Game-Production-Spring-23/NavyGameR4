@@ -1,4 +1,14 @@
 ~ test4
 
-R.O.G.E.R: This is file 3!
+
+Nathan: Choose a Response...
+- Option 1
+	Nathan: You chose option 1
+- Option 2
+	Nathan: You chose option 2
+- Option 3
+	Nathan: OPTION 3
+- Option 4
+	Nathan: OPTION 4
+
 => END

@@ -1,31 +1,25 @@
+~ tutorial1
+Ranger: Ugh... What happened?
+ROGER: ERROR. ERROR. SYSTEM OVERLOAD. PROCEEDING TO REBOOT...Reboot Complete!
+ROGER: Designated Ranger, The ship has been in an accident. Make sure that you are up and able to go, I will run diagnostics and check to see what damage has been done.
+=> tutorial2
+=> END!
 
-import "res://dialogue/test/main.dialogue" as test3
-import "res://dialogue/test/test2.dialogue" as test4
-~ nodeTest
-
-R.O.G.E.R: [[Hello|Good day|Hi there]] [rainbow] Ranger! [/rainbow] This is a test to see if the dialogue works! Does it?
-- Yes it does
-	R.O.G.E.R: Great!
-	 => END
-- No it doesn't
-	R.O.G.E.R: [shake]Not Great! 
-	=> END
-- Switch to second text
-	R.O.G.E.R: Okay! Switching Now.
-	=> nodeTest2
-- go Back to Home Screen
-	R.O.G.E.R:Okay!
-	do gameController.changeScene("0mainMenu")
-
+~ tutorial2
+ROGER: Ranger, I have finished the diagnostics. I have bad news. The Radar is...
+Ranger: Broken? Ok, that's not too bad, I can fix that.
+ROGER: No, it is not that. The Radar, it is completely missing.This is not good.
+Ranger: Alright, calm down ROGER, We're going to find a solution for it. Check the CCTV Footage.
+ROGER: I have tried already, but I could not get access. It seems like someone is messing with my system in the main bay. Let me open the door to the main bay.
+=> tutorial3
 => END
+~ tutorial3
+Ranger: ROGER, what is that thing?
+???: HEY! I'm not a thing, I'm a person!
+Ranger: You must be the one that's been messing with my stuff. I need to talk to you.
 
+???: Uh Oh. 
 
-~ nodeTest2
-R.O.G.E.R: Does it work or not?
-- Yes
-	R.O.G.E.R: Switching to second file.
-	=> test3/test3
-- No
-	R.O.G.E.R: Switching to third file.
-	=> test4/test4
+Ranger: HEY! GET BACK HERE!
+=> END!
 

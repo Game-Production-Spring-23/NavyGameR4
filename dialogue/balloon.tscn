@@ -1,8 +1,11 @@
-[gd_scene load_steps=9 format=3 uid="uid://73jm5qjy52vq"]
+[gd_scene load_steps=12 format=3 uid="uid://73jm5qjy52vq"]
 
 [ext_resource type="Script" path="res://dialogue/balloon.gd" id="1_36de5"]
+[ext_resource type="Texture2D" uid="uid://dfdfajgx7pq1q" path="res://assets/images/dialogue/textBoxPlaceholder.png" id="2_42ybj"]
 [ext_resource type="PackedScene" uid="uid://ckvgyvclnwggo" path="res://addons/dialogue_manager/dialogue_label.tscn" id="2_a8ve6"]
 [ext_resource type="Script" path="res://addons/dialogue_manager/dialogue_reponses_menu.gd" id="3_72ixx"]
+[ext_resource type="Theme" uid="uid://bajr2k60ueqkc" path="res://assets/themes/headerTheme.tres" id="3_co8tf"]
+[ext_resource type="Theme" uid="uid://dctbregm4ijln" path="res://assets/themes/buttonTheme.tres" id="5_5si8r"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_spyqn"]
 bg_color = Color(0, 0, 0, 1)
@@ -73,11 +76,13 @@ layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+offset_top = 1.0
+offset_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 theme = SubResource("Theme_qq3yp")
 
-[node name="Panel" type="Panel" parent="Balloon"]
+[node name="Panel" type="TextureRect" parent="Balloon"]
 clip_children = 2
 layout_mode = 1
 anchors_preset = 12
@@ -85,27 +90,35 @@ anchor_top = 1.0
 anchor_right = 1.0
 anchor_bottom = 1.0
 offset_left = 19.0
-offset_top = -203.0
+offset_top = -305.0
 offset_right = -19.0
 offset_bottom = -19.0
 grow_horizontal = 2
 grow_vertical = 0
-mouse_filter = 1
+texture = ExtResource("2_42ybj")
+expand_mode = 1
 
 [node name="Dialogue" type="MarginContainer" parent="Balloon/Panel"]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+offset_left = 35.0
+offset_top = 14.0
+offset_right = -41.0
+offset_bottom = -13.0
 grow_horizontal = 2
 grow_vertical = 2
 
 [node name="HBoxContainer" type="HBoxContainer" parent="Balloon/Panel/Dialogue"]
 layout_mode = 2
+theme_override_constants/separation = 30
 
-[node name="TextureRect" type="TextureRect" parent="Balloon/Panel/Dialogue/HBoxContainer"]
-custom_minimum_size = Vector2(150, 150)
+[node name="Portrait" type="TextureRect" parent="Balloon/Panel/Dialogue/HBoxContainer"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(250, 200)
 layout_mode = 2
+expand_mode = 1
 
 [node name="VBoxContainer" type="VBoxContainer" parent="Balloon/Panel/Dialogue/HBoxContainer"]
 layout_mode = 2
@@ -116,6 +129,7 @@ unique_name_in_owner = true
 modulate = Color(1, 1, 1, 0.501961)
 layout_mode = 2
 mouse_filter = 1
+theme = ExtResource("3_co8tf")
 bbcode_enabled = true
 text = "Character"
 fit_content = true
@@ -125,26 +139,37 @@ scroll_active = false
 unique_name_in_owner = true
 layout_mode = 2
 size_flags_vertical = 3
+theme = ExtResource("5_5si8r")
 text = "Dialogue..."
 
-[node name="Responses" type="MarginContainer" parent="Balloon"]
+[node name="Responses" type="TextureRect" parent="Balloon"]
+z_index = -2
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.015
 anchor_top = 0.73
 anchor_right = 0.515
 anchor_bottom = 0.978
-offset_left = 135.2
-offset_top = -40.4
-offset_right = 135.2
-offset_bottom = -186.24
+offset_left = 420.2
+offset_top = -190.4
+offset_right = 635.2
+offset_bottom = -250.24
 grow_horizontal = 2
 grow_vertical = 0
+texture = ExtResource("2_42ybj")
+expand_mode = 1
 
 [node name="ResponsesMenu" type="GridContainer" parent="Balloon/Responses" node_paths=PackedStringArray("response_template")]
 unique_name_in_owner = true
 layout_mode = 2
+offset_left = 40.0
+offset_top = 26.0
+offset_right = 697.0
+offset_bottom = 111.0
 size_flags_vertical = 8
+theme = ExtResource("5_5si8r")
+theme_override_constants/h_separation = 275
+theme_override_constants/v_separation = 30
 columns = 2
 script = ExtResource("3_72ixx")
 response_template = NodePath("ResponseExample")
