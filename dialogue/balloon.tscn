@@ -143,6 +143,7 @@ theme = ExtResource("5_5si8r")
 text = "Dialogue..."
 
 [node name="Responses" type="TextureRect" parent="Balloon"]
+unique_name_in_owner = true
 z_index = -2
 layout_mode = 1
 anchors_preset = -1
@@ -153,7 +154,7 @@ anchor_bottom = 0.978
 offset_left = 420.2
 offset_top = -190.4
 offset_right = 635.2
-offset_bottom = -250.24
+offset_bottom = -201.808
 grow_horizontal = 2
 grow_vertical = 0
 texture = ExtResource("2_42ybj")
@@ -164,7 +165,7 @@ unique_name_in_owner = true
 layout_mode = 2
 offset_left = 489.0
 offset_top = 624.0
-offset_right = 1146.0
+offset_right = 1164.0
 offset_bottom = 709.0
 size_flags_vertical = 8
 theme = ExtResource("5_5si8r")

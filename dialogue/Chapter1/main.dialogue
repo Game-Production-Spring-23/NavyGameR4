@@ -1,25 +1,66 @@
 ~ tutorial1
-Ranger: Ugh... What happened?
-ROGER: ERROR. ERROR. SYSTEM OVERLOAD. PROCEEDING TO REBOOT...Reboot Complete!
-ROGER: Designated Ranger, The ship has been in an accident. Make sure that you are up and able to go, I will run diagnostics and check to see what damage has been done.
-=> tutorial2
+Ranger: Ooh Ugh. What happened?
+
+ROGER: Error, Error, system overload. Proceeding to Reboot…... Reboot Complete!
+
+ROGER: Designated Ranger, the ship was in a bad accident. make sure that you are up and able to go, I will run diagnostics and check the damage done.
 => END!
 
 ~ tutorial2
-ROGER: Ranger, I have finished the diagnostics. I have bad news. The Radar is...
-Ranger: Broken? Ok, that's not too bad, I can fix that.
-ROGER: No, it is not that. The Radar, it is completely missing.This is not good.
-Ranger: Alright, calm down ROGER, We're going to find a solution for it. Check the CCTV Footage.
-ROGER: I have tried already, but I could not get access. It seems like someone is messing with my system in the main bay. Let me open the door to the main bay.
-=> tutorial3
+ROGER: Ranger, I finished the Diagnostic check. I have bad news: The Radar, it is…
+Ranger: Broken? OK. That is nothing too bad, I can fix that.
+ROGER: No, it is not that. It is completely missing. Sir, this is not good.
+Ranger: Alright Roger, calm down. We are going to find a solution to it. Check the CCTV footage quickly. 
+ROGER: I tried doing that earlier, but I could not have access. It seems like somebody is messing with my system in the main bay. Let me open the door to the main bay. 
 => END
 ~ tutorial3
 Ranger: ROGER, what is that thing?
 ???: HEY! I'm not a thing, I'm a person!
 Ranger: You must be the one that's been messing with my stuff. I need to talk to you.
-
 ???: Uh Oh. 
-
 Ranger: HEY! GET BACK HERE!
 => END!
+MINIGAME STRUCTURE GOES HERE
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+~ tutorial4
+ ???: That sounds awesome, what does a Radar look like? 
+Ranger: What are you talking about? Do you not have my radar? What were you doing on my ship? 
+???: I heard a loud bang and wanted to see what was going on. When I got here, I saw your friends running off, so I assumed everyone was gone. 
+Ranger: what friends? It is only me and ROGER.  
+???: What about the Scein? And the Trolum? Or the Yappo? The Tendra? And the... oh what were they called? OH, THE LAGNAI!!!! 
+Ranger: Gosh Dango, a dead end. What am I going to do now?
+ROGER: Ranger, I have received the CCTV footage from the wreckage, I need you to look at this sir. I will be waiting in the Comms room.
+Ranger: I'm on my way back right now.
+=> END
+
+~ tutorial5
+ROGER: According to the video, it looks like there were 5 people that took parts of the Radar.
+Ranger: Ok ROGER, can you somehow track these people down using your interface?
+ROGER: Sadly I cannot, due to my reboot, I cannot recollect the ability of doing that
+Ranger: Gosh Dango, first my ship crashed, then my Radar broken down and stolen for pieces, and now ROGER? How am I going to get this done?
+???: Hmmmmm, perhaps I can help!
+Ranger: The pleque are you doing here kid?
+Daria: The name is Daria! I am a Daran here at these parts. I liked the conversation we had about Radars and realized that you could need some help. Turns out I am correct.
+Ranger: and why should I trust you?
+Daria: It seems I am your only choice right now. 
+Ranger: Dango, it seems you have a point. Alright, and how exactly can you help?
+Daria: Well like I said earlier, I know my ways around this place. It looks like for repairs you would need to go to Yaplisdapolis, a city that's nearby. I can show you how to get there!
+Ranger: The city looks to be nearby anyway; I don't think I need help getting there.
+Daria: Thats the other thing, in the video, only one person there is from the city, everyone else is from other parts of this world. Plus, it wouldn't hurt to have someone who knows the way of the land to help you out you know?  The best thing to do in your situation is to go to these different parts of land, collect the Radar thing youre looking for, and then to fix your ship.
+Ranger: Ok then hotshot, since you're leading the way, where are we going first? 
+Daria: The closest place here we would need to go first is the Plains of Trolonc. I saw a Trolum when I came here, and they live pretty near my home. I can show you the way. 
+Ranger: Alrighty then, I will be following from behind
+=> END!

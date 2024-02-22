@@ -45,11 +45,12 @@ var dialogue_line: DialogueLine:
 
 		character_label.visible = not dialogue_line.character.is_empty()
 		character_label.text = tr(dialogue_line.character, "dialogue")
-		var portrait_path: String = "res://assets/images/dialogue/%.png" % dialogue_line.character.to_lower();
-		
-		if FileAccess.file_exists(portrait_path):
-			portrait.texture = load(portrait_path)
+		var portrait_path = "res://assets/images/dialogue/%.png" % dialogue_line.character.to_lower();
+		var portrait_name = dialogue_line.character.to_lower();
+		if FileAccess.file_exists("res://assets/images/dialogue/"+portrait_name+".png"):
+			portrait.texture = load("res://assets/images/dialogue/"+portrait_name+".png")
 		else :
+			print(portrait_name)
 			portrait.texture = load("res://assets/images/dialogue/errorPlaceholder.png")
 			
 		dialogue_label.hide()
