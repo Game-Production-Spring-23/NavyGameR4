@@ -72,4 +72,6 @@ libraries = {
 "": SubResource("AnimationLibrary_rem3y")
 }
 
+[node name="soundQueue" type="Node" parent="."]
+
 [connection signal="finished" from="music/intro" to="music" method="_on_intro_finished"]

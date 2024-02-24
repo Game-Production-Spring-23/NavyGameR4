@@ -32,6 +32,13 @@ func pauseMusic():
 	$music/intro.stream_paused = true
 	$music/body.stream_paused = true
 
+#takes the path to create a new audioplayer node, which will remove itself upon completion
+func playSound(path):
+	var sound = AudioStreamPlayer.new()
+	sound.set_stream(load(path))
+	sound.finished.connect(func(): sound.queue_free())
+	$soundQueue.add_child(sound)
+	sound.play()
 
 func triggerDialogue(path, dialogName) :
 	DialogueManager.show_dialogue_balloon(load("res://dialogue/"+path + "/main.dialogue"), dialogName)
