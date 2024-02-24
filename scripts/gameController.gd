@@ -1,6 +1,7 @@
 extends Node
+#Variable to define the textSpeed.
+var textSpeed = 10
 
-var textSpeed = 100
 @onready var animationPlayer = $ScreenTransition/FadeScreen/AnimationPlayer
 
 func changeScene(scenePath, intro = null, body = null):
@@ -40,5 +41,6 @@ func playSound(path):
 	$soundQueue.add_child(sound)
 	sound.play()
 
+#takes the folder path and dialogue name, and triggers a dialogue balloon with those parameters.
 func triggerDialogue(path, dialogName) :
 	DialogueManager.show_dialogue_balloon(load("res://dialogue/"+path + "/main.dialogue"), dialogName)

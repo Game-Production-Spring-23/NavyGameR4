@@ -157,7 +157,7 @@ func _get_pause(at_index: int) -> float:
 
 # Get the speed for the current typing position
 func _get_speed(at_index: int) -> float:
-	var speed: float = 1
+	var speed: float = gameController.textSpeed
 	for index in dialogue_line.speeds:
 		if index > at_index:
 			return speed
