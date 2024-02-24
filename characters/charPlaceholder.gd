@@ -1,7 +1,7 @@
 extends CharacterBody2D
 #parameters/idle/blend_position
 
-@export var move_speed : float = 100
+@export var move_speed : float = 500
 @export var starting_direction : Vector2 = Vector2(0, 1)
 
 @onready var animation_tree = $AnimationTree
