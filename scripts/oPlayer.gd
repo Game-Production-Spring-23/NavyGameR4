@@ -6,5 +6,5 @@ var color
 
 func _init(pro, voi, col):
 	pronouns = pro
-	voice = voice
-	color = color
+	voice = voi
+	color = col
