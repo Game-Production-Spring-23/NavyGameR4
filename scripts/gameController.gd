@@ -1,7 +1,7 @@
 extends Node
 #Variable to define the textSpeed.
 var textSpeed = 10
-
+var player = null #player object is set after the character creation scene is finished
 @onready var animationPlayer = $ScreenTransition/FadeScreen/AnimationPlayer
 
 func changeScene(scenePath, intro = null, body = null):

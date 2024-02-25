@@ -9,6 +9,10 @@ var pronounButtons = []
 var voiceButtons = []
 var appearenceButtons = []
 
+var pronouns = ["she", "her", "hers"]
+var voice = "voice1"
+var color = "red"
+
 # SETUP FUNCTIONS
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -44,11 +48,11 @@ func on_pronoun_button_pressed(button_pressed):
 
 	# Sets the player's pronouns
 	if(button_pressed.name == "She"): # Sets pronouns to she/her
-		print("Pronoun Seleceted: She/Her")
+		pronouns = ["she", "her", "hers"]
 	elif(button_pressed.name == "He"): # Sets pronouns to he/him
-		print("Pronoun Seleceted: He/Him")
+		pronouns = ["he", "him", "his"]
 	elif(button_pressed.name == "They"): # Sets pronouns to they/them
-		print("Pronoun Seleceted: They/Them")
+		pronouns = ["they", "them", "their"]
 	else:
 		print(button_pressed.name)
 
@@ -61,9 +65,9 @@ func on_voice_button_pressed(button_pressed):
 
 	# Sets the player's voice
 	if(button_pressed.name == "Voice1"): # Sets voice to voice 1
-		print("Voice Seleceted: *Play Voice 1")
+		voice = "voice1"
 	elif(button_pressed.name == "Voice2"): # Sets voice to voice 2
-		print("Voice Seleceted: *Play Voice 2")
+		voice = "voice2"
 	else:
 		print(button_pressed.name)
 
@@ -76,17 +80,17 @@ func on_appearance_button_pressed(button_pressed):
 
 	# Sets the player's appearance
 	if(button_pressed.name == "Red"): # Sets appearance to preset 1
-		print("Appearance Seleceted: Preset 1")
+		color = "red"
 	elif(button_pressed.name == "Blue"): # Sets appearance to preset 2
-		print("Appearance Seleceted: Preset 2")
+		color = "blue"
 	elif(button_pressed.name == "Orange"): # Sets appearance to preset 3
-		print("Appearance Seleceted: Preset 3")
+		color = "orange"
 	elif(button_pressed.name == "Pink"): # Sets appearance to preset 4
-		print("Appearance Seleceted: Preset 4")
+		color = "pink"
 	else:
 		print(button_pressed.name)
 
-# Called when a player confirm's their character
+# Called when the player confirms their character
 func on_character_creation_confirm():
-	print("SAVE CHARACTER")
+	gameController.player = oPlayer.new(pronouns, voice, color)
 	gameController.changeScene("0-3_shipInterior")
