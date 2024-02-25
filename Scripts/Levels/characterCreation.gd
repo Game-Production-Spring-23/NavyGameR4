@@ -89,4 +89,4 @@ func on_appearance_button_pressed(button_pressed):
 # Called when a player confirm's their character
 func on_character_creation_confirm():
 	print("SAVE CHARACTER")
-	gameController.changeScene("testEnd")
+	gameController.changeScene("0-3_shipInterior")
