@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://6bqqlx0isjlp"
-path="res://.godot/imported/overlayScanlines.png-a11d9b84b3285c8ffb85e5e31bacd9a5.ctex"
+uid="uid://d3osgmwlxiqak"
+path="res://.godot/imported/placeholderTiles.png-c826aea23f46ff0c5b477609c1cb7202.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/images/dialogue/overlayScanlines.png"
-dest_files=["res://.godot/imported/overlayScanlines.png-a11d9b84b3285c8ffb85e5e31bacd9a5.ctex"]
+source_file="res://Assets/WIP/placeholderTiles.png"
+dest_files=["res://.godot/imported/placeholderTiles.png-c826aea23f46ff0c5b477609c1cb7202.ctex"]
 
 [params]
 
