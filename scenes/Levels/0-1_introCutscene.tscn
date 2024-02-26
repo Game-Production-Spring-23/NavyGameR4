@@ -1,7 +1,8 @@
-[gd_scene load_steps=6 format=3 uid="uid://bji5f0h8q1wts"]
+[gd_scene load_steps=7 format=3 uid="uid://bji5f0h8q1wts"]
 
 [ext_resource type="Script" path="res://Scripts/Levels/0-1_introCutscene.gd" id="1_ljok5"]
 [ext_resource type="Texture2D" uid="uid://psuq4daqdl8k" path="res://Assets/WIP/slide1.png" id="2_sxoyj"]
+[ext_resource type="Theme" uid="uid://dctbregm4ijln" path="res://Assets/themes/buttonTheme.tres" id="3_3uaui"]
 
 [sub_resource type="Animation" id="Animation_a5gqd"]
 resource_name = "Fade"
@@ -56,6 +57,14 @@ texture = ExtResource("2_sxoyj")
 wait_time = 5.0
 autostart = true
 
+[node name="skipButton" type="Button" parent="UI"]
+offset_left = 1722.0
+offset_top = 23.0
+offset_right = 1896.0
+offset_bottom = 71.0
+theme = ExtResource("3_3uaui")
+text = "Skip Intro"
+
 [node name="ScreenTransition" type="CanvasLayer" parent="."]
 layer = 50
 
@@ -75,3 +84,4 @@ libraries = {
 }
 
 [connection signal="timeout" from="UI/Timer" to="." method="_on_timer_timeout"]
+[connection signal="pressed" from="UI/skipButton" to="." method="_on_button_pressed"]

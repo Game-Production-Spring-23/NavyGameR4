@@ -34,6 +34,11 @@ func _on_timer_timeout():
 		timer.start()
 	else:
 		gameController.changeScene("0-2_characterCreation", load("res://assets/audio/music/menu-theme-intro.ogg"), load("res://assets/audio/music/menu-theme-body.ogg"))
+		
+func _on_button_pressed():
+	gameController.playSound("res://assets/audio/sfx/gui_confirmation.ogg")
+	gameController.changeScene("0-2_characterCreation", load("res://assets/audio/music/menu-theme-intro.ogg"), load("res://assets/audio/music/menu-theme-body.ogg"))
+		
 	
 	
 	
