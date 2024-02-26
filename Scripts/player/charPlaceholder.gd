@@ -11,20 +11,21 @@ func _ready():
 	update_animation_parameters(starting_direction)
 
 func _physics_process(_delta):
+	if gameController.characterCanMove == true:
 	#Get input direction
-	var input_direction = Vector2(
-		Input.get_action_strength("right") - Input.get_action_strength("left"),
-		Input.get_action_strength("down") - Input.get_action_strength("up")
-		)
+		var input_direction = Vector2(
+			Input.get_action_strength("right") - Input.get_action_strength("left"),
+			Input.get_action_strength("down") - Input.get_action_strength("up")
+			)
 		
-	update_animation_parameters(input_direction)	
+		update_animation_parameters(input_direction)	
 
 	#update velocity
-	velocity = input_direction * move_speed
+		velocity = input_direction * move_speed
 	
 	# move and slide
-	move_and_slide()
-	pick_new_state()
+		move_and_slide()
+		pick_new_state()
 
 
 func update_animation_parameters(move_input : Vector2):

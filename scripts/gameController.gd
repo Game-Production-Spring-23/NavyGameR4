@@ -2,6 +2,7 @@ extends Node
 #Variable to define the textSpeed.
 var textSpeed = 1
 var player = null #player object is set after the character creation scene is finished
+var characterCanMove = true
 @onready var animationPlayer = $ScreenTransition/FadeScreen/AnimationPlayer
 
 func changeScene(scenePath, intro = null, body = null):
@@ -54,4 +55,7 @@ func playSound(path):
 
 #takes the folder path and dialogue name, and triggers a dialogue balloon with those parameters.
 func triggerDialogue(path, dialogName) :
+	characterCanMove = false
 	DialogueManager.show_dialogue_balloon(load("res://dialogue/"+path + "/main.dialogue"), dialogName)
+	
+	

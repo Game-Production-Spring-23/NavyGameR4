@@ -5,6 +5,7 @@
 ROGER: Error, Error, system overload. Proceeding to Reboot…... Reboot Complete!
 
 ROGER: Designated Ranger, the ships gravity engine malfunctioned. While I run diagnostics, make sure you can move efficiently. We have lots to do!
+do gameController.characterCanMove = true
 => END!
 
 ~ tutorial2
@@ -17,6 +18,7 @@ ROGER: Don’t interrupt me! It’s not broken, it’s completely missing. Sir, 
 Ranger: Missing? Unless it fell out of the ship during the crash, it must have been stolen...Check the CCTV footage, quickly.
 
 ROGER: I tried doing that during my diagnostics, but I couldn’t access it. It seems like somebody is messing with my system in the main bay. Let me open the door and you go check it out.
+do gameController.characterCanMove = true
 => END
 ~ tutorial3
 Ranger: ROGER, what is that thing?
@@ -24,8 +26,9 @@ Ranger: ROGER, what is that thing?
 Ranger: Well whatever you are, you must be the one messing with my ship!
 ???: Uh Oh. 
 Ranger: HEY! GET BACK HERE!
+do gameController.characterCanMove = true
 => END!
-MINIGAME STRUCTURE GOES HERE
+# MINIGAME STRUCTURE GOES HERE
 
 
 
@@ -41,31 +44,37 @@ MINIGAME STRUCTURE GOES HERE
 
 
 ~ tutorial4
- ???: That sounds awesome, what does a Radar look like? 
-Ranger: What are you talking about? Do you not have my radar? What were you doing on my ship? 
-???: I heard a loud bang and wanted to see what was going on. When I got here, I saw your friends running off, so I assumed everyone was gone. 
-Ranger: what friends? It is only me and ROGER.  
-???: What about the Scein? And the Trolum? Or the Yappo? The Tendra? And the... oh what were they called? OH, THE LAGNAI!!!! 
-Ranger: Gosh Dango, a dead end. What am I going to do now?
-ROGER: Ranger, I have received the CCTV footage from the wreckage, I need you to look at this sir. I will be waiting in the Comms room.
-Ranger: I'm on my way back right now.
+Daria: That sounds awesome, what does a Radar look like?
+Ranger: What are you talking about, don’t you not have my radar? What were you doing on my ship?
+Daria: I heard an explosion and wanted to see what was going on. When I got here, I saw your friends running off, so I assumed everyone was gone.
+Ranger: Friends? Unless ROGER grew some legs and ran off, no one else was on the ship but us two.
+Daria: What about the Scein? And the Trolum? Or the Yappo? The Tendra? And the...what were they called? Oh yeah, the Lagna!
+Ranger: Sheiza, the aliens of this planet must have gotten on board while ROGER and I were out cold...
+ROGER: Ranger, while you were playing catch up with your new friend, I got access to the CCTV footage. You should come take a look at this; I will be waiting in the Comms room.
+do gameController.characterCanMove = true
 => END
 
 ~ tutorial5
-ROGER: According to the video, it looks like there were 5 people that took parts of the Radar.
-Ranger: Ok ROGER, can you somehow track these people down using your interface?
-ROGER: Sadly I cannot, due to my reboot, I cannot recollect the ability of doing that
-Ranger: Gosh Dango, first my ship crashed, then my Radar broken down and stolen for pieces, and now ROGER? How am I going to get this done?
-???: Hmmmmm, perhaps I can help!
-Ranger: The pleque are you doing here kid?
-Daria: The name is Daria! I am a Daran here at these parts. I liked the conversation we had about Radars and realized that you could need some help. Turns out I am correct.
-Ranger: and why should I trust you?
-Daria: It seems I am your only choice right now. 
-Ranger: Dango, it seems you have a point. Alright, and how exactly can you help?
-Daria: Well like I said earlier, I know my ways around this place. It looks like for repairs you would need to go to Yaplisdapolis, a city that's nearby. I can show you how to get there!
-Ranger: The city looks to be nearby anyway; I don't think I need help getting there.
-Daria: Thats the other thing, in the video, only one person there is from the city, everyone else is from other parts of this world. Plus, it wouldn't hurt to have someone who knows the way of the land to help you out you know?  The best thing to do in your situation is to go to these different parts of land, collect the Radar thing youre looking for, and then to fix your ship.
-Ranger: Ok then hotshot, since you're leading the way, where are we going first? 
-Daria: The closest place here we would need to go first is the Plains of Trolonc. I saw a Trolum when I came here, and they live pretty near my home. I can show you the way. 
-Ranger: Alrighty then, I will be following from behind
+ROGER: According to the video, it looks like there were 5 different aliens that took parts of the Radar.
+Ranger: Ok ROGER, is there any way you can track them down?
+
+ROGER: Sadly I cannot. Due to my reboot, most of my functionality was wiped clean.
+
+Ranger: Dango! First my ship crashes, then my radar is stolen, and now ROGER? How am I going to get this done?
+Daria: Perhaps I can help! 
+#Daria enters
+Ranger: Oh yeah? Why would you help us! I don’t even know your name...
+Daria: The name is Daria! I am a Daran, the native species of Hertzich! I had so much fun earlier with you I thought I would see if you wanted to play more! Then I overheard your conversation, and it seems like you could use some help.
+Ranger: And why should I trust you?
+Daria: Do you have any other options?
+Ranger: Dango, you gotta point there...Alright, and how exactly can you help?
+Daria: I’ve lived here all my life and I know this planet like the back of my paw. The big city, Yaplisdapolis, would have somewhere to fix your ship. I can show you how to get there!
+Ranger: The city? I saw that earlier when we were falling into the atmosphere, I don’t think it’s too far...but what about the missing radar? I would be flying blind in deep space without it!
+Daria: Well, all the nice people I saw earlier had pieces of something, I bet that was your missing radar! I know a path that would lead into each major village of the other species on the planet, with the biiiiiig city at the end!
+Ranger: Well, it seems we really could use your help then...Ok hotshot, where to first?
+Daria: The closest village would be in the Plains of Trolonc. That’s where the Trolums live. I bet we can find a part of your radar there!
+Ranger: Sounds good! ROGER, will you be ok on the ship?
+ROGER: Don’t worry Ranger, I have a piece of me in your suit, it will be like I never left your side. Gotta make sure you stay on track.
+Daria: This will be so much fun!
+do gameController.characterCanMove = true
 => END!
