@@ -7,7 +7,8 @@ extends Node2D
 """
 # SETUP FUNCTIONS
 # Called when the node enters the scene tree for the first time.
-# func _ready():
+func _ready():
+	gameController.triggerDialogue("chapter1", "tutorial1")
 
 func _on_area_2d_body_entered(body):
 	if body.name == "Player":

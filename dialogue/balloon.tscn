@@ -142,24 +142,6 @@ size_flags_vertical = 3
 theme = ExtResource("5_5si8r")
 text = "Dialogue..."
 
-[node name="Responses" type="TextureRect" parent="Balloon"]
-unique_name_in_owner = true
-z_index = -2
-layout_mode = 1
-anchors_preset = -1
-anchor_left = 0.015
-anchor_top = 0.73
-anchor_right = 0.515
-anchor_bottom = 0.978
-offset_left = 420.2
-offset_top = -190.4
-offset_right = 635.2
-offset_bottom = -201.808
-grow_horizontal = 2
-grow_vertical = 0
-texture = ExtResource("2_42ybj")
-expand_mode = 1
-
 [node name="ResponsesMenu" type="GridContainer" parent="Balloon" node_paths=PackedStringArray("response_template")]
 unique_name_in_owner = true
 layout_mode = 2
@@ -179,6 +161,24 @@ response_template = NodePath("ResponseExample")
 custom_minimum_size = Vector2(400, 0)
 layout_mode = 2
 text = "Response example"
+
+[node name="Responses" type="TextureRect" parent="Balloon/ResponsesMenu/ResponseExample"]
+unique_name_in_owner = true
+z_index = -2
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.015
+anchor_top = 0.73
+anchor_right = 0.515
+anchor_bottom = 0.978
+offset_left = -46.0
+offset_top = -59.58
+offset_right = 223.0
+offset_bottom = 105.012
+grow_horizontal = 2
+grow_vertical = 0
+texture = ExtResource("2_42ybj")
+expand_mode = 1
 
 [connection signal="gui_input" from="Balloon" to="." method="_on_balloon_gui_input"]
 [connection signal="response_selected" from="Balloon/ResponsesMenu" to="." method="_on_responses_menu_response_selected"]
