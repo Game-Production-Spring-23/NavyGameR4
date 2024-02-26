@@ -1,24 +1,27 @@
 
 ~ tutorial1
 
- Ranger:  Ooh Ugh. What happened?
-
+ Ranger: Ooh...Ugh, what happened?
 ROGER: Error, Error, system overload. Proceeding to Reboot…... Reboot Complete!
 
-ROGER: Designated Ranger, the ship was in a bad accident. make sure that you are up and able to go, I will run diagnostics and check the damage done.
+ROGER: Designated Ranger, the ships gravity engine malfunctioned. While I run diagnostics, make sure you can move efficiently. We have lots to do!
 => END!
 
 ~ tutorial2
-ROGER: Ranger, I finished the Diagnostic check. I have bad news: The Radar, it is…
-Ranger: Broken? OK. That is nothing too bad, I can fix that.
-ROGER: No, it is not that. It is completely missing. Sir, this is not good.
-Ranger: Alright Roger, calm down. We are going to find a solution to it. Check the CCTV footage quickly. 
-ROGER: I tried doing that earlier, but I could not have access. It seems like somebody is messing with my system in the main bay. Let me open the door to the main bay. 
+ROGER: DIAGNOSTICS COMPLETE. I have bad news Ranger: The ship is totally wrecked, and the radar is…
+
+Ranger: Broken? No problem, I can fix that!
+
+ROGER: Don’t interrupt me! It’s not broken, it’s completely missing. Sir, this is not good.
+
+Ranger: Missing? Unless it fell out of the ship during the crash, it must have been stolen...Check the CCTV footage, quickly.
+
+ROGER: I tried doing that during my diagnostics, but I couldn’t access it. It seems like somebody is messing with my system in the main bay. Let me open the door and you go check it out.
 => END
 ~ tutorial3
 Ranger: ROGER, what is that thing?
-???: HEY! I'm not a thing, I'm a person!
-Ranger: You must be the one that's been messing with my stuff. I need to talk to you.
+???: HEY! I'm not a thing, I'm a Daran!
+Ranger: Well whatever you are, you must be the one messing with my ship!
 ???: Uh Oh. 
 Ranger: HEY! GET BACK HERE!
 => END!
