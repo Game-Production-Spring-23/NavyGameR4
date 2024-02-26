@@ -1,7 +1,8 @@
-[gd_scene load_steps=5 format=3 uid="uid://dghmdkljbg45i"]
+[gd_scene load_steps=6 format=3 uid="uid://dghmdkljbg45i"]
 
 [ext_resource type="Texture2D" uid="uid://bqrd6o0qo7iss" path="res://assets/tilemaps/swamp-tileset-light.png" id="1_gaj2w"]
 [ext_resource type="PackedScene" path="res://Scenes/playerCharacter.tscn" id="2_0n2m0"]
+[ext_resource type="Script" path="res://scripts/followCam.gd" id="3_ndn7o"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_vo8o3"]
 texture = ExtResource("1_gaj2w")
@@ -169,6 +170,7 @@ sources/0 = SubResource("TileSetAtlasSource_vo8o3")
 position = Vector2(339, 198)
 
 [node name="TileMap" type="TileMap" parent="."]
+position = Vector2(-75, -56)
 scale = Vector2(4.12963, 4.44519)
 tile_set = SubResource("TileSet_76hif")
 format = 2
@@ -180,3 +182,9 @@ layer_1/tile_data = PackedInt32Array(11, 0, 2, 65547, 0, 3, 131083, 0, 4, 12, 65
 [node name="CharacterBody2D" parent="." instance=ExtResource("2_0n2m0")]
 position = Vector2(170, 141)
 scale = Vector2(5, 5)
+
+[node name="followCam" type="Camera2D" parent="CharacterBody2D" node_paths=PackedStringArray("tilemap")]
+limit_left = 0
+limit_top = 0
+script = ExtResource("3_ndn7o")
+tilemap = NodePath("../../TileMap")
