@@ -26,12 +26,16 @@ func _ready():
 # Called when a button is pressed from main menu
 func on_button_pressed(button_pressed):
 	if(button_pressed.name == "startButton"): # Loads the options cutscene
+		gameController.playSound("res://assets/audio/sfx/gui_confirmation.ogg")
 		gameController.changeScene("1introCutscene")
 	elif(button_pressed.name == "chapterSelectButton"): # Displays the chapter select screen
+		gameController.playSound("res://assets/audio/sfx/gui_select.ogg")
 		displayMenuScreen(1)
 	elif(button_pressed.name == "optionButton"): # Displays the options screen
+		gameController.playSound("res://assets/audio/sfx/gui_select.ogg")
 		displayMenuScreen(2)
 	elif(button_pressed.name == "backButton"): # Displays the main menu screen
+		gameController.playSound("res://assets/audio/sfx/gui_select.ogg")
 		displayMenuScreen(0)
 	elif(button_pressed.name == "endButton"): # Quit the game
 		get_tree().quit()

@@ -1,10 +1,10 @@
 [gd_scene load_steps=6 format=3 uid="uid://bp3ym5chah6ee"]
 
 [ext_resource type="Script" path="res://Scripts/Levels/mainmenu.gd" id="1_isdwb"]
-[ext_resource type="Texture2D" uid="uid://8epkpuji2qwp" path="res://Assets/images/Planet-Placeholder.webp" id="2_ryqsy"]
-[ext_resource type="Texture2D" uid="uid://bs386d8grwo8f" path="res://Assets/images/R4LogoV1.webp" id="3_qxfr5"]
-[ext_resource type="Theme" uid="uid://dctbregm4ijln" path="res://Assets/themes/buttonTheme.tres" id="4_hpplx"]
-[ext_resource type="Theme" uid="uid://bajr2k60ueqkc" path="res://Assets/themes/headerTheme.tres" id="5_tc1l3"]
+[ext_resource type="Texture2D" uid="uid://8epkpuji2qwp" path="res://assets/images/Planet-Placeholder.webp" id="2_ryqsy"]
+[ext_resource type="Texture2D" uid="uid://bs386d8grwo8f" path="res://assets/images/R4LogoV1.webp" id="3_qxfr5"]
+[ext_resource type="Theme" uid="uid://dctbregm4ijln" path="res://assets/themes/buttonTheme.tres" id="4_hpplx"]
+[ext_resource type="Theme" uid="uid://bajr2k60ueqkc" path="res://assets/themes/headerTheme.tres" id="5_tc1l3"]
 
 [node name="mainMenu" type="Node2D"]
 script = ExtResource("1_isdwb")

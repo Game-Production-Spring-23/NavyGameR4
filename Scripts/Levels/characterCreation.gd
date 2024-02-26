@@ -41,6 +41,7 @@ func _ready():
 
 # Called when a button is pressed from the pronouns list
 func on_pronoun_button_pressed(button_pressed):
+	gameController.playSound("res://assets/audio/sfx/gui_select.ogg")
 	# Deselects all pronoun options and marks the button pressed as selected
 	for pronounButton in pronounButtons:
 		pronounButton.set_pressed(false)
@@ -58,6 +59,7 @@ func on_pronoun_button_pressed(button_pressed):
 
 # Called when a button is pressed from the voice list
 func on_voice_button_pressed(button_pressed):
+	gameController.playSound("res://assets/audio/sfx/gui_select.ogg")
 	# Deselects all voice options and marks the button pressed as selected
 	for voiceButton in voiceButtons:
 		voiceButton.set_pressed(false)
@@ -73,6 +75,7 @@ func on_voice_button_pressed(button_pressed):
 
 # Called when a button is pressed from the pronouns list
 func on_appearance_button_pressed(button_pressed):
+	gameController.playSound("res://assets/audio/sfx/gui_select.ogg")
 	# Deselects all appearance options and marks the button pressed as selected
 	for appearenceButton in appearenceButtons:
 		appearenceButton.set_pressed(false)
@@ -92,5 +95,6 @@ func on_appearance_button_pressed(button_pressed):
 
 # Called when the player confirms their character
 func on_character_creation_confirm():
+	gameController.playSound("res://assets/audio/sfx/gui_confirmation.ogg")
 	gameController.player = oPlayer.new(pronouns, voice, color)
-	gameController.changeScene("0-3_shipInterior")
+	gameController.changeScene("0-3_shipInterior", null, load("res://assets/audio/sfx/ship_ambience.ogg"))

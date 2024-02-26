@@ -10,8 +10,10 @@ func changeScene(scenePath, intro = null, body = null):
 	await animationPlayer.animation_finished
 	get_tree().change_scene_to_file("res://Scenes/Levels/" + scenePath + ".tscn")
 	animationPlayer.play_backwards("Fade")
-	#checks if the changeScene() call provides both music paths, plays it if yes and simply pauses it if not
+	#checks if the changeScene() call provides both music paths or at least the body, plays it if yes and simply pauses it if not
 	if(intro and body):
+		changeMusic(intro, body)
+	elif(body):
 		changeMusic(intro, body)
 	else:
 		pauseMusic()
@@ -22,11 +24,20 @@ func changeMusic(intro, body):
 	pauseMusic()
 	$music/intro.stream = intro
 	$music/body.stream = body
-	playMusic()
+	
+	#if intro is present, play it. If not, play body instead
+	if (intro):
+		playIntro()
+	else:
+		playBody()
+	
 
 #slightly inelegant - possible to take the playback time when it is paused and pass it back in to start at the time it was paused
-func playMusic():
+func playIntro():
 	$music/intro.play()
+
+func playBody():
+	$music/body.play()
 
 #sets both the intro and body music players to pause
 func pauseMusic():
