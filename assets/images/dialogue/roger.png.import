@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cqaqwfcxnsxkv"
-path="res://.godot/imported/roger.png-b7a1b532172ebdd7f312c8b685c1d5ed.ctex"
+path="res://.godot/imported/roger.png-22fd1490ab02a1585a9cbc25a92001fd.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/images/dialogue/roger.png"
-dest_files=["res://.godot/imported/roger.png-b7a1b532172ebdd7f312c8b685c1d5ed.ctex"]
+source_file="res://assets/images/dialogue/roger.png"
+dest_files=["res://.godot/imported/roger.png-22fd1490ab02a1585a9cbc25a92001fd.ctex"]
 
 [params]
 

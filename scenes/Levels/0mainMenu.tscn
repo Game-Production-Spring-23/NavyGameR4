@@ -1,0 +1,210 @@
+[gd_scene load_steps=6 format=3 uid="uid://bs5f7b7xq600p"]
+
+[ext_resource type="Script" path="res://Scripts/Levels/mainmenu.gd" id="1_isdwb"]
+[ext_resource type="Texture2D" uid="uid://8epkpuji2qwp" path="res://assets/images/Planet-Placeholder.webp" id="2_ryqsy"]
+[ext_resource type="Texture2D" uid="uid://bs386d8grwo8f" path="res://assets/images/R4LogoV1.webp" id="3_qxfr5"]
+[ext_resource type="Theme" uid="uid://dctbregm4ijln" path="res://assets/themes/buttonTheme.tres" id="4_hpplx"]
+[ext_resource type="Theme" uid="uid://bajr2k60ueqkc" path="res://assets/themes/headerTheme.tres" id="5_tc1l3"]
+
+[node name="mainMenu" type="Node2D"]
+script = ExtResource("1_isdwb")
+metadata/_edit_vertical_guides_ = [-145.0]
+
+[node name="UI" type="CanvasLayer" parent="."]
+
+[node name="BackgroundTexture" type="TextureRect" parent="UI"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_ryqsy")
+expand_mode = 3
+
+[node name="MainMenuScreen" type="Control" parent="UI"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Title" type="TextureRect" parent="UI/MainMenuScreen"]
+texture_filter = 1
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 0.35
+offset_left = 650.0
+offset_top = 125.0
+offset_right = -650.0
+offset_bottom = -0.0800171
+texture = ExtResource("3_qxfr5")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="UI/MainMenuScreen"]
+layout_mode = 1
+anchors_preset = -1
+anchor_top = 0.35
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 750.0
+offset_right = -750.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_constants/separation = 25
+alignment = 1
+
+[node name="startButton" type="Button" parent="UI/MainMenuScreen/VBoxContainer" groups=["ChapterSelectButtons"]]
+layout_mode = 2
+theme = ExtResource("4_hpplx")
+text = "Start"
+
+[node name="chapterSelectButton" type="Button" parent="UI/MainMenuScreen/VBoxContainer" groups=["ChapterSelectButtons"]]
+layout_mode = 2
+theme = ExtResource("4_hpplx")
+text = "Chapter Select"
+
+[node name="optionButton" type="Button" parent="UI/MainMenuScreen/VBoxContainer" groups=["ChapterSelectButtons"]]
+layout_mode = 2
+theme = ExtResource("4_hpplx")
+text = "Options"
+
+[node name="endButton" type="Button" parent="UI/MainMenuScreen/VBoxContainer" groups=["ChapterSelectButtons"]]
+layout_mode = 2
+theme = ExtResource("4_hpplx")
+text = "Quit
+"
+
+[node name="ChapterSelectScreen" type="Control" parent="UI"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Title" type="Label" parent="UI/ChapterSelectScreen"]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 0.4
+grow_horizontal = 2
+theme = ExtResource("5_tc1l3")
+text = "Chapter Select
+"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Chapters" type="VBoxContainer" parent="UI/ChapterSelectScreen"]
+layout_mode = 1
+anchors_preset = -1
+anchor_top = 0.4
+anchor_right = 1.0
+anchor_bottom = 0.8
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 75
+alignment = 1
+
+[node name="Row" type="HBoxContainer" parent="UI/ChapterSelectScreen/Chapters"]
+layout_mode = 2
+theme_override_constants/separation = 75
+alignment = 1
+
+[node name="swampDarra" type="Button" parent="UI/ChapterSelectScreen/Chapters/Row" groups=["ChapterSelectButtons"]]
+layout_mode = 2
+theme = ExtResource("4_hpplx")
+text = "Swamp of Darra"
+
+[node name="plainTrolonc" type="Button" parent="UI/ChapterSelectScreen/Chapters/Row" groups=["ChapterSelectButtons"]]
+layout_mode = 2
+theme = ExtResource("4_hpplx")
+text = "Plains of Trolonc"
+
+[node name="mtTenanan" type="Button" parent="UI/ChapterSelectScreen/Chapters/Row" groups=["ChapterSelectButtons"]]
+layout_mode = 2
+theme = ExtResource("4_hpplx")
+text = "Mt. Tenanan"
+
+[node name="Row2" type="HBoxContainer" parent="UI/ChapterSelectScreen/Chapters"]
+layout_mode = 2
+theme_override_constants/separation = 75
+alignment = 1
+
+[node name="desertSceivnarter" type="Button" parent="UI/ChapterSelectScreen/Chapters/Row2" groups=["ChapterSelectButtons"]]
+layout_mode = 2
+theme = ExtResource("4_hpplx")
+text = "Desert of Sceivnarter"
+
+[node name="lagnisOcean" type="Button" parent="UI/ChapterSelectScreen/Chapters/Row2" groups=["ChapterSelectButtons"]]
+layout_mode = 2
+theme = ExtResource("4_hpplx")
+text = "Lagnis Ocean"
+
+[node name="yaplisdapolis" type="Button" parent="UI/ChapterSelectScreen/Chapters/Row2" groups=["ChapterSelectButtons"]]
+layout_mode = 2
+theme = ExtResource("4_hpplx")
+text = "Yaplisdapolis"
+
+[node name="backButton" type="Button" parent="UI/ChapterSelectScreen" groups=["ChapterSelectButtons"]]
+layout_mode = 1
+anchors_preset = -1
+anchor_top = 0.8
+anchor_right = 0.25
+anchor_bottom = 1.0
+offset_left = 155.0
+offset_top = 93.0
+offset_bottom = -75.0
+grow_vertical = 0
+theme = ExtResource("4_hpplx")
+text = "Back to Main Menu"
+
+[node name="OptionsScreen" type="Control" parent="UI"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Title" type="Label" parent="UI/OptionsScreen"]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 0.4
+grow_horizontal = 2
+theme = ExtResource("5_tc1l3")
+text = "Options"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Options" type="VBoxContainer" parent="UI/OptionsScreen"]
+layout_mode = 1
+anchors_preset = -1
+anchor_top = 0.4
+anchor_right = 1.0
+anchor_bottom = 0.8
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 75
+alignment = 1
+
+[node name="Label" type="Label" parent="UI/OptionsScreen/Options"]
+layout_mode = 2
+theme = ExtResource("5_tc1l3")
+text = "ADD OPTIONS HERE"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="backButton" type="Button" parent="UI/OptionsScreen" groups=["ChapterSelectButtons"]]
+layout_mode = 1
+anchors_preset = -1
+anchor_top = 0.8
+anchor_right = 0.25
+anchor_bottom = 1.0
+offset_left = 155.0
+offset_top = 93.0
+offset_bottom = -75.0
+grow_vertical = 0
+theme = ExtResource("4_hpplx")
+text = "Back to Main Menu"
