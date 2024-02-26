@@ -15,4 +15,4 @@ func _input(event):
 
 # Switches to intro dialouge as soon as intro cutscene finishes
 func _on_video_stream_player_finished():
-	gameController.changeScene("2characterCreation", load("res://assets/audio/music/menu-theme-intro.ogg"), load("res://assets/audio/music/menu-theme-body.ogg"))
+	gameController.changeScene("0-2_characterCreation", load("res://assets/audio/music/menu-theme-intro.ogg"), load("res://assets/audio/music/menu-theme-body.ogg"))

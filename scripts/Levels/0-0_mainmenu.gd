@@ -27,7 +27,7 @@ func _ready():
 func on_button_pressed(button_pressed):
 	if(button_pressed.name == "startButton"): # Loads the options cutscene
 		gameController.playSound("res://assets/audio/sfx/gui_confirmation.ogg")
-		gameController.changeScene("1introCutscene")
+		gameController.changeScene("0-1_introCutscene")
 	elif(button_pressed.name == "chapterSelectButton"): # Displays the chapter select screen
 		gameController.playSound("res://assets/audio/sfx/gui_select.ogg")
 		displayMenuScreen(1)

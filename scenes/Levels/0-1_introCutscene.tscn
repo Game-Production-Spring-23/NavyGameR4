@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://71ymv4gjcpwo"]
 
-[ext_resource type="Script" path="res://Scripts/Levels/introCutscene.gd" id="1_ljok5"]
+[ext_resource type="Script" path="res://Scripts/Levels/0-1_introCutscene.gd" id="1_ljok5"]
 [ext_resource type="VideoStream" path="res://Assets/videos/placeholderIntro.ogv" id="2_1gwyy"]
 
 [node name="IntroCutscene" type="Node2D"]

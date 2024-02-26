@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=3 uid="uid://dghmdkljbg45i"]
 
-[ext_resource type="Texture2D" uid="uid://bqrd6o0qo7iss" path="res://assets/tilemaps/swamp-tileset-light.png" id="1_gaj2w"]
+[ext_resource type="Texture2D" uid="uid://bqrd6o0qo7iss" path="res://Assets/tilemaps/swamp-tileset-light.png" id="1_gaj2w"]
 [ext_resource type="PackedScene" uid="uid://dtolugbyxj6gu" path="res://Scenes/playerCharacter.tscn" id="2_0n2m0"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_vo8o3"]

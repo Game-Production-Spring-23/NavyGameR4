@@ -2,8 +2,8 @@
 
 [ext_resource type="Script" path="res://scripts/gameController.gd" id="1_6lwvo"]
 [ext_resource type="Script" path="res://scripts/music_controller.gd" id="2_7r1b8"]
-[ext_resource type="AudioStream" uid="uid://d2l22sb545024" path="res://assets/audio/music/title-intro.ogg" id="3_2vvp4"]
-[ext_resource type="AudioStream" uid="uid://dko8hcsgvw08n" path="res://assets/audio/music/title-body.ogg" id="4_xxu8g"]
+[ext_resource type="AudioStream" uid="uid://d2l22sb545024" path="res://Assets/audio/music/title-intro.ogg" id="3_2vvp4"]
+[ext_resource type="AudioStream" uid="uid://dko8hcsgvw08n" path="res://Assets/audio/music/title-body.ogg" id="4_xxu8g"]
 
 [sub_resource type="Animation" id="Animation_a5gqd"]
 resource_name = "Fade"

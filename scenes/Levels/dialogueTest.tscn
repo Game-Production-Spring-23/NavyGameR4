@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://fopof7how"]
 
 [ext_resource type="Theme" uid="uid://bajr2k60ueqkc" path="res://Assets/themes/headerTheme.tres" id="1_smqkv"]
-[ext_resource type="Script" path="res://scripts/Levels/introDialogue.gd" id="1_w54t7"]
+[ext_resource type="Script" path="res://scripts/Levels/TestDialogue.gd" id="1_w54t7"]
 
 [node name="introDialogue" type="Node2D"]
 script = ExtResource("1_w54t7")

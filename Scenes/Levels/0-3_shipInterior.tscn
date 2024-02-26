@@ -50,7 +50,6 @@ position = Vector2(930, -40)
 scale = Vector2(11, 6.35)
 
 [node name="Exit" type="Sprite2D" parent="Area2D"]
-scale = Vector2(1, 1)
 texture = ExtResource("3_frx6r")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
