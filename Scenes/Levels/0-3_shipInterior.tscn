@@ -1,8 +1,8 @@
 [gd_scene load_steps=8 format=3 uid="uid://bjwnjgf0sg4nb"]
 
 [ext_resource type="Texture2D" uid="uid://d3osgmwlxiqak" path="res://assets/WIP/placeholderTiles.png" id="1_0rfw7"]
-[ext_resource type="Script" path="res://Scripts/Levels/0-3_shipInterior.gd" id="1_y6uaa"]
-[ext_resource type="PackedScene" path="res://Scenes/playerCharacter.tscn" id="2_0yyxf"]
+[ext_resource type="Script" path="res://scripts/levels/0-3_shipInterior.gd" id="1_uhbjv"]
+[ext_resource type="PackedScene" uid="uid://dtolugbyxj6gu" path="res://scenes/playerCharacter.tscn" id="2_0yyxf"]
 [ext_resource type="Texture2D" uid="uid://bnu4ld8njissu" path="res://assets/WIP/Light.png" id="3_frx6r"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_lmhvk"]
@@ -31,7 +31,7 @@ sources/3 = SubResource("TileSetAtlasSource_lmhvk")
 size = Vector2(24, 64)
 
 [node name="0-3" type="Node2D"]
-script = ExtResource("1_y6uaa")
+script = ExtResource("1_uhbjv")
 
 [node name="World" type="TileMap" parent="."]
 scale = Vector2(5, 5)

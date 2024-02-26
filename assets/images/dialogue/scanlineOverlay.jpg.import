@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dwsw7bsd4hcv8"
-path="res://.godot/imported/scanlineOverlay.jpg-b269d3456f67bd04a8ab27371b92c8e6.ctex"
+path="res://.godot/imported/scanlineOverlay.jpg-099926d3e5921501fb5cedff3f72e418.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/images/dialogue/scanlineOverlay.jpg"
-dest_files=["res://.godot/imported/scanlineOverlay.jpg-b269d3456f67bd04a8ab27371b92c8e6.ctex"]
+source_file="res://assets/images/dialogue/scanlineOverlay.jpg"
+dest_files=["res://.godot/imported/scanlineOverlay.jpg-099926d3e5921501fb5cedff3f72e418.ctex"]
 
 [params]
 

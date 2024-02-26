@@ -1,7 +1,7 @@
 [gd_scene load_steps=28 format=3 uid="uid://dtolugbyxj6gu"]
 
-[ext_resource type="Script" path="res://Scripts/player/charPlaceholder.gd" id="1_kkdgu"]
-[ext_resource type="Texture2D" uid="uid://it2tko2ftlbj" path="res://Assets/characters/player-walkall.png" id="2_yf2yd"]
+[ext_resource type="Script" path="res://scripts/player/charPlaceholder.gd" id="1_e4rjr"]
+[ext_resource type="Texture2D" uid="uid://it2tko2ftlbj" path="res://assets/sprites/spritesheets/player-walkall.png" id="2_n4gw3"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_r2p8k"]
 size = Vector2(22, 14)
@@ -233,10 +233,10 @@ states/walk/position = Vector2(473.5, 99.875)
 transitions = ["Start", "idle", SubResource("AnimationNodeStateMachineTransition_g8mff"), "idle", "walk", SubResource("AnimationNodeStateMachineTransition_agdeh"), "walk", "idle", SubResource("AnimationNodeStateMachineTransition_h2cs5")]
 
 [node name="Player" type="CharacterBody2D"]
-script = ExtResource("1_kkdgu")
+script = ExtResource("1_e4rjr")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-texture = ExtResource("2_yf2yd")
+texture = ExtResource("2_n4gw3")
 hframes = 4
 vframes = 4
 

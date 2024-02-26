@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dfdfajgx7pq1q"
-path="res://.godot/imported/textBoxPlaceholder.png-8600accfd1023bfe3c6ffabc946c6822.ctex"
+path="res://.godot/imported/textBoxPlaceholder.png-6ce61a5fe702f48a546e41cf6132b033.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/images/dialogue/textBoxPlaceholder.png"
-dest_files=["res://.godot/imported/textBoxPlaceholder.png-8600accfd1023bfe3c6ffabc946c6822.ctex"]
+source_file="res://assets/images/dialogue/textBoxPlaceholder.png"
+dest_files=["res://.godot/imported/textBoxPlaceholder.png-6ce61a5fe702f48a546e41cf6132b033.ctex"]
 
 [params]
 

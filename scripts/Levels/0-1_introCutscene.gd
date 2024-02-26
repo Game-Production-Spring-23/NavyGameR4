@@ -28,16 +28,16 @@ func _on_timer_timeout():
 	if (slide == 1):
 		animationPlayer.play("Fade")
 		await animationPlayer.animation_finished
-		textureRect.texture = load("res://Assets/WIP/slide2.png")
+		textureRect.texture = load("res://assets/WIP/slide2.png")
 		animationPlayer.play_backwards("Fade")
 		slide = 2
 		timer.start()
 	else:
-		gameController.changeScene("0-2_characterCreation", load("res://assets/audio/music/menu-theme-intro.ogg"), load("res://assets/audio/music/menu-theme-body.ogg"))
+		gameController.changeScene("0-2_characterCreation", "res://assets/audio/music/menu-theme-intro.ogg", "res://assets/audio/music/menu-theme-body.ogg")
 		
 func _on_button_pressed():
-	gameController.playSound("res://assets/audio/sfx/gui_confirmation.ogg")
-	gameController.changeScene("0-2_characterCreation", load("res://assets/audio/music/menu-theme-intro.ogg"), load("res://assets/audio/music/menu-theme-body.ogg"))
+	gameController.playSound("res://assets/audio/sfx/gui-confirmation.ogg")
+	gameController.changeScene("0-2_characterCreation", "res://assets/audio/music/menu-theme-intro.ogg", "res://assets/audio/music/menu-theme-body.ogg")
 		
 	
 	

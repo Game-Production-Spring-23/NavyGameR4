@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bs386d8grwo8f"
-path="res://.godot/imported/R4LogoV1.webp-cee38257e3b86305313ed1c0f17cfb78.ctex"
+path="res://.godot/imported/R4LogoV1.webp-1b4af2dee64aa2c517b43e6cc08a83ec.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/images/R4LogoV1.webp"
-dest_files=["res://.godot/imported/R4LogoV1.webp-cee38257e3b86305313ed1c0f17cfb78.ctex"]
+source_file="res://assets/images/R4LogoV1.webp"
+dest_files=["res://.godot/imported/R4LogoV1.webp-1b4af2dee64aa2c517b43e6cc08a83ec.ctex"]
 
 [params]
 

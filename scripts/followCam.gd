@@ -2,7 +2,6 @@ extends Camera2D
 
 @export var tilemap = TileMap
 
-
 #This limits the camera to the size of the map
 func _ready():
 	var mapRect = tilemap.get_used_rect()

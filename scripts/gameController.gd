@@ -9,7 +9,7 @@ func changeScene(scenePath, intro = null, body = null):
 	#play the fade out animation, then switch scene and fade back in
 	animationPlayer.play("Fade")
 	await animationPlayer.animation_finished
-	get_tree().change_scene_to_file("res://Scenes/Levels/" + scenePath + ".tscn")
+	get_tree().change_scene_to_file("res://scenes/levels/" + scenePath + ".tscn")
 	animationPlayer.play_backwards("Fade")
 	#checks if the changeScene() call provides both music paths or at least the body, plays it if yes and simply pauses it if not
 	if(intro and body):
@@ -23,8 +23,8 @@ func changeScene(scenePath, intro = null, body = null):
 func changeMusic(intro, body):
 	#haven't actually tested to make sure the audio pauses when changed but just in case it doesn't
 	pauseMusic()
-	$music/intro.stream = intro
-	$music/body.stream = body
+	$music/intro.stream = load(intro)
+	$music/body.stream = load(body)
 	
 	#if intro is present, play it. If not, play body instead
 	if (intro):
@@ -56,6 +56,6 @@ func playSound(path):
 #takes the folder path and dialogue name, and triggers a dialogue balloon with those parameters.
 func triggerDialogue(path, dialogName) :
 	characterCanMove = false
-	DialogueManager.show_dialogue_balloon(load("res://dialogue/"+path + "/main.dialogue"), dialogName)
+	DialogueManager.show_dialogue_balloon(load("res://dialogue/"+ path + "/main.dialogue"), dialogName)
 	
 	

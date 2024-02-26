@@ -1,18 +1,18 @@
 [gd_scene load_steps=11 format=3 uid="uid://fopof7how"]
 
-[ext_resource type="Script" path="res://Scripts/Levels/0-2_characterCreation.gd" id="1_4twel"]
-[ext_resource type="Theme" uid="uid://dctbregm4ijln" path="res://Assets/themes/buttonTheme.tres" id="2_jb8hu"]
-[ext_resource type="Theme" uid="uid://bajr2k60ueqkc" path="res://Assets/themes/headerTheme.tres" id="2_xsp0k"]
-[ext_resource type="Texture2D" uid="uid://caobb2glrjb80" path="res://Assets/WIP/greenBord.png" id="3_28fvm"]
-[ext_resource type="Texture2D" uid="uid://6r646kmtm0lq" path="res://Assets/WIP/pinkSound.png" id="4_jy5lg"]
-[ext_resource type="Texture2D" uid="uid://bvkdu82e0teyg" path="res://Assets/WIP/blueSound.png" id="5_dmrhp"]
-[ext_resource type="Texture2D" uid="uid://bh17ppthb71dy" path="res://Assets/WIP/amongRed.png" id="6_opftc"]
-[ext_resource type="Texture2D" uid="uid://b4h5uamuw2kec" path="res://Assets/WIP/amongBlue.png" id="7_bddyq"]
-[ext_resource type="Texture2D" uid="uid://clpmq3swfxwk0" path="res://Assets/WIP/amongOrange.png" id="8_uo287"]
-[ext_resource type="Texture2D" uid="uid://bfr73tvtjs2ig" path="res://Assets/WIP/amongPink.png" id="9_fxh0o"]
+[ext_resource type="Script" path="res://scripts/levels/0-2_characterCreation.gd" id="1_tuaof"]
+[ext_resource type="Theme" uid="uid://dctbregm4ijln" path="res://assets/themes/buttonTheme.tres" id="2_jb8hu"]
+[ext_resource type="Theme" uid="uid://bajr2k60ueqkc" path="res://assets/themes/headerTheme.tres" id="2_xsp0k"]
+[ext_resource type="Texture2D" uid="uid://caobb2glrjb80" path="res://assets/WIP/greenBord.png" id="3_28fvm"]
+[ext_resource type="Texture2D" uid="uid://6r646kmtm0lq" path="res://assets/WIP/pinkSound.png" id="4_jy5lg"]
+[ext_resource type="Texture2D" uid="uid://bvkdu82e0teyg" path="res://assets/WIP/blueSound.png" id="5_dmrhp"]
+[ext_resource type="Texture2D" uid="uid://bh17ppthb71dy" path="res://assets/WIP/amongRed.png" id="6_opftc"]
+[ext_resource type="Texture2D" uid="uid://b4h5uamuw2kec" path="res://assets/WIP/amongBlue.png" id="7_bddyq"]
+[ext_resource type="Texture2D" uid="uid://clpmq3swfxwk0" path="res://assets/WIP/amongOrange.png" id="8_uo287"]
+[ext_resource type="Texture2D" uid="uid://bfr73tvtjs2ig" path="res://assets/WIP/amongPink.png" id="9_fxh0o"]
 
 [node name="CharacterCreation" type="Node2D"]
-script = ExtResource("1_4twel")
+script = ExtResource("1_tuaof")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 

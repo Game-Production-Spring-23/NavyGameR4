@@ -1,8 +1,8 @@
 [gd_scene load_steps=7 format=3 uid="uid://bji5f0h8q1wts"]
 
-[ext_resource type="Script" path="res://Scripts/Levels/0-1_introCutscene.gd" id="1_ljok5"]
-[ext_resource type="Texture2D" uid="uid://psuq4daqdl8k" path="res://Assets/WIP/slide1.png" id="2_sxoyj"]
-[ext_resource type="Theme" uid="uid://dctbregm4ijln" path="res://Assets/themes/buttonTheme.tres" id="3_3uaui"]
+[ext_resource type="Script" path="res://scripts/levels/0-1_introCutscene.gd" id="1_8bdlb"]
+[ext_resource type="Texture2D" uid="uid://psuq4daqdl8k" path="res://assets/WIP/slide1.png" id="2_sxoyj"]
+[ext_resource type="Theme" uid="uid://dctbregm4ijln" path="res://assets/themes/buttonTheme.tres" id="3_3uaui"]
 
 [sub_resource type="Animation" id="Animation_a5gqd"]
 resource_name = "Fade"
@@ -42,7 +42,7 @@ _data = {
 }
 
 [node name="IntroCutscene" type="Node2D" node_paths=PackedStringArray("textureRect", "timer")]
-script = ExtResource("1_ljok5")
+script = ExtResource("1_8bdlb")
 textureRect = NodePath("UI/TextureRect")
 timer = NodePath("UI/Timer")
 

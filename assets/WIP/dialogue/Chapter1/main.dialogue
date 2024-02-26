@@ -1,0 +1,80 @@
+
+~ tutorial1
+
+ Ranger: Ooh...Ugh, what happened?
+ROGER: Error, Error, system overload. Proceeding to Reboot…... Reboot Complete!
+
+ROGER: Designated Ranger, the ships gravity engine malfunctioned. While I run diagnostics, make sure you can move efficiently. We have lots to do!
+do gameController.characterCanMove = true
+=> END!
+
+~ tutorial2
+ROGER: DIAGNOSTICS COMPLETE. I have bad news Ranger: The ship is totally wrecked, and the radar is…
+
+Ranger: Broken? No problem, I can fix that!
+
+ROGER: Don’t interrupt me! It’s not broken, it’s completely missing. Sir, this is not good.
+
+Ranger: Missing? Unless it fell out of the ship during the crash, it must have been stolen...Check the CCTV footage, quickly.
+
+ROGER: I tried doing that during my diagnostics, but I couldn’t access it. It seems like somebody is messing with my system in the main bay. Let me open the door and you go check it out.
+do gameController.characterCanMove = true
+=> END
+~ tutorial3
+Ranger: ROGER, what is that thing?
+???: HEY! I'm not a thing, I'm a Daran!
+Ranger: Well whatever you are, you must be the one messing with my ship!
+???: Uh Oh. 
+Ranger: HEY! GET BACK HERE!
+do gameController.characterCanMove = true
+=> END!
+# MINIGAME STRUCTURE GOES HERE
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+~ tutorial4
+Daria: That sounds awesome, what does a Radar look like?
+Ranger: What are you talking about, don’t you not have my radar? What were you doing on my ship?
+Daria: I heard an explosion and wanted to see what was going on. When I got here, I saw your friends running off, so I assumed everyone was gone.
+Ranger: Friends? Unless ROGER grew some legs and ran off, no one else was on the ship but us two.
+Daria: What about the Scein? And the Trolum? Or the Yappo? The Tendra? And the...what were they called? Oh yeah, the Lagna!
+Ranger: Sheiza, the aliens of this planet must have gotten on board while ROGER and I were out cold...
+ROGER: Ranger, while you were playing catch up with your new friend, I got access to the CCTV footage. You should come take a look at this; I will be waiting in the Comms room.
+do gameController.characterCanMove = true
+=> END
+
+~ tutorial5
+ROGER: According to the video, it looks like there were 5 different aliens that took parts of the Radar.
+Ranger: Ok ROGER, is there any way you can track them down?
+
+ROGER: Sadly I cannot. Due to my reboot, most of my functionality was wiped clean.
+
+Ranger: Dango! First my ship crashes, then my radar is stolen, and now ROGER? How am I going to get this done?
+Daria: Perhaps I can help! 
+#Daria enters
+Ranger: Oh yeah? Why would you help us! I don’t even know your name...
+Daria: The name is Daria! I am a Daran, the native species of Hertzich! I had so much fun earlier with you I thought I would see if you wanted to play more! Then I overheard your conversation, and it seems like you could use some help.
+Ranger: And why should I trust you?
+Daria: Do you have any other options?
+Ranger: Dango, you gotta point there...Alright, and how exactly can you help?
+Daria: I’ve lived here all my life and I know this planet like the back of my paw. The big city, Yaplisdapolis, would have somewhere to fix your ship. I can show you how to get there!
+Ranger: The city? I saw that earlier when we were falling into the atmosphere, I don’t think it’s too far...but what about the missing radar? I would be flying blind in deep space without it!
+Daria: Well, all the nice people I saw earlier had pieces of something, I bet that was your missing radar! I know a path that would lead into each major village of the other species on the planet, with the biiiiiig city at the end!
+Ranger: Well, it seems we really could use your help then...Ok hotshot, where to first?
+Daria: The closest village would be in the Plains of Trolonc. That’s where the Trolums live. I bet we can find a part of your radar there!
+Ranger: Sounds good! ROGER, will you be ok on the ship?
+ROGER: Don’t worry Ranger, I have a piece of me in your suit, it will be like I never left your side. Gotta make sure you stay on track.
+Daria: This will be so much fun!
+do gameController.characterCanMove = true
+=> END!
