@@ -23,7 +23,8 @@ func changeScene(scenePath, intro = null, body = null):
 func changeMusic(intro, body):
 	#haven't actually tested to make sure the audio pauses when changed but just in case it doesn't
 	pauseMusic()
-	$music/intro.stream = load(intro)
+	if(intro):
+		$music/intro.stream = load(intro)
 	$music/body.stream = load(body)
 	
 	#if intro is present, play it. If not, play body instead

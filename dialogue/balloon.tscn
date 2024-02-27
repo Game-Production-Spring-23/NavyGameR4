@@ -1,6 +1,6 @@
 [gd_scene load_steps=12 format=3 uid="uid://73jm5qjy52vq"]
 
-[ext_resource type="Script" path="res://assets/WIP/dialogue/balloon.gd" id="1_36de5"]
+[ext_resource type="Script" path="res://dialogue/balloon.gd" id="1_36de5"]
 [ext_resource type="Texture2D" uid="uid://dfdfajgx7pq1q" path="res://assets/images/dialogue/textBoxPlaceholder.png" id="2_42ybj"]
 [ext_resource type="PackedScene" uid="uid://ckvgyvclnwggo" path="res://addons/dialogue_manager/dialogue_label.tscn" id="2_a8ve6"]
 [ext_resource type="Script" path="res://addons/dialogue_manager/dialogue_reponses_menu.gd" id="3_72ixx"]
