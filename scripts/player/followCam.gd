@@ -1,13 +1,16 @@
 extends Camera2D
 
-@export var tilemap = TileMap
+@export var tilemap: TileMap
 
-#This limits the camera to the size of the map
 func _ready():
+	var mapRect = tilemap.get_used_rect()
+	var tileSize = tilemap.rendering_quadrant_size
+	var worldSizeInPixels = mapRect.size * tileSize
+	limit_right = 5 * (worldSizeInPixels.x)
+	limit_bottom = 5 * (worldSizeInPixels.y)
+	limit_left = 0
+	limit_top = 0
+
+
+func _process(delta):
 	pass
-	# FIX THIS CJ
-	# var mapRect = tilemap.get_used_rect()
-	# var tileSize = tilemap.rendering_quadrant_size
-	# var worldSizeInPixels = mapRect.size * tileSize
-	# limit_right = worldSizeInPixels.x
-	# limit_bottom = worldSizeInPixels.y
