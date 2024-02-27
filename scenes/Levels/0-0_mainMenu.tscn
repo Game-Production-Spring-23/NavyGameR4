@@ -1,4 +1,4 @@
-[gd_scene load_steps=27 format=3 uid="uid://bih6j6sulhe0p"]
+[gd_scene load_steps=26 format=3 uid="uid://bih6j6sulhe0p"]
 
 [ext_resource type="Script" path="res://scripts/levels/0-0_mainmenu.gd" id="1_iq5kt"]
 [ext_resource type="Texture2D" uid="uid://buhk2xbj1mu3i" path="res://assets/images/background/titlescreen-background_mockup.png" id="2_l0djt"]
@@ -37,13 +37,6 @@ expand_margin_bottom = 27.0
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_teavx"]
 texture = ExtResource("22_5o68x")
-expand_margin_top = 21.0
-expand_margin_bottom = 27.0
-
-[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_uoaud"]
-texture = ExtResource("22_5o68x")
-texture_margin_top = 1.0
-texture_margin_bottom = 1.0
 expand_margin_top = 21.0
 expand_margin_bottom = 27.0
 
@@ -464,22 +457,85 @@ theme_override_icons/grabber = ExtResource("21_cwvs3")
 theme_override_icons/grabber_highlight = ExtResource("21_cwvs3")
 theme_override_styles/slider = SubResource("StyleBoxTexture_teavx")
 
-[node name="Label" type="Label" parent="UI/OptionsScreen/Options"]
+[node name="HBoxContainer" type="HBoxContainer" parent="UI/OptionsScreen/Options"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="UI/OptionsScreen/Options/HBoxContainer"]
 layout_mode = 2
 theme = ExtResource("4_vwfj0")
-text = "Text Speed"
-horizontal_alignment = 1
+text = "TEXT SPEED"
 
-[node name="TextSpeed" type="HSlider" parent="UI/OptionsScreen/Options"]
-custom_minimum_size = Vector2(0, 100)
+[node name="slow" type="TextureButton" parent="UI/OptionsScreen/Options/HBoxContainer"]
+custom_minimum_size = Vector2(114, 44)
 layout_mode = 2
-theme_override_icons/grabber = ExtResource("21_cwvs3")
-theme_override_icons/grabber_highlight = ExtResource("21_cwvs3")
-theme_override_styles/slider = SubResource("StyleBoxTexture_uoaud")
-min_value = 0.5
-max_value = 2.0
-step = 0.5
-value = 1.0
+texture_normal = ExtResource("18_vfvdr")
+texture_pressed = ExtResource("19_4umo7")
+texture_hover = ExtResource("20_02m45")
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="UI/OptionsScreen/Options/HBoxContainer/slow"]
+layout_mode = 0
+offset_left = 13.0
+offset_top = 6.0
+offset_right = 142.0
+offset_bottom = 42.0
+theme = ExtResource("4_vwfj0")
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "SLOW"
+
+[node name="normal" type="TextureButton" parent="UI/OptionsScreen/Options/HBoxContainer"]
+custom_minimum_size = Vector2(156, 44)
+layout_mode = 2
+texture_normal = ExtResource("18_vfvdr")
+texture_pressed = ExtResource("19_4umo7")
+texture_hover = ExtResource("20_02m45")
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="UI/OptionsScreen/Options/HBoxContainer/normal"]
+layout_mode = 0
+offset_left = 13.0
+offset_top = 6.0
+offset_right = 142.0
+offset_bottom = 42.0
+theme = ExtResource("4_vwfj0")
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "NORMAL"
+
+[node name="fast" type="TextureButton" parent="UI/OptionsScreen/Options/HBoxContainer"]
+custom_minimum_size = Vector2(113, 44)
+layout_mode = 2
+texture_normal = ExtResource("18_vfvdr")
+texture_pressed = ExtResource("19_4umo7")
+texture_hover = ExtResource("20_02m45")
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="UI/OptionsScreen/Options/HBoxContainer/fast"]
+layout_mode = 0
+offset_left = 13.0
+offset_top = 6.0
+offset_right = 142.0
+offset_bottom = 42.0
+theme = ExtResource("4_vwfj0")
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "FAST"
+
+[node name="faster" type="TextureButton" parent="UI/OptionsScreen/Options/HBoxContainer"]
+custom_minimum_size = Vector2(156, 44)
+layout_mode = 2
+texture_normal = ExtResource("18_vfvdr")
+texture_pressed = ExtResource("19_4umo7")
+texture_hover = ExtResource("20_02m45")
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="UI/OptionsScreen/Options/HBoxContainer/faster"]
+layout_mode = 0
+offset_left = 13.0
+offset_top = 6.0
+offset_right = 142.0
+offset_bottom = 42.0
+theme = ExtResource("4_vwfj0")
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "FASTER"
 
 [node name="backButton" type="TextureButton" parent="UI/OptionsScreen" groups=["ChapterSelectButtons"]]
 texture_filter = 1
@@ -518,5 +574,7 @@ horizontal_alignment = 1
 vertical_alignment = 1
 
 [connection signal="value_changed" from="UI/OptionsScreen/Options/MusicSlider" to="." method="_on_h_slider_value_changed"]
-[connection signal="changed" from="UI/OptionsScreen/Options/TextSpeed" to="." method="_on_h_slider_2_changed"]
-[connection signal="value_changed" from="UI/OptionsScreen/Options/TextSpeed" to="." method="_on_h_slider_2_value_changed"]
+[connection signal="pressed" from="UI/OptionsScreen/Options/HBoxContainer/slow" to="." method="_on_slow_pressed"]
+[connection signal="pressed" from="UI/OptionsScreen/Options/HBoxContainer/normal" to="." method="_on_normal_pressed"]
+[connection signal="pressed" from="UI/OptionsScreen/Options/HBoxContainer/fast" to="." method="_on_fast_pressed"]
+[connection signal="pressed" from="UI/OptionsScreen/Options/HBoxContainer/faster" to="." method="_on_faster_pressed"]
