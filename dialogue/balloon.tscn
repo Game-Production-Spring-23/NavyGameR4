@@ -164,6 +164,7 @@ text = "Response example"
 
 [node name="Responses" type="TextureRect" parent="Balloon/ResponsesMenu/ResponseExample"]
 unique_name_in_owner = true
+z_index = -2
 layout_mode = 2
 offset_left = -12.0
 offset_right = 1113.0

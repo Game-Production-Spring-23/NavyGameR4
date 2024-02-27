@@ -55,7 +55,7 @@ func playSound(path):
 	sound.play()
 
 #takes the folder path and dialogue name, and triggers a dialogue balloon with those parameters.
-func triggerDialogue(path, dialogName) :
+func triggerDialogue(path, dialogName):
 	characterCanMove = false
 	DialogueManager.show_dialogue_balloon(load("res://dialogue/"+ path + "/main.dialogue"), dialogName)
 

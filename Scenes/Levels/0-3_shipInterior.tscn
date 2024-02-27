@@ -44,6 +44,7 @@ layer_1/tile_data = PackedInt32Array(-65521, 65539, 1, 15, 65539, 1, 65551, 6553
 
 [node name="Player" parent="." instance=ExtResource("2_0yyxf")]
 scale = Vector2(5, 5)
+move_speed = null
 
 [node name="Area2D" type="Area2D" parent="."]
 position = Vector2(930, -40)
