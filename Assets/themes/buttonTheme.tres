@@ -1,7 +1,7 @@
 [gd_resource type="Theme" load_steps=2 format=3 uid="uid://dctbregm4ijln"]
 
-[ext_resource type="FontFile" uid="uid://bgsxfdq87axtb" path="res://assets/fonts/PixeloidSans-mLxMm.ttf" id="1_b65ny"]
+[ext_resource type="FontFile" uid="uid://blpf7l45pndyk" path="res://assets/fonts/Retro Gaming.ttf" id="1_brv0h"]
 
 [resource]
-default_font = ExtResource("1_b65ny")
-default_font_size = 32
+default_font = ExtResource("1_brv0h")
+default_font_size = 28

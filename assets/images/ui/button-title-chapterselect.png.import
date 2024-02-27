@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bucp74mwivatq"
-path="res://.godot/imported/Planet-Placeholder.webp-8feb0c78eacf5e2f555139b5c86f7b78.ctex"
+uid="uid://csuugac2jm1fn"
+path="res://.godot/imported/button-title-chapterselect.png-6685df70e07a5bdb42af9272d514e74c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/images/Planet-Placeholder.webp"
-dest_files=["res://.godot/imported/Planet-Placeholder.webp-8feb0c78eacf5e2f555139b5c86f7b78.ctex"]
+source_file="res://assets/images/ui/button-title-chapterselect.png"
+dest_files=["res://.godot/imported/button-title-chapterselect.png-6685df70e07a5bdb42af9272d514e74c.ctex"]
 
 [params]
 

@@ -1,19 +1,32 @@
-[gd_scene load_steps=7 format=3 uid="uid://bih6j6sulhe0p"]
+[gd_scene load_steps=22 format=3 uid="uid://bih6j6sulhe0p"]
 
 [ext_resource type="Script" path="res://scripts/levels/0-0_mainmenu.gd" id="1_iq5kt"]
-[ext_resource type="Texture2D" uid="uid://bucp74mwivatq" path="res://assets/images/Planet-Placeholder.webp" id="2_k1sox"]
-[ext_resource type="Texture2D" uid="uid://bl0gpyctpq10n" path="res://assets/images/R4LogoV1.webp" id="3_kjf6h"]
+[ext_resource type="Texture2D" uid="uid://buhk2xbj1mu3i" path="res://assets/images/background/titlescreen-background_mockup.png" id="2_txktm"]
+[ext_resource type="Texture2D" uid="uid://lsbltly2fte4" path="res://assets/images/logo-title.png" id="3_neue0"]
+[ext_resource type="Texture2D" uid="uid://7mk2r2g22pqx" path="res://assets/images/ui/button-blank.png" id="5_ceb7p"]
 [ext_resource type="FontFile" uid="uid://bgsxfdq87axtb" path="res://assets/fonts/PixeloidSans-mLxMm.ttf" id="5_nxsjq"]
-
-[sub_resource type="Theme" id="Theme_3t8pt"]
-default_font = ExtResource("5_nxsjq")
-default_font_size = 32
+[ext_resource type="Texture2D" uid="uid://b43bp8hdog3co" path="res://assets/images/ui/button-blank_click.png" id="6_j5mkj"]
+[ext_resource type="Texture2D" uid="uid://c50yxy2j5boao" path="res://assets/images/ui/button-title-startgame.png" id="6_lwg30"]
+[ext_resource type="Texture2D" uid="uid://dqeaxjc3n8x4" path="res://assets/images/ui/button-blank_hover.png" id="7_nrlyo"]
+[ext_resource type="Texture2D" uid="uid://cemds52bl6u3e" path="res://assets/images/ui/button-title-startgame_click.png" id="7_pqv2g"]
+[ext_resource type="Theme" uid="uid://dctbregm4ijln" path="res://assets/themes/buttonTheme.tres" id="8_4stg8"]
+[ext_resource type="Texture2D" uid="uid://ba8b2t6ndbtsr" path="res://assets/images/ui/button-title-startgame_hover.png" id="8_8ywmp"]
+[ext_resource type="Texture2D" uid="uid://csuugac2jm1fn" path="res://assets/images/ui/button-title-chapterselect.png" id="9_avnyl"]
+[ext_resource type="Texture2D" uid="uid://bulipucm08v8b" path="res://assets/images/ui/button-title-chapterselect_click.png" id="10_b2pkv"]
+[ext_resource type="Texture2D" uid="uid://b4thc2ihpcahi" path="res://assets/images/ui/button-title-chapterselect_hover.png" id="11_xwsc3"]
+[ext_resource type="Texture2D" uid="uid://cy4l4jid6x21y" path="res://assets/images/ui/button-title-options.png" id="12_gcvgy"]
+[ext_resource type="Texture2D" uid="uid://c6k4e8ravig6l" path="res://assets/images/ui/button-title-options_click.png" id="13_al866"]
+[ext_resource type="Texture2D" uid="uid://dpmcu6xvkl31n" path="res://assets/images/ui/button-title-options_hover.png" id="14_3dqqp"]
+[ext_resource type="Texture2D" uid="uid://cvmto8a15cpcn" path="res://assets/images/ui/button-title-spacer.png" id="15_086n8"]
+[ext_resource type="Texture2D" uid="uid://cgds6skcbcsft" path="res://assets/images/ui/button-title-spacer_click.png" id="16_evsgr"]
+[ext_resource type="Texture2D" uid="uid://btr2mf2sd8bq4" path="res://assets/images/ui/button-title-spacer_hover.png" id="17_63inl"]
 
 [sub_resource type="Theme" id="Theme_g8onr"]
 default_font = ExtResource("5_nxsjq")
 default_font_size = 64
 
 [node name="mainMenu" type="Node2D"]
+texture_filter = 1
 script = ExtResource("1_iq5kt")
 metadata/_edit_vertical_guides_ = [-145.0]
 
@@ -25,7 +38,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("2_k1sox")
+texture = ExtResource("2_txktm")
 expand_mode = 3
 
 [node name="MainMenuScreen" type="Control" parent="UI"]
@@ -46,41 +59,77 @@ offset_left = 500.0
 offset_top = 125.0
 offset_right = -500.0
 offset_bottom = 0.199997
-texture = ExtResource("3_kjf6h")
+texture = ExtResource("3_neue0")
 
 [node name="VBoxContainer" type="VBoxContainer" parent="UI/MainMenuScreen"]
 layout_mode = 1
 anchors_preset = -1
-anchor_top = 0.35
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_left = 750.0
-offset_right = -750.0
+anchor_left = 0.425
+anchor_top = 0.5
+anchor_right = 0.575
+anchor_bottom = 0.85
+offset_right = -0.00012207
 grow_horizontal = 2
 grow_vertical = 0
 theme_override_constants/separation = 25
 alignment = 1
 
-[node name="startButton" type="Button" parent="UI/MainMenuScreen/VBoxContainer" groups=["ChapterSelectButtons"]]
+[node name="startButton" type="TextureButton" parent="UI/MainMenuScreen/VBoxContainer" groups=["ChapterSelectButtons"]]
+texture_filter = 1
+custom_minimum_size = Vector2(0, 65)
 layout_mode = 2
-theme = SubResource("Theme_3t8pt")
-text = "Start"
+theme = ExtResource("8_4stg8")
+texture_normal = ExtResource("6_lwg30")
+texture_pressed = ExtResource("7_pqv2g")
+texture_hover = ExtResource("8_8ywmp")
+stretch_mode = 0
 
-[node name="chapterSelectButton" type="Button" parent="UI/MainMenuScreen/VBoxContainer" groups=["ChapterSelectButtons"]]
+[node name="chapterSelectButton" type="TextureButton" parent="UI/MainMenuScreen/VBoxContainer" groups=["ChapterSelectButtons"]]
+texture_filter = 1
+custom_minimum_size = Vector2(0, 65)
 layout_mode = 2
-theme = SubResource("Theme_3t8pt")
-text = "Chapter Select"
+theme = ExtResource("8_4stg8")
+texture_normal = ExtResource("9_avnyl")
+texture_pressed = ExtResource("10_b2pkv")
+texture_hover = ExtResource("11_xwsc3")
+stretch_mode = 0
 
-[node name="optionButton" type="Button" parent="UI/MainMenuScreen/VBoxContainer" groups=["ChapterSelectButtons"]]
+[node name="optionButton" type="TextureButton" parent="UI/MainMenuScreen/VBoxContainer" groups=["ChapterSelectButtons"]]
+texture_filter = 1
+custom_minimum_size = Vector2(0, 65)
 layout_mode = 2
-theme = SubResource("Theme_3t8pt")
-text = "Options"
+theme = ExtResource("8_4stg8")
+texture_normal = ExtResource("12_gcvgy")
+texture_pressed = ExtResource("13_al866")
+texture_hover = ExtResource("14_3dqqp")
+stretch_mode = 0
 
-[node name="endButton" type="Button" parent="UI/MainMenuScreen/VBoxContainer" groups=["ChapterSelectButtons"]]
+[node name="endButton" type="TextureButton" parent="UI/MainMenuScreen/VBoxContainer" groups=["ChapterSelectButtons"]]
+texture_filter = 1
+custom_minimum_size = Vector2(0, 65)
 layout_mode = 2
-theme = SubResource("Theme_3t8pt")
-text = "Quit
-"
+theme = ExtResource("8_4stg8")
+texture_normal = ExtResource("15_086n8")
+texture_pressed = ExtResource("16_evsgr")
+texture_hover = ExtResource("17_63inl")
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="UI/MainMenuScreen/VBoxContainer/endButton"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.035
+anchor_top = 0.092
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -0.0799999
+offset_top = 0.0199995
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("8_4stg8")
+theme_override_colors/font_color = Color(0.0901961, 0.0901961, 0.0941176, 1)
+text = "EXiT"
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [node name="ChapterSelectScreen" type="Control" parent="UI"]
 layout_mode = 3
@@ -118,53 +167,208 @@ layout_mode = 2
 theme_override_constants/separation = 75
 alignment = 1
 
-[node name="swampDarra" type="Button" parent="UI/ChapterSelectScreen/Chapters/Row" groups=["ChapterSelectButtons"]]
+[node name="swampDarra" type="TextureButton" parent="UI/ChapterSelectScreen/Chapters/Row" groups=["ChapterSelectButtons"]]
+texture_filter = 1
+custom_minimum_size = Vector2(400, 65)
 layout_mode = 2
-theme = SubResource("Theme_3t8pt")
+theme = ExtResource("8_4stg8")
+texture_normal = ExtResource("5_ceb7p")
+texture_pressed = ExtResource("6_j5mkj")
+texture_hover = ExtResource("7_nrlyo")
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="UI/ChapterSelectScreen/Chapters/Row/swampDarra"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.035
+anchor_top = 0.092
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -0.0799999
+offset_top = 0.0199995
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("8_4stg8")
+theme_override_colors/font_color = Color(0.0901961, 0.0901961, 0.0941176, 1)
 text = "Swamp of Darra"
+horizontal_alignment = 1
+vertical_alignment = 1
 
-[node name="plainTrolonc" type="Button" parent="UI/ChapterSelectScreen/Chapters/Row" groups=["ChapterSelectButtons"]]
+[node name="plainTrolonc" type="TextureButton" parent="UI/ChapterSelectScreen/Chapters/Row" groups=["ChapterSelectButtons"]]
+texture_filter = 1
+custom_minimum_size = Vector2(400, 65)
 layout_mode = 2
-theme = SubResource("Theme_3t8pt")
+theme = ExtResource("8_4stg8")
+texture_normal = ExtResource("5_ceb7p")
+texture_pressed = ExtResource("6_j5mkj")
+texture_hover = ExtResource("7_nrlyo")
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="UI/ChapterSelectScreen/Chapters/Row/plainTrolonc"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.035
+anchor_top = 0.092
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -0.0799999
+offset_top = 0.0199995
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("8_4stg8")
+theme_override_colors/font_color = Color(0.0901961, 0.0901961, 0.0941176, 1)
 text = "Plains of Trolonc"
+horizontal_alignment = 1
+vertical_alignment = 1
 
-[node name="mtTenanan" type="Button" parent="UI/ChapterSelectScreen/Chapters/Row" groups=["ChapterSelectButtons"]]
+[node name="mtTenanan" type="TextureButton" parent="UI/ChapterSelectScreen/Chapters/Row" groups=["ChapterSelectButtons"]]
+texture_filter = 1
+custom_minimum_size = Vector2(400, 65)
 layout_mode = 2
-theme = SubResource("Theme_3t8pt")
+theme = ExtResource("8_4stg8")
+texture_normal = ExtResource("5_ceb7p")
+texture_pressed = ExtResource("6_j5mkj")
+texture_hover = ExtResource("7_nrlyo")
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="UI/ChapterSelectScreen/Chapters/Row/mtTenanan"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.035
+anchor_top = 0.092
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -0.0799999
+offset_top = 0.0199995
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("8_4stg8")
+theme_override_colors/font_color = Color(0.0901961, 0.0901961, 0.0941176, 1)
 text = "Mt. Tenanan"
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [node name="Row2" type="HBoxContainer" parent="UI/ChapterSelectScreen/Chapters"]
 layout_mode = 2
 theme_override_constants/separation = 75
 alignment = 1
 
-[node name="desertSceivnarter" type="Button" parent="UI/ChapterSelectScreen/Chapters/Row2" groups=["ChapterSelectButtons"]]
+[node name="desertSceivnarter" type="TextureButton" parent="UI/ChapterSelectScreen/Chapters/Row2" groups=["ChapterSelectButtons"]]
+texture_filter = 1
+custom_minimum_size = Vector2(500, 65)
 layout_mode = 2
-theme = SubResource("Theme_3t8pt")
-text = "Desert of Sceivnarter"
+theme = ExtResource("8_4stg8")
+texture_normal = ExtResource("5_ceb7p")
+texture_pressed = ExtResource("6_j5mkj")
+texture_hover = ExtResource("7_nrlyo")
+stretch_mode = 0
 
-[node name="lagnisOcean" type="Button" parent="UI/ChapterSelectScreen/Chapters/Row2" groups=["ChapterSelectButtons"]]
-layout_mode = 2
-theme = SubResource("Theme_3t8pt")
-text = "Lagnis Ocean"
-
-[node name="yaplisdapolis" type="Button" parent="UI/ChapterSelectScreen/Chapters/Row2" groups=["ChapterSelectButtons"]]
-layout_mode = 2
-theme = SubResource("Theme_3t8pt")
-text = "Yaplisdapolis"
-
-[node name="backButton" type="Button" parent="UI/ChapterSelectScreen" groups=["ChapterSelectButtons"]]
+[node name="Label" type="Label" parent="UI/ChapterSelectScreen/Chapters/Row2/desertSceivnarter"]
 layout_mode = 1
 anchors_preset = -1
-anchor_top = 0.8
-anchor_right = 0.25
+anchor_left = 0.035
+anchor_top = 0.092
+anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = 155.0
-offset_top = 93.0
-offset_bottom = -75.0
-grow_vertical = 0
-theme = SubResource("Theme_3t8pt")
+offset_left = -0.0799999
+offset_top = 0.0199995
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("8_4stg8")
+theme_override_colors/font_color = Color(0.0901961, 0.0901961, 0.0941176, 1)
+text = "Desert of Sceivnarter"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="lagnisOcean" type="TextureButton" parent="UI/ChapterSelectScreen/Chapters/Row2" groups=["ChapterSelectButtons"]]
+texture_filter = 1
+custom_minimum_size = Vector2(400, 65)
+layout_mode = 2
+theme = ExtResource("8_4stg8")
+texture_normal = ExtResource("5_ceb7p")
+texture_pressed = ExtResource("6_j5mkj")
+texture_hover = ExtResource("7_nrlyo")
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="UI/ChapterSelectScreen/Chapters/Row2/lagnisOcean"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.035
+anchor_top = 0.092
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -0.0799999
+offset_top = 0.0199995
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("8_4stg8")
+theme_override_colors/font_color = Color(0.0901961, 0.0901961, 0.0941176, 1)
+text = "Lagnis Ocean"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="yaplisdapolis" type="TextureButton" parent="UI/ChapterSelectScreen/Chapters/Row2" groups=["ChapterSelectButtons"]]
+texture_filter = 1
+custom_minimum_size = Vector2(400, 65)
+layout_mode = 2
+theme = ExtResource("8_4stg8")
+texture_normal = ExtResource("5_ceb7p")
+texture_pressed = ExtResource("6_j5mkj")
+texture_hover = ExtResource("7_nrlyo")
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="UI/ChapterSelectScreen/Chapters/Row2/yaplisdapolis"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.035
+anchor_top = 0.092
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -0.0799999
+offset_top = 0.0199995
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("8_4stg8")
+theme_override_colors/font_color = Color(0.0901961, 0.0901961, 0.0941176, 1)
+text = "Yaplisdapolis"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="backButton" type="TextureButton" parent="UI/ChapterSelectScreen" groups=["ChapterSelectButtons"]]
+texture_filter = 1
+custom_minimum_size = Vector2(400, 65)
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.081
+anchor_top = 0.886
+anchor_right = 0.289
+anchor_bottom = 0.946
+offset_left = -0.520004
+offset_top = 0.119934
+offset_right = 0.119995
+offset_bottom = 0.319946
+theme = ExtResource("8_4stg8")
+texture_normal = ExtResource("5_ceb7p")
+texture_pressed = ExtResource("6_j5mkj")
+texture_hover = ExtResource("7_nrlyo")
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="UI/ChapterSelectScreen/backButton"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.035
+anchor_top = 0.092
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -0.0799999
+offset_top = 0.0199995
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("8_4stg8")
+theme_override_colors/font_color = Color(0.0901961, 0.0901961, 0.0941176, 1)
 text = "Back to Main Menu"
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [node name="OptionsScreen" type="Control" parent="UI"]
 layout_mode = 3
@@ -203,15 +407,38 @@ text = "ADD OPTIONS HERE"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="backButton" type="Button" parent="UI/OptionsScreen" groups=["ChapterSelectButtons"]]
+[node name="backButton" type="TextureButton" parent="UI/OptionsScreen" groups=["ChapterSelectButtons"]]
+texture_filter = 1
+custom_minimum_size = Vector2(400, 65)
 layout_mode = 1
 anchors_preset = -1
-anchor_top = 0.8
-anchor_right = 0.25
+anchor_left = 0.081
+anchor_top = 0.886
+anchor_right = 0.289
+anchor_bottom = 0.946
+offset_left = -0.520004
+offset_top = 0.119934
+offset_right = 0.119995
+offset_bottom = 0.319946
+theme = ExtResource("8_4stg8")
+texture_normal = ExtResource("5_ceb7p")
+texture_pressed = ExtResource("6_j5mkj")
+texture_hover = ExtResource("7_nrlyo")
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="UI/OptionsScreen/backButton"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.035
+anchor_top = 0.092
+anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = 155.0
-offset_top = 93.0
-offset_bottom = -75.0
-grow_vertical = 0
-theme = SubResource("Theme_3t8pt")
+offset_left = -0.0799999
+offset_top = 0.0199995
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("8_4stg8")
+theme_override_colors/font_color = Color(0.0901961, 0.0901961, 0.0941176, 1)
 text = "Back to Main Menu"
+horizontal_alignment = 1
+vertical_alignment = 1

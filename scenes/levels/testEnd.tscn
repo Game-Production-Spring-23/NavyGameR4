@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://b21psc2icrv5h"]
 
 [ext_resource type="Theme" uid="uid://bajr2k60ueqkc" path="res://assets/themes/headerTheme.tres" id="1_83spl"]
-[ext_resource type="Texture2D" uid="uid://bucp74mwivatq" path="res://assets/images/Planet-Placeholder.webp" id="1_wyw12"]
+[ext_resource type="Texture2D" uid="uid://bucp74mwivatq" path="res://assets/images/background/Planet-Placeholder.webp" id="1_wyw12"]
 
 [node name="TestEnd" type="Node2D"]
 

@@ -1,12 +1,11 @@
-[gd_scene load_steps=8 format=3 uid="uid://bji5f0h8q1wts"]
+[gd_scene load_steps=10 format=3 uid="uid://bji5f0h8q1wts"]
 
 [ext_resource type="Script" path="res://scripts/levels/0-1_introCutscene.gd" id="1_8bdlb"]
 [ext_resource type="Texture2D" uid="uid://bxukpb2250tyg" path="res://assets/WIP/slide1.png" id="2_sxoyj"]
-[ext_resource type="FontFile" uid="uid://bgsxfdq87axtb" path="res://assets/fonts/PixeloidSans-mLxMm.ttf" id="3_aq8hq"]
-
-[sub_resource type="Theme" id="Theme_3t8pt"]
-default_font = ExtResource("3_aq8hq")
-default_font_size = 32
+[ext_resource type="Theme" uid="uid://dctbregm4ijln" path="res://assets/themes/buttonTheme.tres" id="4_6cxa4"]
+[ext_resource type="Texture2D" uid="uid://7mk2r2g22pqx" path="res://assets/images/ui/button-blank.png" id="5_32b4g"]
+[ext_resource type="Texture2D" uid="uid://b43bp8hdog3co" path="res://assets/images/ui/button-blank_click.png" id="6_okdq1"]
+[ext_resource type="Texture2D" uid="uid://dqeaxjc3n8x4" path="res://assets/images/ui/button-blank_hover.png" id="7_1gw8s"]
 
 [sub_resource type="Animation" id="Animation_a5gqd"]
 resource_name = "Fade"
@@ -64,21 +63,41 @@ texture = ExtResource("2_sxoyj")
 wait_time = 5.0
 autostart = true
 
-[node name="skipButton" type="Button" parent="UI"]
+[node name="backButton" type="TextureButton" parent="UI" groups=["ChapterSelectButtons"]]
+texture_filter = 1
+custom_minimum_size = Vector2(200, 65)
 anchors_preset = -1
-anchor_left = 0.897
-anchor_top = 0.021
-anchor_right = 0.987
-anchor_bottom = 0.066
-offset_left = -0.23999
-offset_top = 0.319998
-offset_right = 0.959961
-offset_bottom = -0.279999
-theme = SubResource("Theme_3t8pt")
-text = "Skip Intro"
+anchor_left = 0.828
+anchor_top = 0.056
+anchor_right = 0.961
+anchor_bottom = 0.117
+offset_left = -0.760132
+offset_top = 0.519997
+offset_right = 0.880005
+offset_bottom = -0.360008
+theme = ExtResource("4_6cxa4")
+texture_normal = ExtResource("5_32b4g")
+texture_pressed = ExtResource("6_okdq1")
+texture_hover = ExtResource("7_1gw8s")
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="UI/backButton"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("4_6cxa4")
+theme_override_colors/font_color = Color(0.0901961, 0.0901961, 0.0941176, 1)
+text = "Skip Intro
+"
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [node name="ScreenTransition" type="CanvasLayer" parent="."]
 layer = 50
+visible = false
 
 [node name="FadeScreen" type="ColorRect" parent="ScreenTransition"]
 self_modulate = Color(1, 1, 1, 0)
@@ -96,4 +115,4 @@ libraries = {
 }
 
 [connection signal="timeout" from="UI/Timer" to="." method="_on_timer_timeout"]
-[connection signal="pressed" from="UI/skipButton" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="UI/backButton" to="." method="_on_button_pressed"]
