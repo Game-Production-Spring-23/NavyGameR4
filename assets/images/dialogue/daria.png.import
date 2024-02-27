@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://2r1et8s3a0hw"
-path="res://.godot/imported/ranger.png-8afe2d03861a54daf8d9a266f8aed916.ctex"
+uid="uid://dtx3b4a5hvhf0"
+path="res://.godot/imported/daria.png-41f8765674f3f2505b92a0f68d38be26.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/images/dialogue/ranger.png"
-dest_files=["res://.godot/imported/ranger.png-8afe2d03861a54daf8d9a266f8aed916.ctex"]
+source_file="res://assets/images/dialogue/daria.png"
+dest_files=["res://.godot/imported/daria.png-41f8765674f3f2505b92a0f68d38be26.ctex"]
 
 [params]
 

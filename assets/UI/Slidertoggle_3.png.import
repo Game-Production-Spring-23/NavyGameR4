@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://2r1et8s3a0hw"
-path="res://.godot/imported/ranger.png-8afe2d03861a54daf8d9a266f8aed916.ctex"
+uid="uid://jo2fpi33ks0c"
+path="res://.godot/imported/Slidertoggle_3.png-036d46beca6993aed1e51cbe7bc10149.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/images/dialogue/ranger.png"
-dest_files=["res://.godot/imported/ranger.png-8afe2d03861a54daf8d9a266f8aed916.ctex"]
+source_file="res://assets/UI/Slidertoggle_3.png"
+dest_files=["res://.godot/imported/Slidertoggle_3.png-036d46beca6993aed1e51cbe7bc10149.ctex"]
 
 [params]
 

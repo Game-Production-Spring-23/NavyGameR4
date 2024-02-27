@@ -5,7 +5,7 @@ name: mainmenu.gd
 description: This script controls the functions and screens of the main menu
 """
 var menuScreens = []
-
+var busIndex = AudioServer.get_bus_index("Master")
 # SETUP FUNCTIONS
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -50,3 +50,15 @@ func displayMenuScreen(screenNum):
 
 	# Displays the correct screen
 	menuScreens[screenNum].show()
+
+
+
+
+
+
+func _on_h_slider_2_value_changed(value):
+	gameController.textSpeed = value
+
+
+func _on_h_slider_value_changed(value):
+	AudioServer.set_bus_volume_db(busIndex,value)
