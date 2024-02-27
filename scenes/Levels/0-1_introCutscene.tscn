@@ -1,8 +1,12 @@
-[gd_scene load_steps=7 format=3 uid="uid://bji5f0h8q1wts"]
+[gd_scene load_steps=8 format=3 uid="uid://bji5f0h8q1wts"]
 
 [ext_resource type="Script" path="res://scripts/levels/0-1_introCutscene.gd" id="1_8bdlb"]
-[ext_resource type="Texture2D" uid="uid://psuq4daqdl8k" path="res://assets/WIP/slide1.png" id="2_sxoyj"]
-[ext_resource type="Theme" uid="uid://dctbregm4ijln" path="res://assets/themes/buttonTheme.tres" id="3_3uaui"]
+[ext_resource type="Texture2D" uid="uid://bxukpb2250tyg" path="res://assets/WIP/slide1.png" id="2_sxoyj"]
+[ext_resource type="FontFile" uid="uid://bgsxfdq87axtb" path="res://assets/fonts/PixeloidSans-mLxMm.ttf" id="3_aq8hq"]
+
+[sub_resource type="Theme" id="Theme_3t8pt"]
+default_font = ExtResource("3_aq8hq")
+default_font_size = 32
 
 [sub_resource type="Animation" id="Animation_a5gqd"]
 resource_name = "Fade"
@@ -49,8 +53,11 @@ timer = NodePath("UI/Timer")
 [node name="UI" type="CanvasLayer" parent="."]
 
 [node name="TextureRect" type="TextureRect" parent="UI"]
-offset_right = 40.0
-offset_bottom = 40.0
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
 texture = ExtResource("2_sxoyj")
 
 [node name="Timer" type="Timer" parent="UI"]
@@ -58,11 +65,16 @@ wait_time = 5.0
 autostart = true
 
 [node name="skipButton" type="Button" parent="UI"]
-offset_left = 1722.0
-offset_top = 23.0
-offset_right = 1896.0
-offset_bottom = 71.0
-theme = ExtResource("3_3uaui")
+anchors_preset = -1
+anchor_left = 0.897
+anchor_top = 0.021
+anchor_right = 0.987
+anchor_bottom = 0.066
+offset_left = -0.23999
+offset_top = 0.319998
+offset_right = 0.959961
+offset_bottom = -0.279999
+theme = SubResource("Theme_3t8pt")
 text = "Skip Intro"
 
 [node name="ScreenTransition" type="CanvasLayer" parent="."]

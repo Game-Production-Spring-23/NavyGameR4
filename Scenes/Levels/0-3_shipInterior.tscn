@@ -1,9 +1,9 @@
 [gd_scene load_steps=8 format=3 uid="uid://bjwnjgf0sg4nb"]
 
-[ext_resource type="Texture2D" uid="uid://d3osgmwlxiqak" path="res://assets/WIP/placeholderTiles.png" id="1_0rfw7"]
+[ext_resource type="Texture2D" uid="uid://dhxovq701roxb" path="res://assets/WIP/placeholderTiles.png" id="1_0rfw7"]
 [ext_resource type="Script" path="res://scripts/levels/0-3_shipInterior.gd" id="1_uhbjv"]
-[ext_resource type="PackedScene" uid="uid://dtolugbyxj6gu" path="res://scenes/playerCharacter.tscn" id="2_0yyxf"]
-[ext_resource type="Texture2D" uid="uid://bnu4ld8njissu" path="res://assets/WIP/Light.png" id="3_frx6r"]
+[ext_resource type="PackedScene" uid="uid://dtolugbyxj6gu" path="res://scenes/objects/playerCharacter.tscn" id="2_0yyxf"]
+[ext_resource type="Texture2D" uid="uid://bywfh4pryw8py" path="res://assets/WIP/Light.png" id="3_frx6r"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_lmhvk"]
 texture = ExtResource("1_0rfw7")

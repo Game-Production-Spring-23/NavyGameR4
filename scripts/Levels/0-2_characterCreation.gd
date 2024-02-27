@@ -1,8 +1,8 @@
 extends Node2D
 
 """
-	name: characterCreation.gd
-	description: This script controls the creation of Rodger
+name: characterCreation.gd
+description: This script controls the creation of Rodger
 
 """
 var pronounButtons = []

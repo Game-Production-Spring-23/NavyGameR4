@@ -25,8 +25,8 @@ func changeMusic(intro, body):
 	pauseMusic()
 	if(intro):
 		$music/intro.stream = load(intro)
-	$music/body.stream = load(body)
-	
+		$music/body.stream = load(body)
+
 	#if intro is present, play it. If not, play body instead
 	if (intro):
 		playIntro()
@@ -58,5 +58,5 @@ func playSound(path):
 func triggerDialogue(path, dialogName) :
 	characterCanMove = false
 	DialogueManager.show_dialogue_balloon(load("res://dialogue/"+ path + "/main.dialogue"), dialogName)
-	
-	
+
+

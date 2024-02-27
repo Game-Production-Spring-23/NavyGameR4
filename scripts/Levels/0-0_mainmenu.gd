@@ -47,6 +47,6 @@ func displayMenuScreen(screenNum):
 	# Hides all screens
 	for menuScreen in menuScreens:
 		menuScreen.hide()
-	
+
 	# Displays the correct screen
 	menuScreens[screenNum].show()

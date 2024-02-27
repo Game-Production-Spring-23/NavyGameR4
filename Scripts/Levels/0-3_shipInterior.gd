@@ -1,8 +1,8 @@
 extends Node2D
 
 """
-	name: 0-3_shipInterior.gd
-	description: This script controls the level managment of the ship's interior
+name: 0-3_shipInterior.gd
+description: This script controls the level managment of the ship's interior
 
 """
 # SETUP FUNCTIONS
