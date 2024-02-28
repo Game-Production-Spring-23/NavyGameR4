@@ -30,7 +30,7 @@ func _ready():
 	darknessScreen = get_node("CanvasLayer/Darkness/AnimationPlayer")
 	wasdKeyScreen = get_node("CanvasLayer/WasdScreen/AnimationPlayer")
 	transitionScreen = get_node("CanvasLayer/FadeScreen/AnimationPlayer")
-
+	
 	# Gets each spawnPoint in the spawnPoints group
 	for spawnPoint in get_tree().get_nodes_in_group("Exits"):
 		spawnPoints.append(spawnPoint)
@@ -38,7 +38,7 @@ func _ready():
 	# Gets each cameraPoint in the cameraPoints group
 	for cameraPoint in get_tree().get_nodes_in_group("CameraPoints"):
 		cameraPoints.append(cameraPoint)
-
+	gameController.triggerDialogue("chapter1", "tutorial1")
 func _input(event):
 	# Makes WASD prompt disappear after moving
 	if(!hasPlayerMovedOnce):
@@ -51,7 +51,7 @@ func _input(event):
 		darknessScreen.play("brighten")
 		print("PLAY DIALOGUE WITH ROGER")
 		# FIX DIALOGUE HERE JACOB
-		# gameController.triggerDialogue("chapter1", "tutorial1")
+		gameController.triggerDialogue("chapter1", "tutorial2")
 		hadPlayerTalkedToRoger = true
 
 # If player enter roger's module
@@ -70,7 +70,7 @@ func _on_daria_interact_player_enter():
 		hasPlayerFoundDaria = true
 		print("PLAY DARIA DIALOGUE HERE")
 		# Add Daria dialogue here
-		# gameController.triggerDialogue("chapter1", "tutorial2")
+		gameController.triggerDialogue("chapter1", "tutorial3")
 		darknessScreen.play("darken")
 
 # When the player enter the exit to area 2 in area 1

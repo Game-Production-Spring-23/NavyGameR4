@@ -1,6 +1,6 @@
 
 ~ tutorial1
-
+do gameController.characterCanMove = false
  Ranger: Ooh...Ugh, what happened?
 ROGER: Error, Error, system overload. Proceeding to Reboot…... Reboot Complete!
 

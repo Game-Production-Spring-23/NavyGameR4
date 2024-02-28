@@ -44,14 +44,14 @@ var dialogue_line: DialogueLine:
 		dialogue_line = next_dialogue_line
 
 		character_label.visible = not dialogue_line.character.is_empty()
-		var portrait_path = "res://assets/images/dialogue/%.png" % dialogue_line.character.to_lower();
+	
 
 		var portrait_name = dialogue_line.character.to_lower();
 
-		if FileAccess.file_exists("res://assets/images/dialogue/"+portrait_name+".png"):
-
+		if FileAccess.file_exists("res://assets/images/dialogue/"+portrait_name+".png.import"):
+		
 			portrait.texture = load("res://assets/images/dialogue/"+portrait_name+".png")
-
+			print(portrait.texture)
 		else :
 
 			print(portrait_name)

@@ -1,6 +1,6 @@
 extends Node
 #Variable to define the textSpeed.
-var textSpeed
+var textSpeed = 1
 var player = null #player object is set after the character creation scene is finished
 var characterCanMove = true
 @onready var animationPlayer = $ScreenTransition/FadeScreen/AnimationPlayer
