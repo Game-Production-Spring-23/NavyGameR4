@@ -1,7 +1,8 @@
-[gd_scene load_steps=28 format=3 uid="uid://dtolugbyxj6gu"]
+[gd_scene load_steps=29 format=3 uid="uid://dtolugbyxj6gu"]
 
 [ext_resource type="Script" path="res://scripts/player/charPlaceholder.gd" id="1_e4rjr"]
 [ext_resource type="Texture2D" uid="uid://ct7b5rogj5r1j" path="res://assets/sprites/spritesheets/player-walkall.png" id="2_n4gw3"]
+[ext_resource type="Texture2D" uid="uid://d10fuiocxxnge" path="res://assets/images/ui/interactPrompt.png" id="3_dki42"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_r2p8k"]
 size = Vector2(22, 14)
@@ -233,8 +234,8 @@ states/walk/position = Vector2(473.5, 99.875)
 transitions = ["Start", "idle", SubResource("AnimationNodeStateMachineTransition_g8mff"), "idle", "walk", SubResource("AnimationNodeStateMachineTransition_agdeh"), "walk", "idle", SubResource("AnimationNodeStateMachineTransition_h2cs5")]
 
 [node name="Player" type="CharacterBody2D"]
+texture_filter = 1
 script = ExtResource("1_e4rjr")
-starting_direction = null
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture = ExtResource("2_n4gw3")
@@ -258,3 +259,8 @@ tree_root = SubResource("AnimationNodeStateMachine_ilaaq")
 anim_player = NodePath("../AnimationPlayer")
 parameters/idle/blend_position = Vector2(-0.00148147, 1.08845)
 parameters/walk/blend_position = Vector2(0, 0)
+
+[node name="IntractionPrompt" type="Sprite2D" parent="."]
+position = Vector2(25, -30)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("3_dki42")

@@ -7,8 +7,18 @@ extends CharacterBody2D
 @onready var animation_tree = $AnimationTree
 @onready var state_machine = animation_tree.get("parameters/playback")
 
+var interactPrompt
+
 func _ready():
+	interactPrompt = get_node("IntractionPrompt")
+	interactPrompt.hide()
 	update_animation_parameters(starting_direction)
+
+func showInteractionPrompt(shouldShow):
+	if(shouldShow):
+		interactPrompt.show()
+	else:
+		interactPrompt.hide()
 
 func _physics_process(_delta):
 	if gameController.characterCanMove == true:

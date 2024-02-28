@@ -1,15 +1,22 @@
-[gd_scene load_steps=11 format=3 uid="uid://fopof7how"]
+[gd_scene load_steps=18 format=3 uid="uid://fopof7how"]
 
 [ext_resource type="Script" path="res://scripts/levels/0-2_characterCreation.gd" id="1_tuaof"]
 [ext_resource type="Theme" uid="uid://dctbregm4ijln" path="res://assets/themes/buttonTheme.tres" id="2_jb8hu"]
+[ext_resource type="Texture2D" uid="uid://buhk2xbj1mu3i" path="res://assets/images/background/titlescreen-background_mockup.png" id="2_x1a2d"]
 [ext_resource type="Theme" uid="uid://bajr2k60ueqkc" path="res://assets/themes/headerTheme.tres" id="2_xsp0k"]
-[ext_resource type="Texture2D" uid="uid://blgu75ptl5at2" path="res://assets/WIP/greenBord.png" id="3_28fvm"]
+[ext_resource type="Theme" uid="uid://dvij0s1xehu3a" path="res://assets/themes/subheaderTheme.tres" id="4_e71pu"]
 [ext_resource type="Texture2D" uid="uid://bnxmji1of1ldn" path="res://assets/WIP/pinkSound.png" id="4_jy5lg"]
+[ext_resource type="Texture2D" uid="uid://7mk2r2g22pqx" path="res://assets/images/ui/button-blank.png" id="5_d46lf"]
 [ext_resource type="Texture2D" uid="uid://vlq0qaph53ek" path="res://assets/WIP/blueSound.png" id="5_dmrhp"]
 [ext_resource type="Texture2D" uid="uid://du2k6n0lnlmpf" path="res://assets/WIP/amongRed.png" id="6_opftc"]
+[ext_resource type="Texture2D" uid="uid://b43bp8hdog3co" path="res://assets/images/ui/button-blank_click.png" id="6_wk762"]
+[ext_resource type="Texture2D" uid="uid://dqeaxjc3n8x4" path="res://assets/images/ui/button-blank_hover.png" id="7_8umw6"]
 [ext_resource type="Texture2D" uid="uid://wu5ae714rjc4" path="res://assets/WIP/amongBlue.png" id="7_bddyq"]
 [ext_resource type="Texture2D" uid="uid://dfospmj2j8o0c" path="res://assets/WIP/amongOrange.png" id="8_uo287"]
 [ext_resource type="Texture2D" uid="uid://07eo6dgtkaik" path="res://assets/WIP/amongPink.png" id="9_fxh0o"]
+[ext_resource type="Texture2D" path="res://assets/images/ui/button-blank-square.png" id="11_itkfq"]
+[ext_resource type="Texture2D" path="res://assets/images/ui/button-blank-square_click.png" id="12_i2fng"]
+[ext_resource type="Texture2D" path="res://assets/images/ui/button-blank-square_hover.png" id="13_3cr6v"]
 
 [node name="CharacterCreation" type="Node2D"]
 script = ExtResource("1_tuaof")
@@ -22,7 +29,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("3_28fvm")
+texture = ExtResource("2_x1a2d")
 
 [node name="Label" type="Label" parent="CanvasLayer/CCmenu"]
 layout_mode = 1
@@ -53,30 +60,84 @@ alignment = 1
 
 [node name="Label" type="Label" parent="CanvasLayer/CCmenu/VBoxContainer/Pronouns"]
 layout_mode = 2
-theme = ExtResource("2_xsp0k")
+theme = ExtResource("4_e71pu")
 text = "Pronouns"
 
 [node name="HBoxContainer" type="HBoxContainer" parent="CanvasLayer/CCmenu/VBoxContainer/Pronouns"]
 layout_mode = 2
 theme_override_constants/separation = 75
 
-[node name="She" type="Button" parent="CanvasLayer/CCmenu/VBoxContainer/Pronouns/HBoxContainer" groups=["pronounButtons"]]
+[node name="She" type="TextureButton" parent="CanvasLayer/CCmenu/VBoxContainer/Pronouns/HBoxContainer" groups=["pronounButtons"]]
+texture_filter = 1
+custom_minimum_size = Vector2(250, 65)
 layout_mode = 2
 theme = ExtResource("2_jb8hu")
 toggle_mode = true
+texture_normal = ExtResource("5_d46lf")
+texture_pressed = ExtResource("6_wk762")
+texture_hover = ExtResource("7_8umw6")
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="CanvasLayer/CCmenu/VBoxContainer/Pronouns/HBoxContainer/She"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("2_jb8hu")
+theme_override_colors/font_color = Color(0.0901961, 0.0901961, 0.0941176, 1)
 text = "She/Her"
+horizontal_alignment = 1
+vertical_alignment = 1
 
-[node name="He" type="Button" parent="CanvasLayer/CCmenu/VBoxContainer/Pronouns/HBoxContainer" groups=["pronounButtons"]]
+[node name="He" type="TextureButton" parent="CanvasLayer/CCmenu/VBoxContainer/Pronouns/HBoxContainer" groups=["pronounButtons"]]
+texture_filter = 1
+custom_minimum_size = Vector2(250, 65)
 layout_mode = 2
 theme = ExtResource("2_jb8hu")
 toggle_mode = true
+texture_normal = ExtResource("5_d46lf")
+texture_pressed = ExtResource("6_wk762")
+texture_hover = ExtResource("7_8umw6")
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="CanvasLayer/CCmenu/VBoxContainer/Pronouns/HBoxContainer/He"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("2_jb8hu")
+theme_override_colors/font_color = Color(0.0901961, 0.0901961, 0.0941176, 1)
 text = "He/Him"
+horizontal_alignment = 1
+vertical_alignment = 1
 
-[node name="They" type="Button" parent="CanvasLayer/CCmenu/VBoxContainer/Pronouns/HBoxContainer" groups=["pronounButtons"]]
+[node name="They" type="TextureButton" parent="CanvasLayer/CCmenu/VBoxContainer/Pronouns/HBoxContainer" groups=["pronounButtons"]]
+texture_filter = 1
+custom_minimum_size = Vector2(250, 65)
 layout_mode = 2
 theme = ExtResource("2_jb8hu")
 toggle_mode = true
+texture_normal = ExtResource("5_d46lf")
+texture_pressed = ExtResource("6_wk762")
+texture_hover = ExtResource("7_8umw6")
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="CanvasLayer/CCmenu/VBoxContainer/Pronouns/HBoxContainer/They"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("2_jb8hu")
+theme_override_colors/font_color = Color(0.0901961, 0.0901961, 0.0941176, 1)
 text = "They/Them"
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [node name="Voice" type="VBoxContainer" parent="CanvasLayer/CCmenu/VBoxContainer"]
 layout_mode = 2
@@ -85,27 +146,58 @@ alignment = 1
 
 [node name="Label" type="Label" parent="CanvasLayer/CCmenu/VBoxContainer/Voice"]
 layout_mode = 2
-theme = ExtResource("2_xsp0k")
+theme = ExtResource("4_e71pu")
 text = "Voice"
 
 [node name="HBoxContainer" type="HBoxContainer" parent="CanvasLayer/CCmenu/VBoxContainer/Voice"]
 layout_mode = 2
-size_flags_stretch_ratio = 0.2
 theme_override_constants/separation = 50
 
-[node name="Voice1" type="Button" parent="CanvasLayer/CCmenu/VBoxContainer/Voice/HBoxContainer" groups=["voiceButtons"]]
+[node name="Voice1" type="TextureButton" parent="CanvasLayer/CCmenu/VBoxContainer/Voice/HBoxContainer" groups=["voiceButtons"]]
+texture_filter = 1
+custom_minimum_size = Vector2(150, 150)
 layout_mode = 2
 theme = ExtResource("2_jb8hu")
-theme_override_constants/icon_max_width = 75
 toggle_mode = true
-icon = ExtResource("4_jy5lg")
+texture_normal = ExtResource("11_itkfq")
+texture_pressed = ExtResource("12_i2fng")
+texture_hover = ExtResource("13_3cr6v")
+stretch_mode = 0
 
-[node name="Voice2" type="Button" parent="CanvasLayer/CCmenu/VBoxContainer/Voice/HBoxContainer" groups=["voiceButtons"]]
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer/CCmenu/VBoxContainer/Voice/HBoxContainer/Voice1"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.18
+anchor_top = 0.18
+anchor_right = 0.82
+anchor_bottom = 0.82
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("4_jy5lg")
+expand_mode = 1
+
+[node name="Voice2" type="TextureButton" parent="CanvasLayer/CCmenu/VBoxContainer/Voice/HBoxContainer" groups=["voiceButtons"]]
+texture_filter = 1
+custom_minimum_size = Vector2(150, 150)
 layout_mode = 2
 theme = ExtResource("2_jb8hu")
-theme_override_constants/icon_max_width = 75
 toggle_mode = true
-icon = ExtResource("5_dmrhp")
+texture_normal = ExtResource("11_itkfq")
+texture_pressed = ExtResource("12_i2fng")
+texture_hover = ExtResource("13_3cr6v")
+stretch_mode = 0
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer/CCmenu/VBoxContainer/Voice/HBoxContainer/Voice2"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.18
+anchor_top = 0.18
+anchor_right = 0.82
+anchor_bottom = 0.82
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("5_dmrhp")
+expand_mode = 1
 
 [node name="Appearance" type="VBoxContainer" parent="CanvasLayer/CCmenu/VBoxContainer"]
 layout_mode = 2
@@ -114,63 +206,134 @@ alignment = 1
 
 [node name="Label" type="Label" parent="CanvasLayer/CCmenu/VBoxContainer/Appearance"]
 layout_mode = 2
-theme = ExtResource("2_xsp0k")
+theme = ExtResource("4_e71pu")
 text = "Appearance"
 
 [node name="HBoxContainer" type="HBoxContainer" parent="CanvasLayer/CCmenu/VBoxContainer/Appearance"]
 layout_mode = 2
 theme_override_constants/separation = 35
 
-[node name="Red" type="Button" parent="CanvasLayer/CCmenu/VBoxContainer/Appearance/HBoxContainer" groups=["appearenceButtons"]]
+[node name="Red" type="TextureButton" parent="CanvasLayer/CCmenu/VBoxContainer/Appearance/HBoxContainer" groups=["appearenceButtons"]]
+texture_filter = 1
+custom_minimum_size = Vector2(200, 200)
 layout_mode = 2
 theme = ExtResource("2_jb8hu")
-theme_override_constants/icon_max_width = 200
 toggle_mode = true
-text = "
-"
-icon = ExtResource("6_opftc")
+texture_normal = ExtResource("11_itkfq")
+texture_pressed = ExtResource("12_i2fng")
+texture_hover = ExtResource("13_3cr6v")
+stretch_mode = 0
 
-[node name="Blue" type="Button" parent="CanvasLayer/CCmenu/VBoxContainer/Appearance/HBoxContainer" groups=["appearenceButtons"]]
-layout_mode = 2
-theme = ExtResource("2_jb8hu")
-theme_override_constants/icon_max_width = 200
-toggle_mode = true
-text = "
-"
-icon = ExtResource("7_bddyq")
-
-[node name="Orange" type="Button" parent="CanvasLayer/CCmenu/VBoxContainer/Appearance/HBoxContainer" groups=["appearenceButtons"]]
-layout_mode = 2
-theme = ExtResource("2_jb8hu")
-theme_override_constants/icon_max_width = 200
-toggle_mode = true
-text = "
-"
-icon = ExtResource("8_uo287")
-
-[node name="Pink" type="Button" parent="CanvasLayer/CCmenu/VBoxContainer/Appearance/HBoxContainer" groups=["appearenceButtons"]]
-layout_mode = 2
-theme = ExtResource("2_jb8hu")
-theme_override_constants/icon_max_width = 200
-toggle_mode = true
-text = "
-"
-icon = ExtResource("9_fxh0o")
-
-[node name="Confirm" type="Button" parent="CanvasLayer/CCmenu"]
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer/CCmenu/VBoxContainer/Appearance/HBoxContainer/Red"]
 layout_mode = 1
 anchors_preset = -1
-anchor_top = 0.85
+anchor_left = 0.18
+anchor_top = 0.18
+anchor_right = 0.82
+anchor_bottom = 0.82
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("6_opftc")
+expand_mode = 1
+
+[node name="Orange" type="TextureButton" parent="CanvasLayer/CCmenu/VBoxContainer/Appearance/HBoxContainer" groups=["appearenceButtons"]]
+texture_filter = 1
+custom_minimum_size = Vector2(200, 200)
+layout_mode = 2
+theme = ExtResource("2_jb8hu")
+toggle_mode = true
+texture_normal = ExtResource("11_itkfq")
+texture_pressed = ExtResource("12_i2fng")
+texture_hover = ExtResource("13_3cr6v")
+stretch_mode = 0
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer/CCmenu/VBoxContainer/Appearance/HBoxContainer/Orange"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.18
+anchor_top = 0.18
+anchor_right = 0.82
+anchor_bottom = 0.82
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("8_uo287")
+expand_mode = 1
+
+[node name="Pink" type="TextureButton" parent="CanvasLayer/CCmenu/VBoxContainer/Appearance/HBoxContainer" groups=["appearenceButtons"]]
+texture_filter = 1
+custom_minimum_size = Vector2(200, 200)
+layout_mode = 2
+theme = ExtResource("2_jb8hu")
+toggle_mode = true
+texture_normal = ExtResource("11_itkfq")
+texture_pressed = ExtResource("12_i2fng")
+texture_hover = ExtResource("13_3cr6v")
+stretch_mode = 0
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer/CCmenu/VBoxContainer/Appearance/HBoxContainer/Pink"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.18
+anchor_top = 0.18
+anchor_right = 0.82
+anchor_bottom = 0.82
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("9_fxh0o")
+expand_mode = 1
+
+[node name="Blue" type="TextureButton" parent="CanvasLayer/CCmenu/VBoxContainer/Appearance/HBoxContainer" groups=["appearenceButtons"]]
+texture_filter = 1
+custom_minimum_size = Vector2(200, 200)
+layout_mode = 2
+theme = ExtResource("2_jb8hu")
+toggle_mode = true
+texture_normal = ExtResource("11_itkfq")
+texture_pressed = ExtResource("12_i2fng")
+texture_hover = ExtResource("13_3cr6v")
+stretch_mode = 0
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer/CCmenu/VBoxContainer/Appearance/HBoxContainer/Blue"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.18
+anchor_top = 0.18
+anchor_right = 0.82
+anchor_bottom = 0.82
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("7_bddyq")
+expand_mode = 1
+
+[node name="Confirm" type="TextureButton" parent="CanvasLayer/CCmenu"]
+texture_filter = 1
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.435
+anchor_top = 0.884
+anchor_right = 0.565
+anchor_bottom = 0.944
+offset_left = -0.200073
+offset_top = 0.279907
+offset_right = 0.199951
+offset_bottom = 0.479919
+theme = ExtResource("2_jb8hu")
+texture_normal = ExtResource("5_d46lf")
+texture_pressed = ExtResource("6_wk762")
+texture_hover = ExtResource("7_8umw6")
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="CanvasLayer/CCmenu/Confirm"]
+layout_mode = 1
+anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = 800.0
-offset_top = 40.0
-offset_right = -800.0
-offset_bottom = -60.0
 grow_horizontal = 2
-grow_vertical = 0
+grow_vertical = 2
 theme = ExtResource("2_jb8hu")
-theme_override_constants/icon_max_width = 200
+theme_override_colors/font_color = Color(0.0901961, 0.0901961, 0.0941176, 1)
 text = "Confirm"
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [connection signal="pressed" from="CanvasLayer/CCmenu/Confirm" to="." method="on_character_creation_confirm"]

@@ -63,7 +63,7 @@ texture = ExtResource("2_sxoyj")
 wait_time = 5.0
 autostart = true
 
-[node name="backButton" type="TextureButton" parent="UI" groups=["ChapterSelectButtons"]]
+[node name="backButton" type="TextureButton" parent="UI"]
 texture_filter = 1
 custom_minimum_size = Vector2(200, 65)
 anchors_preset = -1
@@ -97,7 +97,6 @@ vertical_alignment = 1
 
 [node name="ScreenTransition" type="CanvasLayer" parent="."]
 layer = 50
-visible = false
 
 [node name="FadeScreen" type="ColorRect" parent="ScreenTransition"]
 self_modulate = Color(1, 1, 1, 0)
