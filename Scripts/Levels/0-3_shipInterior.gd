@@ -16,7 +16,7 @@ var transitionScreen
 var spawnPoints = []
 var cameraPoints = []
 
-var hasPlayerMovedOnce = false
+var hasPlayerMovedOnce = true
 var isPlayerInRange = false
 var hadPlayerTalkedToRoger = false
 var hasPlayerFoundDaria = false
@@ -38,7 +38,9 @@ func _ready():
 	# Gets each cameraPoint in the cameraPoints group
 	for cameraPoint in get_tree().get_nodes_in_group("CameraPoints"):
 		cameraPoints.append(cameraPoint)
-	gameController.triggerDialogue("chapter1", "tutorial1")
+		
+	await gameController.triggerDialogue("chapter1", "tutorial1")
+	
 func _input(event):
 	# Makes WASD prompt disappear after moving
 	if(!hasPlayerMovedOnce):
@@ -48,11 +50,7 @@ func _input(event):
 	
 	# If player interacts with roger
 	if(isPlayerInRange && event.is_action_pressed("interact")):
-		darknessScreen.play("brighten")
-		print("PLAY DIALOGUE WITH ROGER")
-		# FIX DIALOGUE HERE JACOB
 		gameController.triggerDialogue("chapter1", "tutorial2")
-		hadPlayerTalkedToRoger = true
 
 # If player enter roger's module
 func _on_roger_interact_player_enter():
@@ -68,10 +66,7 @@ func _on_roger_interact_player_exit():
 func _on_daria_interact_player_enter():
 	if(!hasPlayerFoundDaria):
 		hasPlayerFoundDaria = true
-		print("PLAY DARIA DIALOGUE HERE")
-		# Add Daria dialogue here
 		gameController.triggerDialogue("chapter1", "tutorial3")
-		darknessScreen.play("darken")
 
 # When the player enter the exit to area 2 in area 1
 func _on_area1_exit(body):

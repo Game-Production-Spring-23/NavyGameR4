@@ -6,9 +6,12 @@ ROGER: Error, Error, system overload. Proceeding to Reboot…... Reboot Complete
 
 ROGER: Designated Ranger, the ships gravity engine malfunctioned. While I run diagnostics, make sure you can move efficiently. We have lots to do!
 do gameController.characterCanMove = true
+do wasdKeyScreen.play("fadein")
+do hasPlayerMovedOnce = false
 => END!
 
 ~ tutorial2
+do darknessScreen.play("brighten")
 ROGER: DIAGNOSTICS COMPLETE. I have bad news Ranger: The ship is totally wrecked, and the radar is…
 
 Ranger: Broken? No problem, I can fix that!
@@ -19,6 +22,8 @@ Ranger: Missing? Unless it fell out of the ship during the crash, it must have b
 
 ROGER: I tried doing that during my diagnostics, but I couldn’t access it. It seems like somebody is messing with my system in the main bay. Let me open the door and you go check it out.
 do gameController.characterCanMove = true
+do hadPlayerTalkedToRoger = true
+
 => END
 ~ tutorial3
 Ranger: ROGER, what is that thing?
@@ -26,11 +31,11 @@ Ranger: ROGER, what is that thing?
 Ranger: Well whatever you are, you must be the one messing with my ship!
 ???: Uh Oh. 
 Ranger: HEY! GET BACK HERE!
+do darknessScreen.play("darken")
 do gameController.characterCanMove = true
 => END!
 # MINIGAME STRUCTURE GOES HERE
-
-
+		
 
 
 

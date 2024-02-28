@@ -287,7 +287,6 @@ texture = ExtResource("7_rprdl")
 libraries = {
 "": SubResource("AnimationLibrary_utwt0")
 }
-autoplay = "fadein"
 
 [node name="FadeScreen" type="ColorRect" parent="CanvasLayer"]
 self_modulate = Color(1, 1, 1, 0)
