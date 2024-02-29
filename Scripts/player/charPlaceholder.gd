@@ -31,7 +31,7 @@ func _physics_process(_delta):
 		update_animation_parameters(input_direction)	
 
 		#update velocity
-		velocity = input_direction * move_speed
+		velocity = input_direction.normalized() * move_speed
 
 		# move and slide
 		move_and_slide()
