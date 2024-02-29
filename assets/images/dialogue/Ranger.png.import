@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://2r1et8s3a0hw"
-path="res://.godot/imported/Ranger.png-680dc1aaddda484ac2fffa0f47831eb7.ctex"
+uid="uid://bcpd1lwsi65hg"
+path="res://.godot/imported/ranger.png-8afe2d03861a54daf8d9a266f8aed916.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/images/dialogue/Ranger.png"
-dest_files=["res://.godot/imported/Ranger.png-680dc1aaddda484ac2fffa0f47831eb7.ctex"]
+source_file="res://assets/images/dialogue/ranger.png"
+dest_files=["res://.godot/imported/ranger.png-8afe2d03861a54daf8d9a266f8aed916.ctex"]
 
 [params]
 
