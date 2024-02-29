@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bcpd1lwsi65hg"
-path="res://.godot/imported/ranger.png-8afe2d03861a54daf8d9a266f8aed916.ctex"
+uid="uid://dcrqalb6cub7i"
+path="res://.godot/imported/rangerLarge.png-ed30bd312754a718fbfe87793712c947.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/images/dialogue/ranger.png"
-dest_files=["res://.godot/imported/ranger.png-8afe2d03861a54daf8d9a266f8aed916.ctex"]
+source_file="res://assets/images/dialogue/rangerLarge.png"
+dest_files=["res://.godot/imported/rangerLarge.png-ed30bd312754a718fbfe87793712c947.ctex"]
 
 [params]
 

@@ -49,9 +49,19 @@ var dialogue_line: DialogueLine:
 		var portrait_name = dialogue_line.character.to_lower();
 
 		if FileAccess.file_exists("res://assets/images/dialogue/"+portrait_name+".png.import"):
-		
-			portrait.texture = load("res://assets/images/dialogue/"+portrait_name+".png")
-			print(portrait.texture)
+			
+			if portrait_name == "ranger":
+				print("NAME" + gameController.player.color)
+				if gameController.player.color == "red":
+					portrait.texture = load("res://assets/images/dialogue/ranger.png")
+				if gameController.player.color == "blue":
+					portrait.texture = load("res://assets/images/dialogue/ranger4.png")
+				if gameController.player.color == "orange":
+					portrait.texture = load("res://assets/images/dialogue/ranger2.png")
+				if gameController.player.color == "pink":
+					portrait.texture = load("res://assets/images/dialogue/ranger3.png")
+			else:
+				portrait.texture = load("res://assets/images/dialogue/"+ portrait_name+".png")
 		else :
 
 			print(portrait_name)
