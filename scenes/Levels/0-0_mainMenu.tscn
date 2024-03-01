@@ -57,6 +57,7 @@ texture = ExtResource("2_l0djt")
 expand_mode = 3
 
 [node name="MainMenuScreen" type="Control" parent="UI"]
+visible = false
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -147,6 +148,7 @@ horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="ChapterSelectScreen" type="Control" parent="UI"]
+visible = false
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -456,10 +458,12 @@ theme_override_styles/slider = SubResource("StyleBoxTexture_teavx")
 
 [node name="HBoxContainer" type="HBoxContainer" parent="UI/OptionsScreen/Options"]
 layout_mode = 2
+theme_override_constants/separation = 37
 
 [node name="Label" type="Label" parent="UI/OptionsScreen/Options/HBoxContainer"]
 layout_mode = 2
 theme = ExtResource("4_vwfj0")
+theme_override_constants/line_spacing = 0
 text = "TEXT SPEED"
 
 [node name="slow" type="TextureButton" parent="UI/OptionsScreen/Options/HBoxContainer"]
