@@ -9,4 +9,5 @@ func _ready():
 		print("body played")
 
 func _on_intro_finished():
+	print("body played")
 	$body.play()
