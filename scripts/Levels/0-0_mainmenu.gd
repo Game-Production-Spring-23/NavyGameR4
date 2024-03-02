@@ -58,8 +58,6 @@ func displayMenuScreen(screenNum):
 
 
 
-func _on_h_slider_value_changed(value):
-	AudioServer.set_bus_volume_db(busIndex,value)
 
 
 func _on_slow_pressed():
@@ -76,3 +74,7 @@ func _on_fast_pressed():
 
 func _on_faster_pressed():
 	gameController.textSpeed = 2
+
+
+func _on_voice_slider_2_value_changed(value):
+	AudioServer.set_bus_volume_db(busIndex,value)
