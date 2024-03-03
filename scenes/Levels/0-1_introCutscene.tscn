@@ -1,11 +1,11 @@
 [gd_scene load_steps=10 format=3 uid="uid://bji5f0h8q1wts"]
 
 [ext_resource type="Script" path="res://scripts/levels/0-1_introCutscene.gd" id="1_8bdlb"]
-[ext_resource type="Texture2D" uid="uid://suwdiqftxil6" path="res://Assets/images/intro-cutscene/slide1.png" id="2_qhyv0"]
-[ext_resource type="Theme" uid="uid://dctbregm4ijln" path="res://Assets/themes/buttonTheme.tres" id="4_6cxa4"]
-[ext_resource type="Texture2D" uid="uid://7mk2r2g22pqx" path="res://Assets/images/ui/button-blank.png" id="5_32b4g"]
-[ext_resource type="Texture2D" uid="uid://b43bp8hdog3co" path="res://Assets/images/ui/button-blank_click.png" id="6_okdq1"]
-[ext_resource type="Texture2D" uid="uid://dqeaxjc3n8x4" path="res://Assets/images/ui/button-blank_hover.png" id="7_1gw8s"]
+[ext_resource type="Texture2D" uid="uid://bxukpb2250tyg" path="res://assets/WIP/slide1.png" id="2_sxoyj"]
+[ext_resource type="Theme" uid="uid://dctbregm4ijln" path="res://assets/themes/buttonTheme.tres" id="4_6cxa4"]
+[ext_resource type="Texture2D" uid="uid://7mk2r2g22pqx" path="res://assets/images/ui/button-blank.png" id="5_32b4g"]
+[ext_resource type="Texture2D" uid="uid://b43bp8hdog3co" path="res://assets/images/ui/button-blank_click.png" id="6_okdq1"]
+[ext_resource type="Texture2D" uid="uid://dqeaxjc3n8x4" path="res://assets/images/ui/button-blank_hover.png" id="7_1gw8s"]
 
 [sub_resource type="Animation" id="Animation_a5gqd"]
 resource_name = "Fade"
@@ -57,7 +57,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("2_qhyv0")
+texture = ExtResource("2_sxoyj")
 
 [node name="Timer" type="Timer" parent="UI"]
 wait_time = 5.0
