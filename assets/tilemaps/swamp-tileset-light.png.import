@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://duhxocbx0oavo"
-path="res://.godot/imported/swamp-tileset-light.png-8c9adca7c11a4306cacfed5916020b1e.ctex"
+path="res://.godot/imported/swamp-tileset-light.png-e7f5b3e8fb0aff37eefafdb2f995b9b9.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/tilemaps/swamp-tileset-light.png"
-dest_files=["res://.godot/imported/swamp-tileset-light.png-8c9adca7c11a4306cacfed5916020b1e.ctex"]
+source_file="res://assets/tilemaps/swamp-tileset-light.png"
+dest_files=["res://.godot/imported/swamp-tileset-light.png-e7f5b3e8fb0aff37eefafdb2f995b9b9.ctex"]
 
 [params]
 

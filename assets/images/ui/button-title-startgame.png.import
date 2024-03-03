@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c50yxy2j5boao"
-path="res://.godot/imported/button-title-startgame.png-1c61a31ef7afe393f07996131d7a2b02.ctex"
+path="res://.godot/imported/button-title-startgame.png-2010b0dc5f8aa97452724af0c1abd12a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/images/ui/button-title-startgame.png"
-dest_files=["res://.godot/imported/button-title-startgame.png-1c61a31ef7afe393f07996131d7a2b02.ctex"]
+source_file="res://assets/images/ui/button-title-startgame.png"
+dest_files=["res://.godot/imported/button-title-startgame.png-2010b0dc5f8aa97452724af0c1abd12a.ctex"]
 
 [params]
 

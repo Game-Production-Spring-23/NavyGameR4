@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dbxk7q15g4pg2"
-path="res://.godot/imported/keyboardprompt-e.png-736e1f519ce199b0d5236ef8ec0cf0c4.ctex"
+path="res://.godot/imported/keyboardprompt-e.png-bf078a1ea31a94f9e8a6be9ac862d4c6.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/images/ui/keyboardprompt-e.png"
-dest_files=["res://.godot/imported/keyboardprompt-e.png-736e1f519ce199b0d5236ef8ec0cf0c4.ctex"]
+source_file="res://assets/images/ui/keyboardprompt-e.png"
+dest_files=["res://.godot/imported/keyboardprompt-e.png-bf078a1ea31a94f9e8a6be9ac862d4c6.ctex"]
 
 [params]
 

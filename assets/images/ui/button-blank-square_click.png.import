@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://jhebylfnm7my"
-path="res://.godot/imported/button-blank-square_click.png-d7f43d7041ced6ac8acc85440bb3bc04.ctex"
+path="res://.godot/imported/button-blank-square_click.png-8fbec25f4cbb4af958970abb1eef37d4.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/images/ui/button-blank-square_click.png"
-dest_files=["res://.godot/imported/button-blank-square_click.png-d7f43d7041ced6ac8acc85440bb3bc04.ctex"]
+source_file="res://assets/images/ui/button-blank-square_click.png"
+dest_files=["res://.godot/imported/button-blank-square_click.png-8fbec25f4cbb4af958970abb1eef37d4.ctex"]
 
 [params]
 

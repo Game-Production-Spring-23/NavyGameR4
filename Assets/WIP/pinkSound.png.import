@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bnxmji1of1ldn"
-path="res://.godot/imported/pinkSound.png-b7c2f01a0bf2c38db144eadd9e19c824.ctex"
+path="res://.godot/imported/pinkSound.png-362bc1d2b34badb4655d113c82e5876d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/WIP/pinkSound.png"
-dest_files=["res://.godot/imported/pinkSound.png-b7c2f01a0bf2c38db144eadd9e19c824.ctex"]
+source_file="res://assets/WIP/pinkSound.png"
+dest_files=["res://.godot/imported/pinkSound.png-362bc1d2b34badb4655d113c82e5876d.ctex"]
 
 [params]
 
