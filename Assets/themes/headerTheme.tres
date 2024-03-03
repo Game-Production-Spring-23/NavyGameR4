@@ -1,7 +1,0 @@
-[gd_resource type="Theme" load_steps=2 format=3 uid="uid://bajr2k60ueqkc"]
-
-[ext_resource type="FontFile" uid="uid://bgsxfdq87axtb" path="res://assets/fonts/PixeloidSans-mLxMm.ttf" id="1_b65ny"]
-
-[resource]
-default_font = ExtResource("1_b65ny")
-default_font_size = 64
