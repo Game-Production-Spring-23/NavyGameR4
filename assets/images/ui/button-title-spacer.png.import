@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cvmto8a15cpcn"
-path="res://.godot/imported/button-title-spacer.png-e6b1fcb0653bdf2a5866fd48d5cfd9a2.ctex"
+path="res://.godot/imported/button-title-spacer.png-a6fc51f76a3f6de1ce1eb9f00bbd5051.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/images/ui/button-title-spacer.png"
-dest_files=["res://.godot/imported/button-title-spacer.png-e6b1fcb0653bdf2a5866fd48d5cfd9a2.ctex"]
+source_file="res://assets/images/ui/button-title-spacer.png"
+dest_files=["res://.godot/imported/button-title-spacer.png-a6fc51f76a3f6de1ce1eb9f00bbd5051.ctex"]
 
 [params]
 

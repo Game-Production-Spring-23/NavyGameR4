@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dtx3b4a5hvhf0"
-path="res://.godot/imported/daria.png-85b12eaa0c8444b1aff3b3ebc55bd6d8.ctex"
+path="res://.godot/imported/daria.png-41f8765674f3f2505b92a0f68d38be26.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/images/dialogue/daria.png"
-dest_files=["res://.godot/imported/daria.png-85b12eaa0c8444b1aff3b3ebc55bd6d8.ctex"]
+source_file="res://assets/images/dialogue/daria.png"
+dest_files=["res://.godot/imported/daria.png-41f8765674f3f2505b92a0f68d38be26.ctex"]
 
 [params]
 

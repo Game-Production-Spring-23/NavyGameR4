@@ -3,12 +3,12 @@
 importer="font_data_dynamic"
 type="FontFile"
 uid="uid://blpf7l45pndyk"
-path="res://.godot/imported/Retro Gaming.ttf-0fd9d2a9605a2ba77b1ec4b612ee2d75.fontdata"
+path="res://.godot/imported/Retro Gaming.ttf-7ea05d60dde1dd26db0e8ab6d3ff7f64.fontdata"
 
 [deps]
 
-source_file="res://Assets/fonts/Retro Gaming.ttf"
-dest_files=["res://.godot/imported/Retro Gaming.ttf-0fd9d2a9605a2ba77b1ec4b612ee2d75.fontdata"]
+source_file="res://assets/fonts/Retro Gaming.ttf"
+dest_files=["res://.godot/imported/Retro Gaming.ttf-7ea05d60dde1dd26db0e8ab6d3ff7f64.fontdata"]
 
 [params]
 
