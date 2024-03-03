@@ -28,7 +28,7 @@ func _on_timer_timeout():
 	if (slide == 1):
 		animationPlayer.play("Fade")
 		await animationPlayer.animation_finished
-		textureRect.texture = load("res://assets/WIP/slide2.png")
+		textureRect.texture = load("res://assets/images/intro-cutscene/introSlide2.png")
 		animationPlayer.play_backwards("Fade")
 		slide = 2
 		timer.start()

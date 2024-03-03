@@ -1,9 +1,9 @@
 [gd_scene load_steps=18 format=3 uid="uid://fopof7how"]
 
 [ext_resource type="Script" path="res://scripts/levels/0-2_characterCreation.gd" id="1_tuaof"]
-[ext_resource type="Theme" uid="uid://dctbregm4ijln" path="res://assets/themes/buttonTheme.tres" id="2_jb8hu"]
+[ext_resource type="Theme" uid="uid://bb1avbfrqtssf" path="res://assets/themes/buttonTheme.tres" id="2_jb8hu"]
 [ext_resource type="Texture2D" uid="uid://buhk2xbj1mu3i" path="res://assets/images/background/titlescreen-background_mockup.png" id="2_x1a2d"]
-[ext_resource type="Theme" uid="uid://bajr2k60ueqkc" path="res://assets/themes/headerTheme.tres" id="2_xsp0k"]
+[ext_resource type="Theme" uid="uid://di7hhhkbeix4p" path="res://assets/themes/headerTheme.tres" id="2_xsp0k"]
 [ext_resource type="Theme" uid="uid://dvij0s1xehu3a" path="res://assets/themes/subheaderTheme.tres" id="4_e71pu"]
 [ext_resource type="Texture2D" uid="uid://bnxmji1of1ldn" path="res://assets/WIP/pinkSound.png" id="4_jy5lg"]
 [ext_resource type="Texture2D" uid="uid://7mk2r2g22pqx" path="res://assets/images/ui/button-blank.png" id="5_d46lf"]
