@@ -1,7 +1,7 @@
 extends Node
 #Variable to define the textSpeed.
 var textSpeed = 1
-var player = null #player object is set after the character creation scene is finished
+@onready var player = oPlayer.new(["she", "her", "hers"], "voice1", "orange")
 var characterCanMove = true
 @onready var animationPlayer = $ScreenTransition/FadeScreen/AnimationPlayer
 
