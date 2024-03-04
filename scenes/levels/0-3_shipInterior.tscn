@@ -1,4 +1,4 @@
-[gd_scene load_steps=26 format=3 uid="uid://cyvlfaiags34j"]
+[gd_scene load_steps=26 format=3 uid="uid://bgfkk68d7c4op"]
 
 [ext_resource type="Texture2D" uid="uid://dhxovq701roxb" path="res://assets/images/wip/placeholderTiles.png" id="1_0rfw7"]
 [ext_resource type="Script" path="res://scripts/levels/0-3_shipInterior.gd" id="1_uhbjv"]
