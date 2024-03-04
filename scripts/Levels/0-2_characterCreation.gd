@@ -67,8 +67,10 @@ func on_voice_button_pressed(button_pressed):
 
 	# Sets the player's voice
 	if(button_pressed.name == "Voice1"): # Sets voice to voice 1
+		gameController.playSound("res://assets/audio/sfx/F_Ranger_Hey3.ogg")
 		voice = "voice1"
 	elif(button_pressed.name == "Voice2"): # Sets voice to voice 2
+		gameController.playSound("res://assets/audio/sfx/M_Ranger_Hey3.ogg")
 		voice = "voice2"
 	else:
 		print(button_pressed.name)
