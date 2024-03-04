@@ -1,0 +1,610 @@
+[gd_scene load_steps=28 format=3 uid="uid://bih6j6sulhe0p"]
+
+[ext_resource type="Script" path="res://scripts/levels/0-0_mainmenu.gd" id="1_iq5kt"]
+[ext_resource type="Texture2D" uid="uid://bl2a1xch1k2ou" path="res://assets/images/background/background-scrolling-stars.png" id="2_i3icy"]
+[ext_resource type="Texture2D" uid="uid://b4eh0x4b0j50m" path="res://assets/images/background/planet-125x.png" id="3_7eb7c"]
+[ext_resource type="Texture2D" uid="uid://lsbltly2fte4" path="res://assets/images/logo-title.png" id="3_anhmo"]
+[ext_resource type="Texture2D" uid="uid://qo0lhbojoqwa" path="res://assets/images/background/intro-ship.png" id="4_14tds"]
+[ext_resource type="Theme" uid="uid://dctbregm4ijln" path="res://assets/themes/buttonTheme.tres" id="4_vwfj0"]
+[ext_resource type="Texture2D" uid="uid://c50yxy2j5boao" path="res://assets/images/ui/button-title-startgame.png" id="5_ufgvl"]
+[ext_resource type="Texture2D" uid="uid://cemds52bl6u3e" path="res://assets/images/ui/button-title-startgame_click.png" id="6_f2ojj"]
+[ext_resource type="Texture2D" uid="uid://ba8b2t6ndbtsr" path="res://assets/images/ui/button-title-startgame_hover.png" id="7_np1f0"]
+[ext_resource type="Texture2D" uid="uid://csuugac2jm1fn" path="res://assets/images/ui/button-title-chapterselect.png" id="8_sq7kp"]
+[ext_resource type="Texture2D" uid="uid://bulipucm08v8b" path="res://assets/images/ui/button-title-chapterselect_click.png" id="9_rgud4"]
+[ext_resource type="Texture2D" uid="uid://b4thc2ihpcahi" path="res://assets/images/ui/button-title-chapterselect_hover.png" id="10_k63ed"]
+[ext_resource type="Texture2D" uid="uid://cy4l4jid6x21y" path="res://assets/images/ui/button-title-options.png" id="11_fov88"]
+[ext_resource type="Texture2D" uid="uid://c6k4e8ravig6l" path="res://assets/images/ui/button-title-options_click.png" id="12_ld63y"]
+[ext_resource type="Texture2D" uid="uid://dpmcu6xvkl31n" path="res://assets/images/ui/button-title-options_hover.png" id="13_pyksp"]
+[ext_resource type="Texture2D" uid="uid://cvmto8a15cpcn" path="res://assets/images/ui/button-title-spacer.png" id="14_sjpqd"]
+[ext_resource type="Texture2D" uid="uid://cgds6skcbcsft" path="res://assets/images/ui/button-title-spacer_click.png" id="15_0hcvh"]
+[ext_resource type="Texture2D" uid="uid://btr2mf2sd8bq4" path="res://assets/images/ui/button-title-spacer_hover.png" id="16_noe6n"]
+[ext_resource type="FontFile" uid="uid://bgsxfdq87axtb" path="res://assets/fonts/PixeloidSans-mLxMm.ttf" id="17_moymb"]
+[ext_resource type="Texture2D" uid="uid://7mk2r2g22pqx" path="res://assets/images/ui/button-blank.png" id="18_vfvdr"]
+[ext_resource type="Texture2D" uid="uid://b43bp8hdog3co" path="res://assets/images/ui/button-blank_click.png" id="19_4umo7"]
+[ext_resource type="Texture2D" uid="uid://dqeaxjc3n8x4" path="res://assets/images/ui/button-blank_hover.png" id="20_02m45"]
+[ext_resource type="Texture2D" uid="uid://blg43rixug03d" path="res://assets/images/ui/slidertoggleFINAL.png" id="21_esw23"]
+[ext_resource type="Texture2D" uid="uid://dkvoscquy0dvv" path="res://assets/images/ui/SliderFINAL.png" id="22_mipwb"]
+
+[sub_resource type="Theme" id="Theme_g8onr"]
+default_font = ExtResource("17_moymb")
+default_font_size = 64
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_fompn"]
+texture = ExtResource("22_mipwb")
+texture_margin_left = 20.0
+texture_margin_right = 28.0
+expand_margin_top = 30.0
+expand_margin_bottom = 30.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_teavx"]
+texture = ExtResource("22_mipwb")
+texture_margin_left = 17.0
+texture_margin_right = 17.0
+expand_margin_top = 30.0
+expand_margin_bottom = 30.0
+
+[node name="mainMenu" type="Node2D"]
+texture_filter = 1
+script = ExtResource("1_iq5kt")
+metadata/_edit_vertical_guides_ = [-145.0]
+
+[node name="UI" type="CanvasLayer" parent="."]
+
+[node name="BackgroundTexture" type="TextureRect" parent="UI"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_i3icy")
+expand_mode = 3
+
+[node name="BackgroundTexture" type="TextureRect" parent="UI/BackgroundTexture"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 59.0
+offset_top = 527.0
+offset_right = -1235.0
+offset_bottom = 73.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("3_7eb7c")
+
+[node name="BackgroundTexture2" type="TextureRect" parent="UI/BackgroundTexture"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 1295.0
+offset_top = 306.0
+offset_right = 92.0
+offset_bottom = -371.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("4_14tds")
+
+[node name="MainMenuScreen" type="Control" parent="UI"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Title" type="TextureRect" parent="UI/MainMenuScreen"]
+texture_filter = 1
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 0.35
+offset_left = 500.0
+offset_top = 125.0
+offset_right = -500.0
+offset_bottom = 0.199997
+texture = ExtResource("3_anhmo")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="UI/MainMenuScreen"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.425
+anchor_top = 0.5
+anchor_right = 0.575
+anchor_bottom = 0.85
+offset_right = -0.00012207
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_constants/separation = 25
+alignment = 1
+
+[node name="startButton" type="TextureButton" parent="UI/MainMenuScreen/VBoxContainer" groups=["ChapterSelectButtons"]]
+texture_filter = 1
+custom_minimum_size = Vector2(0, 65)
+layout_mode = 2
+theme = ExtResource("4_vwfj0")
+texture_normal = ExtResource("5_ufgvl")
+texture_pressed = ExtResource("6_f2ojj")
+texture_hover = ExtResource("7_np1f0")
+stretch_mode = 0
+
+[node name="chapterSelectButton" type="TextureButton" parent="UI/MainMenuScreen/VBoxContainer" groups=["ChapterSelectButtons"]]
+texture_filter = 1
+custom_minimum_size = Vector2(0, 65)
+layout_mode = 2
+theme = ExtResource("4_vwfj0")
+texture_normal = ExtResource("8_sq7kp")
+texture_pressed = ExtResource("9_rgud4")
+texture_hover = ExtResource("10_k63ed")
+stretch_mode = 0
+
+[node name="optionButton" type="TextureButton" parent="UI/MainMenuScreen/VBoxContainer" groups=["ChapterSelectButtons"]]
+texture_filter = 1
+custom_minimum_size = Vector2(0, 65)
+layout_mode = 2
+theme = ExtResource("4_vwfj0")
+texture_normal = ExtResource("11_fov88")
+texture_pressed = ExtResource("12_ld63y")
+texture_hover = ExtResource("13_pyksp")
+stretch_mode = 0
+
+[node name="endButton" type="TextureButton" parent="UI/MainMenuScreen/VBoxContainer" groups=["ChapterSelectButtons"]]
+texture_filter = 1
+custom_minimum_size = Vector2(0, 65)
+layout_mode = 2
+theme = ExtResource("4_vwfj0")
+texture_normal = ExtResource("14_sjpqd")
+texture_pressed = ExtResource("15_0hcvh")
+texture_hover = ExtResource("16_noe6n")
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="UI/MainMenuScreen/VBoxContainer/endButton"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.035
+anchor_top = 0.092
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -0.0799999
+offset_top = 0.0199995
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("4_vwfj0")
+theme_override_colors/font_color = Color(0.0901961, 0.0901961, 0.0941176, 1)
+text = "EXiT"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ChapterSelectScreen" type="Control" parent="UI"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Title" type="Label" parent="UI/ChapterSelectScreen"]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 0.4
+grow_horizontal = 2
+theme = SubResource("Theme_g8onr")
+text = "Chapter Select
+"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Chapters" type="VBoxContainer" parent="UI/ChapterSelectScreen"]
+layout_mode = 1
+anchors_preset = -1
+anchor_top = 0.4
+anchor_right = 1.0
+anchor_bottom = 0.8
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 75
+alignment = 1
+
+[node name="Row" type="HBoxContainer" parent="UI/ChapterSelectScreen/Chapters"]
+layout_mode = 2
+theme_override_constants/separation = 75
+alignment = 1
+
+[node name="swampDarra" type="TextureButton" parent="UI/ChapterSelectScreen/Chapters/Row" groups=["ChapterSelectButtons"]]
+texture_filter = 1
+custom_minimum_size = Vector2(400, 65)
+layout_mode = 2
+theme = ExtResource("4_vwfj0")
+texture_normal = ExtResource("18_vfvdr")
+texture_pressed = ExtResource("19_4umo7")
+texture_hover = ExtResource("20_02m45")
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="UI/ChapterSelectScreen/Chapters/Row/swampDarra"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.035
+anchor_top = 0.092
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -0.0799999
+offset_top = 0.0199995
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("4_vwfj0")
+theme_override_colors/font_color = Color(0.0901961, 0.0901961, 0.0941176, 1)
+text = "Swamp of Darra"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="plainTrolonc" type="TextureButton" parent="UI/ChapterSelectScreen/Chapters/Row" groups=["ChapterSelectButtons"]]
+texture_filter = 1
+custom_minimum_size = Vector2(400, 65)
+layout_mode = 2
+theme = ExtResource("4_vwfj0")
+texture_normal = ExtResource("18_vfvdr")
+texture_pressed = ExtResource("19_4umo7")
+texture_hover = ExtResource("20_02m45")
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="UI/ChapterSelectScreen/Chapters/Row/plainTrolonc"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.035
+anchor_top = 0.092
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -0.0799999
+offset_top = 0.0199995
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("4_vwfj0")
+theme_override_colors/font_color = Color(0.0901961, 0.0901961, 0.0941176, 1)
+text = "Plains of Trolonc"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="mtTenanan" type="TextureButton" parent="UI/ChapterSelectScreen/Chapters/Row" groups=["ChapterSelectButtons"]]
+texture_filter = 1
+custom_minimum_size = Vector2(400, 65)
+layout_mode = 2
+theme = ExtResource("4_vwfj0")
+texture_normal = ExtResource("18_vfvdr")
+texture_pressed = ExtResource("19_4umo7")
+texture_hover = ExtResource("20_02m45")
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="UI/ChapterSelectScreen/Chapters/Row/mtTenanan"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.035
+anchor_top = 0.092
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -0.0799999
+offset_top = 0.0199995
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("4_vwfj0")
+theme_override_colors/font_color = Color(0.0901961, 0.0901961, 0.0941176, 1)
+text = "Mt. Tenanan"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Row2" type="HBoxContainer" parent="UI/ChapterSelectScreen/Chapters"]
+layout_mode = 2
+theme_override_constants/separation = 75
+alignment = 1
+
+[node name="desertSceivnarter" type="TextureButton" parent="UI/ChapterSelectScreen/Chapters/Row2" groups=["ChapterSelectButtons"]]
+texture_filter = 1
+custom_minimum_size = Vector2(500, 65)
+layout_mode = 2
+theme = ExtResource("4_vwfj0")
+texture_normal = ExtResource("18_vfvdr")
+texture_pressed = ExtResource("19_4umo7")
+texture_hover = ExtResource("20_02m45")
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="UI/ChapterSelectScreen/Chapters/Row2/desertSceivnarter"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.035
+anchor_top = 0.092
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -0.0799999
+offset_top = 0.0199995
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("4_vwfj0")
+theme_override_colors/font_color = Color(0.0901961, 0.0901961, 0.0941176, 1)
+text = "Desert of Sceivnarter"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="lagnisOcean" type="TextureButton" parent="UI/ChapterSelectScreen/Chapters/Row2" groups=["ChapterSelectButtons"]]
+texture_filter = 1
+custom_minimum_size = Vector2(400, 65)
+layout_mode = 2
+theme = ExtResource("4_vwfj0")
+texture_normal = ExtResource("18_vfvdr")
+texture_pressed = ExtResource("19_4umo7")
+texture_hover = ExtResource("20_02m45")
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="UI/ChapterSelectScreen/Chapters/Row2/lagnisOcean"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.035
+anchor_top = 0.092
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -0.0799999
+offset_top = 0.0199995
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("4_vwfj0")
+theme_override_colors/font_color = Color(0.0901961, 0.0901961, 0.0941176, 1)
+text = "Lagnis Ocean"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="yaplisdapolis" type="TextureButton" parent="UI/ChapterSelectScreen/Chapters/Row2" groups=["ChapterSelectButtons"]]
+texture_filter = 1
+custom_minimum_size = Vector2(400, 65)
+layout_mode = 2
+theme = ExtResource("4_vwfj0")
+texture_normal = ExtResource("18_vfvdr")
+texture_pressed = ExtResource("19_4umo7")
+texture_hover = ExtResource("20_02m45")
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="UI/ChapterSelectScreen/Chapters/Row2/yaplisdapolis"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.035
+anchor_top = 0.092
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -0.0799999
+offset_top = 0.0199995
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("4_vwfj0")
+theme_override_colors/font_color = Color(0.0901961, 0.0901961, 0.0941176, 1)
+text = "Yaplisdapolis"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="backButton" type="TextureButton" parent="UI/ChapterSelectScreen" groups=["ChapterSelectButtons"]]
+texture_filter = 1
+custom_minimum_size = Vector2(400, 65)
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.081
+anchor_top = 0.886
+anchor_right = 0.289
+anchor_bottom = 0.946
+offset_left = -0.520004
+offset_top = 0.119934
+offset_right = 0.119995
+offset_bottom = 0.319946
+theme = ExtResource("4_vwfj0")
+texture_normal = ExtResource("18_vfvdr")
+texture_pressed = ExtResource("19_4umo7")
+texture_hover = ExtResource("20_02m45")
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="UI/ChapterSelectScreen/backButton"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.035
+anchor_top = 0.092
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -0.0799999
+offset_top = 0.0199995
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("4_vwfj0")
+theme_override_colors/font_color = Color(0.0901961, 0.0901961, 0.0941176, 1)
+text = "Back to Main Menu"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="OptionsScreen" type="Control" parent="UI"]
+texture_filter = 1
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 1.0
+offset_top = -11.0
+offset_right = 1.0
+offset_bottom = -11.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Title" type="Label" parent="UI/OptionsScreen"]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 0.4
+offset_left = -2.0
+offset_top = -3.0
+offset_bottom = -203.0
+grow_horizontal = 2
+theme = SubResource("Theme_g8onr")
+text = "Options"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Options" type="VBoxContainer" parent="UI/OptionsScreen"]
+texture_filter = 1
+layout_mode = 1
+anchors_preset = -1
+anchor_top = 0.4
+anchor_right = 1.0
+anchor_bottom = 0.8
+offset_left = 511.0
+offset_top = -92.0
+offset_right = -533.0
+offset_bottom = -92.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 75
+alignment = 1
+
+[node name="MusicVolume" type="Label" parent="UI/OptionsScreen/Options"]
+layout_mode = 2
+theme = ExtResource("4_vwfj0")
+text = "Music Volume"
+horizontal_alignment = 1
+
+[node name="VoiceSlider2" type="HSlider" parent="UI/OptionsScreen/Options"]
+texture_filter = 1
+layout_mode = 2
+theme_override_icons/grabber = ExtResource("21_esw23")
+theme_override_icons/grabber_highlight = ExtResource("21_esw23")
+theme_override_styles/slider = SubResource("StyleBoxTexture_fompn")
+min_value = -50.0
+max_value = 0.0
+
+[node name="VoiceVolume" type="Label" parent="UI/OptionsScreen/Options"]
+layout_mode = 2
+theme = ExtResource("4_vwfj0")
+text = "Voice Volume"
+horizontal_alignment = 1
+
+[node name="VoiceSlider" type="HSlider" parent="UI/OptionsScreen/Options"]
+texture_filter = 1
+layout_mode = 2
+theme_override_icons/grabber = ExtResource("21_esw23")
+theme_override_icons/grabber_highlight = ExtResource("21_esw23")
+theme_override_styles/slider = SubResource("StyleBoxTexture_teavx")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="UI/OptionsScreen/Options"]
+layout_mode = 2
+theme_override_constants/separation = 37
+
+[node name="Label" type="Label" parent="UI/OptionsScreen/Options/HBoxContainer"]
+layout_mode = 2
+theme = ExtResource("4_vwfj0")
+theme_override_constants/line_spacing = 0
+text = "TEXT SPEED"
+
+[node name="slow" type="TextureButton" parent="UI/OptionsScreen/Options/HBoxContainer"]
+custom_minimum_size = Vector2(114, 44)
+layout_mode = 2
+texture_normal = ExtResource("18_vfvdr")
+texture_pressed = ExtResource("19_4umo7")
+texture_hover = ExtResource("20_02m45")
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="UI/OptionsScreen/Options/HBoxContainer/slow"]
+layout_mode = 0
+offset_left = 13.0
+offset_top = 6.0
+offset_right = 142.0
+offset_bottom = 42.0
+theme = ExtResource("4_vwfj0")
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "SLOW"
+
+[node name="normal" type="TextureButton" parent="UI/OptionsScreen/Options/HBoxContainer"]
+custom_minimum_size = Vector2(156, 44)
+layout_mode = 2
+texture_normal = ExtResource("18_vfvdr")
+texture_pressed = ExtResource("19_4umo7")
+texture_hover = ExtResource("20_02m45")
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="UI/OptionsScreen/Options/HBoxContainer/normal"]
+layout_mode = 0
+offset_left = 13.0
+offset_top = 6.0
+offset_right = 142.0
+offset_bottom = 42.0
+theme = ExtResource("4_vwfj0")
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "NORMAL"
+
+[node name="fast" type="TextureButton" parent="UI/OptionsScreen/Options/HBoxContainer"]
+custom_minimum_size = Vector2(113, 44)
+layout_mode = 2
+texture_normal = ExtResource("18_vfvdr")
+texture_pressed = ExtResource("19_4umo7")
+texture_hover = ExtResource("20_02m45")
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="UI/OptionsScreen/Options/HBoxContainer/fast"]
+layout_mode = 0
+offset_left = 13.0
+offset_top = 6.0
+offset_right = 142.0
+offset_bottom = 42.0
+theme = ExtResource("4_vwfj0")
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "FAST"
+
+[node name="faster" type="TextureButton" parent="UI/OptionsScreen/Options/HBoxContainer"]
+custom_minimum_size = Vector2(156, 44)
+layout_mode = 2
+texture_normal = ExtResource("18_vfvdr")
+texture_pressed = ExtResource("19_4umo7")
+texture_hover = ExtResource("20_02m45")
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="UI/OptionsScreen/Options/HBoxContainer/faster"]
+layout_mode = 0
+offset_left = 13.0
+offset_top = 6.0
+offset_right = 142.0
+offset_bottom = 42.0
+theme = ExtResource("4_vwfj0")
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "FASTER"
+
+[node name="backButton" type="TextureButton" parent="UI/OptionsScreen" groups=["ChapterSelectButtons"]]
+texture_filter = 1
+custom_minimum_size = Vector2(400, 65)
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.081
+anchor_top = 0.886
+anchor_right = 0.289
+anchor_bottom = 0.946
+offset_left = -0.520004
+offset_top = 0.119934
+offset_right = 0.119995
+offset_bottom = 0.319946
+theme = ExtResource("4_vwfj0")
+texture_normal = ExtResource("18_vfvdr")
+texture_pressed = ExtResource("19_4umo7")
+texture_hover = ExtResource("20_02m45")
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="UI/OptionsScreen/backButton"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.035
+anchor_top = 0.092
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -0.0799999
+offset_top = 0.0199995
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("4_vwfj0")
+theme_override_colors/font_color = Color(0.0901961, 0.0901961, 0.0941176, 1)
+text = "Back to Main Menu"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[connection signal="value_changed" from="UI/OptionsScreen/Options/VoiceSlider2" to="." method="_on_voice_slider_2_value_changed"]
+[connection signal="pressed" from="UI/OptionsScreen/Options/HBoxContainer/slow" to="." method="_on_slow_pressed"]
+[connection signal="pressed" from="UI/OptionsScreen/Options/HBoxContainer/normal" to="." method="_on_normal_pressed"]
+[connection signal="pressed" from="UI/OptionsScreen/Options/HBoxContainer/fast" to="." method="_on_fast_pressed"]
+[connection signal="pressed" from="UI/OptionsScreen/Options/HBoxContainer/faster" to="." method="_on_faster_pressed"]
