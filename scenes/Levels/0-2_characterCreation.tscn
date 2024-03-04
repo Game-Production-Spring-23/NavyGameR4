@@ -15,9 +15,9 @@
 [ext_resource type="Texture2D" uid="uid://11ot7gebvpu0" path="res://assets/images/ui/button-blank-square.png" id="11_itkfq"]
 [ext_resource type="Texture2D" uid="uid://jhebylfnm7my" path="res://assets/images/ui/button-blank-square_click.png" id="12_i2fng"]
 [ext_resource type="Texture2D" uid="uid://de0xl057ghfw2" path="res://assets/images/ui/button-blank-square_hover.png" id="13_3cr6v"]
-[ext_resource type="Texture2D" uid="uid://3cqv4y4t2gvx" path="res://assets/images/ui/player-walkall-icon.png" id="14_86sub"]
 [ext_resource type="Texture2D" uid="uid://d3ixkuct6ap1" path="res://assets/images/ui/player-walkall-blue-icon.png" id="15_f1ht5"]
 [ext_resource type="Texture2D" uid="uid://l840sd6uv3jg" path="res://assets/images/ui/player-walkall-pink-icon.png" id="16_mis3c"]
+[ext_resource type="Texture2D" uid="uid://fkr8bklx85lp" path="res://assets/images/ui/player-walkall-red-icon.png" id="17_epolg"]
 [ext_resource type="Texture2D" uid="uid://2gtffj73yphy" path="res://assets/images/ui/player-walkall-purple-icon.png" id="17_r8kqx"]
 
 [node name="CharacterCreation" type="Node2D"]
@@ -250,30 +250,6 @@ text = "Appearance"
 layout_mode = 2
 theme_override_constants/separation = 35
 
-[node name="Red" type="TextureButton" parent="CanvasLayer/CCmenu/VBoxContainer/Appearance/HBoxContainer" groups=["appearenceButtons"]]
-texture_filter = 1
-custom_minimum_size = Vector2(200, 200)
-layout_mode = 2
-theme = ExtResource("2_jb8hu")
-toggle_mode = true
-texture_normal = ExtResource("11_itkfq")
-texture_pressed = ExtResource("12_i2fng")
-texture_hover = ExtResource("13_3cr6v")
-stretch_mode = 0
-
-[node name="TextureRect" type="TextureRect" parent="CanvasLayer/CCmenu/VBoxContainer/Appearance/HBoxContainer/Red"]
-layout_mode = 1
-anchors_preset = -1
-anchor_left = 0.285
-anchor_top = 0.17
-anchor_right = 0.715
-anchor_bottom = 0.835
-grow_horizontal = 2
-grow_vertical = 2
-texture = ExtResource("14_86sub")
-expand_mode = 1
-stretch_mode = 4
-
 [node name="Orange" type="TextureButton" parent="CanvasLayer/CCmenu/VBoxContainer/Appearance/HBoxContainer" groups=["appearenceButtons"]]
 texture_filter = 1
 custom_minimum_size = Vector2(200, 200)
@@ -294,7 +270,31 @@ anchor_right = 0.715
 anchor_bottom = 0.835
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("16_mis3c")
+texture = ExtResource("17_r8kqx")
+expand_mode = 1
+stretch_mode = 4
+
+[node name="Red" type="TextureButton" parent="CanvasLayer/CCmenu/VBoxContainer/Appearance/HBoxContainer" groups=["appearenceButtons"]]
+texture_filter = 1
+custom_minimum_size = Vector2(200, 200)
+layout_mode = 2
+theme = ExtResource("2_jb8hu")
+toggle_mode = true
+texture_normal = ExtResource("11_itkfq")
+texture_pressed = ExtResource("12_i2fng")
+texture_hover = ExtResource("13_3cr6v")
+stretch_mode = 0
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer/CCmenu/VBoxContainer/Appearance/HBoxContainer/Red"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.285
+anchor_top = 0.17
+anchor_right = 0.715
+anchor_bottom = 0.835
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("17_epolg")
 expand_mode = 1
 stretch_mode = 4
 
@@ -318,7 +318,7 @@ anchor_right = 0.715
 anchor_bottom = 0.835
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("17_r8kqx")
+texture = ExtResource("16_mis3c")
 expand_mode = 1
 stretch_mode = 4
 

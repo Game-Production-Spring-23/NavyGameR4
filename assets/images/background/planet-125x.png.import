@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b4eh0x4b0j50m"
-path="res://.godot/imported/planet-125x.png-d63c3e73be16295dc8e16359063c972c.ctex"
+path="res://.godot/imported/planet-125x.png-55026c9ee41931788f5167ac86b3795f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/images/background/planet-125x.png"
-dest_files=["res://.godot/imported/planet-125x.png-d63c3e73be16295dc8e16359063c972c.ctex"]
+source_file="res://assets/images/background/planet-125x.png"
+dest_files=["res://.godot/imported/planet-125x.png-55026c9ee41931788f5167ac86b3795f.ctex"]
 
 [params]
 
