@@ -1,14 +1,15 @@
-[gd_scene load_steps=19 format=3 uid="uid://dwcmd82u8nbk3"]
+[gd_scene load_steps=20 format=3 uid="uid://fopof7how"]
 
 [ext_resource type="Script" path="res://scripts/levels/0-2_characterCreation.gd" id="1_tuaof"]
 [ext_resource type="Texture2D" uid="uid://bl2a1xch1k2ou" path="res://assets/images/background/background-scrolling-stars.png" id="2_54y8g"]
 [ext_resource type="Theme" uid="uid://dctbregm4ijln" path="res://assets/themes/buttonTheme.tres" id="2_jb8hu"]
 [ext_resource type="Theme" uid="uid://bajr2k60ueqkc" path="res://assets/themes/headerTheme.tres" id="2_xsp0k"]
 [ext_resource type="Texture2D" uid="uid://b4eh0x4b0j50m" path="res://assets/images/background/planet-125x.png" id="3_tqb04"]
+[ext_resource type="Texture2D" uid="uid://qo0lhbojoqwa" path="res://assets/images/background/intro-ship.png" id="4_2y3en"]
 [ext_resource type="Theme" uid="uid://dvij0s1xehu3a" path="res://assets/themes/subheaderTheme.tres" id="4_e71pu"]
-[ext_resource type="Texture2D" uid="uid://bnxmji1of1ldn" path="res://assets/images/wip/pinkSound.png" id="4_jy5lg"]
+[ext_resource type="Texture2D" uid="uid://bnxmji1of1ldn" path="res://assets/WIP/pinkSound.png" id="4_jy5lg"]
 [ext_resource type="Texture2D" uid="uid://7mk2r2g22pqx" path="res://assets/images/ui/button-blank.png" id="5_d46lf"]
-[ext_resource type="Texture2D" uid="uid://vlq0qaph53ek" path="res://assets/images/wip/blueSound.png" id="5_dmrhp"]
+[ext_resource type="Texture2D" uid="uid://vlq0qaph53ek" path="res://assets/WIP/blueSound.png" id="5_dmrhp"]
 [ext_resource type="Texture2D" uid="uid://b43bp8hdog3co" path="res://assets/images/ui/button-blank_click.png" id="6_wk762"]
 [ext_resource type="Texture2D" uid="uid://dqeaxjc3n8x4" path="res://assets/images/ui/button-blank_hover.png" id="7_8umw6"]
 [ext_resource type="Texture2D" uid="uid://11ot7gebvpu0" path="res://assets/images/ui/button-blank-square.png" id="11_itkfq"]
@@ -39,12 +40,25 @@ anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 offset_left = 59.0
-offset_top = 741.0
-offset_right = -1449.0
+offset_top = 527.0
+offset_right = -1235.0
 offset_bottom = 73.0
 grow_horizontal = 2
 grow_vertical = 2
 texture = ExtResource("3_tqb04")
+
+[node name="BackgroundTexture2" type="TextureRect" parent="CanvasLayer/BackgroundTexture"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 1295.0
+offset_top = 306.0
+offset_right = 92.0
+offset_bottom = -371.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("4_2y3en")
 
 [node name="CCmenu" type="Control" parent="CanvasLayer"]
 layout_mode = 3
