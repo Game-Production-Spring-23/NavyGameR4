@@ -32,6 +32,7 @@ func _on_timer_timeout():
 		animationPlayer.play_backwards("Fade")
 		slide = 2
 		timer.start()
+		gameController.playSound("res://assets/audio/sfx/explosion.ogg")
 	else:
 		gameController.changeScene("0-2_characterCreation", "res://assets/audio/music/menu-theme-intro.ogg", "res://assets/audio/music/menu-theme-body.ogg")
 
