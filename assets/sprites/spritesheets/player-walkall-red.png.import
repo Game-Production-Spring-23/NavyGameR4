@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://d0x6a0wyxqsjl"
-path="res://.godot/imported/player-walkall-red.png-b45b4153c6e1f53a07098aa536fe99db.ctex"
+path="res://.godot/imported/player-walkall-red.png-8c7dcc702503561090b4815a8db8a091.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/spritesheets/player-walkall-red.png"
-dest_files=["res://.godot/imported/player-walkall-red.png-b45b4153c6e1f53a07098aa536fe99db.ctex"]
+source_file="res://Assets/sprites/spritesheets/player-walkall-red.png"
+dest_files=["res://.godot/imported/player-walkall-red.png-8c7dcc702503561090b4815a8db8a091.ctex"]
 
 [params]
 

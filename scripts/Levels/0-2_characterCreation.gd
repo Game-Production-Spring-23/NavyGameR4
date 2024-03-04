@@ -59,7 +59,7 @@ func on_pronoun_button_pressed(button_pressed):
 
 # Called when a button is pressed from the voice list
 func on_voice_button_pressed(button_pressed):
-	gameController.playSound("res://assets/audio/sfx/gui-select.ogg")
+	#gameController.playSound("res://assets/audio/sfx/gui-select.ogg")
 	# Deselects all voice options and marks the button pressed as selected
 	for voiceButton in voiceButtons:
 		voiceButton.set_pressed(false)

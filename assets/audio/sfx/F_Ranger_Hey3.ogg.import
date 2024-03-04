@@ -2,13 +2,13 @@
 
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
-uid="uid://cnrd1k04gd3cd"
-path="res://.godot/imported/F_Ranger_Hey3.ogg-ec9ce9ff4d3e917724fa3b50744f8efb.oggvorbisstr"
+uid="uid://bnd5nct76qnmx"
+path="res://.godot/imported/F_Ranger_Hey3.ogg-639c2536ddc6994cd862da6deb23e201.oggvorbisstr"
 
 [deps]
 
-source_file="res://assets/audio/sfx/F_Ranger_Hey3.ogg"
-dest_files=["res://.godot/imported/F_Ranger_Hey3.ogg-ec9ce9ff4d3e917724fa3b50744f8efb.oggvorbisstr"]
+source_file="res://Assets/audio/sfx/F_Ranger_Hey3.ogg"
+dest_files=["res://.godot/imported/F_Ranger_Hey3.ogg-639c2536ddc6994cd862da6deb23e201.oggvorbisstr"]
 
 [params]
 

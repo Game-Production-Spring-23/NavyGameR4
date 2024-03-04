@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bulipucm08v8b"
-path="res://.godot/imported/button-title-chapterselect_click.png-9bf00cf55fda2900864826f4f6bad6a6.ctex"
+path="res://.godot/imported/button-title-chapterselect_click.png-cca9070548c9d7700e422de24e1cc895.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/images/ui/button-title-chapterselect_click.png"
-dest_files=["res://.godot/imported/button-title-chapterselect_click.png-9bf00cf55fda2900864826f4f6bad6a6.ctex"]
+source_file="res://Assets/images/ui/button-title-chapterselect_click.png"
+dest_files=["res://.godot/imported/button-title-chapterselect_click.png-cca9070548c9d7700e422de24e1cc895.ctex"]
 
 [params]
 

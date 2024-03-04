@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://blg43rixug03d"
-path="res://.godot/imported/slidertoggleFINAL.png-b108aa04f48bb8df51c1a66596575f34.ctex"
+path="res://.godot/imported/slidertoggleFINAL.png-0208deee418f194fa70bddb450a61d5c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/UI/slidertoggleFINAL.png"
-dest_files=["res://.godot/imported/slidertoggleFINAL.png-b108aa04f48bb8df51c1a66596575f34.ctex"]
+source_file="res://Assets/UI/slidertoggleFINAL.png"
+dest_files=["res://.godot/imported/slidertoggleFINAL.png-0208deee418f194fa70bddb450a61d5c.ctex"]
 
 [params]
 
