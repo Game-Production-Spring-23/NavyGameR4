@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://cjf4uhai11dx3"
-path="res://.godot/imported/M_Ranger_Hey3.ogg-7df3859c0d58793730fa6a6feac3bfa1.oggvorbisstr"
+path="res://.godot/imported/M_Ranger_Hey3.ogg-30e43a5e5b300b08fc7023c5684efd48.oggvorbisstr"
 
 [deps]
 
-source_file="res://Assets/audio/sfx/M_Ranger_Hey3.ogg"
-dest_files=["res://.godot/imported/M_Ranger_Hey3.ogg-7df3859c0d58793730fa6a6feac3bfa1.oggvorbisstr"]
+source_file="res://assets/audio/sfx/M_Ranger_Hey3.ogg"
+dest_files=["res://.godot/imported/M_Ranger_Hey3.ogg-30e43a5e5b300b08fc7023c5684efd48.oggvorbisstr"]
 
 [params]
 

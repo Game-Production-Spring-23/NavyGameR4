@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://di4jjrsy08bqt"
-path="res://.godot/imported/slidertoggle_6.png-90202a112a74494565b2b23099f25756.ctex"
+uid="uid://cly12vid6gi86"
+path="res://.godot/imported/player-walkall-pink.png-3251adf065440be18f434595b76d2e0e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/UI/slidertoggle_6.png"
-dest_files=["res://.godot/imported/slidertoggle_6.png-90202a112a74494565b2b23099f25756.ctex"]
+source_file="res://assets/images/spritesheets/player-walkall-pink.png"
+dest_files=["res://.godot/imported/player-walkall-pink.png-3251adf065440be18f434595b76d2e0e.ctex"]
 
 [params]
 

@@ -1,6 +1,6 @@
 [gd_scene load_steps=6 format=3 uid="uid://br02tb2oyx6e3"]
 
-[ext_resource type="Texture2D" uid="uid://duhxocbx0oavo" path="res://assets/tilemaps/swamp-tileset-light.png" id="1_4j4g7"]
+[ext_resource type="Texture2D" uid="uid://duhxocbx0oavo" path="res://assets/images/tilemaps/swamp-tileset-light.png" id="1_4j4g7"]
 [ext_resource type="PackedScene" uid="uid://dtolugbyxj6gu" path="res://scenes/objects/playerCharacter.tscn" id="2_uhgn2"]
 [ext_resource type="Script" path="res://scripts/player/followCam.gd" id="3_l7oqm"]
 

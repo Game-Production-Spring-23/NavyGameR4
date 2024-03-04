@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cly12vid6gi86"
-path="res://.godot/imported/player-walkall-pink.png-a96db29b0b9416e3ba14e139f4d91085.ctex"
+uid="uid://bm76hofngfq3x"
+path="res://.godot/imported/Slider.png-881034495b90d443ebd4defed42428f3.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/sprites/spritesheets/player-walkall-pink.png"
-dest_files=["res://.godot/imported/player-walkall-pink.png-a96db29b0b9416e3ba14e139f4d91085.ctex"]
+source_file="res://assets/images/ui/Slider.png"
+dest_files=["res://.godot/imported/Slider.png-881034495b90d443ebd4defed42428f3.ctex"]
 
 [params]
 

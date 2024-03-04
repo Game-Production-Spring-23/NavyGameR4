@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cusc0hif5p7a2"
-path="res://.godot/imported/swamp-tileset-dark.png-c16c0612e53345c1ccdc6adc4ed7a8c2.ctex"
+uid="uid://dkvoscquy0dvv"
+path="res://.godot/imported/SliderFINAL.png-15c329e235b477b8ef51d001278c7594.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/tilemaps/swamp-tileset-dark.png"
-dest_files=["res://.godot/imported/swamp-tileset-dark.png-c16c0612e53345c1ccdc6adc4ed7a8c2.ctex"]
+source_file="res://assets/images/ui/SliderFINAL.png"
+dest_files=["res://.godot/imported/SliderFINAL.png-15c329e235b477b8ef51d001278c7594.ctex"]
 
 [params]
 

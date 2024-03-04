@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dmrop1hksucoc"
-path="res://.godot/imported/slidertoggle_5.png-cebbc38abcd2cd92c7fd69f940abd4e3.ctex"
+uid="uid://pods61dhshvj"
+path="res://.godot/imported/player-walkall-blue.png-c17d19a816ea5760db88d251d9f234d4.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/UI/slidertoggle_5.png"
-dest_files=["res://.godot/imported/slidertoggle_5.png-cebbc38abcd2cd92c7fd69f940abd4e3.ctex"]
+source_file="res://assets/images/spritesheets/player-walkall-blue.png"
+dest_files=["res://.godot/imported/player-walkall-blue.png-c17d19a816ea5760db88d251d9f234d4.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://jo2fpi33ks0c"
-path="res://.godot/imported/Slidertoggle_3.png-8b99b55ecff7add2772ec2a3dd865f54.ctex"
+uid="uid://di4jjrsy08bqt"
+path="res://.godot/imported/slidertoggle_6.png-54f94adf97b1c0c3ba9cab2e9c02821c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/UI/Slidertoggle_3.png"
-dest_files=["res://.godot/imported/Slidertoggle_3.png-8b99b55ecff7add2772ec2a3dd865f54.ctex"]
+source_file="res://assets/images/ui/slidertoggle_6.png"
+dest_files=["res://.godot/imported/slidertoggle_6.png-54f94adf97b1c0c3ba9cab2e9c02821c.ctex"]
 
 [params]
 

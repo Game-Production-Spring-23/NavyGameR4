@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://d0x6a0wyxqsjl"
-path="res://.godot/imported/player-walkall-red.png-8c7dcc702503561090b4815a8db8a091.ctex"
+uid="uid://blg43rixug03d"
+path="res://.godot/imported/slidertoggleFINAL.png-4f8237827594a2082e171079133bdf97.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/sprites/spritesheets/player-walkall-red.png"
-dest_files=["res://.godot/imported/player-walkall-red.png-8c7dcc702503561090b4815a8db8a091.ctex"]
+source_file="res://assets/images/ui/slidertoggleFINAL.png"
+dest_files=["res://.godot/imported/slidertoggleFINAL.png-4f8237827594a2082e171079133bdf97.ctex"]
 
 [params]
 
