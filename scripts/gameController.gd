@@ -1,7 +1,7 @@
 extends Node
 #Variable to define the textSpeed.
 var textSpeed = 1
-@onready var player = oPlayer.new(["she", "her", "hers"], "voice1", "orange")
+@onready var player = oPlayer.new(["she", "her", "hers"], "voice1", "purple")
 var characterCanMove = true
 @onready var animationPlayer = $ScreenTransition/FadeScreen/AnimationPlayer
 

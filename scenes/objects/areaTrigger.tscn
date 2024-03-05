@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://ci7prtn8nsmpf"]
+
+[ext_resource type="Script" path="res://scripts/player/areaTrigger.gd" id="1_gqp21"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4t50q"]
+
+[node name="AreaTrigger" type="Area2D"]
+script = ExtResource("1_gqp21")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_4t50q")

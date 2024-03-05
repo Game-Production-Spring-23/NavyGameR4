@@ -236,7 +236,7 @@ text = "Appearance"
 layout_mode = 2
 theme_override_constants/separation = 35
 
-[node name="Orange" type="TextureButton" parent="CanvasLayer/CCmenu/VBoxContainer/Appearance/HBoxContainer" groups=["appearenceButtons"]]
+[node name="Purple" type="TextureButton" parent="CanvasLayer/CCmenu/VBoxContainer/Appearance/HBoxContainer" groups=["appearenceButtons"]]
 texture_filter = 1
 custom_minimum_size = Vector2(200, 200)
 layout_mode = 2
@@ -247,7 +247,7 @@ texture_pressed = ExtResource("12_i2fng")
 texture_hover = ExtResource("13_3cr6v")
 stretch_mode = 0
 
-[node name="TextureRect" type="TextureRect" parent="CanvasLayer/CCmenu/VBoxContainer/Appearance/HBoxContainer/Orange"]
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer/CCmenu/VBoxContainer/Appearance/HBoxContainer/Purple"]
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.285

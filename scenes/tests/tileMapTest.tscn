@@ -1,7 +1,10 @@
-[gd_scene load_steps=5 format=3 uid="uid://dghmdkljbg45i"]
+[gd_scene load_steps=8 format=3 uid="uid://dghmdkljbg45i"]
 
 [ext_resource type="Texture2D" uid="uid://duhxocbx0oavo" path="res://assets/images/tilemaps/swamp-tileset-light.png" id="1_gaj2w"]
+[ext_resource type="Script" path="res://scripts/levels/Test_triggers.gd" id="1_se1yp"]
 [ext_resource type="PackedScene" uid="uid://dtolugbyxj6gu" path="res://scenes/objects/playerCharacter.tscn" id="2_0n2m0"]
+[ext_resource type="PackedScene" uid="uid://ci7prtn8nsmpf" path="res://scenes/objects/areaTrigger.tscn" id="4_dpfwv"]
+[ext_resource type="PackedScene" uid="uid://dtai37xgm0iof" path="res://scenes/objects/interactTrigger.tscn" id="5_coqkx"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_vo8o3"]
 texture = ExtResource("1_gaj2w")
@@ -167,6 +170,7 @@ sources/0 = SubResource("TileSetAtlasSource_vo8o3")
 
 [node name="TileMapTest" type="Node2D"]
 position = Vector2(339, 198)
+script = ExtResource("1_se1yp")
 
 [node name="TileMap" type="TileMap" parent="."]
 scale = Vector2(4.12963, 4.44519)
@@ -177,7 +181,18 @@ layer_0/tile_data = PackedInt32Array(-2, 262144, 0, 65534, 262144, 1, 131070, 26
 layer_1/name = "Trees"
 layer_1/tile_data = PackedInt32Array(11, 0, 2, 65547, 0, 3, 131083, 0, 4, 12, 65536, 2, 65548, 65536, 3, 131084, 65536, 4, 13, 131072, 2, 65549, 131072, 3, 131085, 131072, 4, 196619, 262144, 3, 196620, 262144, 3, 196621, 262144, 3)
 
-[node name="CharacterBody2D" parent="." instance=ExtResource("2_0n2m0")]
+[node name="Player" parent="." instance=ExtResource("2_0n2m0")]
 position = Vector2(170, 141)
 scale = Vector2(5, 5)
 move_speed = null
+
+[node name="InteractTrigger" parent="." instance=ExtResource("5_coqkx")]
+position = Vector2(362, 334)
+scale = Vector2(6.95154, 7.77073)
+
+[node name="AreaTrigger" parent="." instance=ExtResource("4_dpfwv")]
+position = Vector2(784, 712)
+scale = Vector2(6.64, 19.64)
+
+[connection signal="player_interact" from="InteractTrigger" to="." method="_on_interact"]
+[connection signal="player_interact" from="AreaTrigger" to="." method="_on_interact"]

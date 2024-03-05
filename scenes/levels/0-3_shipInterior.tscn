@@ -1,13 +1,14 @@
-[gd_scene load_steps=26 format=3 uid="uid://bjwnjgf0sg4nb"]
+[gd_scene load_steps=23 format=3 uid="uid://bjwnjgf0sg4nb"]
 
-[ext_resource type="Texture2D" uid="uid://dhxovq701roxb" path="res://assets/WIP/placeholderTiles.png" id="1_0rfw7"]
+[ext_resource type="Texture2D" uid="uid://dhxovq701roxb" path="res://assets/images/wip/placeholderTiles.png" id="1_0rfw7"]
 [ext_resource type="Script" path="res://scripts/levels/0-3_shipInterior.gd" id="1_uhbjv"]
 [ext_resource type="PackedScene" uid="uid://dtolugbyxj6gu" path="res://scenes/objects/playerCharacter.tscn" id="2_0yyxf"]
-[ext_resource type="Texture2D" uid="uid://bywfh4pryw8py" path="res://assets/WIP/Light.png" id="3_frx6r"]
-[ext_resource type="Theme" path="res://assets/themes/subheaderTheme.tres" id="5_oegn3"]
+[ext_resource type="Texture2D" uid="uid://bywfh4pryw8py" path="res://assets/images/wip/Light.png" id="3_frx6r"]
+[ext_resource type="Theme" uid="uid://dvij0s1xehu3a" path="res://assets/themes/subheaderTheme.tres" id="5_oegn3"]
 [ext_resource type="Texture2D" uid="uid://c3kycv7iolqq7" path="res://assets/images/ui/keyboardprompt-wasd.png" id="6_m6y7a"]
 [ext_resource type="Texture2D" uid="uid://cjyt3xsf4hs0l" path="res://assets/images/ui/keyboardprompt-arrowkeys.png" id="7_rprdl"]
-[ext_resource type="Script" path="res://scripts/player/interact.gd" id="8_aoi3y"]
+[ext_resource type="PackedScene" uid="uid://ci7prtn8nsmpf" path="res://scenes/objects/areaTrigger.tscn" id="8_12hrh"]
+[ext_resource type="PackedScene" uid="uid://dtai37xgm0iof" path="res://scenes/objects/interactTrigger.tscn" id="9_dg4ts"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_lmhvk"]
 texture = ExtResource("1_0rfw7")
@@ -198,18 +199,6 @@ _data = {
 "RESET": SubResource("Animation_4hiwk")
 }
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_q8pd3"]
-size = Vector2(160, 480)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_ldy34"]
-size = Vector2(80.9996, 168)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_7kxj6"]
-size = Vector2(237, 323)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_746b2"]
-size = Vector2(196, 589)
-
 [node name="0-3" type="Node2D"]
 script = ExtResource("1_uhbjv")
 
@@ -305,58 +294,6 @@ libraries = {
 
 [node name="Objects" type="Node2D" parent="."]
 
-[node name="Exits" type="Node2D" parent="Objects"]
-
-[node name="Exit" type="Area2D" parent="Objects/Exits"]
-position = Vector2(857, 38)
-
-[node name="Exit" type="Sprite2D" parent="Objects/Exits/Exit" groups=["Exits"]]
-position = Vector2(24, -35)
-scale = Vector2(10, 7.5)
-texture = ExtResource("3_frx6r")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Objects/Exits/Exit"]
-position = Vector2(267, -37)
-shape = SubResource("RectangleShape2D_q8pd3")
-
-[node name="Exit2" type="Area2D" parent="Objects/Exits"]
-position = Vector2(1789, -35)
-rotation = 3.14159
-
-[node name="Exit" type="Sprite2D" parent="Objects/Exits/Exit2" groups=["Exits"]]
-position = Vector2(24, -35)
-scale = Vector2(10, 7.5)
-texture = ExtResource("3_frx6r")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Objects/Exits/Exit2"]
-position = Vector2(267, -37)
-shape = SubResource("RectangleShape2D_q8pd3")
-
-[node name="Exit3" type="Area2D" parent="Objects/Exits"]
-position = Vector2(857, 1645)
-
-[node name="Exit" type="Sprite2D" parent="Objects/Exits/Exit3" groups=["Exits"]]
-position = Vector2(24, -35)
-scale = Vector2(10, 7.5)
-texture = ExtResource("3_frx6r")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Objects/Exits/Exit3"]
-position = Vector2(267, -37)
-shape = SubResource("RectangleShape2D_q8pd3")
-
-[node name="Exit4" type="Area2D" parent="Objects/Exits"]
-position = Vector2(-128, 1309)
-rotation = -1.57079
-
-[node name="Exit" type="Sprite2D" parent="Objects/Exits/Exit4" groups=["Exits"]]
-position = Vector2(106.545, -192.153)
-scale = Vector2(7.42047, 2.58898)
-texture = ExtResource("3_frx6r")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Objects/Exits/Exit4"]
-position = Vector2(309.499, -191.001)
-shape = SubResource("RectangleShape2D_ldy34")
-
 [node name="CameraPoints" type="Node2D" parent="Objects" groups=["CameraPoints"]]
 
 [node name="CameraPoints" type="Node2D" parent="Objects/CameraPoints" groups=["CameraPoints"]]
@@ -365,26 +302,57 @@ position = Vector2(2650, 0)
 [node name="CameraPoints2" type="Node2D" parent="Objects/CameraPoints" groups=["CameraPoints"]]
 position = Vector2(0, 1600)
 
-[node name="RogerInteract" type="Area2D" parent="Objects"]
-position = Vector2(3100, 72)
-script = ExtResource("8_aoi3y")
+[node name="Triggers" type="Node2D" parent="Objects"]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Objects/RogerInteract"]
-position = Vector2(-17.5, 9.5)
-shape = SubResource("RectangleShape2D_7kxj6")
+[node name="ExitTrigger" parent="Objects/Triggers" instance=ExtResource("8_12hrh")]
+position = Vector2(1125, 1)
+scale = Vector2(7.75, 24.5)
 
-[node name="DariaInteract" type="Area2D" parent="Objects"]
-position = Vector2(402, 1674)
-script = ExtResource("8_aoi3y")
+[node name="Exit" type="Sprite2D" parent="Objects/Triggers/ExitTrigger" groups=["Exits"]]
+position = Vector2(-31.4839, 0.0816327)
+scale = Vector2(1.29032, 0.306122)
+texture = ExtResource("3_frx6r")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Objects/DariaInteract"]
-position = Vector2(-8, -38.5)
-shape = SubResource("RectangleShape2D_746b2")
+[node name="ExitTrigger2" parent="Objects/Triggers" instance=ExtResource("8_12hrh")]
+position = Vector2(1525, 1)
+scale = Vector2(7.75, 24.5)
 
-[connection signal="body_entered" from="Objects/Exits/Exit" to="." method="_on_area1_exit"]
-[connection signal="body_entered" from="Objects/Exits/Exit2" to="." method="_on_area2_exit"]
-[connection signal="body_entered" from="Objects/Exits/Exit3" to="." method="_on_area3_exit"]
-[connection signal="body_entered" from="Objects/Exits/Exit4" to="." method="_on_level_finish"]
-[connection signal="player_enter" from="Objects/RogerInteract" to="." method="_on_roger_interact_player_enter"]
-[connection signal="player_exit" from="Objects/RogerInteract" to="." method="_on_roger_interact_player_exit"]
-[connection signal="player_enter" from="Objects/DariaInteract" to="." method="_on_daria_interact_player_enter"]
+[node name="Exit" type="Sprite2D" parent="Objects/Triggers/ExitTrigger2" groups=["Exits"]]
+position = Vector2(30.9678, -0.0408138)
+rotation = 3.14159
+scale = Vector2(1.29032, 0.306122)
+texture = ExtResource("3_frx6r")
+
+[node name="ExitTrigger3" parent="Objects/Triggers" instance=ExtResource("8_12hrh")]
+position = Vector2(1125, 1600)
+scale = Vector2(7.75, 24.5)
+
+[node name="Exit" type="Sprite2D" parent="Objects/Triggers/ExitTrigger3" groups=["Exits"]]
+position = Vector2(-31.4839, 0.408165)
+scale = Vector2(1.29032, 0.306122)
+texture = ExtResource("3_frx6r")
+
+[node name="ExitTrigger4" parent="Objects/Triggers" instance=ExtResource("8_12hrh")]
+position = Vector2(-325, 1000)
+scale = Vector2(8.5, 4.5)
+
+[node name="Exit" type="Sprite2D" parent="Objects/Triggers/ExitTrigger4" groups=["Exits"]]
+position = Vector2(0.57029, 44.9897)
+rotation = -1.57079
+scale = Vector2(1.64899, 0.304586)
+texture = ExtResource("3_frx6r")
+
+[node name="RogerInteract" parent="Objects/Triggers" instance=ExtResource("9_dg4ts")]
+position = Vector2(3096, 80)
+scale = Vector2(-10.5, 16)
+
+[node name="DariaInteract" parent="Objects/Triggers" instance=ExtResource("8_12hrh")]
+position = Vector2(280, 1600)
+scale = Vector2(12, 32)
+
+[connection signal="player_interact" from="Objects/Triggers/ExitTrigger" to="." method="_on_area1_exit"]
+[connection signal="player_interact" from="Objects/Triggers/ExitTrigger2" to="." method="_on_area2_exit"]
+[connection signal="player_interact" from="Objects/Triggers/ExitTrigger3" to="." method="_on_area3_exit"]
+[connection signal="player_interact" from="Objects/Triggers/ExitTrigger4" to="." method="_on_level_finish"]
+[connection signal="player_interact" from="Objects/Triggers/RogerInteract" to="." method="_on_roger_interact"]
+[connection signal="player_interact" from="Objects/Triggers/DariaInteract" to="." method="_on_daria_interact"]

@@ -11,7 +11,7 @@ var appearenceButtons = []
 
 var pronouns = ["she", "her", "hers"]
 var voice = "voice1"
-var color = "red"
+var color = "purple"
 
 # SETUP FUNCTIONS
 # Called when the node enters the scene tree for the first time.
@@ -84,14 +84,14 @@ func on_appearance_button_pressed(button_pressed):
 	button_pressed.set_pressed(true)
 
 	# Sets the player's appearance
-	if(button_pressed.name == "Red"): # Sets appearance to preset 1
+	if(button_pressed.name == "Purple"): # Sets appearance to preset 3
+		color = "purple"
+	elif(button_pressed.name == "Red"): # Sets appearance to preset 1
 		color = "red"
-	elif(button_pressed.name == "Blue"): # Sets appearance to preset 2
-		color = "blue"
-	elif(button_pressed.name == "Orange"): # Sets appearance to preset 3
-		color = "orange"
 	elif(button_pressed.name == "Pink"): # Sets appearance to preset 4
 		color = "pink"
+	elif(button_pressed.name == "Blue"): # Sets appearance to preset 2
+		color = "blue"
 	else:
 		print(button_pressed.name)
 

@@ -22,7 +22,6 @@ Ranger: Missing? Unless it fell out of the ship during the crash, it must have b
 
 ROGER: I tried doing that during my diagnostics, but I couldn’t access it. It seems like somebody is messing with my system in the main bay. Let me open the door and you go check it out.
 do gameController.characterCanMove = true
-do hadPlayerTalkedToRoger = true
 
 => END
 ~ tutorial3
