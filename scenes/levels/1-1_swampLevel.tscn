@@ -1,11 +1,10 @@
-[gd_scene load_steps=9 format=3 uid="uid://br02tb2oyx6e3"]
+[gd_scene load_steps=8 format=3 uid="uid://br02tb2oyx6e3"]
 
 [ext_resource type="Script" path="res://scripts/levels/1-1_swampLevel.gd" id="1_3w8m7"]
 [ext_resource type="Texture2D" uid="uid://duhxocbx0oavo" path="res://assets/images/tilemaps/swamp-tileset-light.png" id="1_4j4g7"]
 [ext_resource type="PackedScene" uid="uid://dtolugbyxj6gu" path="res://scenes/objects/playerCharacter.tscn" id="2_uhgn2"]
 [ext_resource type="Script" path="res://scripts/player/followCam.gd" id="3_l7oqm"]
 [ext_resource type="PackedScene" uid="uid://dab15f8h7doq8" path="res://scenes/objects/areaTrigger.tscn" id="4_hie1r"]
-[ext_resource type="PackedScene" uid="uid://bfdknr001mevw" path="res://scenes/objects/interactTrigger.tscn" id="5_uq5h5"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_13elx"]
 texture = ExtResource("1_4j4g7")
@@ -213,9 +212,4 @@ tilemap = NodePath("../TileMap")
 position = Vector2(4225, 1113)
 scale = Vector2(23.126, -18.2341)
 
-[node name="InteractTrigger" parent="." instance=ExtResource("5_uq5h5")]
-position = Vector2(1816, 747)
-scale = Vector2(-8.36398, 12.5619)
-
 [connection signal="player_interact" from="AreaTrigger" to="." method="_on_area_trigger_player_interact"]
-[connection signal="player_interact" from="InteractTrigger" to="InteractTrigger" method="_on_player_interact"]
