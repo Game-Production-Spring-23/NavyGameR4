@@ -1,13 +1,14 @@
-[gd_scene load_steps=23 format=3 uid="uid://bjwnjgf0sg4nb"]
+[gd_scene load_steps=24 format=3 uid="uid://bjwnjgf0sg4nb"]
 
 [ext_resource type="Texture2D" uid="uid://dhxovq701roxb" path="res://assets/images/wip/placeholderTiles.png" id="1_0rfw7"]
 [ext_resource type="Script" path="res://scripts/levels/0-3_shipInterior.gd" id="1_uhbjv"]
 [ext_resource type="PackedScene" uid="uid://dtolugbyxj6gu" path="res://scenes/objects/playerCharacter.tscn" id="2_0yyxf"]
 [ext_resource type="Texture2D" uid="uid://bywfh4pryw8py" path="res://assets/images/wip/Light.png" id="3_frx6r"]
+[ext_resource type="PackedScene" uid="uid://dandgr1thsqtx" path="res://scenes/objects/dariaCharacter.tscn" id="4_kllkw"]
 [ext_resource type="Theme" uid="uid://dvij0s1xehu3a" path="res://assets/themes/subheaderTheme.tres" id="5_oegn3"]
 [ext_resource type="Texture2D" uid="uid://c3kycv7iolqq7" path="res://assets/images/ui/keyboardprompt-wasd.png" id="6_m6y7a"]
 [ext_resource type="Texture2D" uid="uid://cjyt3xsf4hs0l" path="res://assets/images/ui/keyboardprompt-arrowkeys.png" id="7_rprdl"]
-[ext_resource type="PackedScene" path="res://scenes/objects/areaTrigger.tscn" id="8_12hrh"]
+[ext_resource type="PackedScene" uid="uid://dab15f8h7doq8" path="res://scenes/objects/areaTrigger.tscn" id="8_12hrh"]
 [ext_resource type="PackedScene" uid="uid://bfdknr001mevw" path="res://scenes/objects/interactTrigger.tscn" id="9_dg4ts"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_lmhvk"]
@@ -214,6 +215,9 @@ layer_1/tile_data = PackedInt32Array(-589820, 3, 0, -524284, 3, 0, -458748, 3, 0
 [node name="Player" parent="." instance=ExtResource("2_0yyxf")]
 position = Vector2(-494, -6.99988)
 scale = Vector2(5, 5)
+
+[node name="Daria" parent="." instance=ExtResource("4_kllkw")]
+position = Vector2(-215, 1654)
 
 [node name="Camera2D" type="Camera2D" parent="."]
 scale = Vector2(5, 5)

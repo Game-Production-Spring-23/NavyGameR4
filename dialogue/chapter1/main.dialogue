@@ -32,6 +32,7 @@ Ranger: Well whatever you are, you must be the one messing with my ship!
 ???: Uh Oh. 
 Ranger: HEY! GET BACK HERE!
 do darknessScreen.play("darken")
+do daria.hide()
 do gameController.characterCanMove = true
 => END!
 ~ minigameQuestion1

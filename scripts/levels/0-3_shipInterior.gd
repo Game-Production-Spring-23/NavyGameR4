@@ -8,6 +8,7 @@ description: This script controls the level managment of the ship's interior
 # References
 var player
 var camera
+var daria
 
 var darknessScreen
 var wasdKeyScreen
@@ -24,6 +25,7 @@ var hadPlayerTalkedToRoger = false
 func _ready():
 	player = get_node("Player")
 	camera = get_node("Camera2D")
+	daria = get_node("Daria")
 
 	darknessScreen = get_node("CanvasLayer/Darkness/AnimationPlayer")
 	wasdKeyScreen = get_node("CanvasLayer/WasdScreen/AnimationPlayer")
