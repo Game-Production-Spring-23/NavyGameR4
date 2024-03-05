@@ -9,13 +9,13 @@ signal player_enter
 signal player_exit
 
 func _ready():
-    body_entered.connect(Callable(self, "_on_body_entered"))
-    body_exited.connect(Callable(self, "_on_body_exit"))
+	body_entered.connect(Callable(self, "_on_body_entered"))
+	body_exited.connect(Callable(self, "_on_body_exit"))
 
 func _on_body_entered(body):
-    if body.name == "Player":
-        player_enter.emit()
+	if body.name == "Player":
+		player_enter.emit()
 
 func _on_body_exit(body):
-    if body.name == "Player":
-        player_exit.emit()
+	if body.name == "Player":
+		player_exit.emit()

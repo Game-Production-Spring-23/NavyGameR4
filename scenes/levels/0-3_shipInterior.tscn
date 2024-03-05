@@ -7,8 +7,8 @@
 [ext_resource type="Theme" uid="uid://dvij0s1xehu3a" path="res://assets/themes/subheaderTheme.tres" id="5_oegn3"]
 [ext_resource type="Texture2D" uid="uid://c3kycv7iolqq7" path="res://assets/images/ui/keyboardprompt-wasd.png" id="6_m6y7a"]
 [ext_resource type="Texture2D" uid="uid://cjyt3xsf4hs0l" path="res://assets/images/ui/keyboardprompt-arrowkeys.png" id="7_rprdl"]
-[ext_resource type="PackedScene" uid="uid://ci7prtn8nsmpf" path="res://scenes/objects/areaTrigger.tscn" id="8_12hrh"]
-[ext_resource type="PackedScene" uid="uid://dtai37xgm0iof" path="res://scenes/objects/interactTrigger.tscn" id="9_dg4ts"]
+[ext_resource type="PackedScene" path="res://scenes/objects/areaTrigger.tscn" id="8_12hrh"]
+[ext_resource type="PackedScene" uid="uid://bfdknr001mevw" path="res://scenes/objects/interactTrigger.tscn" id="9_dg4ts"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_lmhvk"]
 texture = ExtResource("1_0rfw7")

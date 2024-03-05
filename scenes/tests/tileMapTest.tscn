@@ -3,8 +3,8 @@
 [ext_resource type="Texture2D" uid="uid://duhxocbx0oavo" path="res://assets/images/tilemaps/swamp-tileset-light.png" id="1_gaj2w"]
 [ext_resource type="Script" path="res://scripts/levels/Test_triggers.gd" id="1_se1yp"]
 [ext_resource type="PackedScene" uid="uid://dtolugbyxj6gu" path="res://scenes/objects/playerCharacter.tscn" id="2_0n2m0"]
-[ext_resource type="PackedScene" uid="uid://ci7prtn8nsmpf" path="res://scenes/objects/areaTrigger.tscn" id="4_dpfwv"]
-[ext_resource type="PackedScene" uid="uid://dtai37xgm0iof" path="res://scenes/objects/interactTrigger.tscn" id="5_coqkx"]
+[ext_resource type="PackedScene" path="res://scenes/objects/areaTrigger.tscn" id="4_dpfwv"]
+[ext_resource type="PackedScene" uid="uid://bfdknr001mevw" path="res://scenes/objects/interactTrigger.tscn" id="5_coqkx"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_vo8o3"]
 texture = ExtResource("1_gaj2w")

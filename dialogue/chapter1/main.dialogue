@@ -2,7 +2,7 @@
 ~ tutorial1
 do gameController.characterCanMove = false
  Ranger: Ooh...Ugh, what happened?
-ROGER: Error, Error, system overload. Proceeding to Reboot…... Reboot Complete!
+ROGER:[#mood=scrambled] Error, Error, system overload. Proceeding to Reboot…... Reboot Complete!
 
 ROGER: Designated Ranger, the ships gravity engine malfunctioned. While I run diagnostics, make sure you can move efficiently. We have lots to do!
 do gameController.characterCanMove = true
@@ -12,16 +12,17 @@ do hasPlayerMovedOnce = false
 
 ~ tutorial2
 do darknessScreen.play("brighten")
-ROGER: DIAGNOSTICS COMPLETE. I have bad news Ranger: The ship is totally wrecked, and the radar is…
+ROGER: [#mood=normal] DIAGNOSTICS COMPLETE. I have bad news Ranger: The ship is totally wrecked, and the radar is…
 
 Ranger: Broken? No problem, I can fix that!
 
-ROGER: Don’t interrupt me! It’s not broken, it’s completely missing. Sir, this is not good.
+ROGER: [#mood=sad] Don’t interrupt me! It’s not broken, it’s completely missing. Sir, this is not good.
 
 Ranger: Missing? Unless it fell out of the ship during the crash, it must have been stolen...Check the CCTV footage, quickly.
 
-ROGER: I tried doing that during my diagnostics, but I couldn’t access it. It seems like somebody is messing with my system in the main bay. Let me open the door and you go check it out.
+ROGER:  [#mood=normal] I tried doing that during my diagnostics, but I couldn’t access it. It seems like somebody is messing with my system in the main bay. Let me open the door and you go check it out.
 do gameController.characterCanMove = true
+do hadPlayerTalkedToRoger = true
 
 => END
 ~ tutorial3
@@ -33,20 +34,74 @@ Ranger: HEY! GET BACK HERE!
 do darknessScreen.play("darken")
 do gameController.characterCanMove = true
 => END!
-# MINIGAME STRUCTURE GOES HERE
-		
+~ minigameQuestion1
+Daria: What's radar?
+- A radar detects surrounding objects using radio waves. 
 
+- A radar detects recently made cherry pie 
 
+- A radar gets your favorite television shows 
 
+- A radar detects surrounding objects using magic 
+=> END
+~ minigameQuestion2
+Daria: What does RADAR stand for?
 
+- Radio Detection and Ranging. 
 
+- Raspberry Danish and Ravioli 
 
+- Rectangle Diamond and Rombas 
 
+- Radio Destroyer and Reviver  
+=> END
+~ minigameQuestion3
+Daria: How does a radar detect things? 
+- The radar transmits a pulse wave – usually shortwave \n microwaves – at a certain time.
 
+- Asks politely 
 
+- Studies very hard 
 
+- Uses the MBSE model 
+=> END
+~ minigameQuestion4
+Daria: What does the pulse wave do? 
+- The pulse travels through a medium (air, vacuum of space) \n and bounces off an object. 
 
+- Finishes your math homework 
 
+- The pulse travels through Jello and bounces off a spoon 
+
+- Makes you act on impulse 
+=> END
+~ minigameQuestion5
+Daria: Why does it bounce off an object? 
+- Once it bounces off the object, it comes back towards the radar. 
+
+- It wants to be a gymnast.
+
+- It wants to see how high it can jump.
+
+- It’s coated in bouncy juice.
+=> END
+~ minigameQuestion6
+Daria: How does the radar know where the object is? 
+- It finds the range by measuring the time the pulse was sent & \n when the pulse returns & divides it by 2 
+- It looks at it with binoculars 
+- It tries it’s best
+- It communicates with other radars within a 300-mile radius 
+=> END
+~ minigameQuestion7
+Daria: What if the object is moving?
+- We can determine the direction & speed the object is moving by looking \n at various positions over time 
+
+- It puts pedal to the metal 
+
+- It says, “SLOW DOWN!” 
+
+- It does not detect the object 
+=> END
 ~ tutorial4
 Daria: That sounds awesome, what does a Radar look like?
 Ranger: What are you talking about, don’t you not have my radar? What were you doing on my ship?
