@@ -22,5 +22,4 @@ func _on_body_entered(body):
 			player_interact.emit()
 
 
-func _on_player_interact():
-	gameController.triggerDialogue("chapter1", "tutorial3")
+

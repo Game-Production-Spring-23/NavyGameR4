@@ -1,11 +1,11 @@
-[gd_scene load_steps=13 format=3 uid="uid://br02tb2oyx6e3"]
+[gd_scene load_steps=9 format=3 uid="uid://br02tb2oyx6e3"]
 
+[ext_resource type="Script" path="res://scripts/levels/1-1_swampLevel.gd" id="1_3w8m7"]
 [ext_resource type="Texture2D" uid="uid://duhxocbx0oavo" path="res://assets/images/tilemaps/swamp-tileset-light.png" id="1_4j4g7"]
 [ext_resource type="PackedScene" uid="uid://dtolugbyxj6gu" path="res://scenes/objects/playerCharacter.tscn" id="2_uhgn2"]
 [ext_resource type="Script" path="res://scripts/player/followCam.gd" id="3_l7oqm"]
-[ext_resource type="PackedScene" path="res://scenes/objects/areaTrigger.tscn" id="4_hie1r"]
+[ext_resource type="PackedScene" uid="uid://dab15f8h7doq8" path="res://scenes/objects/areaTrigger.tscn" id="4_hie1r"]
 [ext_resource type="PackedScene" uid="uid://bfdknr001mevw" path="res://scenes/objects/interactTrigger.tscn" id="5_uq5h5"]
-[ext_resource type="Texture2D" uid="uid://c2nxwhl24mfoe" path="res://assets/images/sprites/daria.png" id="6_wdt38"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_13elx"]
 texture = ExtResource("1_4j4g7")
@@ -182,84 +182,8 @@ texture = ExtResource("1_4j4g7")
 physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_13elx")
 
-[sub_resource type="Animation" id="Animation_11ox5"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath(".:self_modulate")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Color(1, 1, 1, 1)]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath(".:color")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Color(0.196078, 0.196078, 0.196078, 0.490196)]
-}
-
-[sub_resource type="Animation" id="Animation_1j8tj"]
-resource_name = "brighten"
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath(".:self_modulate")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 1),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
-}
-
-[sub_resource type="Animation" id="Animation_qraff"]
-resource_name = "darken"
-length = 0.3
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath(".:self_modulate")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.1, 0.2),
-"transitions": PackedFloat32Array(1, 1, 1),
-"update": 0,
-"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath(".:color")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Color(0, 0, 0, 1)]
-}
-
-[sub_resource type="AnimationLibrary" id="AnimationLibrary_w1lxa"]
-_data = {
-"RESET": SubResource("Animation_11ox5"),
-"brighten": SubResource("Animation_1j8tj"),
-"darken": SubResource("Animation_qraff")
-}
-
 [node name="1-1SwampLevel" type="Node2D"]
+script = ExtResource("1_3w8m7")
 
 [node name="TileMap" type="TileMap" parent="."]
 scale = Vector2(5, 5)
@@ -286,31 +210,12 @@ script = ExtResource("3_l7oqm")
 tilemap = NodePath("../TileMap")
 
 [node name="AreaTrigger" parent="." instance=ExtResource("4_hie1r")]
-position = Vector2(3694, 1092)
+position = Vector2(4225, 1113)
 scale = Vector2(23.126, -18.2341)
 
 [node name="InteractTrigger" parent="." instance=ExtResource("5_uq5h5")]
 position = Vector2(1816, 747)
 scale = Vector2(-8.36398, 12.5619)
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(3679, 1084)
-scale = Vector2(-1.2, 1)
-texture = ExtResource("6_wdt38")
-
-[node name="Darkness" type="ColorRect" parent="."]
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-mouse_filter = 2
-color = Color(0.196078, 0.196078, 0.196078, 0.490196)
-
-[node name="AnimationPlayer" type="AnimationPlayer" parent="Darkness"]
-libraries = {
-"": SubResource("AnimationLibrary_w1lxa")
-}
-
-[connection signal="player_interact" from="AreaTrigger" to="AreaTrigger" method="_on_player_interact"]
+[connection signal="player_interact" from="AreaTrigger" to="." method="_on_area_trigger_player_interact"]
 [connection signal="player_interact" from="InteractTrigger" to="InteractTrigger" method="_on_player_interact"]
