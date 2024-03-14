@@ -3,11 +3,11 @@ Daria: Here we reached the Plains of Trolonc! This is where the Trolums live. Le
 => END!
 ~ chapter2_NPC_1 
 Daria: Excuse me Ma’am, has anything unusual happened today?
-Trolum: I personally haven't seen anything. I was too busy mopping my doorway.
+Trolum1: I personally haven't seen anything. I was too busy mopping my doorway.
 => END!
 ~ chapter2_NPC_2
 Daria: Excuse me Sir, has anything unusual happened today?
-Trolum: Earlier I heard a loud bang myself; I thought it was just the neighbors.
+Trolum 2: Earlier I heard a loud bang myself; I thought it was just the neighbors.
 ~ chapter2_NPC_3
 Daria: Excuse me Sir, has anything unusual happened today?
 NPC: I think Travin just came by stating that they found this weird Geode looking rock while scavenging. It was a square rock with these weird items on the right and a transparent rock on the left. He should be in his little shop nearby.

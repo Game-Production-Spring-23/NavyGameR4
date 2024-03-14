@@ -49,7 +49,10 @@ var dialogue_line: DialogueLine:
 		var portrait_name = dialogue_line.character.to_lower();
 
 		if FileAccess.file_exists("res://assets/images/dialogue/"+portrait_name+".png.import"):
-			if portrait_name == "ranger":
+			if portrait_name == "roger":
+				if dialogue_line.id=="normal":
+					portrait.texture = load("res://assets/images/dialogue/roger.png")
+			elif portrait_name == "ranger":
 				print(gameController.player)
 				if gameController.player.color == "purple":
 					portrait.texture = load("res://assets/images/dialogue/ranger.png")
