@@ -87,5 +87,5 @@ func _on_area3_exit():
 
 # When the player enter the exit to finish the level
 func _on_level_finish():
-	gameController.changeScene("testEnd")
+	gameController.changeScene("1-0_swampSplash")
 
