@@ -1,7 +1,7 @@
 [gd_scene load_steps=12 format=3 uid="uid://73jm5qjy52vq"]
 
 [ext_resource type="Script" path="res://dialogue/balloon.gd" id="1_36de5"]
-[ext_resource type="Texture2D" uid="uid://devqr4867mlpl" path="res://assets/images/dialogue/textBoxPlaceholder.png" id="2_42ybj"]
+[ext_resource type="Texture2D" uid="uid://801crpoif2md" path="res://assets/images/dialogue/dialogueBox.png" id="2_6eof2"]
 [ext_resource type="PackedScene" uid="uid://ckvgyvclnwggo" path="res://addons/dialogue_manager/dialogue_label.tscn" id="2_a8ve6"]
 [ext_resource type="Script" path="res://addons/dialogue_manager/dialogue_reponses_menu.gd" id="3_72ixx"]
 [ext_resource type="Theme" uid="uid://bajr2k60ueqkc" path="res://assets/themes/headerTheme.tres" id="3_co8tf"]
@@ -95,7 +95,7 @@ offset_right = 5.0
 offset_bottom = -7.0
 grow_horizontal = 2
 grow_vertical = 0
-texture = ExtResource("2_42ybj")
+texture = ExtResource("2_6eof2")
 expand_mode = 1
 
 [node name="Dialogue" type="MarginContainer" parent="Balloon/Panel"]
@@ -103,19 +103,20 @@ layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = 35.0
-offset_top = 14.0
-offset_right = -41.0
-offset_bottom = -13.0
+offset_left = 33.0
+offset_top = 2.0
+offset_right = -43.0
+offset_bottom = -25.0
 grow_horizontal = 2
 grow_vertical = 2
 
 [node name="HBoxContainer" type="HBoxContainer" parent="Balloon/Panel/Dialogue"]
 layout_mode = 2
-theme_override_constants/separation = 30
+theme_override_constants/separation = 169
 
 [node name="Portrait" type="TextureRect" parent="Balloon/Panel/Dialogue/HBoxContainer"]
 unique_name_in_owner = true
+texture_filter = 2
 custom_minimum_size = Vector2(250, 200)
 layout_mode = 2
 expand_mode = 1
@@ -130,6 +131,7 @@ modulate = Color(1, 1, 1, 0.501961)
 layout_mode = 2
 mouse_filter = 1
 theme = ExtResource("3_co8tf")
+theme_override_colors/default_color = Color(0, 0, 0, 1)
 bbcode_enabled = true
 text = "Character"
 fit_content = true

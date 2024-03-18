@@ -47,11 +47,17 @@ var dialogue_line: DialogueLine:
 	
 
 		var portrait_name = dialogue_line.character.to_lower();
-
+		# Looks for image file path 
 		if FileAccess.file_exists("res://assets/images/dialogue/"+portrait_name+".png.import"):
+			# If roger is talking
 			if portrait_name == "roger":
-				if dialogue_line.id=="normal":
+				if dialogue_line.get_tag_value("mood")=="scrambled":
+					portrait.texture = load("res://assets/images/dialogue/rogerScrambled.png")
+				elif dialogue_line.get_tag_value("mood")=="sad":
+					portrait.texture = load("res://assets/images/dialogue/rogerSad.png")
+				else:
 					portrait.texture = load("res://assets/images/dialogue/roger.png")
+			# if ranger is talking
 			elif portrait_name == "ranger":
 				print(gameController.player)
 				if gameController.player.color == "purple":
