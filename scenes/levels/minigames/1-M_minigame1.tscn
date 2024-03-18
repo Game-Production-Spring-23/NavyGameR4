@@ -1,0 +1,104 @@
+[gd_scene load_steps=10 format=3 uid="uid://dar8bo8aej7wg"]
+
+[ext_resource type="Script" path="res://scripts/levels/minigames/minigame1.gd" id="1_4iqra"]
+[ext_resource type="Texture2D" uid="uid://cmjstgqxlae6a" path="res://assets/images/wip/running-man-dev.png" id="2_1mqsy"]
+[ext_resource type="Texture2D" uid="uid://ed0e3kp3l10i" path="res://assets/images/wip/alens.png" id="3_fj0jj"]
+
+[sub_resource type="Animation" id="Animation_ipeq2"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(590, 720)]
+}
+
+[sub_resource type="Animation" id="Animation_58btu"]
+resource_name = "bob"
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5, 1),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(590, 720), Vector2(590, 700), Vector2(590, 720)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_bmtoe"]
+_data = {
+"RESET": SubResource("Animation_ipeq2"),
+"bob": SubResource("Animation_58btu")
+}
+
+[sub_resource type="Animation" id="Animation_i31ic"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1450, 720)]
+}
+
+[sub_resource type="Animation" id="Animation_4tdo4"]
+resource_name = "bob2"
+length = 1.5
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.9, 1.2, 1.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(1450, 720), Vector2(1500, 700), Vector2(1500, 720), Vector2(1450, 720)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_m287l"]
+_data = {
+"RESET": SubResource("Animation_i31ic"),
+"bob2": SubResource("Animation_4tdo4")
+}
+
+[node name="level" type="Node2D"]
+script = ExtResource("1_4iqra")
+
+[node name="player" type="Sprite2D" parent="."]
+position = Vector2(590, 720)
+scale = Vector2(6, 6)
+texture = ExtResource("2_1mqsy")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="player"]
+libraries = {
+"": SubResource("AnimationLibrary_bmtoe")
+}
+
+[node name="alien" type="Sprite2D" parent="."]
+position = Vector2(1450, 720)
+scale = Vector2(6, 6)
+texture = ExtResource("3_fj0jj")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="alien"]
+libraries = {
+"": SubResource("AnimationLibrary_m287l")
+}
+autoplay = "bob2"

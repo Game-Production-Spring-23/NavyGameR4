@@ -60,4 +60,10 @@ func triggerDialogue(path, dialogName):
 	characterCanMove = false
 	DialogueManager.show_dialogue_balloon(load("res://dialogue/"+ path + "/main.dialogue"), dialogName)
 
-
+func rootCall(function, parameter):
+	#calls a method in the root node of the current scene (with an optional single parameter. i hate that this has to exist
+	#if you don't have a parameter, pass in null
+	if(parameter != null):
+		get_tree().get_current_scene().call(function, parameter)
+	else:
+		get_tree().get_current_scene().call(function)

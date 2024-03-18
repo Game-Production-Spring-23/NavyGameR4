@@ -38,70 +38,79 @@ do gameController.characterCanMove = true
 ~ minigameQuestion1
 Daria: What's radar?
 - A radar detects surrounding objects using radio waves. 
-
+	do gameController.rootCall("answer", true)
 - A radar detects recently made cherry pie 
-
+	do gameController.rootCall("answer", false)
 - A radar gets your favorite television shows 
-
+	do gameController.rootCall("answer", false)
 - A radar detects surrounding objects using magic 
+	do gameController.rootCall("answer", false)
 => END
 ~ minigameQuestion2
 Daria: What does RADAR stand for?
-
 - Radio Detection and Ranging. 
-
+	do gameController.rootCall("answer", true)
 - Raspberry Danish and Ravioli 
-
+	do gameController.rootCall("answer", false)
 - Rectangle Diamond and Rombas 
-
+	do gameController.rootCall("answer", false)
 - Radio Destroyer and Reviver  
+	do gameController.rootCall("answer", false)
 => END
 ~ minigameQuestion3
 Daria: How does a radar detect things? 
 - The radar transmits a pulse wave – usually shortwave \n microwaves – at a certain time.
-
+	do gameController.rootCall("answer", true)
 - Asks politely 
-
+	do gameController.rootCall("answer", false)
 - Studies very hard 
-
+	do gameController.rootCall("answer", false)
 - Uses the MBSE model 
+	do gameController.rootCall("answer", false)
 => END
 ~ minigameQuestion4
 Daria: What does the pulse wave do? 
 - The pulse travels through a medium (air, vacuum of space) \n and bounces off an object. 
-
+	do gameController.rootCall("answer", true)
 - Finishes your math homework 
-
+	do gameController.rootCall("answer", false)
 - The pulse travels through Jello and bounces off a spoon 
-
+	do gameController.rootCall("answer", false)
 - Makes you act on impulse 
+	do gameController.rootCall("answer", false)
 => END
 ~ minigameQuestion5
 Daria: Why does it bounce off an object? 
 - Once it bounces off the object, it comes back towards the radar. 
-
+	do gameController.rootCall("answer", true)
 - It wants to be a gymnast.
-
+	do gameController.rootCall("answer", false)
 - It wants to see how high it can jump.
-
+	do gameController.rootCall("answer", false)
 - It’s coated in bouncy juice.
+	do gameController.rootCall("answer", false)
 => END
 ~ minigameQuestion6
 Daria: How does the radar know where the object is? 
 - It finds the range by measuring the time the pulse was sent & \n when the pulse returns & divides it by 2 
+	do gameController.rootCall("answer", true)
 - It looks at it with binoculars 
+	do gameController.rootCall("answer", false)
 - It tries it’s best
+	do gameController.rootCall("answer", false)
 - It communicates with other radars within a 300-mile radius 
+	do gameController.rootCall("answer", false)
 => END
 ~ minigameQuestion7
 Daria: What if the object is moving?
 - We can determine the direction & speed the object is moving by looking \n at various positions over time 
-
+	do gameController.rootCall("answer", true)
 - It puts pedal to the metal 
-
+	do gameController.rootCall("answer", false)
 - It says, “SLOW DOWN!” 
-
+	do gameController.rootCall("answer", false)
 - It does not detect the object 
+	do gameController.rootCall("answer", false)
 => END
 ~ tutorial4
 Daria: That sounds awesome, what does a Radar look like?
