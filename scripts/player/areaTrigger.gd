@@ -6,6 +6,7 @@ extends Area2D
 """
 signal player_interact
 var hasPlayerInteracted
+@export var mulipleInteracts: bool
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -15,7 +16,7 @@ func _ready():
 # If a 2Dbody has entered the area
 func _on_body_entered(body):
 	# Only check if the player hasn't interacted with the trigger before
-	if (!hasPlayerInteracted):
+	if (!hasPlayerInteracted || mulipleInteracts):
 		if body.name == "Player":
 			hasPlayerInteracted = true
 			player_interact.emit()

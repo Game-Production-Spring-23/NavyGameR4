@@ -193,6 +193,7 @@ scale = Vector2(6.95154, 7.77073)
 [node name="AreaTrigger" parent="." instance=ExtResource("4_dpfwv")]
 position = Vector2(784, 712)
 scale = Vector2(6.64, 19.64)
+mulipleInteracts = null
 
 [connection signal="player_interact" from="InteractTrigger" to="." method="_on_interact"]
 [connection signal="player_interact" from="AreaTrigger" to="." method="_on_interact"]

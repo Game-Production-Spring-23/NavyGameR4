@@ -211,5 +211,6 @@ tilemap = NodePath("../TileMap")
 [node name="AreaTrigger" parent="." instance=ExtResource("4_hie1r")]
 position = Vector2(4225, 1113)
 scale = Vector2(23.126, -18.2341)
+mulipleInteracts = null
 
 [connection signal="player_interact" from="AreaTrigger" to="." method="_on_area_trigger_player_interact"]
