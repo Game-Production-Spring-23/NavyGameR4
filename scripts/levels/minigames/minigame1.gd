@@ -20,5 +20,9 @@ func answer(correct):
 		else:
 			await get_tree().create_timer(2.0).timeout
 			question()
+	else:
+		player.position.x -= 100
+		await get_tree().create_timer(2.0).timeout
+		question()
 
 	

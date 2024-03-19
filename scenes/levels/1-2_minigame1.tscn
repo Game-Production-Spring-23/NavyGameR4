@@ -1,8 +1,10 @@
-[gd_scene load_steps=10 format=3 uid="uid://dar8bo8aej7wg"]
+[gd_scene load_steps=12 format=3 uid="uid://17h2hscs6iyr"]
 
-[ext_resource type="Script" path="res://scripts/levels/minigames/minigame1.gd" id="1_4iqra"]
-[ext_resource type="Texture2D" uid="uid://cmjstgqxlae6a" path="res://assets/images/wip/running-man-dev.png" id="2_1mqsy"]
-[ext_resource type="Texture2D" uid="uid://ed0e3kp3l10i" path="res://assets/images/wip/alens.png" id="3_fj0jj"]
+[ext_resource type="Script" path="res://scripts/levels/minigames/minigame1.gd" id="1_xadul"]
+[ext_resource type="Texture2D" uid="uid://dnnem0lq2q2l4" path="res://assets/images/minigames/popsicleRanger.png" id="2_7akgu"]
+[ext_resource type="Texture2D" uid="uid://ctw1gqxb82ycp" path="res://assets/images/minigames/stripedBackground.png" id="2_cauop"]
+[ext_resource type="Texture2D" uid="uid://ci6qyga74ewt0" path="res://assets/images/minigames/popsicleDaria.png" id="3_exki5"]
+[ext_resource type="Texture2D" uid="uid://c0ht3n7re6jaj" path="res://assets/images/minigames/redCurtain.png" id="4_3knku"]
 
 [sub_resource type="Animation" id="Animation_ipeq2"]
 length = 0.001
@@ -16,7 +18,7 @@ tracks/0/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [Vector2(590, 720)]
+"values": [Vector2(590, 600)]
 }
 
 [sub_resource type="Animation" id="Animation_58btu"]
@@ -53,7 +55,7 @@ tracks/0/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [Vector2(1450, 720)]
+"values": [Vector2(1450, 600)]
 }
 
 [sub_resource type="Animation" id="Animation_4tdo4"]
@@ -80,12 +82,17 @@ _data = {
 }
 
 [node name="level" type="Node2D"]
-script = ExtResource("1_4iqra")
+script = ExtResource("1_xadul")
+
+[node name="Background" type="TextureRect" parent="."]
+offset_right = 1934.0
+offset_bottom = 1087.0
+texture = ExtResource("2_cauop")
 
 [node name="player" type="Sprite2D" parent="."]
-position = Vector2(590, 720)
-scale = Vector2(6, 6)
-texture = ExtResource("2_1mqsy")
+position = Vector2(590, 600)
+scale = Vector2(1.33123, 1.336)
+texture = ExtResource("2_7akgu")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="player"]
 libraries = {
@@ -93,12 +100,17 @@ libraries = {
 }
 
 [node name="alien" type="Sprite2D" parent="."]
-position = Vector2(1450, 720)
-scale = Vector2(6, 6)
-texture = ExtResource("3_fj0jj")
+position = Vector2(1450, 600)
+scale = Vector2(1.42841, 1.08878)
+texture = ExtResource("3_exki5")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="alien"]
 libraries = {
 "": SubResource("AnimationLibrary_m287l")
 }
 autoplay = "bob2"
+
+[node name="Curtains" type="TextureRect" parent="."]
+offset_right = 1930.0
+offset_bottom = 1087.0
+texture = ExtResource("4_3knku")

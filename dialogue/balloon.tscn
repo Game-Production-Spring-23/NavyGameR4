@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=3 uid="uid://73jm5qjy52vq"]
+[gd_scene load_steps=14 format=3 uid="uid://73jm5qjy52vq"]
 
 [ext_resource type="Script" path="res://dialogue/balloon.gd" id="1_36de5"]
 [ext_resource type="Texture2D" uid="uid://801crpoif2md" path="res://assets/images/dialogue/dialogueBox.png" id="2_6eof2"]
@@ -65,6 +65,17 @@ MarginContainer/constants/margin_left = 30
 MarginContainer/constants/margin_right = 30
 MarginContainer/constants/margin_top = 15
 Panel/styles/panel = SubResource("StyleBoxFlat_uy0d5")
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_jdxkl"]
+bg_color = Color(0.109804, 0.12549, 0.235294, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.992157, 0.843137, 0.372549, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_vvbei"]
+bg_color = Color(0.105882, 0.12549, 0.235294, 1)
 
 [node name="ExampleBalloon" type="CanvasLayer"]
 layer = 100
@@ -160,14 +171,17 @@ grow_horizontal = 2
 grow_vertical = 2
 size_flags_vertical = 8
 theme = ExtResource("5_5si8r")
-theme_override_constants/h_separation = 275
-theme_override_constants/v_separation = 60
+theme_override_constants/h_separation = 30
+theme_override_constants/v_separation = 30
+columns = 2
 script = ExtResource("3_72ixx")
 response_template = NodePath("ResponseExample")
 
 [node name="ResponseExample" type="Button" parent="Balloon/ResponsesMenu"]
 custom_minimum_size = Vector2(400, 0)
 layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_jdxkl")
+theme_override_styles/hover = SubResource("StyleBoxFlat_vvbei")
 text = "Response example, Long"
 
 [connection signal="gui_input" from="Balloon" to="." method="_on_balloon_gui_input"]
