@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ci6qyga74ewt0"
-path="res://.godot/imported/popsicleDaria.png-c2abf6f3b20dc1492eeddb60fdd33208.ctex"
+uid="uid://dnnem0lq2q2l4"
+path="res://.godot/imported/popsicleRanger.png-4c86c1e2ca01aa14fbe44bee9f56dd9a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/images/minigames/popsicleDaria.png"
-dest_files=["res://.godot/imported/popsicleDaria.png-c2abf6f3b20dc1492eeddb60fdd33208.ctex"]
+source_file="res://assets/images/sprites/minigame_1/popsicleRanger.png"
+dest_files=["res://.godot/imported/popsicleRanger.png-4c86c1e2ca01aa14fbe44bee9f56dd9a.ctex"]
 
 [params]
 

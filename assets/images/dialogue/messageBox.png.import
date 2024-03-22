@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dnnem0lq2q2l4"
-path="res://.godot/imported/popsicleRanger.png-636c731ec63a2f3665b83f4cb04aa39e.ctex"
+uid="uid://dhaj7ugamct2f"
+path="res://.godot/imported/messageBox.png-b839fa2bd5229f14bfab44f0559476af.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/images/minigames/popsicleRanger.png"
-dest_files=["res://.godot/imported/popsicleRanger.png-636c731ec63a2f3665b83f4cb04aa39e.ctex"]
+source_file="res://assets/images/dialogue/messageBox.png"
+dest_files=["res://.godot/imported/messageBox.png-b839fa2bd5229f14bfab44f0559476af.ctex"]
 
 [params]
 

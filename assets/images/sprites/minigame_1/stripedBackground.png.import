@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ctw1gqxb82ycp"
-path="res://.godot/imported/stripedBackground.png-5e0a42878e93fe7145f86a778ab38194.ctex"
+path="res://.godot/imported/stripedBackground.png-4bac790e5b117413dd8948a6596b8f17.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/images/minigames/stripedBackground.png"
-dest_files=["res://.godot/imported/stripedBackground.png-5e0a42878e93fe7145f86a778ab38194.ctex"]
+source_file="res://assets/images/sprites/minigame_1/stripedBackground.png"
+dest_files=["res://.godot/imported/stripedBackground.png-4bac790e5b117413dd8948a6596b8f17.ctex"]
 
 [params]
 

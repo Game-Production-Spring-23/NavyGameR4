@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c0ht3n7re6jaj"
-path="res://.godot/imported/redCurtain.png-c476b3419e48e985f2171fb85f761d26.ctex"
+path="res://.godot/imported/redCurtain.png-8fc019a9ba0d7880706825c6471056d8.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/images/minigames/redCurtain.png"
-dest_files=["res://.godot/imported/redCurtain.png-c476b3419e48e985f2171fb85f761d26.ctex"]
+source_file="res://assets/images/sprites/minigame_1/redCurtain.png"
+dest_files=["res://.godot/imported/redCurtain.png-8fc019a9ba0d7880706825c6471056d8.ctex"]
 
 [params]
 
