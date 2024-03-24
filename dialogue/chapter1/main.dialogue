@@ -27,9 +27,9 @@ do hadPlayerTalkedToRoger = true
 => END
 ~ tutorial3
 Ranger: ROGER, what is that thing?
-???: HEY! I'm not a thing, I'm a Daran!
+???: [#sprite=daria] HEY! I'm not a thing, I'm a Daran!
 Ranger: Well whatever you are, you must be the one messing with my ship!
-???: Uh Oh. 
+???: [#sprite=daria] Uh Oh. 
 Ranger: HEY! GET BACK HERE!
 do darknessScreen.play("darken")
 do daria.hide()
@@ -48,10 +48,10 @@ Daria: What's radar?
 => END
 ~ minigameQuestion2
 Daria: What does RADAR stand for?
-- Raspberry Danish and Ravioli 
-	do gameController.rootCall("answer", false)
 - Radio Detection and Ranging. 
 	do gameController.rootCall("answer", true)
+- Raspberry Danish and Ravioli 
+	do gameController.rootCall("answer", false)
 - Rectangle Diamond and Rombas 
 	do gameController.rootCall("answer", false)
 - Radio Destroyer and Reviver  
@@ -59,25 +59,25 @@ Daria: What does RADAR stand for?
 => END
 ~ minigameQuestion3
 Daria: How does a radar detect things? 
+- The radar transmits a pulse wave – usually shortwave \n microwaves – at a certain time.
+	do gameController.rootCall("answer", true)
 - Asks politely 
 	do gameController.rootCall("answer", false)
 - Studies very hard 
 	do gameController.rootCall("answer", false)
-- The radar transmits a pulse wave – usually shortwave \n microwaves – at a certain time.
-	do gameController.rootCall("answer", true)
 - Uses the MBSE model 
 	do gameController.rootCall("answer", false)
 => END
 ~ minigameQuestion4
 Daria: What does the pulse wave do? 
+- The pulse travels through a medium (air, vacuum of space) \n and bounces off an object. 
+	do gameController.rootCall("answer", true)
 - Finishes your math homework 
 	do gameController.rootCall("answer", false)
 - The pulse travels through Jello and bounces off a spoon 
 	do gameController.rootCall("answer", false)
 - Makes you act on impulse 
 	do gameController.rootCall("answer", false)
-- The pulse travels through a medium (air, vacuum of space) \n and bounces off an object. 
-	do gameController.rootCall("answer", true)
 => END
 ~ minigameQuestion5
 Daria: Why does it bounce off an object? 
@@ -92,10 +92,10 @@ Daria: Why does it bounce off an object?
 => END
 ~ minigameQuestion6
 Daria: How does the radar know where the object is? 
-- It looks at it with binoculars 
-	do gameController.rootCall("answer", false)
 - It finds the range by measuring the time the pulse was sent & \n when the pulse returns & \n divides it by 2 
 	do gameController.rootCall("answer", true)
+- It looks at it with binoculars 
+	do gameController.rootCall("answer", false)
 - It tries it’s best
 	do gameController.rootCall("answer", false)
 - It communicates with other radars within a 300-mile radius 
@@ -103,16 +103,15 @@ Daria: How does the radar know where the object is?
 => END
 ~ minigameQuestion7
 Daria: What if the object is moving?
+- We can determine the direction & speed the object is moving by looking \n at various positions over time 
+	do gameController.rootCall("answer", true)
 - It puts pedal to the metal 
 	do gameController.rootCall("answer", false)
 - It says, “SLOW DOWN!” 
 	do gameController.rootCall("answer", false)
-- We can determine the direction & speed the object is moving by looking \n at various positions over time 
-	do gameController.rootCall("answer", true)
 - It does not detect the object 
 	do gameController.rootCall("answer", false)
 => END
-
 ~ tutorial4
 Daria: That sounds awesome, what does a Radar look like?
 Ranger: What are you talking about, don’t you not have my radar? What were you doing on my ship?
@@ -121,13 +120,15 @@ Ranger: Friends? Unless ROGER grew some legs and ran off, no one else was on the
 Daria: What about the Scein? And the Trolum? Or the Yappo? The Tendra? And the...what were they called? Oh yeah, the Lagna!
 Ranger: Sheiza, the aliens of this planet must have gotten on board while ROGER and I were out cold...
 ROGER: Ranger, while you were playing catch up with your new friend, I got access to the CCTV footage. You should come take a look at this; I will be waiting in the Comms room.
-do loadCommsDialogue()
-=> END!
+do gameController.characterCanMove = true
+=> END
 
 ~ tutorial5
 ROGER: According to the video, it looks like there were 5 different aliens that took parts of the Radar.
 Ranger: Ok ROGER, is there any way you can track them down?
+
 ROGER: Sadly I cannot. Due to my reboot, most of my functionality was wiped clean.
+
 Ranger: Dango! First my ship crashes, then my radar is stolen, and now ROGER? How am I going to get this done?
 Daria: Perhaps I can help! 
 #Daria enters
@@ -144,42 +145,5 @@ Daria: The closest village would be in the Plains of Trolonc. That’s where the
 Ranger: Sounds good! ROGER, will you be ok on the ship?
 ROGER: Don’t worry Ranger, I have a piece of me in your suit, it will be like I never left your side. Gotta make sure you stay on track.
 Daria: This will be so much fun!
-do endDialogue()
-=> END!
-
-~ reviewQuestion1
-ROGER: What does the antenna do? 
-- Sends and receives waves. 
-	ROGER: Correct!
-	do gameController.rootCall("answer", true)
-- Display Data.
-	ROGER: Incorrect, please try again
-	do gameController.rootCall("answer", false)
-- Provides power for the unit. 
-	ROGER: Incorrect, please try again
-	do gameController.rootCall("answer", false)
-=> END
-~ reviewQuestion2
-ROGER: What would a radar be used for? 
-- Send messages to other radars. 
-	ROGER: Incorrect, please try again
-	do gameController.rootCall("answer", false)
-- Detecting, locating, and tracking objects.
-	ROGER: Correct!
-	do gameController.rootCall("answer", true)
-- Translate different languages. 
-	ROGER: Incorrect, please try again
-	do gameController.rootCall("answer", false)
-=> END
-~ reviewQuestion3
-ROGER: What kind of waves does the radar use? 
-- Hand waves. 
-	ROGER: Incorrect, please try again
-	do gameController.rootCall("answer", false)
-- Ocean waves.
-	ROGER: Incorrect, please try again
-	do gameController.rootCall("answer", false)
-- Microwaves. 
-	ROGER: Correct!
-	do gameController.rootCall("answer", true)
+do gameController.characterCanMove = true
 => END!

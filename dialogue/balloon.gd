@@ -47,6 +47,7 @@ var dialogue_line: DialogueLine:
 	
 
 		var portrait_name = dialogue_line.character.to_lower();
+		
 		# Looks for image file path 
 		if FileAccess.file_exists("res://assets/images/dialogue/"+portrait_name+".png.import"):
 			# If roger is talking
@@ -71,8 +72,13 @@ var dialogue_line: DialogueLine:
 			else:
 				portrait.texture = load("res://assets/images/dialogue/"+ portrait_name+".png")
 		else :
-			print(portrait_name)
-			portrait.texture = load("res://assets/images/dialogue/errorPlaceholder.png")
+			#If character is unknown
+			if portrait_name == "???":
+				if dialogue_line.get_tag_value("sprite") == "daria":
+					portrait.texture = load("res://assets/images/dialogue/daria.png")
+			else:
+				print(portrait_name)
+				portrait.texture = load("res://assets/images/dialogue/errorPlaceholder.png")
 		character_label.text = tr(dialogue_line.character, "dialogue")
 
 		dialogue_label.hide()
