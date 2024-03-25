@@ -1,7 +1,7 @@
 @icon("./assets/responses_menu.svg")
 
 ## A VBoxContainer for dialogue responses provided by [b]Dialogue Manager[/b].
-class_name DialogueResponsesMenu extends GridContainer
+class_name DialogueResponsesMenu extends VBoxContainer
 
 
 ## Emitted when a response is selected.
