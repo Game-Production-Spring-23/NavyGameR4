@@ -1,9 +1,24 @@
 [gd_scene load_steps=11 format=3 uid="uid://bn76ojai1v8t6"]
 
 [ext_resource type="Script" path="res://scripts/levels/1-4_dialogue.gd" id="1_t35me"]
-[ext_resource type="Texture2D" uid="uid://bucp74mwivatq" path="res://assets/images/background/Planet-Placeholder.webp" id="2_jagha"]
+[ext_resource type="Texture2D" uid="uid://c2b175ahm88ie" path="res://assets/images/wip/placeholder.png" id="2_31rcr"]
 [ext_resource type="Theme" uid="uid://bajr2k60ueqkc" path="res://assets/themes/headerTheme.tres" id="3_mmnru"]
 [ext_resource type="Texture2D" uid="uid://dhaj7ugamct2f" path="res://assets/images/dialogue/messageBox.png" id="4_hwf13"]
+
+[sub_resource type="Animation" id="Animation_xgc4e"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
 
 [sub_resource type="Animation" id="Animation_4q0rf"]
 resource_name = "show"
@@ -19,21 +34,6 @@ tracks/0/keys = {
 "transitions": PackedFloat32Array(1, 1, 1),
 "update": 0,
 "values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1), Color(1, 1, 1, 1)]
-}
-
-[sub_resource type="Animation" id="Animation_xgc4e"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath(".:modulate")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Color(1, 1, 1, 0)]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_e20r5"]
@@ -92,7 +92,7 @@ offset_top = -1.0
 offset_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("2_jagha")
+texture = ExtResource("2_31rcr")
 
 [node name="Label" type="Label" parent="Backgrounds/Background"]
 layout_mode = 1

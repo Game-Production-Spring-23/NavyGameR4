@@ -1,7 +1,7 @@
 [gd_scene load_steps=10 format=3 uid="uid://ehjpjvutjsgt"]
 
 [ext_resource type="Script" path="res://scripts/levels/1-0_swampSplash.gd" id="1_wpksr"]
-[ext_resource type="Texture2D" uid="uid://c774exdt06p8a" path="res://assets/images/intro-cutscene/introSlide1.png" id="2_ym5bv"]
+[ext_resource type="Texture2D" uid="uid://c2b175ahm88ie" path="res://assets/images/wip/placeholder.png" id="2_nudno"]
 [ext_resource type="Theme" uid="uid://dctbregm4ijln" path="res://assets/themes/buttonTheme.tres" id="3_ycpom"]
 [ext_resource type="Texture2D" uid="uid://7mk2r2g22pqx" path="res://assets/images/ui/button-blank.png" id="4_2tymc"]
 [ext_resource type="Texture2D" uid="uid://b43bp8hdog3co" path="res://assets/images/ui/button-blank_click.png" id="5_bf6gr"]
@@ -57,7 +57,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("2_ym5bv")
+texture = ExtResource("2_nudno")
 
 [node name="Timer" type="Timer" parent="UI"]
 wait_time = 5.0
