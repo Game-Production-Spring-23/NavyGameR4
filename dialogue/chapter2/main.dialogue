@@ -1,31 +1,31 @@
 ~ chapter2_1
-Daria: Here we are! This is where the Trolums live. 
-ROGER: Let’s ask around for any information the locals might have.
+Daria: Here we are! This is where the Trolums live. [ID:tfd528a3855] 
+ROGER: Let’s ask around for any information the locals might have. [ID:t97714956bf]
 do gameController.characterCanMove = true
 => END!
 ~ chapter2_NPC_1 
-Daria: Excuse me, see anything unusual recently?
-Trolum: [#type = trolum1] I haven't seen anything. I was too busy mopping my doorway.
+Daria: Excuse me, see anything unusual recently? [ID:t6a9719a5d0]
+Trolum: [#type = trolum1] I haven't seen anything. I was too busy mopping my doorway. [ID:t78ea2b225e]
 do gameController.characterCanMove = true
 => END!
 ~ chapter2_NPC_2
-Ranger: Hey, see anything strange around?
-Trolum: [#type = trolum2] I heard a loud bang earlier; I think it was just the neighbors
+Ranger: Hey, see anything strange around? [ID:t1a47a3b5ad]
+Trolum: [#type = trolum2] I heard a loud bang earlier; I think it was just the neighbors [ID:t41f324b156]
 do gameController.characterCanMove = true
 ~ chapter2_NPC_3
-Daria: Sorry to bother you, but have you seen anyone with a weird device?
+Daria: Sorry to bother you, but have you seen anyone with a weird device? [ID:t383544819b]
 
-Trolum: [#type = trolum3] Well, Travin just came by saying that they found this weird Geode while scavenging. It was a square rock with these weird items on the right and a transparent rock on the left. 
+Trolum: [#type = trolum3] Well, Travin just came by saying that they found this weird Geode while scavenging. It was a square rock with these weird items on the right and a transparent rock on the left. [ID:tb55b87b074] 
 
-Ranger: That must be the Control Unit! Where is Travin right now?
-Trolum: [#type = trolum3] He runs a shop next door. It's hard to miss.
+Ranger: That must be the Control Unit! Where is Travin right now? [ID:te0a7cc9cf9]
+Trolum: [#type = trolum3] He runs a shop next door. It's hard to miss. [ID:tf142fb31bc]
 do gameController.characterCanMove = true
 => END
 ~ chapter2_2
-Travin: Newcomers...Welcome in! I am Travin and this is my shop.
-Daria: Hey there sir, we heard from somebody that you found some cool geode recently?
-Travin: OH, you're talking about my Geode. It looks beautiful, I would show you, but it's not for sale.
-Ranger: Actually, that geode you're talking about is a control unit for my radar, and its mine!
+Travin: Newcomers...Welcome in! I am Travin and this is my shop. [ID:t7254bb4e0e]
+Daria: Hey there sir, we heard from somebody that you found some cool geode recently? [ID:tf9175e8dd6]
+Travin: OH, you're talking about my Geode. It looks beautiful, I would show you, but it's not for sale. [ID:t0b52c820db]
+Ranger: Actually, that geode you're talking about is a control unit for my radar, and its mine! [ID:t2372788ad5]
 do gameController.characterCanMove = true
 => END
 # MINIGAME STRUCTURE GOES HERE
@@ -34,11 +34,11 @@ do gameController.characterCanMove = true
 
 
 ~ chapter2_3
-ROGER: Alright! One part down!
-Ranger: A couple more to go. Alright kid, where to next?
-Daria: Well, I hope you're good at climbing.
-Ranger: What do you mean?
-Daria: We are about to climb Mt. Tenanan!
-Ranger: Of course we are.
+ROGER: Alright! One part down! [ID:ta749e4c79d]
+Ranger: A couple more to go. Alright kid, where to next? [ID:t04cf9eff58]
+Daria: Well, I hope you're good at climbing. [ID:t80f0c69308]
+Ranger: What do you mean? [ID:t83ee6e3130]
+Daria: We are about to climb Mt. Tenanan! [ID:t66cfa0286e]
+Ranger: Of course we are. [ID:t8c04363e04]
 do gameController.characterCanMove = true
 => END

@@ -25,3 +25,5 @@ func answer(correct):
 		question()  
 
 
+func printDialogue(param):
+	print(param)

@@ -1,10 +1,10 @@
 
 ~ tutorial1
 
- Ranger: Ooh...Ugh, what happened?
-ROGER:[#mood=scrambled] Error, Error, system overload. Proceeding to Reboot…... Reboot Complete!
+ Ranger:  Ooh...Ugh, what happened? [ID:ta78288b13b] 
+ROGER:[#mood=scrambled] Error, Error, system overload. Proceeding to Reboot…... Reboot Complete! [ID:t6a967d27e3]
 
-ROGER:[#mood=scrambled] Designated Ranger, the ships gravity engine malfunctioned. While I run diagnostics, make sure you can move efficiently. We have lots to do!
+ROGER:[#mood=scrambled] Designated Ranger, the ships gravity engine malfunctioned. While I run diagnostics, make sure you can move efficiently. We have lots to do! [ID:t16872b2d94]
 do gameController.characterCanMove = true
 do wasdKeyScreen.play("fadein")
 do hasPlayerMovedOnce = false
@@ -12,164 +12,165 @@ do hasPlayerMovedOnce = false
 
 ~ tutorial2
 do darknessScreen.play("brighten")
-ROGER: DIAGNOSTICS COMPLETE. I have bad news Ranger: The ship is totally wrecked, and the radar is…
+ROGER: DIAGNOSTICS COMPLETE. I have bad news Ranger: The ship is totally wrecked, and the radar is… [ID:t4413d98621]
 
-Ranger: Broken? No problem, I can fix that!
+Ranger: Broken? No problem, I can fix that! [ID:t9225f0607b]
 
-ROGER: [#mood=sad] Don’t interrupt me! It’s not broken, it’s completely missing. Sir, this is not good.
+ROGER: [#mood=sad] Don’t interrupt me! It’s not broken, it’s completely missing. Sir, this is not good. [ID:t44fc75551b]
 
-Ranger: Missing? Unless it fell out of the ship during the crash, it must have been stolen...Check the CCTV footage, quickly.
+Ranger: Missing? Unless it fell out of the ship during the crash, it must have been stolen...Check the CCTV footage, quickly. [ID:tddf5b00135]
 
-ROGER: tried doing that during my diagnostics, but I couldn’t access it. It seems like somebody is messing with my system in the main bay. Let me open the door and you go check it out.
+ROGER: tried doing that during my diagnostics, but I couldn’t access it. It seems like somebody is messing with my system in the main bay. Let me open the door and you go check it out. [ID:t39e146ed2d]
 do gameController.characterCanMove = true
 do hadPlayerTalkedToRoger = true
 
 => END
 ~ tutorial3
-Ranger: ROGER, what is that thing?
-???: [#sprite=daria] HEY! I'm not a thing, I'm a Daran!
-Ranger: Well whatever you are, you must be the one messing with my ship!
-???: [#sprite=daria] Uh Oh. 
-Ranger: HEY! GET BACK HERE!
+Ranger: ROGER, what is that thing? [ID:t0c59c37dfc]
+???: [#sprite=daria] HEY! I'm not a thing, I'm a Daran! [ID:t54e55888c6]
+Ranger: Well whatever you are, you must be the one messing with my ship! [ID:tef167cdaa1]
+???: [#sprite=daria] Uh Oh. [ID:t02b2426b9c] 
+Ranger: HEY! GET BACK HERE! [ID:tc7cb4d9e3d]
 do darknessScreen.play("darken")
 do daria.hide()
 do gameController.characterCanMove = true
 => END!
 
 ~ minigameQuestion1
-Daria: What's radar?
-- A radar detects surrounding objects using radio waves. 
+Daria: What's radar? [ID:t81fcd0b612]
+- A radar detects surrounding objects using radio waves. [ID:t780dce65b4] 
 	do gameController.rootCall("answer", true)
-- A radar detects recently made cherry pie 
+- A radar detects recently made cherry pie [ID:t9b1fd30216] 
 	do gameController.rootCall("answer", false)
-- A radar gets your favorite television shows 
+- A radar gets your favorite television shows [ID:t9ec6b9fcbb] 
 	do gameController.rootCall("answer", false)
-- A radar detects surrounding objects using magic 
+- A radar detects surrounding objects using magic [ID:tb7edfe1c53] 
 	do gameController.rootCall("answer", false)
 => END
 ~ minigameQuestion2
-Daria: What does RADAR stand for?
-- Raspberry Danish and Ravioli 
+Daria: What does RADAR stand for? [ID:tcf5f63d5c0]
+- Raspberry Danish and Ravioli [ID:t2be74f1afc] 
 	do gameController.rootCall("answer", false)
-- Radio Detection and Ranging. 
+- Radio Detection and Ranging. [ID:tcf3b2eea69] 
 	do gameController.rootCall("answer", true)
-- Rectangle Diamond and Rombas 
+- Rectangle Diamond and Rombas [ID:tb27d6593f6] 
 	do gameController.rootCall("answer", false)
-- Radio Destroyer and Reviver  
+- Radio Destroyer and Reviver [ID:tcdc1356e41]  
 	do gameController.rootCall("answer", false)
 => END
 ~ minigameQuestion3
-Daria: How does a radar detect things? 
-- Asks politely 
+Daria: How does a radar detect things? [ID:taa65c82d6f] 
+- Asks politely [ID:t88abf908ea] 
 	do gameController.rootCall("answer", false)
-- Studies very hard 
+- Studies very hard [ID:td2d279eb6e] 
 	do gameController.rootCall("answer", false)
 - The radar transmits a pulse wave – usually shortwave \n microwaves – at a certain time.
 	do gameController.rootCall("answer", true)
-- Uses the MBSE model 
+- Uses the MBSE model [ID:te49cdcb7ac] 
 	do gameController.rootCall("answer", false)
 => END
 ~ minigameQuestion4
-Daria: What does the pulse wave do? 
-- Finishes your math homework 
+Daria: What does the pulse wave do? [ID:t123edd5699] 
+- Finishes your math homework [ID:tda308a5274] 
 	do gameController.rootCall("answer", false)
-- The pulse travels through Jello and bounces off a spoon 
+- The pulse travels through Jello and bounces off a spoon [ID:t8b9eac592c] 
 	do gameController.rootCall("answer", false)
-- Makes you act on impulse 
+- Makes you act on impulse [ID:tf0462cc0c0] 
 	do gameController.rootCall("answer", false)
 - The pulse travels through a medium (air, vacuum of space) \n and bounces off an object. 
 	do gameController.rootCall("answer", true)
 => END
 ~ minigameQuestion5
-Daria: Why does it bounce off an object? 
-- Once it bounces off the object, it comes back towards the radar. 
+Daria: Why does it bounce off an object? [ID:t5b960bb877] 
+- Once it bounces off the object, it comes back towards the radar. [ID:t88213c60a1] 
 	do gameController.rootCall("answer", true)
-- It wants to be a gymnast 
+- It wants to be a gymnast [ID:t7efbf0b560] 
 	do gameController.rootCall("answer", false)
-- It wants to see how high it can jump 
+- It wants to see how high it can jump [ID:t81e0d9731e] 
 	do gameController.rootCall("answer", false)
-- It’s coated in bouncy juice 
+- It’s coated in bouncy juice [ID:t3ac8c6ee93] 
 	do gameController.rootCall("answer", false)
 ~ minigameQuestion6
-Daria: How does the radar know where the object is? 
-- It looks at it with binoculars 
+Daria: How does the radar know where the object is? [ID:t95e74d146d] 
+- It looks at it with binoculars [ID:t6d59b9afe0] 
 	do gameController.rootCall("answer", false)
 - It finds the range by measuring the time the pulse was sent & \n when the pulse returns & \n divides it by 2 
 	do gameController.rootCall("answer", true)
-- It tries it’s best
+- It tries it’s best [ID:tcd7eb62156]
 	do gameController.rootCall("answer", false)
-- It communicates with other radars within a 300-mile radius 
+- It communicates with other radars within a 300-mile radius [ID:t2b55699fad] 
 	do gameController.rootCall("answer", false)
 => END
 ~ minigameQuestion7
-Daria: What if the object is moving?
-- It puts pedal to the metal 
+Daria: What if the object is moving? [ID:td97c1ea399]
+- It puts pedal to the metal [ID:te655873ceb] 
 	do gameController.rootCall("answer", false)
-- It says, “SLOW DOWN!” 
+- It says, “SLOW DOWN!” [ID:tda4d26f57b] 
 	do gameController.rootCall("answer", false)
 - We can determine the direction & speed the object is moving by looking \n at various positions over time 
 	do gameController.rootCall("answer", true)
-- It does not detect the object 
+- It does not detect the object [ID:td7665734c1] 
 	do gameController.rootCall("answer", false)
 => END
 
 ~ tutorial4
-Daria: That sounds awesome, what does a Radar look like?
-Ranger: What are you talking about, don’t you not have my radar? What were you doing on my ship?
-Ranger: Friends? Unless ROGER grew some legs and ran off, no one else was on the
-Daria: What about the Scein? And the Trolum? Or the Yappo? The Tendra? And the...what were they called? Oh yeah, the Lagna!
-Ranger: Sheiza, the aliens of this planet must have gotten on board while ROGER and I were out cold...
-ROGER: Ranger, while you were playing catch up with your new friend, I got access to the CCTV footage. You should come take a look at this; I will be waiting in the Comms room.
+Daria: That sounds awesome, what does a Radar look like? [ID:tb9d56cc107]
+Ranger: What are you talking about, don’t you not have my radar? What were you doing on my ship? [ID:td4eaa52908]
+Ranger: Friends? Unless ROGER grew some legs and ran off, no one else was on the [ID:t76cdc77037]
+Daria: What about the Scein? And the Trolum? Or the Yappo? The Tendra? And the...what were they called? Oh yeah, the Lagna! [ID:t73fee68bbd]
+Ranger: Sheiza, the aliens of this planet must have gotten on board while ROGER and I were out cold... [ID:t1cdab008fc]
+ROGER: Ranger, while you were playing catch up with your new friend, I got access to the CCTV footage. You should come take a look at this; I will be waiting in the Comms room. [ID:tae380d9e41]
 do loadCommsDialogue()
 => END!
 
 ~ tutorial5
-ROGER: According to the video, it looks like there were 5 different aliens that took parts of the Radar.
-Ranger: Ok ROGER, is there any way you can track them down?
-ROGER: Sadly I cannot. Due to my reboot, most of my functionality was wiped clean.
-Ranger: Dango! First my ship crashes, then my radar is stolen, and now ROGER? How am I going to get this done?
-Daria: Perhaps I can help! 
+ROGER: According to the video, it looks like there were 5 different aliens that took parts of the Radar. [ID:tf1684095e0]
+Ranger: Ok ROGER, is there any way you can track them down? [ID:t1bafa24ade]
+ROGER: Sadly I cannot. Due to my reboot, most of my functionality was wiped clean. [ID:te43d75db1f]
+Ranger: Dango! First my ship crashes, then my radar is stolen, and now ROGER? How am I going to get this done? [ID:tbba8c438c2]
+Daria: Perhaps I can help! [ID:t3c06e11e88] 
 #Daria enters
-Daria: The closest village would be in the Plains of Trolonc. That’s where the
-Ranger: Sounds good! ROGER, will you be ok on the ship?
-ROGER: Don’t worry Ranger, I have a piece of me in your suit, it will be like I never left your side. Gotta make sure you stay on track.
-Daria: This will be so much fun!
+Daria: The closest village would be in the Plains of Trolonc. That’s where the [ID:t84a3d98536]
+Ranger: Sounds good! ROGER, will you be ok on the ship? [ID:t30743222f8]
+ROGER: Don’t worry Ranger, I have a piece of me in your suit, it will be like I never left your side. Gotta make sure you stay on track. [ID:t1c8dbe3e55]
+Daria: This will be so much fun! [ID:t33cd479cc2]
 do endDialogue()
 => END!
 
 ~ reviewQuestion1
-ROGER: What does the antenna do? 
-- Sends and receives waves. 
-	ROGER: Correct!
+ROGER: What does the antenna do? [ID:t401f76580f] 
+- Sends and receives waves. [ID:td240547987] 
+	ROGER: Correct! [ID:t38cb49319d]
+	do printDialogue("This sucks")
 	do gameController.rootCall("answer", true)
-- Display Data.
-	ROGER: Incorrect, please try again
+- Display Data. [ID:t61a8ef7a64]
+	ROGER: Incorrect, please try again [ID:t552220e298]
 	do gameController.rootCall("answer", false)
-- Provides power for the unit. 
-	ROGER: Incorrect, please try again
+- Provides power for the unit. [ID:t31a7d38976] 
+	ROGER: Incorrect, please try again [ID:t84a1cccd1a]
 	do gameController.rootCall("answer", false)
 => END
 ~ reviewQuestion2
-ROGER: What would a radar be used for? 
-- Send messages to other radars. 
-	ROGER: Incorrect, please try again
+ROGER: What would a radar be used for? [ID:t8c52905744] 
+- Send messages to other radars. [ID:t1571280c73] 
+	ROGER: Incorrect, please try again [ID:tc0d4f92f8e]
 	do gameController.rootCall("answer", false)
-- Detecting, locating, and tracking objects.
-	ROGER: Correct!
+- Detecting, locating, and tracking objects. [ID:tfb184de46c]
+	ROGER: Correct! [ID:t39df9e5b80]
 	do gameController.rootCall("answer", true)
-- Translate different languages. 
-	ROGER: Incorrect, please try again
+- Translate different languages. [ID:t87e83e3360] 
+	ROGER: Incorrect, please try again [ID:t8355f9ab1b]
 	do gameController.rootCall("answer", false)
 => END
 ~ reviewQuestion3
-ROGER: What kind of waves does the radar use? 
-- Hand waves. 
-	ROGER: Incorrect, please try again
+ROGER: What kind of waves does the radar use? [ID:t0eb693354c] 
+- Hand waves. [ID:t2b090d3396] 
+	ROGER: Incorrect, please try again [ID:tb08056e8cf]
 	do gameController.rootCall("answer", false)
-- Ocean waves.
-	ROGER: Incorrect, please try again
+- Ocean waves. [ID:t3031ebfdf2]
+	ROGER: Incorrect, please try again [ID:t22b4d86ebb]
 	do gameController.rootCall("answer", false)
-- Microwaves. 
-	ROGER: Correct!
+- Microwaves. [ID:t4ec936e578] 
+	ROGER: Correct! [ID:t1fba75170b]
 	do gameController.rootCall("answer", true)
 => END!

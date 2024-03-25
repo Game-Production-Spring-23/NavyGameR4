@@ -12,6 +12,7 @@ const SKIP_ACTION = &"ui_cancel"
 @onready var dialogue_label: DialogueLabel = %DialogueLabel
 @onready var responses_menu: DialogueResponsesMenu = %ResponsesMenu
 @onready var portrait = %Portrait
+@onready var sound = $Sound
 
 ## The dialogue resource
 var resource: DialogueResource
@@ -31,7 +32,7 @@ var dialogue_line: DialogueLine:
 		is_waiting_for_input = false
 		balloon.focus_mode = Control.FOCUS_ALL
 		balloon.grab_focus()
-
+		
 		# The dialogue has finished so close the balloon
 		if not next_dialogue_line:
 			queue_free()
@@ -44,10 +45,13 @@ var dialogue_line: DialogueLine:
 		dialogue_line = next_dialogue_line
 
 		character_label.visible = not dialogue_line.character.is_empty()
-	
-
-		var portrait_name = dialogue_line.character.to_lower();
 		
+		var stream = load("res://assets/audio/voiceovers/"+dialogue_line.translation_key +".ogg")
+		print(dialogue_line.translation_key)
+		sound.stream = stream
+		sound.play()
+		
+		var portrait_name = dialogue_line.character.to_lower();
 		# Looks for image file path 
 		if FileAccess.file_exists("res://assets/images/dialogue/"+portrait_name+".png.import"):
 			# If roger is talking
