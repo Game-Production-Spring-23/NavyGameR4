@@ -25,7 +25,7 @@ func answer(correct):
 			progession += 1
 			player.position.x += 100
 		if(questions.size() == 0):
-			gameController.changeScene("1-4_review1", "res://assets/audio/music/swamp-intro.ogg", "res://assets/audio/music/swamp-body.ogg")
+			gameController.changeScene("1-4_dialogue", "res://assets/audio/music/swamp-intro.ogg", "res://assets/audio/music/swamp-body.ogg")
 		else:
 			await get_tree().create_timer(2.0).timeout
 			question()
