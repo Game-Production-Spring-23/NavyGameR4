@@ -1,37 +1,36 @@
 ~ reviewQuestion1
-ROGER: What equation is this for?
-- Gamma
+ROGER: What is SNR (Signal to Noise Ratio)? 
+- The Measure of the data (signal) compared to the receiver antenna power(noise) received by the antenna. 
 	ROGER: Incorrect, please try again
 	do gameController.rootCall("answer", false)
-- Gain
-	do gainEquation.hide()
+- The Measure of the antenna (signal) compared to the amount of data (noise) received by the receiver. 
+	ROGER: Incorrect, please try again
+	do gameController.rootCall("answer", false)
+- The Measure of the receiver antenna power (signal) compared to the amount of data (noise) received by the antenna. 
 	ROGER: Correct!
 	do gameController.rootCall("answer", true)
-- Growth
-	ROGER: Incorrect, please try again
-	do gameController.rootCall("answer", false)
 => END
 ~ reviewQuestion2
-ROGER: What happens when gain is too high?
-- Transmit The shape becomes fixated in a position.
+ROGER: How is SNR measured? 
+- Decibels
 	ROGER: Correct!
 	do gameController.rootCall("answer", true)
-- The shape is equaled out
+- Megawatts
 	ROGER: Incorrect, please try again
 	do gameController.rootCall("answer", false)
-- The shape becomes more spaced out 
+- Milliwatts
 	ROGER: Incorrect, please try again
 	do gameController.rootCall("answer", false)
 => END
 ~ reviewQuestion3
-ROGER: What happens when gain is too high?
-- The shape becomes fixated in a position.
+ROGER: What equation is used for SNR? 
+- 10 * log(p2/p1) 
 	ROGER: Incorrect, please try again
 	do gameController.rootCall("answer", false)
-- The shape is equaled out
+- k * T_s * B_n 
 	ROGER: Incorrect, please try again
 	do gameController.rootCall("answer", false)
-- Transmit The shape becomes more spaced out 
+- P_r / N 
 	ROGER: Correct!
 	do gameController.rootCall("answer", true)
 => END!

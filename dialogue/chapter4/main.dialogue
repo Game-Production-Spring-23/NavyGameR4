@@ -1,0 +1,36 @@
+~ reviewQuestion1
+ROGER: What Three Properties affect waves? 
+- Amplitude, Frequency, and Wavelength
+	ROGER: Correct!
+	do gameController.rootCall("answer", true)
+- Velocity, Impulse, and Flash 
+	ROGER: Incorrect, please try again
+	do gameController.rootCall("answer", false)
+- Force, Light, and Amplitude 
+	ROGER: Incorrect, please try again
+	do gameController.rootCall("answer", false)
+=> END
+~ reviewQuestion2
+ROGER: What is Velocity? 
+- Transmit The speed at which the wave moves through a given medium 
+	ROGER: Correct!
+	do gameController.rootCall("answer", true)
+- the time it takes for the wave to go through one cycle 
+	ROGER: Incorrect, please try again
+	do gameController.rootCall("answer", false)
+- It’s the distance between two consecutive points on a wave. 
+	ROGER: Incorrect, please try again
+	do gameController.rootCall("answer", false)
+=> END
+~ reviewQuestion3
+ROGER: How do electromagnetic waves differ from other kinds of waves? 
+- They have frequency, amplitude, and a wavelength 
+	ROGER: Incorrect, please try again
+	do gameController.rootCall("answer", false)
+- They are completely similar to other kinds of waves 
+	ROGER: Incorrect, please try again
+	do gameController.rootCall("answer", false)
+- They don’t need a material medium to travel. 
+	ROGER: Correct!
+	do gameController.rootCall("answer", true)
+=> END!

@@ -1,37 +1,37 @@
 ~ reviewQuestion1
-ROGER: What equation is this for?
-- Gamma
+ROGER: What connects the device to the Signal Processor? 
+- The Compute Engine 
 	ROGER: Incorrect, please try again
 	do gameController.rootCall("answer", false)
-- Gain
-	do gainEquation.hide()
+- The Input and Output
 	ROGER: Correct!
 	do gameController.rootCall("answer", true)
-- Growth
+- The Radio Signal 
 	ROGER: Incorrect, please try again
 	do gameController.rootCall("answer", false)
 => END
 ~ reviewQuestion2
-ROGER: What happens when gain is too high?
-- Transmit The shape becomes fixated in a position.
+ROGER: What does the Signal Processor do?  
+- Transmit Takes a signal and Interprets it 
 	ROGER: Correct!
 	do gameController.rootCall("answer", true)
-- The shape is equaled out
+- Sends the signal out to other Radars 
 	ROGER: Incorrect, please try again
 	do gameController.rootCall("answer", false)
-- The shape becomes more spaced out 
+- Produces the Signal 
 	ROGER: Incorrect, please try again
 	do gameController.rootCall("answer", false)
 => END
 ~ reviewQuestion3
-ROGER: What happens when gain is too high?
-- The shape becomes fixated in a position.
+ROGER: What is the Signal Processor made of? 
+- The Compute Engine, The Input and Output, and the Radio Signal 
 	ROGER: Incorrect, please try again
 	do gameController.rootCall("answer", false)
-- The shape is equaled out
-	ROGER: Incorrect, please try again
-	do gameController.rootCall("answer", false)
-- Transmit The shape becomes more spaced out 
+- Program and Data Memory, The Compute Engine, and the Input and Output 
 	ROGER: Correct!
 	do gameController.rootCall("answer", true)
+- Program and Data Memory, the Radio Signal, and The Input and Output 
+
+	ROGER: Incorrect, please try again
+	do gameController.rootCall("answer", false)
 => END!

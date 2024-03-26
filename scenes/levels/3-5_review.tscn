@@ -1,0 +1,70 @@
+[gd_scene load_steps=6 format=3 uid="uid://c15n3rpov4aym"]
+
+[ext_resource type="Script" path="res://scripts/levels/3-5_review.gd" id="1_y7vfb"]
+[ext_resource type="Texture2D" uid="uid://c2b175ahm88ie" path="res://assets/images/wip/placeholder.png" id="2_gcsxo"]
+[ext_resource type="Theme" uid="uid://bajr2k60ueqkc" path="res://assets/themes/headerTheme.tres" id="3_u45o1"]
+[ext_resource type="Texture2D" uid="uid://dhaj7ugamct2f" path="res://assets/images/dialogue/messageBox.png" id="4_vhctr"]
+[ext_resource type="Texture2D" uid="uid://dawdg5sco2g18" path="res://assets/images/wip/gainEquation.png" id="5_lsbpl"]
+
+[node name="level" type="Node2D"]
+script = ExtResource("1_y7vfb")
+
+[node name="GainEquation" type="CanvasLayer" parent="."]
+layer = 128
+
+[node name="GainEquation" type="TextureRect" parent="GainEquation"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 878.0
+offset_top = 928.0
+offset_right = -786.0
+offset_bottom = -56.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("5_lsbpl")
+stretch_mode = 4
+
+[node name="Backgrounds" type="CanvasLayer" parent="."]
+
+[node name="Background" type="TextureRect" parent="Backgrounds"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -1.0
+offset_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_gcsxo")
+
+[node name="ColorRect" type="ColorRect" parent="Backgrounds"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.294118, 0.294118, 0.294118, 0.392157)
+
+[node name="Message" type="TextureRect" parent="Backgrounds"]
+anchors_preset = -1
+anchor_left = 0.156
+anchor_top = 0.113
+anchor_right = 0.844
+anchor_bottom = 0.298
+offset_top = -0.0400085
+offset_bottom = -0.039978
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("4_vhctr")
+
+[node name="Label" type="Label" parent="Backgrounds/Message"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("3_u45o1")
+text = "Chapter 3 Review"
+horizontal_alignment = 1
+vertical_alignment = 1

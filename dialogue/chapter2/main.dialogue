@@ -42,3 +42,40 @@ Daria: We are about to climb Mt. Tenanan! [ID:t66cfa0286e]
 Ranger: Of course we are. [ID:t8c04363e04]
 do gameController.characterCanMove = true
 => END
+
+~ reviewQuestion1
+ROGER: What is a Control Unit? 
+- It refers to the electromagnetic wave that relates to the energy of the radar 
+	ROGER: Incorrect, please try again
+	do gameController.rootCall("answer", false)
+- It stores information on the radar 
+	ROGER: Incorrect, please try again
+	do gameController.rootCall("answer", false)
+- It controls the radars settings. 
+	ROGER: Correct!
+	do gameController.rootCall("answer", true)
+=> END
+~ reviewQuestion2
+ROGER: What is the PT?
+- Transmit Power or the Average Transmit in Watts
+	ROGER: Correct!
+	do gameController.rootCall("answer", true)
+- Is the speed at which the wave moves through a given medium
+	ROGER: Incorrect, please try again
+	do gameController.rootCall("answer", false)
+- It refers to the electromagnetic wave that relates to the energy of said wave  
+	ROGER: Incorrect, please try again
+	do gameController.rootCall("answer", false)
+=> END
+~ reviewQuestion3
+ROGER: The signal a radar receives is typically smaller than what is transmitted. Why?
+- Because of the noise bandwidth of the receiver
+	ROGER: Incorrect, please try again
+	do gameController.rootCall("answer", false)
+- Because of the wave functions traveling through the air 
+	ROGER: Incorrect, please try again
+	do gameController.rootCall("answer", false)
+- Transmit Because of scattering and attenuation losses as waves travel through its medium.
+	ROGER: Correct!
+	do gameController.rootCall("answer", true)
+=> END!  
