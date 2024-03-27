@@ -61,18 +61,22 @@ func displayMenuScreen(screenNum):
 
 
 func _on_slow_pressed():
+	gameController.playSound("res://assets/audio/sfx/gui-select.ogg")
 	gameController.textSpeed = 0.5
 
 
 func _on_normal_pressed():
+	gameController.playSound("res://assets/audio/sfx/gui-select.ogg")
 	gameController.textSpeed = 1
 
 
 func _on_fast_pressed():
+	gameController.playSound("res://assets/audio/sfx/gui-select.ogg")
 	gameController.textSpeed = 1.5
 
 
 func _on_faster_pressed():
+	gameController.playSound("res://assets/audio/sfx/gui-select.ogg")
 	gameController.textSpeed = 2
 
 
