@@ -2,7 +2,6 @@ extends Node2D
 @onready var animationPlayer = $ScreenTransition/FadeScreen/AnimationPlayer
 @onready var messageAnimationPlayer = $Backgrounds/Message/AnimationPlayer
 @onready var background = $Backgrounds/Background
-@onready var label = $Backgrounds/Background/Label #REMOVE ONCE WE GET BACKGROUND ASSETS
 
 """
 	name: 1-4_dialogue.gd
@@ -16,14 +15,12 @@ func _ready():
 
 # Loads dialogue after minigame 1
 func loadDariaCatchDialogue():
-	label.text = "Swamp Background"
 	gameController.triggerDialogue("chapter1", "tutorial4")
 
 # Loads dialogue between Roger, Daria, and Ranger
 func loadCommsDialogue():
 	animationPlayer.play("Fade")
 	await animationPlayer.animation_finished
-	label.text = "Ship Interior Background"
 	animationPlayer.play_backwards("Fade")
 	gameController.triggerDialogue("chapter1", "tutorial5")
 
