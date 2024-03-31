@@ -1,6 +1,7 @@
 extends Node2D
 
 @onready var tilemap = $TileMap
+@onready var background = $Background
 
 var solution = [Vector2i(0, 0), Vector2i(1, 0), Vector2i(2, 0), Vector2i(0, 1), Vector2i(1, 1), Vector2i(2, 1), Vector2i(0, 2), Vector2i(1, 2), Vector2i(2, 2)]
 var guess = [Vector2i(1, 0), Vector2i(2, 0), Vector2i(0, 0), Vector2i(0, 1), Vector2i(2, 1), Vector2i(1, 1), Vector2i(2, 2), Vector2i(1, 2), Vector2i(0, 2)]
@@ -33,8 +34,8 @@ func scramble_puzzle():
 func _input(event):
 	if event is InputEventMouseButton:
 		if(isGameComplete == false):
-			var pos = event.position
-			var tile_pos = tilemap.local_to_map(pos) - Vector2i(2, 1)
+			var pos = tilemap.get_local_mouse_position()
+			var tile_pos = tilemap.local_to_map(pos)
 			if event.pressed:
 				if(solution.has(tile_pos)):
 					swap_tiles(tile_pos)
@@ -57,6 +58,8 @@ func swap_tiles(pos):
 
 		# If the user guesses correctly
 		if(guess == solution):
+			tilemap.hide()
+			background.texture = load("res://assets/images/sprites/minigame_3/minigame_3_background_complete.png")
 			isGameComplete = true
 			gameController.triggerDialogue("chapter3", "chapter3_4")
 

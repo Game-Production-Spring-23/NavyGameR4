@@ -1,0 +1,20 @@
+[gd_resource type="TileSet" load_steps=3 format=3 uid="uid://bhqd0kvpnqv8t"]
+
+[ext_resource type="Texture2D" uid="uid://c1iy5o8mh4pw8" path="res://assets/images/sprites/minigame_3/minigame_3_puzzle_full.png" id="1_gqcx1"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_fvedd"]
+texture = ExtResource("1_gqcx1")
+texture_region_size = Vector2i(398, 274)
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+2:1/0 = 0
+0:2/0 = 0
+1:2/0 = 0
+2:2/0 = 0
+
+[resource]
+tile_size = Vector2i(398, 274)
+sources/1 = SubResource("TileSetAtlasSource_fvedd")

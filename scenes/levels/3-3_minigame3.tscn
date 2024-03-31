@@ -1,8 +1,8 @@
 [gd_scene load_steps=4 format=3 uid="uid://41iyf5ychcul"]
 
 [ext_resource type="Script" path="res://scripts/levels/3-3_minigame3.gd" id="1_dysem"]
-[ext_resource type="Texture2D" uid="uid://c2b175ahm88ie" path="res://assets/images/wip/placeholder.png" id="2_vkb7d"]
-[ext_resource type="TileSet" uid="uid://wum8s2be7iet" path="res://assets/images/tilemaps/wipM3TileSet.tres" id="3_fwxb2"]
+[ext_resource type="Texture2D" uid="uid://bcvnkoftpou8v" path="res://assets/images/sprites/minigame_3/minigame_3_background_transparent.png" id="2_dh3ns"]
+[ext_resource type="TileSet" uid="uid://bhqd0kvpnqv8t" path="res://assets/images/tilemaps/minigame3_tileset.tres" id="3_5etyk"]
 
 [node name="level" type="Node2D"]
 script = ExtResource("1_dysem")
@@ -10,9 +10,9 @@ script = ExtResource("1_dysem")
 [node name="Background" type="TextureRect" parent="."]
 offset_right = 1920.0
 offset_bottom = 1080.0
-texture = ExtResource("2_vkb7d")
+texture = ExtResource("2_dh3ns")
 
 [node name="TileMap" type="TileMap" parent="."]
-position = Vector2(573, 164)
-tile_set = ExtResource("3_fwxb2")
+position = Vector2(362, 130)
+tile_set = ExtResource("3_5etyk")
 format = 2
