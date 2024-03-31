@@ -33,28 +33,24 @@ Tendra: Any help is major cool! I will give you passage.
 ~ chapter3_3
 ROGER: Looks like the gatekeeper was right; their antenna is having major issues. Try to see if you can help them out!
 => END
+
 ~ chapter3_4
 Techra: Thank you so much for helping us fix the Antenna!
-
 Ranger: No problem.
-
 Daria: Hey Ranger, that looks to be your Antenna piece!
-
 Ranger: Yeah, it is. Since you don't need it anymore, you mind if I take my antenna back?
-
 Techra: Oh, this little thing? One of the guys found it near a wreckage and thought it would work, obviously, he was wrong. 
-
 ROGER: Yeah, you folks have a different type of Antenna up, ours is a Dipole Antenna, while yours is parabolic.
-
 Ranger: I am just happy I got the ship’s Antenna back! What's next Daria?
-
 Daria: Well, we gotta get down the mountain.
-
 Techra: Actually, to show our gratitude, let us help you glide down the mountain! We will be waiting at the end right here.
+do finish_game()
 => END
+
 ~ chapter3_5
 Daria: Wheeeeeeeeeeeeeee!
 => END!
+
 ~ reviewQuestion1
 ROGER: What equation is this for?
 - Gamma

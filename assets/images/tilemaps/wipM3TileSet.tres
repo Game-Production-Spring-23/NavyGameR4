@@ -1,0 +1,19 @@
+[gd_resource type="TileSet" load_steps=3 format=3 uid="uid://wum8s2be7iet"]
+
+[ext_resource type="Texture2D" uid="uid://bpnnm005gbu2c" path="res://assets/images/wip/m3slideTiles.png" id="1_u3t1x"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_acwr0"]
+texture = ExtResource("1_u3t1x")
+texture_region_size = Vector2i(256, 256)
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+2:1/0 = 0
+0:2/0 = 0
+1:2/0 = 0
+
+[resource]
+tile_size = Vector2i(256, 256)
+sources/1 = SubResource("TileSetAtlasSource_acwr0")

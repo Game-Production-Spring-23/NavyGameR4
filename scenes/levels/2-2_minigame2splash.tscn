@@ -1,11 +1,11 @@
-[gd_scene load_steps=10 format=3 uid="uid://b6dncb2q4l8c2"]
+[gd_scene load_steps=10 format=3 uid="uid://dpu7tcq3j5w0h"]
 
-[ext_resource type="Script" path="res://scripts/levels/1-2_minigame1splash.gd" id="1_yywjy"]
-[ext_resource type="Texture2D" uid="uid://c3jucg3f5ffi5" path="res://assets/images/background/MinigameCard.png" id="2_cdxyt"]
-[ext_resource type="Theme" uid="uid://dctbregm4ijln" path="res://assets/themes/buttonTheme.tres" id="3_di3f7"]
-[ext_resource type="Texture2D" uid="uid://7mk2r2g22pqx" path="res://assets/images/ui/button-blank.png" id="4_oajda"]
-[ext_resource type="Texture2D" uid="uid://b43bp8hdog3co" path="res://assets/images/ui/button-blank_click.png" id="5_ltw0d"]
-[ext_resource type="Texture2D" uid="uid://dqeaxjc3n8x4" path="res://assets/images/ui/button-blank_hover.png" id="6_1umo6"]
+[ext_resource type="Script" path="res://scripts/levels/1-2_minigame1splash.gd" id="1_6jnl4"]
+[ext_resource type="Texture2D" uid="uid://c3jucg3f5ffi5" path="res://assets/images/background/MinigameCard.png" id="2_86ti8"]
+[ext_resource type="Theme" uid="uid://dctbregm4ijln" path="res://assets/themes/buttonTheme.tres" id="3_hs0d6"]
+[ext_resource type="Texture2D" uid="uid://7mk2r2g22pqx" path="res://assets/images/ui/button-blank.png" id="4_tk53s"]
+[ext_resource type="Texture2D" uid="uid://b43bp8hdog3co" path="res://assets/images/ui/button-blank_click.png" id="5_pf8im"]
+[ext_resource type="Texture2D" uid="uid://dqeaxjc3n8x4" path="res://assets/images/ui/button-blank_hover.png" id="6_7bifu"]
 
 [sub_resource type="Animation" id="Animation_a5gqd"]
 resource_name = "Fade"
@@ -45,7 +45,7 @@ _data = {
 }
 
 [node name="IntroCutscene" type="Node2D"]
-script = ExtResource("1_yywjy")
+script = ExtResource("1_6jnl4")
 
 [node name="UI" type="CanvasLayer" parent="."]
 
@@ -55,7 +55,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("2_cdxyt")
+texture = ExtResource("2_86ti8")
 
 [node name="Timer" type="Timer" parent="UI"]
 wait_time = 5.0
@@ -73,10 +73,10 @@ offset_left = -0.760132
 offset_top = 0.519997
 offset_right = 0.880005
 offset_bottom = -0.360008
-theme = ExtResource("3_di3f7")
-texture_normal = ExtResource("4_oajda")
-texture_pressed = ExtResource("5_ltw0d")
-texture_hover = ExtResource("6_1umo6")
+theme = ExtResource("3_hs0d6")
+texture_normal = ExtResource("4_tk53s")
+texture_pressed = ExtResource("5_pf8im")
+texture_hover = ExtResource("6_7bifu")
 stretch_mode = 0
 
 [node name="Label" type="Label" parent="UI/backButton"]
@@ -86,7 +86,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-theme = ExtResource("3_di3f7")
+theme = ExtResource("3_hs0d6")
 theme_override_colors/font_color = Color(0.0901961, 0.0901961, 0.0941176, 1)
 text = "Skip"
 horizontal_alignment = 1
