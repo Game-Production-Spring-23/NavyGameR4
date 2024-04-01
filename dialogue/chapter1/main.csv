@@ -72,6 +72,7 @@ What kind of waves does the radar use?,What kind of waves does the radar use?
 Hand waves.,Hand waves.
 Ocean waves.,Ocean waves.
 Microwaves.,Microwaves.
+t84a3d98536,The closest village would be in the Plains of Trolonc. That’s where the
 ta78288b13b,"Ooh...Ugh, what happened?"
 t6a967d27e3,"Error, Error, system overload. Proceeding to Reboot…... Reboot Complete!"
 t16872b2d94,"Designated Ranger, the ships gravity engine malfunctioned. While I run diagnostics, make sure you can move efficiently. We have lots to do!"
@@ -132,6 +133,7 @@ tda4d26f57b,"It says, “SLOW DOWN!”"
 td7665734c1,It does not detect the object
 tb9d56cc107,"That sounds awesome, what does a Radar look like?"
 td4eaa52908,"What are you talking about, don’t you not have my radar? What were you doing on my ship?"
+tc75bb9b9b9,"I heard an explosion and wanted to see what was going on. When I got here, I saw your friends running off, so I assumed everyone was gone."
 t76cdc77037,"Friends? Unless ROGER grew some legs and ran off, no one else was on the"
 t73fee68bbd,"What about the Scein? And the Trolum? Or the Yappo? The Tendra? And the...what were they called? Oh yeah, the Lagna!"
 t1cdab008fc,"Sheiza, the aliens of this planet must have gotten on board while ROGER and I were out cold..."
@@ -141,7 +143,16 @@ t1bafa24ade,"Ok ROGER, is there any way you can track them down?"
 te43d75db1f,"Sadly I cannot. Due to my reboot, most of my functionality was wiped clean."
 tbba8c438c2,"Dango! First my ship crashes, then my radar is stolen, and now ROGER? How am I going to get this done?"
 t3c06e11e88,Perhaps I can help!
-t84a3d98536,The closest village would be in the Plains of Trolonc. That’s where the
+t10e94eb338,Oh yeah? Why would you help us?! I don’t even know your name...
+t607f0b2f98,"The name is Daria! I am a Daran, the native species of Hertzich! I had so much fun with you earlier, I thought I would see if you wanted to play more! Then I overheard your conversation, and it seems like you could use some help."
+tec0eb4c5b0,And why should I trust you?
+t35c54c8034,Do you have any other options?
+t6784b5943a,"Dango, you got a point there...Alright, and how exactly can you help?"
+t71c8e1bb89,"I’ve lived here all my life and I know this planet like the back of my paw. The big city, Yaplisdapolis, would have somewhere to fix your ship. I can show you how to get there!"
+td197291984,"The city? I saw that earlier when we were falling into the atmosphere, I don’t think it’s too far...but what about the missing radar? I would be flying blind in deep space without it!"
+t9b3a08870b,"Well, all the nice people I saw earlier had pieces of something, I bet that was your missing radar! I know a path that would lead into each major village of the other species on the planet, with the biiiiiig city at the end!"
+t91353689b3,"Well, it seems we really could use your help then...Ok hotshot, where to first?"
+t046e4ae97f,The closest village would be in the Plains of Trolonc. That’s where the Trolums live. I bet we can find a part of your radar there!
 t30743222f8,"Sounds good! ROGER, will you be ok on the ship?"
 t1c8dbe3e55,"Don’t worry Ranger, I have a piece of me in your suit, it will be like I never left your side. Gotta make sure you stay on track."
 t33cd479cc2,This will be so much fun!
