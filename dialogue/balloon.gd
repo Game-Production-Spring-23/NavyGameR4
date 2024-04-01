@@ -45,10 +45,39 @@ var dialogue_line: DialogueLine:
 		dialogue_line = next_dialogue_line
 
 		character_label.visible = not dialogue_line.character.is_empty()
-		
-		
-		
 		var portrait_name = dialogue_line.character.to_lower();
+		#if the voice file exists in its own folder
+		if FileAccess.file_exists("res://assets/audio/voiceovers/"+ portrait_name + "/"+dialogue_line.translation_key +".ogg"):
+					#loads the voice line for other characters
+				var stream = load("res://assets/audio/voiceovers/" + portrait_name + "/"+dialogue_line.translation_key +".ogg")
+				print(dialogue_line.translation_key)
+				sound.stream = stream
+				sound.play()
+				print("FILE LOADED", portrait_name)
+		else:
+			#No voicelines and Ranger 
+			if portrait_name == "ranger":
+			#if the voice is female
+				if gameController.player.voice == "voice1":
+					var stream_string = "res://assets/audio/voiceovers/female/"+dialogue_line.translation_key +".ogg"
+					var stream = load(stream_string)
+					if FileAccess.file_exists(stream_string):
+						print("FEMALE", dialogue_line.translation_key)
+						sound.stream = stream
+						sound.play()
+					
+				else:
+				# If the voice is male
+					print("NOT FEMALE" , dialogue_line.translation_key)
+					var stream = load("res://assets/audio/voiceovers/male/"+dialogue_line.translation_key +".ogg")
+					sound.stream = stream
+					sound.play()
+					print("NOT FEMALE FILE LOADED", portrait_name)
+			else:
+				#if a voiceline doesn't exist
+				print("no voice line")
+		
+
 		# Looks for image file path 
 		if FileAccess.file_exists("res://assets/images/dialogue/"+portrait_name+".png.import"):
 			# If roger is talking
@@ -80,15 +109,6 @@ var dialogue_line: DialogueLine:
 			else:
 				print(portrait_name)
 				portrait.texture = load("res://assets/images/dialogue/errorPlaceholder.png")
-		if FileAccess.file_exists("res://assets/audio/voiceovers/"+dialogue_line.translation_key +".ogg"):
-			var stream = load("res://assets/audio/voiceovers/"+dialogue_line.translation_key +".ogg")
-
-			if stream != null:
-				print(dialogue_line.translation_key)
-				sound.stream = stream
-				sound.play()
-		else:
-			print("No voiceover")
 		character_label.text = tr(dialogue_line.character, "dialogue")
 
 		dialogue_label.hide()
