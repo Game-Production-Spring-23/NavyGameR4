@@ -1,0 +1,17 @@
+[remap]
+
+importer="csv_translation"
+type="Translation"
+uid="uid://bnrd8u0341gvm"
+
+[deps]
+
+files=["res://dialogue/chapter6/main.en.translation"]
+
+source_file="res://dialogue/chapter6/main.csv"
+dest_files=["res://dialogue/chapter6/main.en.translation"]
+
+[params]
+
+compress=true
+delimiter=0

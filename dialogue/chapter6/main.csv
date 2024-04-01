@@ -1,0 +1,45 @@
+keys,en
+t998abe3be8,This city is beautiful!
+t4ec0d94691,"And really bright. Wow, there are a lot of screens."
+t66a2b31ad7,"Welcome to Yaplisdapolis, the city of Screens & Dreams."
+t6d035f27dd,"It looks like the only place open right now is that, Cafe. Let's head there."
+t75381c9ed7,That Barista is gorgeous! That new necklace really puts the piece together.
+teb9501478e,The coffee here is to die for!
+t2f5e42407b,Yaplisdapolis and the Yappo sure love their screens. It's too bright for me.
+t6aaccc3feb,Welcome to the 24 Hour Cafe! My name is Yosie. What can I get for you?
+t615fa3a293,"Your necklace! I mean, it’s beautiful!"
+t069bcb6860,"Oh, well... thank you very much."
+t53fd5e3a6a,"Yes, it’s lovely, but don’t you think it... clashes with your feathers a bit?"
+taa51a4bbb5,"Why, yes! Very clashy. Where did you get that weird old thing?"
+tdd73cca79a,None of your business! how dare you...!
+te93a7c8228,"In fact, I bet I can wear it even better than you can..."
+tde75e43456,ca-caw! Ca-caw!
+ted5fdc5c0e,You’re challenging me...!?
+t39bd73c453,"Wow, you were made for this!"
+t6e1014cdc4,"Thank you, and I have to admit I had a lot of fun."
+t5044ce8acc,"It's nice seeing Ranger like this, I never thought Mr. Grumps would be so cool!"
+ta15212e127,We got all the parts for our Radar sir. It looks like we can get out of here.
+ta4a2997528,"That's going to take a while, isn't it?"
+tae2c77e134,"Actually, no! The city is next to the Swamp where your ship is. We should be there in a Jiffy!"
+t5cd10e51ab,"Lead the way, Daria!"
+t0b268ba6f4,What is SNR (Signal to Noise Ratio)?
+tc7083e5268,The Measure of the data (signal) compared to the receiver antenna power(noise) received by the antenna.
+tdbe6cc099e,"Incorrect, please try again"
+t3dd5ee493a,The Measure of the antenna (signal) compared to the amount of data (noise) received by the receiver.
+t3d9aa60b69,"Incorrect, please try again"
+t0d3df3766a,The Measure of the receiver antenna power (signal) compared to the amount of data (noise) received by the antenna.
+tdd233ccd3a,Correct!
+tca99f8754c,How is SNR measured?
+t56747e680b,Decibels
+t1c132f386c,Correct!
+te91832a817,Megawatts
+t7d7c880811,"Incorrect, please try again"
+tf29a281841,Milliwatts
+t920f363a1c,"Incorrect, please try again"
+t0050919b16,What equation is used for SNR?
+t9eb8a0ca4e,10 * log(p2/p1)
+t38dfe7c204,"Incorrect, please try again"
+t74b09264d2,k * T_s * B_n
+td698881920,"Incorrect, please try again"
+t773280b020,P_r / N
+t04e50d36e0,Correct!

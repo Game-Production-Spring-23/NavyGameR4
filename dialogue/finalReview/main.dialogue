@@ -1,0 +1,29 @@
+~ finalReview_1
+Ranger: Now that we have all the pieces, I can put the radar back together! Time to show y'all how a radar technician does it!
+
+Daria: Hey grumps, I would like to say thanks for letting me help you through this journey. You’ve inspired me, I would love to be a ranger like you!
+Ranger: Well Daria, we would be honored to have you! Although typically you have to be an adult...
+Daria: I'm 34 Ranger. 
+Ranger: Really? Well, you can come with us then and we can get you to a recruiter.
+=> END!
+
+~ finalReview_2
+Ranger: That should do it.
+
+ROGER: Ranger? What's going on- WHAT HAPPENED!
+
+Ranger: Oh yeah ROGER, you had to be rebooted because of the crash. The radar being rebuilt must've brought everything back.
+
+ROGER: Sheesh, seems like I missed a lot! I’ll get started on ship repairs! While I get that done, it seems you have some visitors outside.
+=> END!
+~ finalReview_3
+Ranger: Looks like everything is good here. ROGER, how's it looking?
+
+ROGER: Everything is up and running sir. I have to say, it's been a while since I have seen you so relaxed. This adventure must've helped you out a lot.
+
+Ranger: As much as I love this place, work doesn't stop for anyone. ROGER, set a route back to IUI!
+
+ROGER: Affirmative!
+
+Daria: Let's goooo!
+=> END!

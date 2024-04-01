@@ -46,15 +46,7 @@ var dialogue_line: DialogueLine:
 
 		character_label.visible = not dialogue_line.character.is_empty()
 		
-		if FileAccess.file_exists("res://assets/audio/voiceovers/"+dialogue_line.translation_key +".ogg"):
-			var stream = load("res://assets/audio/voiceovers/"+dialogue_line.translation_key +".ogg")
-
-			if stream != null:
-				print(dialogue_line.translation_key)
-				sound.stream = stream
-				sound.play()
-		else:
-			print("No voiceover")
+		
 		
 		var portrait_name = dialogue_line.character.to_lower();
 		# Looks for image file path 
@@ -88,6 +80,15 @@ var dialogue_line: DialogueLine:
 			else:
 				print(portrait_name)
 				portrait.texture = load("res://assets/images/dialogue/errorPlaceholder.png")
+		if FileAccess.file_exists("res://assets/audio/voiceovers/"+dialogue_line.translation_key +".ogg"):
+			var stream = load("res://assets/audio/voiceovers/"+dialogue_line.translation_key +".ogg")
+
+			if stream != null:
+				print(dialogue_line.translation_key)
+				sound.stream = stream
+				sound.play()
+		else:
+			print("No voiceover")
 		character_label.text = tr(dialogue_line.character, "dialogue")
 
 		dialogue_label.hide()
