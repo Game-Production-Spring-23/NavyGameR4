@@ -24,7 +24,7 @@ _data = {
 "hop": SubResource("Animation_l0iqu")
 }
 
-[node name="level" type="Node2D" node_paths=PackedStringArray("travin", "travinAnim")]
+[node name="level2" type="Node2D" node_paths=PackedStringArray("travin", "travinAnim")]
 script = ExtResource("1_u30vb")
 travin = NodePath("Travin")
 travinAnim = NodePath("Travin/AnimationPlayer")
