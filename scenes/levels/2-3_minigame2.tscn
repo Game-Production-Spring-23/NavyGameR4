@@ -1,0 +1,121 @@
+[gd_scene load_steps=12 format=3 uid="uid://be6peh7k67yab"]
+
+[ext_resource type="Script" path="res://scripts/levels/2-3_minigame2.gd" id="1_u30vb"]
+[ext_resource type="Texture2D" uid="uid://cpeeoenygi4a7" path="res://assets/images/sprites/minigame_2/minigame2_background.png" id="2_j6854"]
+[ext_resource type="Texture2D" uid="uid://dnnem0lq2q2l4" path="res://assets/images/sprites/minigame_1/popsicleRanger.png" id="3_tmxft"]
+[ext_resource type="Texture2D" uid="uid://ci6qyga74ewt0" path="res://assets/images/sprites/minigame_1/popsicleDaria.png" id="4_hp1g0"]
+[ext_resource type="Texture2D" uid="uid://c0ht3n7re6jaj" path="res://assets/images/sprites/minigame_1/redCurtain.png" id="5_fn12r"]
+
+[sub_resource type="Animation" id="Animation_ipeq2"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(590, 600)]
+}
+
+[sub_resource type="Animation" id="Animation_58btu"]
+resource_name = "bob"
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5, 1),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(590, 720), Vector2(590, 700), Vector2(590, 720)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_bmtoe"]
+_data = {
+"RESET": SubResource("Animation_ipeq2"),
+"bob": SubResource("Animation_58btu")
+}
+
+[sub_resource type="Animation" id="Animation_i31ic"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1450, 800)]
+}
+
+[sub_resource type="Animation" id="Animation_4tdo4"]
+resource_name = "bob2"
+length = 1.5
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.9, 1.2, 1.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(1450, 720), Vector2(1500, 700), Vector2(1500, 720), Vector2(1450, 720)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_m287l"]
+_data = {
+"RESET": SubResource("Animation_i31ic"),
+"bob2": SubResource("Animation_4tdo4")
+}
+
+[node name="level" type="Node2D"]
+script = ExtResource("1_u30vb")
+
+[node name="Background" type="TextureRect" parent="."]
+offset_right = 1920.0
+offset_bottom = 1080.0
+texture = ExtResource("2_j6854")
+
+[node name="player" type="Sprite2D" parent="."]
+position = Vector2(590, 600)
+scale = Vector2(1.33123, 1.336)
+texture = ExtResource("3_tmxft")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="player"]
+libraries = {
+"": SubResource("AnimationLibrary_bmtoe")
+}
+
+[node name="alien" type="Sprite2D" parent="."]
+position = Vector2(1450, 800)
+scale = Vector2(1.42841, 1.08878)
+texture = ExtResource("4_hp1g0")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="alien"]
+libraries = {
+"": SubResource("AnimationLibrary_m287l")
+}
+autoplay = "bob2"
+
+[node name="TextureRect" type="TextureRect" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = 1920.0
+offset_bottom = 1080.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("5_fn12r")
