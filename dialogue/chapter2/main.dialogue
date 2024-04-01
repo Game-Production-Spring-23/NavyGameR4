@@ -30,7 +30,37 @@ do gameController.characterCanMove = true
 => END
 # MINIGAME STRUCTURE GOES HERE
 
+~ minigameQuestion1
+Travin: What are you talking about? I’m not going to give up this beautiful Geode...what’s a control unit?
+- It controls the radars settings, its necessary to make sure the radar is functioning properly
+	do gameController.rootCall("answer", true)
+- It... well it...oh shoot, I forgot!
+	do gameController.rootCall("answer", false)
+=> END
 
+~ minigameQuestion2
+Travin: Sure, it does, and how does it do that?
+- Magic! No, that can’t be it...
+	do gameController.rootCall("answer", false)
+- It does it with PT, or Transmit Power, which is the Average Transmit in Watts.
+	do gameController.rootCall("answer", true)
+=> END
+
+~ minigameQuestion3
+Travin: What do you mean by Average?
+- Take all the numbers and add them and then...wait that's not it...
+	do gameController.rootCall("answer", false)
+- Depending on the size of the Radar, the power can range from milliwatts to even megawatts.
+	do gameController.rootCall("answer", true)
+=> END
+
+~ minigameQuestion4
+Travin: You said it's for your radar, how does it work with that?
+- The signal a radar receives is typically smaller than what is transmitted because of scattering and attenuation losses as waves travel through its medium.
+	do gameController.rootCall("answer", true)
+- By writing it a love letter! That’s not right...
+	do gameController.rootCall("answer", false)
+=> END
 
 
 ~ chapter2_3
