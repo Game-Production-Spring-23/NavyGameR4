@@ -90,6 +90,7 @@ Daria: Why does it bounce off an object? [ID:t5b960bb877]
 	do gameController.rootCall("answer", false)
 - It’s coated in bouncy juice [ID:t3ac8c6ee93] 
 	do gameController.rootCall("answer", false)
+=> END
 ~ minigameQuestion6
 Daria: How does the radar know where the object is? [ID:t95e74d146d] 
 - It looks at it with binoculars [ID:t6d59b9afe0] 
