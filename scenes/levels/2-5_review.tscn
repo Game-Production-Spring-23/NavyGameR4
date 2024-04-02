@@ -5,7 +5,7 @@
 [ext_resource type="Theme" uid="uid://bajr2k60ueqkc" path="res://assets/themes/headerTheme.tres" id="3_mm3kx"]
 [ext_resource type="Texture2D" uid="uid://dhaj7ugamct2f" path="res://assets/images/dialogue/messageBox.png" id="4_sfqu4"]
 
-[node name="level" type="Node2D"]
+[node name="level2" type="Node2D"]
 script = ExtResource("1_gcrox")
 
 [node name="Backgrounds" type="CanvasLayer" parent="."]

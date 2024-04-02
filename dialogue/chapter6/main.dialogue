@@ -7,9 +7,13 @@ Daria: Welcome to Yaplisdapolis, the city of Screens & Dreams. [ID:t66a2b31ad7]
 
 Ranger: It looks like the only place open right now is that, Cafe. Let's head there. [ID:t6d035f27dd] 
 => END!
-~ chapter6_2
+~ chapter6_NPC_1
 Lagna: That Barista is gorgeous! That new necklace really puts the piece together. [ID:t75381c9ed7]
+=> END!
+~ chapter6_NPC_2
 Lagna: The coffee here is to die for! [ID:teb9501478e]
+=> END!
+~ chapter6_NPC_3
 Lagna: Yaplisdapolis and the Yappo sure love their screens. It's too bright for me. [ID:t2f5e42407b]
 => END!
 ~ chapter6_3
@@ -45,6 +49,7 @@ Ranger: That's going to take a while, isn't it? [ID:ta4a2997528]
 Daria: Actually, no! The city is next to the Swamp where your ship is. We should be there in a Jiffy! [ID:tae2c77e134]
 
 Ranger: Lead the way, Daria! [ID:t5cd10e51ab]
+do endDialogue6()
 => END!
 ~ reviewQuestion1
 ROGER: What is SNR (Signal to Noise Ratio)? [ID:t0b268ba6f4] 

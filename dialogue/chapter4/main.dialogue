@@ -84,6 +84,7 @@ Daria: Alright, we got another part! Now to the next area! [ID:teb066576a8]
 Ranger: I hope we are getting close... [ID:tc2243ced3b]
 
 Daria: And I hope you can swim! [ID:t8af782b938]
+do endDialogue4()
 => END!
 ~ reviewQuestion1
 ROGER: What Three Properties affect waves? [ID:td2d25a9e64] 

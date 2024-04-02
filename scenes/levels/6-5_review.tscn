@@ -1,4 +1,4 @@
-[gd_scene load_steps=5 format=3 uid="uid://srkqfq0omf6n"]
+[gd_scene load_steps=5 format=3 uid="uid://bpgweijcb3dyl"]
 
 [ext_resource type="Script" path="res://scripts/levels/6-5_review.gd" id="1_gn334"]
 [ext_resource type="Texture2D" uid="uid://c2b175ahm88ie" path="res://assets/images/wip/placeholder.png" id="2_rsnoi"]

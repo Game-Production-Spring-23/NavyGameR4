@@ -71,6 +71,7 @@ Ranger: What do you mean? [ID:t83ee6e3130]
 Daria: We are about to climb Mt. Tenanan! [ID:t66cfa0286e]
 Ranger: Of course we are. [ID:t8c04363e04]
 do gameController.characterCanMove = true
+do endDialogue2()
 => END
 
 ~ reviewQuestion1

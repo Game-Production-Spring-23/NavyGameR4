@@ -49,6 +49,7 @@ do finish_game()
 
 ~ chapter3_5
 Daria: Wheeeeeeeeeeeeeee! [ID:tf0e2d18a7b]
+do endDialogue3()
 => END!
 
 ~ reviewQuestion1

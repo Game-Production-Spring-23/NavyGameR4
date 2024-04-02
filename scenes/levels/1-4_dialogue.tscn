@@ -94,6 +94,7 @@ grow_horizontal = 2
 grow_vertical = 2
 texture = ExtResource("2_6iegb")
 expand_mode = 1
+metadata/_edit_use_anchors_ = true
 
 [node name="ColorRect" type="ColorRect" parent="Backgrounds"]
 anchors_preset = 15
@@ -102,6 +103,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 color = Color(0.294118, 0.294118, 0.294118, 0.392157)
+metadata/_edit_use_anchors_ = true
 
 [node name="Message" type="TextureRect" parent="Backgrounds"]
 modulate = Color(1, 1, 1, 0)
@@ -113,6 +115,7 @@ anchor_bottom = 0.452
 grow_horizontal = 2
 grow_vertical = 2
 texture = ExtResource("4_hwf13")
+metadata/_edit_use_anchors_ = true
 
 [node name="Label" type="Label" parent="Backgrounds/Message"]
 layout_mode = 1
@@ -125,6 +128,7 @@ theme = ExtResource("3_mmnru")
 text = "DARIA JOINED THE PARTY"
 horizontal_alignment = 1
 vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Backgrounds/Message"]
 libraries = {
@@ -143,6 +147,7 @@ grow_horizontal = 2
 grow_vertical = 2
 mouse_filter = 2
 color = Color(0, 0, 0, 1)
+metadata/_edit_use_anchors_ = true
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="ScreenTransition/FadeScreen"]
 libraries = {

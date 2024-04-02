@@ -84,6 +84,7 @@ Daria: Hey, since we are here, can you direct us to which way the city is? [ID:t
 GoGo Babby: Oh sure, the city's entrance should be ahead. [ID:t866ba195c7]
 
 Ranger: About time we got to that city. Let's go! [ID:tbe1c0b45a1]
+do endDialogue5()
 => END!
 
 ~ reviewQuestion1
