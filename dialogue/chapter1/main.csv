@@ -73,6 +73,9 @@ Hand waves.,Hand waves.
 Ocean waves.,Ocean waves.
 Microwaves.,Microwaves.
 t84a3d98536,The closest village would be in the Plains of Trolonc. That’s where the
+"We can determine the direction & speed the object is moving by looking 
+ at various positions over time","We can determine the direction & speed the object is moving by looking 
+ at various positions over time"
 ta78288b13b,"Ooh...Ugh, what happened?"
 t6a967d27e3,"Error, Error, system overload. Proceeding to Reboot…... Reboot Complete!"
 t16872b2d94,"Designated Ranger, the ships gravity engine malfunctioned. While I run diagnostics, make sure you can move efficiently. We have lots to do!"
@@ -80,7 +83,7 @@ t4413d98621,"DIAGNOSTICS COMPLETE. I have bad news Ranger: The ship is totally w
 t9225f0607b,"Broken? No problem, I can fix that!"
 t44fc75551b,"Don’t interrupt me! It’s not broken, it’s completely missing. Sir, this is not good."
 tddf5b00135,"Missing? Unless it fell out of the ship during the crash, it must have been stolen...Check the CCTV footage, quickly."
-t39e146ed2d,"tried doing that during my diagnostics, but I couldn’t access it. It seems like somebody is messing with my system in the main bay. Let me open the door and you go check it out."
+t39e146ed2d,"I tried doing that during my diagnostics, but I couldn’t access it. It seems like somebody is messing with my system in the main bay. Let me open the door and you go check it out."
 t0c59c37dfc,"ROGER, what is that thing?"
 t54e55888c6,"HEY! I'm not a thing, I'm a Daran!"
 tef167cdaa1,"Well whatever you are, you must be the one messing with my ship!"
@@ -127,9 +130,9 @@ t2b55699fad,It communicates with other radars within a 300-mile radius
 td97c1ea399,What if the object is moving?
 te655873ceb,It puts pedal to the metal
 tda4d26f57b,"It says, “SLOW DOWN!”"
-"We can determine the direction & speed the object is moving by looking 
- at various positions over time","We can determine the direction & speed the object is moving by looking 
- at various positions over time"
+"We can determine the direction & speed the object is moving by 
+ looking at various positions over time","We can determine the direction & speed the object is moving by 
+ looking at various positions over time"
 td7665734c1,It does not detect the object
 tb9d56cc107,"That sounds awesome, what does a Radar look like?"
 td4eaa52908,"What are you talking about, don’t you not have my radar? What were you doing on my ship?"
