@@ -53,13 +53,13 @@ do endDialogue6()
 => END!
 ~ reviewQuestion1
 ROGER: What is SNR (Signal to Noise Ratio)? [ID:t0b268ba6f4] 
-- The Measure of the data (signal) compared to the receiver antenna power(noise) received by the antenna. [ID:tc7083e5268] 
+- The Measure of the data (signal) compared to the receiver antenna power(noise) \n received by the antenna. [ID:tc7083e5268] 
 	ROGER: Incorrect, please try again [ID:tdbe6cc099e]
 	do gameController.rootCall("answer", false)
-- The Measure of the antenna (signal) compared to the amount of data (noise) received by the receiver. [ID:t3dd5ee493a] 
+- The Measure of the antenna (signal) compared to the amount of data (noise) \n received by the receiver. [ID:t3dd5ee493a] 
 	ROGER: Incorrect, please try again [ID:t3d9aa60b69]
 	do gameController.rootCall("answer", false)
-- The Measure of the receiver antenna power (signal) compared to the amount of data (noise) received by the antenna. [ID:t0d3df3766a] 
+- The Measure of the receiver antenna power (signal) compared to the amount of \n data (noise) received by the antenna. [ID:t0d3df3766a] 
 	ROGER: Correct! [ID:tdd233ccd3a]
 	do gameController.rootCall("answer", true)
 => END

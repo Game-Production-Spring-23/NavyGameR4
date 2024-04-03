@@ -1,29 +1,255 @@
 ~ finalReview_1
-Ranger: Now that we have all the pieces, I can put the radar back together! Time to show y'all how a radar technician does it!
+Ranger: Now that we have all the pieces, I can put the radar back together! Time to show y'all how a radar technician does it! [ID:te02d4d1946]
 
-Daria: Hey grumps, I would like to say thanks for letting me help you through this journey. You’ve inspired me, I would love to be a ranger like you!
-Ranger: Well Daria, we would be honored to have you! Although typically you have to be an adult...
-Daria: I'm 34 Ranger. 
-Ranger: Really? Well, you can come with us then and we can get you to a recruiter.
+Daria: Hey grumps, I would like to say thanks for letting me help you through this journey. You’ve inspired me, I would love to be a ranger like you! [ID:t4f29e28100]
+Ranger: Well Daria, we would be honored to have you! Although typically you have to be an adult... [ID:t4f60aff62f]
+Daria: I'm 34 Ranger. [ID:t62eaf651ef] 
+Ranger: Really? Well, you can come with us then and we can get you to a recruiter. [ID:t64bcac4ef1]
 => END!
+# REVIEW QUESTIONS
+~ reviewQuestion1
+ROGER: What does the antenna do? [ID:t401f76580f] 
+- Sends and receives waves. [ID:td240547987] 
+	ROGER: Correct! [ID:t38cb49319d]
+	do printDialogue("This sucks")
+	do gameController.rootCall("answer", true)
+- Display Data. [ID:t61a8ef7a64]
+	ROGER: Incorrect, please try again [ID:t552220e298]
+	do gameController.rootCall("answer", false)
+- Provides power for the unit. [ID:t31a7d38976] 
+	ROGER: Incorrect, please try again [ID:t84a1cccd1a]
+	do gameController.rootCall("answer", false)
+=> END
+~ reviewQuestion2
+ROGER: What would a radar be used for? [ID:t8c52905744] 
+- Send messages to other radars. [ID:t1571280c73] 
+	ROGER: Incorrect, please try again [ID:tc0d4f92f8e]
+	do gameController.rootCall("answer", false)
+- Detecting, locating, and tracking objects. [ID:tfb184de46c]
+	ROGER: Correct! [ID:t39df9e5b80]
+	do gameController.rootCall("answer", true)
+- Translate different languages. [ID:t87e83e3360] 
+	ROGER: Incorrect, please try again [ID:t8355f9ab1b]
+	do gameController.rootCall("answer", false)
+=> END
+~ reviewQuestion3
+ROGER: What kind of waves does the radar use? [ID:t0eb693354c] 
+- Hand waves. [ID:t2b090d3396] 
+	ROGER: Incorrect, please try again [ID:tb08056e8cf]
+	do gameController.rootCall("answer", false)
+- Ocean waves. [ID:t3031ebfdf2]
+	ROGER: Incorrect, please try again [ID:t22b4d86ebb]
+	do gameController.rootCall("answer", false)
+- Microwaves. [ID:t4ec936e578] 
+	ROGER: Correct! [ID:t1fba75170b]
+	do gameController.rootCall("answer", true)
+=> END!
+
+~ reviewQuestion4
+ROGER: What is a Control Unit? [ID:ta12405df9c] 
+- It refers to the electromagnetic wave that relates to the energy of the radar [ID:tfb44e1949e] 
+	ROGER: Incorrect, please try again [ID:t8f6faaffae]
+	do gameController.rootCall("answer", false)
+- It stores information on the radar [ID:ta7245da05b] 
+	ROGER: Incorrect, please try again [ID:tc8d1f85e75]
+	do gameController.rootCall("answer", false)
+- It controls the radars settings. [ID:tb465b10f97] 
+	ROGER: Correct! [ID:td934930441]
+	do gameController.rootCall("answer", true)
+=> END
+~ reviewQuestion5
+ROGER: What is the PT? [ID:t3e2d17f71c]
+- Transmit Power or the Average Transmit in Watts [ID:t1227913b3e]
+	ROGER: Correct! [ID:tde4d0fbbd4]
+	do gameController.rootCall("answer", true)
+- Is the speed at which the wave moves through a given medium [ID:t00696fecb8]
+	ROGER: Incorrect, please try again [ID:tcbf433b989]
+	do gameController.rootCall("answer", false)
+- It refers to the electromagnetic wave that relates to the energy of said wave [ID:ta217cc641e]  
+	ROGER: Incorrect, please try again [ID:t5203016bd6]
+	do gameController.rootCall("answer", false)
+=> END
+~ reviewQuestion6
+ROGER: The signal a radar receives is typically smaller than what is transmitted. Why? [ID:tc82d0de6b9]
+- Because of the noise bandwidth of the receiver [ID:t3f4930da6a]
+	ROGER: Incorrect, please try again [ID:t58d247ee20]
+	do gameController.rootCall("answer", false)
+- Because of the wave functions traveling through the air [ID:t70efeea5da] 
+	ROGER: Incorrect, please try again [ID:t0e9c64fe4c]
+	do gameController.rootCall("answer", false)
+- Transmit Because of scattering and attenuation losses as waves travel through its medium. [ID:t648addbeef]
+	ROGER: Correct! [ID:ta8944f1a0a]
+	do gameController.rootCall("answer", true)
+=> END!  
+~ reviewQuestion7
+ROGER: What equation is this for? [ID:t607b55ed5c]
+- Gamma [ID:t173992fd1d]
+	ROGER: Incorrect, please try again [ID:te72724f119]
+	do gameController.rootCall("answer", false)
+- Gain [ID:tf230693dd6]
+	do gainEquation.hide()
+	ROGER: Correct! [ID:t2c70222cca]
+	do gameController.rootCall("answer", true)
+- Growth [ID:t69ed54ce28]
+	ROGER: Incorrect, please try again [ID:t067d9033de]
+	do gameController.rootCall("answer", false)
+=> END
+~ reviewQuestion8
+ROGER: What happens when gain is too high? [ID:t1f376ca8b8]
+- Transmit The shape becomes fixated in a position. [ID:tc2deffa834]
+	ROGER: Correct! [ID:t335e98647b]
+	do gameController.rootCall("answer", true)
+- The shape is equaled out [ID:t1c7dc4d3fe]
+	ROGER: Incorrect, please try again [ID:ta320bab595]
+	do gameController.rootCall("answer", false)
+- The shape becomes more spaced out [ID:t2491f1c548] 
+	ROGER: Incorrect, please try again [ID:tee3a905b78]
+	do gameController.rootCall("answer", false)
+=> END
+~ reviewQuestion9
+ROGER: What happens when gain is too high? [ID:t55a6556022]
+- The shape becomes fixated in a position. [ID:t14e07eb8e5]
+	ROGER: Incorrect, please try again [ID:tbd35fa695d]
+	do gameController.rootCall("answer", false)
+- The shape is equaled out [ID:t492dd2e2e2]
+	ROGER: Incorrect, please try again [ID:t09d9fa5581]
+	do gameController.rootCall("answer", false)
+- Transmit The shape becomes more spaced out [ID:te764f80b25] 
+	ROGER: Correct! [ID:t66c0970dc9]
+	do gameController.rootCall("answer", true)
+=> END!
+
+~ reviewQuestion10
+ROGER: What Three Properties affect waves? [ID:td2d25a9e64] 
+- Amplitude, Frequency, and Wavelength [ID:t5d181a53f6]
+	ROGER: Correct! [ID:t82797a8a7f]
+	do gameController.rootCall("answer", true)
+- Velocity, Impulse, and Flash [ID:t44a8249f72] 
+	ROGER: Incorrect, please try again [ID:ta3fe43bf26]
+	do gameController.rootCall("answer", false)
+- Force, Light, and Amplitude [ID:t4ffa7240c8] 
+	ROGER: Incorrect, please try again [ID:t1811dc7c09]
+	do gameController.rootCall("answer", false)
+=> END
+~ reviewQuestion11
+ROGER: What is Velocity? [ID:t8d19140274] 
+- Transmit The speed at which the wave moves through a given medium [ID:tdbf00c20a9] 
+	ROGER: Correct! [ID:t5f5f282d8f]
+	do gameController.rootCall("answer", true)
+- the time it takes for the wave to go through one cycle [ID:t64c001666b] 
+	ROGER: Incorrect, please try again [ID:t160386111a]
+	do gameController.rootCall("answer", false)
+- It’s the distance between two consecutive points on a wave. [ID:te4d7091160] 
+	ROGER: Incorrect, please try again [ID:tdde770a772]
+	do gameController.rootCall("answer", false)
+=> END
+~ reviewQuestion12
+ROGER: How do electromagnetic waves differ from other kinds of waves? [ID:t07de36bc74] 
+- They have frequency, amplitude, and a wavelength [ID:tabec72dd6a] 
+	ROGER: Incorrect, please try again [ID:tc90d707707]
+	do gameController.rootCall("answer", false)
+- They are completely similar to other kinds of waves [ID:te4f8e82275] 
+	ROGER: Incorrect, please try again [ID:tb3c19bb864]
+	do gameController.rootCall("answer", false)
+- They don’t need a material medium to travel. [ID:t934a9fcbad] 
+	ROGER: Correct! [ID:t7707bba1af]
+	do gameController.rootCall("answer", true)
+~ reviewQuestion13
+ROGER: What connects the device to the Signal Processor? [ID:td0ad1dc823] 
+- The Compute Engine [ID:t53dbd632bd] 
+	ROGER: Incorrect, please try again [ID:t8b66b0a3bb]
+	do gameController.rootCall("answer", false)
+- The Input and Output [ID:t7c6abad271]
+	ROGER: Correct! [ID:t6b4cef582e]
+	do gameController.rootCall("answer", true)
+- The Radio Signal [ID:tece3c44625] 
+	ROGER: Incorrect, please try again [ID:t390f562d65]
+	do gameController.rootCall("answer", false)
+=> END
+~ reviewQuestion14
+ROGER: What does the Signal Processor do? [ID:t21924e444b]  
+- Transmit Takes a signal and Interprets it [ID:t75ecb179fa] 
+	ROGER: Correct! [ID:t525c804118]
+	do gameController.rootCall("answer", true)
+- Sends the signal out to other Radars [ID:tef35bf5f9b] 
+	ROGER: Incorrect, please try again [ID:tfc8da0cbb6]
+	do gameController.rootCall("answer", false)
+- Produces the Signal [ID:t4d8af209d9] 
+	ROGER: Incorrect, please try again [ID:t1956b399ee]
+	do gameController.rootCall("answer", false)
+=> END
+~ reviewQuestion15
+ROGER: What is the Signal Processor made of? [ID:t8c6f485739] 
+- The Compute Engine, The Input and Output, and the Radio Signal [ID:tfd47a6f76c] 
+	ROGER: Incorrect, please try again [ID:t77d40e36eb]
+	do gameController.rootCall("answer", false)
+- Program and Data Memory, The Compute Engine, and the Input and Output [ID:teb12c67c1b] 
+	ROGER: Correct! [ID:t3d53581761]
+	do gameController.rootCall("answer", true)
+- Program and Data Memory, the Radio Signal, and The Input and Output [ID:t55334ad52a] 
+
+	ROGER: Incorrect, please try again [ID:t231ba63290]
+	do gameController.rootCall("answer", false)
+=> END!
+~ reviewQuestion16
+ROGER: What is SNR (Signal to Noise Ratio)? [ID:t0b268ba6f4] 
+- The Measure of the data (signal) compared to the receiver antenna power(noise) \n received by the antenna. [ID:tc7083e5268] 
+	ROGER: Incorrect, please try again [ID:tdbe6cc099e]
+	do gameController.rootCall("answer", false)
+- The Measure of the antenna (signal) compared to the amount of data (noise) \n received by the receiver. [ID:t3dd5ee493a] 
+	ROGER: Incorrect, please try again [ID:t3d9aa60b69]
+	do gameController.rootCall("answer", false)
+- The Measure of the receiver antenna power (signal) compared to the amount of \n data (noise) received by the antenna. [ID:t0d3df3766a] 
+	ROGER: Correct! [ID:tdd233ccd3a]
+	do gameController.rootCall("answer", true)
+=> END
+~ reviewQuestion17
+ROGER: How is SNR measured? [ID:tca99f8754c] 
+- Decibels [ID:t56747e680b]
+	ROGER: Correct! [ID:t1c132f386c]
+	do gameController.rootCall("answer", true)
+- Megawatts [ID:te91832a817]
+	ROGER: Incorrect, please try again [ID:t7d7c880811]
+	do gameController.rootCall("answer", false)
+- Milliwatts [ID:tf29a281841]
+	ROGER: Incorrect, please try again [ID:t920f363a1c]
+	do gameController.rootCall("answer", false)
+=> END
+~ reviewQuestion18
+ROGER: What equation is used for SNR? [ID:t0050919b16] 
+- 10 * log(p2/p1) [ID:t9eb8a0ca4e] 
+	ROGER: Incorrect, please try again [ID:t38dfe7c204]
+	do gameController.rootCall("answer", false)
+- k * T_s * B_n [ID:t74b09264d2] 
+	ROGER: Incorrect, please try again [ID:td698881920]
+	do gameController.rootCall("answer", false)
+- P_r / N [ID:t773280b020] 
+	ROGER: Correct! [ID:t04e50d36e0]
+	do gameController.rootCall("answer", true)
+=> END!
+
+
+
+
+
 
 ~ finalReview_2
-Ranger: That should do it.
+Ranger: That should do it. [ID:tb424377ee6]
 
-ROGER: Ranger? What's going on- WHAT HAPPENED!
+ROGER: Ranger? What's going on- WHAT HAPPENED! [ID:ta1360ac25a]
 
-Ranger: Oh yeah ROGER, you had to be rebooted because of the crash. The radar being rebuilt must've brought everything back.
+Ranger: Oh yeah ROGER, you had to be rebooted because of the crash. The radar being rebuilt must've brought everything back. [ID:ta869f14eb2]
 
-ROGER: Sheesh, seems like I missed a lot! I’ll get started on ship repairs! While I get that done, it seems you have some visitors outside.
+ROGER: Sheesh, seems like I missed a lot! I’ll get started on ship repairs! While I get that done, it seems you have some visitors outside. [ID:tb0c8a277be]
 => END!
 ~ finalReview_3
-Ranger: Looks like everything is good here. ROGER, how's it looking?
+Ranger: Looks like everything is good here. ROGER, how's it looking? [ID:t8f1e10c031]
 
-ROGER: Everything is up and running sir. I have to say, it's been a while since I have seen you so relaxed. This adventure must've helped you out a lot.
+ROGER: Everything is up and running sir. I have to say, it's been a while since I have seen you so relaxed. This adventure must've helped you out a lot. [ID:t7752f6390f]
 
-Ranger: As much as I love this place, work doesn't stop for anyone. ROGER, set a route back to IUI!
+Ranger: As much as I love this place, work doesn't stop for anyone. ROGER, set a route back to IUI! [ID:t4c7dffdfea]
 
-ROGER: Affirmative!
+ROGER: Affirmative! [ID:t8064cafd86]
 
-Daria: Let's goooo!
+Daria: Let's goooo! [ID:t001c6517a4]
 => END!

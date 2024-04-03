@@ -1,0 +1,144 @@
+keys,en
+te02d4d1946,"Now that we have all the pieces, I can put the radar back together! Time to show y'all how a radar technician does it!"
+t4f29e28100,"Hey grumps, I would like to say thanks for letting me help you through this journey. You’ve inspired me, I would love to be a ranger like you!"
+t4f60aff62f,"Well Daria, we would be honored to have you! Although typically you have to be an adult..."
+t62eaf651ef,I'm 34 Ranger.
+t64bcac4ef1,"Really? Well, you can come with us then and we can get you to a recruiter."
+t401f76580f,What does the antenna do?
+td240547987,Sends and receives waves.
+t38cb49319d,Correct!
+t61a8ef7a64,Display Data.
+t552220e298,"Incorrect, please try again"
+t31a7d38976,Provides power for the unit.
+t84a1cccd1a,"Incorrect, please try again"
+t8c52905744,What would a radar be used for?
+t1571280c73,Send messages to other radars.
+tc0d4f92f8e,"Incorrect, please try again"
+tfb184de46c,"Detecting, locating, and tracking objects."
+t39df9e5b80,Correct!
+t87e83e3360,Translate different languages.
+t8355f9ab1b,"Incorrect, please try again"
+t0eb693354c,What kind of waves does the radar use?
+t2b090d3396,Hand waves.
+tb08056e8cf,"Incorrect, please try again"
+t3031ebfdf2,Ocean waves.
+t22b4d86ebb,"Incorrect, please try again"
+t4ec936e578,Microwaves.
+t1fba75170b,Correct!
+ta12405df9c,What is a Control Unit?
+tfb44e1949e,It refers to the electromagnetic wave that relates to the energy of the radar
+t8f6faaffae,"Incorrect, please try again"
+ta7245da05b,It stores information on the radar
+tc8d1f85e75,"Incorrect, please try again"
+tb465b10f97,It controls the radars settings.
+td934930441,Correct!
+t3e2d17f71c,What is the PT?
+t1227913b3e,Transmit Power or the Average Transmit in Watts
+tde4d0fbbd4,Correct!
+t00696fecb8,Is the speed at which the wave moves through a given medium
+tcbf433b989,"Incorrect, please try again"
+ta217cc641e,It refers to the electromagnetic wave that relates to the energy of said wave
+t5203016bd6,"Incorrect, please try again"
+tc82d0de6b9,The signal a radar receives is typically smaller than what is transmitted. Why?
+t3f4930da6a,Because of the noise bandwidth of the receiver
+t58d247ee20,"Incorrect, please try again"
+t70efeea5da,Because of the wave functions traveling through the air
+t0e9c64fe4c,"Incorrect, please try again"
+t648addbeef,Transmit Because of scattering and attenuation losses as waves travel through its medium.
+ta8944f1a0a,Correct!
+t607b55ed5c,What equation is this for?
+t173992fd1d,Gamma
+te72724f119,"Incorrect, please try again"
+tf230693dd6,Gain
+t2c70222cca,Correct!
+t69ed54ce28,Growth
+t067d9033de,"Incorrect, please try again"
+t1f376ca8b8,What happens when gain is too high?
+tc2deffa834,Transmit The shape becomes fixated in a position.
+t335e98647b,Correct!
+t1c7dc4d3fe,The shape is equaled out
+ta320bab595,"Incorrect, please try again"
+t2491f1c548,The shape becomes more spaced out
+tee3a905b78,"Incorrect, please try again"
+t55a6556022,What happens when gain is too high?
+t14e07eb8e5,The shape becomes fixated in a position.
+tbd35fa695d,"Incorrect, please try again"
+t492dd2e2e2,The shape is equaled out
+t09d9fa5581,"Incorrect, please try again"
+te764f80b25,Transmit The shape becomes more spaced out
+t66c0970dc9,Correct!
+td2d25a9e64,What Three Properties affect waves?
+t5d181a53f6,"Amplitude, Frequency, and Wavelength"
+t82797a8a7f,Correct!
+t44a8249f72,"Velocity, Impulse, and Flash"
+ta3fe43bf26,"Incorrect, please try again"
+t4ffa7240c8,"Force, Light, and Amplitude"
+t1811dc7c09,"Incorrect, please try again"
+t8d19140274,What is Velocity?
+tdbf00c20a9,Transmit The speed at which the wave moves through a given medium
+t5f5f282d8f,Correct!
+t64c001666b,the time it takes for the wave to go through one cycle
+t160386111a,"Incorrect, please try again"
+te4d7091160,It’s the distance between two consecutive points on a wave.
+tdde770a772,"Incorrect, please try again"
+t07de36bc74,How do electromagnetic waves differ from other kinds of waves?
+tabec72dd6a,"They have frequency, amplitude, and a wavelength"
+tc90d707707,"Incorrect, please try again"
+te4f8e82275,They are completely similar to other kinds of waves
+tb3c19bb864,"Incorrect, please try again"
+t934a9fcbad,They don’t need a material medium to travel.
+t7707bba1af,Correct!
+td0ad1dc823,What connects the device to the Signal Processor?
+t53dbd632bd,The Compute Engine
+t8b66b0a3bb,"Incorrect, please try again"
+t7c6abad271,The Input and Output
+t6b4cef582e,Correct!
+tece3c44625,The Radio Signal
+t390f562d65,"Incorrect, please try again"
+t21924e444b,What does the Signal Processor do?
+t75ecb179fa,Transmit Takes a signal and Interprets it
+t525c804118,Correct!
+tef35bf5f9b,Sends the signal out to other Radars
+tfc8da0cbb6,"Incorrect, please try again"
+t4d8af209d9,Produces the Signal
+t1956b399ee,"Incorrect, please try again"
+t8c6f485739,What is the Signal Processor made of?
+tfd47a6f76c,"The Compute Engine, The Input and Output, and the Radio Signal"
+t77d40e36eb,"Incorrect, please try again"
+teb12c67c1b,"Program and Data Memory, The Compute Engine, and the Input and Output"
+t3d53581761,Correct!
+t55334ad52a,"Program and Data Memory, the Radio Signal, and The Input and Output"
+t231ba63290,"Incorrect, please try again"
+t0b268ba6f4,What is SNR (Signal to Noise Ratio)?
+tc7083e5268,"The Measure of the data (signal) compared to the receiver antenna power(noise) 
+ received by the antenna."
+tdbe6cc099e,"Incorrect, please try again"
+t3dd5ee493a,"The Measure of the antenna (signal) compared to the amount of data (noise) 
+ received by the receiver."
+t3d9aa60b69,"Incorrect, please try again"
+t0d3df3766a,"The Measure of the receiver antenna power (signal) compared to the amount of 
+ data (noise) received by the antenna."
+tdd233ccd3a,Correct!
+tca99f8754c,How is SNR measured?
+t56747e680b,Decibels
+t1c132f386c,Correct!
+te91832a817,Megawatts
+t7d7c880811,"Incorrect, please try again"
+tf29a281841,Milliwatts
+t920f363a1c,"Incorrect, please try again"
+t0050919b16,What equation is used for SNR?
+t9eb8a0ca4e,10 * log(p2/p1)
+t38dfe7c204,"Incorrect, please try again"
+t74b09264d2,k * T_s * B_n
+td698881920,"Incorrect, please try again"
+t773280b020,P_r / N
+t04e50d36e0,Correct!
+tb424377ee6,That should do it.
+ta1360ac25a,Ranger? What's going on- WHAT HAPPENED!
+ta869f14eb2,"Oh yeah ROGER, you had to be rebooted because of the crash. The radar being rebuilt must've brought everything back."
+tb0c8a277be,"Sheesh, seems like I missed a lot! I’ll get started on ship repairs! While I get that done, it seems you have some visitors outside."
+t8f1e10c031,"Looks like everything is good here. ROGER, how's it looking?"
+t7752f6390f,"Everything is up and running sir. I have to say, it's been a while since I have seen you so relaxed. This adventure must've helped you out a lot."
+t4c7dffdfea,"As much as I love this place, work doesn't stop for anyone. ROGER, set a route back to IUI!"
+t8064cafd86,Affirmative!
+t001c6517a4,Let's goooo!

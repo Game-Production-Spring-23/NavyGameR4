@@ -23,11 +23,14 @@ ta4a2997528,"That's going to take a while, isn't it?"
 tae2c77e134,"Actually, no! The city is next to the Swamp where your ship is. We should be there in a Jiffy!"
 t5cd10e51ab,"Lead the way, Daria!"
 t0b268ba6f4,What is SNR (Signal to Noise Ratio)?
-tc7083e5268,The Measure of the data (signal) compared to the receiver antenna power(noise) received by the antenna.
+tc7083e5268,"The Measure of the data (signal) compared to the receiver antenna power(noise) 
+ received by the antenna."
 tdbe6cc099e,"Incorrect, please try again"
-t3dd5ee493a,The Measure of the antenna (signal) compared to the amount of data (noise) received by the receiver.
+t3dd5ee493a,"The Measure of the antenna (signal) compared to the amount of data (noise) 
+ received by the receiver."
 t3d9aa60b69,"Incorrect, please try again"
-t0d3df3766a,The Measure of the receiver antenna power (signal) compared to the amount of data (noise) received by the antenna.
+t0d3df3766a,"The Measure of the receiver antenna power (signal) compared to the amount of 
+ data (noise) received by the antenna."
 tdd233ccd3a,Correct!
 tca99f8754c,How is SNR measured?
 t56747e680b,Decibels
