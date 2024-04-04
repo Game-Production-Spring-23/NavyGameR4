@@ -32,42 +32,54 @@ do gameController.characterCanMove = true
 
 ~ minigameQuestion1
 Travin: What are you talking about? I’m not going to give up this beautiful Geode...what’s a control unit?
+do gameController.triggerMinigame2()
 => END
 ~ minigameQuestion1_Right
 ROGER: It controls the radars settings, its necessary to make sure the radar is functioning properly
+do gameController.minigame2Answer(true)
 => END!
 ~ minigameQuestion1_Wrong
 ROGER: It... well it...oh shoot, I forgot!
+do gameController.minigame2Answer(false)
 => END!
 
 ~ minigameQuestion2
 Travin: Sure, it does, and how does it do that?
+do gameController.triggerMinigame2()
 => END!
 ~ minigameQuestion2_Wrong
 ROGER: Magic! No, that can’t be it...
+do gameController.minigame2Answer(false)
 => END!
 ~ minigameQuestion2_Right
 ROGER: It does it with PT, or Transmit Power, which is the Average Transmit in Watts.
+do gameController.minigame2Answer(true)
 => END
 
 ~ minigameQuestion3
 Travin: What do you mean by Average?
+do gameController.triggerMinigame2()
 => END!
 ~ minigameQuestion3_Wrong
 ROGER: Take all the numbers and add them and then...wait that's not it...
+do gameController.minigame2Answer(false)
 => END!
 ~ minigameQuestion3_Right
 ROGER: Depending on the size of the Radar, the power can range from milliwatts to even megawatts.
+do gameController.minigame2Answer(true)
 => END
 
 ~ minigameQuestion4
 Travin: You said it's for your radar, how does it work with that?
+do gameController.triggerMinigame2()
 => END!
 ~ minigameQuestion4_Right
 ROGER: The signal a radar receives is typically smaller than what is transmitted because of scattering and attenuation losses as waves travel through its medium.
+do gameController.minigame2Answer(true)
 => END!
 ~ minigameQuestion4_Wrong
 ROGER: By writing it a love letter! That’s not right...
+do gameController.minigame2Answer(false)
 => END
 
 
