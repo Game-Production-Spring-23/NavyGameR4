@@ -46,6 +46,7 @@ var dialogue_line: DialogueLine:
 
 		character_label.visible = not dialogue_line.character.is_empty()
 		var portrait_name = dialogue_line.character.to_lower();
+		var voiceBus = AudioServer.get_bus_index("voice")
 		#if the voice file exists in its own folder
 		if FileAccess.file_exists("res://assets/audio/voiceovers/"+ portrait_name + "/"+dialogue_line.translation_key +".ogg"):
 					#loads the voice line for other characters

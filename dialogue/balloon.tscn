@@ -82,6 +82,7 @@ layer = 100
 script = ExtResource("1_36de5")
 
 [node name="Sound" type="AudioStreamPlayer2D" parent="."]
+bus = &"Voice"
 
 [node name="Balloon" type="Control" parent="."]
 unique_name_in_owner = true
