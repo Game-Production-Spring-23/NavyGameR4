@@ -1,4 +1,4 @@
-[gd_scene load_steps=6 format=3 uid="uid://d343eqfehbilh"]
+[gd_scene load_steps=6 format=3 uid="uid://d3qqotkpo8y7m"]
 
 [ext_resource type="Texture2D" uid="uid://c3cpxy6bmy3xh" path="res://assets/images/tilemaps/mountain-tileset.png" id="1_o0bm2"]
 [ext_resource type="PackedScene" uid="uid://dtolugbyxj6gu" path="res://scenes/objects/playerCharacter.tscn" id="2_hta78"]
