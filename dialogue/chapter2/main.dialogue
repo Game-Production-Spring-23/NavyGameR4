@@ -12,6 +12,7 @@ do gameController.characterCanMove = true
 Ranger: Hey, see anything strange around? [ID:t1a47a3b5ad]
 Trolum: [#type = trolum2] I heard a loud bang earlier; I think it was just the neighbors [ID:t41f324b156]
 do gameController.characterCanMove = true
+=> END!
 ~ chapter2_NPC_3
 Daria: Sorry to bother you, but have you seen anyone with a weird device? [ID:t383544819b]
 
