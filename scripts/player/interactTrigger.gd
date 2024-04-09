@@ -39,6 +39,7 @@ func _on_body_exit(body):
 func _input(event):	
 	# If the player is within range, hasn't interacted with this trigger before and presses 'e'
 	if(isPlayerWithinRange && !hasPlayerInteracted && playerRef != null && event.is_action_pressed("interact")):
+		print("interact")
 		hasPlayerInteracted = true
 		playerRef.showInteractionPrompt(false)
 		player_interact.emit()

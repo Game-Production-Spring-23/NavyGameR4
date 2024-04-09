@@ -6,6 +6,7 @@ Ranger: Not going to lie, it was a little fun. So where are we now exactly? [ID:
 Daria: This right here is the Deserts of Sceivnarter. Home of the Scein. On the footage, there was a Scein that took a part. There's an oasis town nearby that should have some information on the part. [ID:t58e99f6095] 
 
 Ranger: Alright, Lead the way! [ID:tbc72bdedd0]
+do gameController.characterCanMove = true
 => END!
 ~ chapter4_NPC_1
 Ranger: Alright, you know the drill. Let's talk to the Natives around here for information. [ID:tf2729444a6]
@@ -19,6 +20,7 @@ Daria: What's an amplitude? [ID:t8ce26abf1d]
 Ranger: It refers to the electromagnetic wave that relates to the energy of said wave. [ID:tb1b448b8d4]
 
 Scein: [#sprite=scein1] Uh…sure [ID:t765218b69d]
+do gameController.characterCanMove = true
 => END!
 ~ chapter4_NPC_2
 Scein: [#sprite=scein2] Keeping track of your wavelength could save your life! [ID:t998f938e62]
@@ -28,6 +30,7 @@ Daria: What's a wavelength? [ID:tec62c87a25]
 Ranger: It’s the distance between two consecutive points on a wave that are in phase with each other. [ID:t1cf50a3d48]
 
 Scein: [#sprite=scein2] Huh? [ID:ta12f9eaa62]
+do gameController.characterCanMove = true
 => END!
 ~ chapter4_NPC_3
 Scein: [#sprite=scein3] The frequency at which you move is vital… [ID:t849f9b1cab] 
@@ -37,6 +40,7 @@ Daria: What's frequency? [ID:tb1d819cae0]
 Ranger: The frequency is the number of cycles a wave in one second. [ID:t7bf59bca2d] 
 
 Scein: [#sprite=scein3] That’s not what I was talking about! [ID:tc67865b058] 
+do gameController.characterCanMove = true
 ~ chapter4_NPC_4
 Scein: [#sprite=scein4] Stop for a period and rest… [ID:td1fe336444] 
 
@@ -45,6 +49,7 @@ Daria: Period, like at the end of a sentence? [ID:t8f316420fa]
 Ranger: Period is the time it takes for the wave to go through one cycle. [ID:t74528e67ad] 
 
 Scein: [#sprite=scein4] Sounds complicated… [ID:t96ae019a3a] 
+do gameController.characterCanMove = true
 => END!
 ~ chapter4_NPC_5
 Scein: I move with the velocity of jets! [ID:tdb412b4bea]
@@ -54,6 +59,7 @@ Daria: Velo-city? Where is that? [ID:t3f2bb3a06d]
 Ranger: It's not a place, It’s the speed at which the wave moves through a given medium. [ID:tb73d051380]
 
 Scein: I guess??? [ID:t89c68ddf58]
+do gameController.characterCanMove = true
 => END!
 ~ chapter5_NPC_6
 Scein: Did you know that in a perfect vacuum, the speed of any electromagnetic wave is equal to the speed of light, c=3x10^8 ms? This only can happen in a perfect vacuum, its slower anywhere else! [ID:t91b5e60efb] 
@@ -63,6 +69,7 @@ Daria: What? [ID:tce021c6b96]
 Ranger: I... got nothing else to add here, you know your stuff! [ID:t7ca16a6f6d]
 
 Scein: No Problem? [ID:te9ee25942d]
+do gameController.characterCanMove = true
 => END!
 ~ chapter4_2
 Selco: If you need locks, I’m your guy! Just made this new safe with some extraterrsital ship parts! [ID:t404c09a70a] 
@@ -72,6 +79,7 @@ ROGER: Thats our transceiver! [ID:t11db46fbf6]
 Selco: Oh yeah? Prove it! If you can unlock my new safe, then I'll give it to you! [ID:t31d444062b]
 
 Ranger: Guess we don’t have a choice, hand it over! [ID:t50b432322e]
+do gameController.characterCanMove = true
 => END!
 
 ~ chapter4_3

@@ -12,6 +12,7 @@ Ranger: I didn't ask you ROGER. [ID:t3f9f20686b]
 Daria: There is a rest stop nearby, we can take a little breather up there. There are typically a few people up there, they might know something about the next part! [ID:tc085242fc9]
 
 Ranger: Sounds good to me. [ID:ta335a561ef]
+do gameController.characterCanMove = true
 => END
 ~ chapter3_2
 Tendra: Welcome to the Resting area before the peak of Mt. Tenanan! Home of the Tendra. I sadly do have some bad news though, due to uncertain circumstances, the gateway to the peak is closed. [ID:t534468ac08]
@@ -29,9 +30,11 @@ ROGER: That must be our Antenna. [ID:tbb0ab562a2]
 Ranger: Hey, I'm a technician myself, do you mind if I help? [ID:t1989f4ebf0]
 
 Tendra: Any help is major cool! I will give you passage. [ID:tc55e130a2d]
+do gameController.characterCanMove = true
 => END
 ~ chapter3_3
 ROGER: Looks like the gatekeeper was right; their antenna is having major issues. Try to see if you can help them out! [ID:t5127f37b76]
+do gameController.changeScene("3-2_minigame3splash")
 => END
 
 ~ chapter3_4
@@ -44,6 +47,7 @@ ROGER: Yeah, you folks have a different type of Antenna up, ours is a Dipole Ant
 Ranger: I am just happy I got the ship’s Antenna back! What's next Daria? [ID:t8011af7508]
 Daria: Well, we gotta get down the mountain. [ID:tc89dc9e33d]
 Techra: Actually, to show our gratitude, let us help you glide down the mountain! We will be waiting at the end right here. [ID:ta1e4bb66dc]
+do gameController.characterCanMove = true
 do finish_game()
 => END
 

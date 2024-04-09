@@ -20,6 +20,7 @@ Ranger: Wait, I don’t know about all that! [ID:td8ecd91e4a]
 Daria: It seems to be the only way. Make room Ranger, I'm coming in! [ID:t8c13364f72]
 
 Ranger: Cramped...Ok then, to the underwater city! [ID:t8c6e9e8452]
+do gameController.characterCanMove = true
 => END!
 ~ chapter5_2
 Ranger: Stop squirming so much! [ID:t86c3c06873]
@@ -63,6 +64,7 @@ Daria: Neat! I can’t think of any more questions... [ID:tab245d7460]
 GoGo Babby: Well before you go, we have a little surprise for you: You are our 1000th caller! We have a prize waiting for you, and it rhymes with “Pringle Successor”. Just come down to the station to get your prize! [ID:ta502f80b79]
 
 ROGER: That must be our Signal Processor. Come on guys, let's go to the station! [ID:t474b31a832]
+do gameController.characterCanMove = true
 => END!
 ~ chapter5_3
 GoGo Babby: Wow, I thought you were kidding about the helmet thing. You must be Daria. [ID:t42d7cd4f9b]
@@ -72,6 +74,7 @@ Daria: Yeah, I am, I am here to get my Pringle Successor. [ID:tfcfe0d8831]
 GoGo Babby: Well, before you do, you have a couple things to do to get your prize! [ID:t28b1709bf7]
 
 Ranger: Bring it on! [ID:t3585c7cd91]
+do gameController.characterCanMove = true
 => END!
 ~ chapter5_4
 GoGo Babby: Congratulations guys! Well, here is your Signal Processor. Before you leave, you can always come back for more challenges and prizes at SGNL. [ID:t21d0ffe89f]
