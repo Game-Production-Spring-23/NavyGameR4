@@ -7,3 +7,6 @@ func _on_interact_trigger_player_interact():
 
 func _on_area_trigger_player_interact():
 	gameController.triggerDialogue("chapter3", "chapter3_2")
+
+func _ready():
+	gameController.triggerDialogue("chapter3", "chapter3_1")
