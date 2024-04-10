@@ -1,7 +1,7 @@
 [gd_scene load_steps=11 format=3 uid="uid://4jj00bv4pjg3"]
 
 [ext_resource type="Script" path="res://scripts/levels/2-4_dialogue.gd" id="1_nduo1"]
-[ext_resource type="Texture2D" uid="uid://c2b175ahm88ie" path="res://assets/images/wip/placeholder.png" id="2_opmi3"]
+[ext_resource type="Texture2D" uid="uid://4ygcqdg274nl" path="res://assets/images/background/plainsenvironment.png" id="2_o7yyv"]
 [ext_resource type="Texture2D" uid="uid://dhaj7ugamct2f" path="res://assets/images/dialogue/messageBox.png" id="3_ltbbr"]
 [ext_resource type="Theme" uid="uid://bajr2k60ueqkc" path="res://assets/themes/headerTheme.tres" id="4_18xpf"]
 
@@ -92,7 +92,7 @@ offset_top = -1.0
 offset_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("2_opmi3")
+texture = ExtResource("2_o7yyv")
 expand_mode = 1
 metadata/_edit_use_anchors_ = true
 

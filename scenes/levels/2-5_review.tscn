@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=3 uid="uid://iwgadal7a8e8"]
 
 [ext_resource type="Script" path="res://scripts/levels/2-5_review.gd" id="1_gcrox"]
-[ext_resource type="Texture2D" uid="uid://c2b175ahm88ie" path="res://assets/images/wip/placeholder.png" id="2_asvxy"]
+[ext_resource type="Texture2D" uid="uid://4ygcqdg274nl" path="res://assets/images/background/plainsenvironment.png" id="2_fqp7b"]
 [ext_resource type="Theme" uid="uid://bajr2k60ueqkc" path="res://assets/themes/headerTheme.tres" id="3_mm3kx"]
 [ext_resource type="Texture2D" uid="uid://dhaj7ugamct2f" path="res://assets/images/dialogue/messageBox.png" id="4_sfqu4"]
 
@@ -18,7 +18,7 @@ offset_top = -1.0
 offset_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("2_asvxy")
+texture = ExtResource("2_fqp7b")
 
 [node name="ColorRect" type="ColorRect" parent="Backgrounds"]
 anchors_preset = 15
