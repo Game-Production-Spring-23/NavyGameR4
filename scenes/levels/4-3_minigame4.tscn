@@ -82,6 +82,7 @@ offset_top = 750.0
 offset_right = 600.0
 offset_bottom = 950.0
 pivot_offset = Vector2(100, 100)
+tooltip_text = "Amplitude"
 texture_normal = ExtResource("3_fpmco")
 stretch_mode = 0
 
@@ -91,6 +92,7 @@ offset_top = 750.0
 offset_right = 1550.0
 offset_bottom = 950.0
 pivot_offset = Vector2(100, 100)
+tooltip_text = "Wavelength"
 texture_normal = ExtResource("3_fpmco")
 stretch_mode = 0
 

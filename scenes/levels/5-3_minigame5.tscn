@@ -1,0 +1,266 @@
+[gd_scene load_steps=10 format=3 uid="uid://ck57brmlctqwa"]
+
+[ext_resource type="Script" path="res://scripts/levels/5-3_minigame5.gd" id="1_cqec2"]
+[ext_resource type="Texture2D" uid="uid://ce626mbi7pybj" path="res://assets/images/wip/m5step1.png" id="2_kc6by"]
+[ext_resource type="Texture2D" uid="uid://dfospmj2j8o0c" path="res://assets/images/wip/amongOrange.png" id="3_n5qf8"]
+[ext_resource type="Texture2D" uid="uid://du2k6n0lnlmpf" path="res://assets/images/wip/amongRed.png" id="4_rwlbl"]
+[ext_resource type="Texture2D" uid="uid://dhaj7ugamct2f" path="res://assets/images/dialogue/messageBox.png" id="5_oalp2"]
+[ext_resource type="Theme" uid="uid://dvij0s1xehu3a" path="res://assets/themes/subheaderTheme.tres" id="6_amcv1"]
+
+[sub_resource type="Animation" id="Animation_t1e7d"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_e3b3s"]
+resource_name = "fadeout"
+length = 5.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 4, 5),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_61oh3"]
+_data = {
+"RESET": SubResource("Animation_t1e7d"),
+"fadeout": SubResource("Animation_e3b3s")
+}
+
+[node name="level" type="Node2D"]
+position = Vector2(1683, 248)
+script = ExtResource("1_cqec2")
+
+[node name="UI" type="CanvasLayer" parent="."]
+
+[node name="Background" type="TextureRect" parent="UI"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_kc6by")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="UI/Background"]
+layout_mode = 0
+offset_left = 142.0
+offset_top = 783.0
+offset_right = 1739.0
+offset_bottom = 1035.0
+theme_override_constants/separation = 48
+alignment = 1
+
+[node name="Toggle128" type="VBoxContainer" parent="UI/Background/HBoxContainer"]
+layout_mode = 2
+alignment = 1
+
+[node name="Label" type="Label" parent="UI/Background/HBoxContainer/Toggle128"]
+layout_mode = 2
+theme = ExtResource("6_amcv1")
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "128"
+horizontal_alignment = 1
+
+[node name="TextureButton" type="TextureButton" parent="UI/Background/HBoxContainer/Toggle128"]
+custom_minimum_size = Vector2(150, 150)
+layout_mode = 2
+size_flags_vertical = 2
+toggle_mode = true
+texture_normal = ExtResource("3_n5qf8")
+texture_pressed = ExtResource("4_rwlbl")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Toggle64" type="VBoxContainer" parent="UI/Background/HBoxContainer"]
+layout_mode = 2
+alignment = 1
+
+[node name="Label" type="Label" parent="UI/Background/HBoxContainer/Toggle64"]
+layout_mode = 2
+theme = ExtResource("6_amcv1")
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "64
+"
+horizontal_alignment = 1
+
+[node name="TextureButton" type="TextureButton" parent="UI/Background/HBoxContainer/Toggle64"]
+custom_minimum_size = Vector2(150, 150)
+layout_mode = 2
+size_flags_vertical = 2
+toggle_mode = true
+texture_normal = ExtResource("3_n5qf8")
+texture_pressed = ExtResource("4_rwlbl")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Toggle32" type="VBoxContainer" parent="UI/Background/HBoxContainer"]
+layout_mode = 2
+alignment = 1
+
+[node name="Label" type="Label" parent="UI/Background/HBoxContainer/Toggle32"]
+layout_mode = 2
+theme = ExtResource("6_amcv1")
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "32"
+horizontal_alignment = 1
+
+[node name="TextureButton" type="TextureButton" parent="UI/Background/HBoxContainer/Toggle32"]
+custom_minimum_size = Vector2(150, 150)
+layout_mode = 2
+size_flags_vertical = 2
+toggle_mode = true
+texture_normal = ExtResource("3_n5qf8")
+texture_pressed = ExtResource("4_rwlbl")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Toggle16" type="VBoxContainer" parent="UI/Background/HBoxContainer"]
+layout_mode = 2
+alignment = 1
+
+[node name="Label" type="Label" parent="UI/Background/HBoxContainer/Toggle16"]
+layout_mode = 2
+theme = ExtResource("6_amcv1")
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "16"
+horizontal_alignment = 1
+
+[node name="TextureButton" type="TextureButton" parent="UI/Background/HBoxContainer/Toggle16"]
+custom_minimum_size = Vector2(150, 150)
+layout_mode = 2
+size_flags_vertical = 2
+toggle_mode = true
+texture_normal = ExtResource("3_n5qf8")
+texture_pressed = ExtResource("4_rwlbl")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Toggle8" type="VBoxContainer" parent="UI/Background/HBoxContainer"]
+layout_mode = 2
+alignment = 1
+
+[node name="Label" type="Label" parent="UI/Background/HBoxContainer/Toggle8"]
+layout_mode = 2
+theme = ExtResource("6_amcv1")
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "8"
+horizontal_alignment = 1
+
+[node name="TextureButton" type="TextureButton" parent="UI/Background/HBoxContainer/Toggle8"]
+custom_minimum_size = Vector2(150, 150)
+layout_mode = 2
+size_flags_vertical = 2
+toggle_mode = true
+texture_normal = ExtResource("3_n5qf8")
+texture_pressed = ExtResource("4_rwlbl")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Toggle4" type="VBoxContainer" parent="UI/Background/HBoxContainer"]
+layout_mode = 2
+alignment = 1
+
+[node name="Label" type="Label" parent="UI/Background/HBoxContainer/Toggle4"]
+layout_mode = 2
+theme = ExtResource("6_amcv1")
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "4"
+horizontal_alignment = 1
+
+[node name="TextureButton" type="TextureButton" parent="UI/Background/HBoxContainer/Toggle4"]
+custom_minimum_size = Vector2(150, 150)
+layout_mode = 2
+size_flags_vertical = 2
+toggle_mode = true
+texture_normal = ExtResource("3_n5qf8")
+texture_pressed = ExtResource("4_rwlbl")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Toggle2" type="VBoxContainer" parent="UI/Background/HBoxContainer"]
+layout_mode = 2
+alignment = 1
+
+[node name="Label" type="Label" parent="UI/Background/HBoxContainer/Toggle2"]
+layout_mode = 2
+theme = ExtResource("6_amcv1")
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "2"
+horizontal_alignment = 1
+
+[node name="TextureButton" type="TextureButton" parent="UI/Background/HBoxContainer/Toggle2"]
+custom_minimum_size = Vector2(150, 150)
+layout_mode = 2
+size_flags_vertical = 2
+toggle_mode = true
+texture_normal = ExtResource("3_n5qf8")
+texture_pressed = ExtResource("4_rwlbl")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Toggle1" type="VBoxContainer" parent="UI/Background/HBoxContainer"]
+layout_mode = 2
+alignment = 1
+
+[node name="Label" type="Label" parent="UI/Background/HBoxContainer/Toggle1"]
+layout_mode = 2
+theme = ExtResource("6_amcv1")
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "1"
+horizontal_alignment = 1
+
+[node name="TextureButton" type="TextureButton" parent="UI/Background/HBoxContainer/Toggle1"]
+custom_minimum_size = Vector2(150, 150)
+layout_mode = 2
+size_flags_vertical = 2
+toggle_mode = true
+texture_normal = ExtResource("3_n5qf8")
+texture_pressed = ExtResource("4_rwlbl")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Message" type="TextureRect" parent="UI"]
+anchors_preset = -1
+anchor_left = 0.156
+anchor_top = 0.109
+anchor_right = 0.844
+anchor_bottom = 0.294
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("5_oalp2")
+
+[node name="Label" type="Label" parent="UI/Message"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("6_amcv1")
+text = "Objective: Use the knobs to find the sum"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="UI/Message"]
+libraries = {
+"": SubResource("AnimationLibrary_61oh3")
+}
+autoplay = "fadeout"

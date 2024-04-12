@@ -12,7 +12,7 @@ extends Node2D
 var guess = [8, 2]
 var solution = [4, 7]
 
-var max = 8
+var maxTurn = 18
 
 func _ready():
 	soultion_wave.setAmplitude(solution[0])
@@ -21,8 +21,8 @@ func _ready():
 
 # Displays the knob at the positions
 func display_knobs():
-	a_knob.rotation_degrees = fmod(45 * guess[0], 360)
-	b_knob.rotation_degrees = fmod(45 * guess[1], 360)
+	a_knob.rotation_degrees = fmod(20 * guess[0], 360)
+	b_knob.rotation_degrees = fmod(20 * guess[1], 360)
 	player_wave.setAmplitude(guess[0])
 	player_wave.setFrequency(guess[1])
 
@@ -31,7 +31,7 @@ func display_knobs():
 
 func _on_knob_a_pressed():
 	guess[0] += 1
-	if(guess[0] > 8):
+	if(guess[0] > maxTurn):
 		guess[0] = 1
 	display_knobs()
 
