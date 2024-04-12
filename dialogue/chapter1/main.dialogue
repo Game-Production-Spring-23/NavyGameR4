@@ -27,7 +27,7 @@ do hadPlayerTalkedToRoger = true
 => END
 ~ tutorial3
 Ranger: ROGER, what is that thing over there? [ID:t0c59c37dfc]
-Daria: [#sprite=daria] HEY! I'm not a thing, I'm a Daran! [ID:t54e55888c6]
+Daria: [#sprite=daria] HEY! I'm not a thing; I'm a Daran! [ID:t54e55888c6]
 Ranger: Well whatever you are, you must be the one messing with my ship! [ID:tef167cdaa1]
 Daria: [#sprite=daria] Uh Oh. [ID:t02b2426b9c] 
 Ranger: HEY! GET BACK HERE! [ID:tc7cb4d9e3d]
