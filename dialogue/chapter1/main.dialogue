@@ -12,7 +12,7 @@ do hasPlayerMovedOnce = false
 
 ~ tutorial2
 do darknessScreen.play("brighten")
-ROGER: DIAGNOSTICS COMPLETE. I have bad news Ranger: The ship is totally wrecked, and the radar is… [ID:t4413d98621]
+ROGER: DIAGNOSTICS COMPLETE. I have bad news Ranger. The ship is totally wrecked, and the radar is… [ID:t4413d98621]
 
 Ranger: Broken? No problem, I can fix that! [ID:t9225f0607b]
 
