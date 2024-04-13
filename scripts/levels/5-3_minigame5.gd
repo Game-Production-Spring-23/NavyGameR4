@@ -44,7 +44,7 @@ func _on_button_toggled(button, button_index):
 func calcBinary():
 	var result = 0
 	var power = binarySequence.size() - 1
-    
+	
 	for bit in binarySequence:
 		result += bit * pow(2, power)
 		power -= 1

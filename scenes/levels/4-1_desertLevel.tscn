@@ -1,6 +1,12 @@
-[gd_scene load_steps=4 format=3 uid="uid://c12cbgk6idsxd"]
+[gd_scene load_steps=11 format=3 uid="uid://c12cbgk6idsxd"]
 
+[ext_resource type="Script" path="res://scripts/levels/4-1_desertLevel.gd" id="1_lhhkh"]
 [ext_resource type="Texture2D" uid="uid://bojjee0jxpkjt" path="res://assets/images/tilemaps/desert-tileset.png" id="1_odtu7"]
+[ext_resource type="PackedScene" uid="uid://dtolugbyxj6gu" path="res://scenes/objects/playerCharacter.tscn" id="2_11f76"]
+[ext_resource type="Script" path="res://scripts/player/followCam.gd" id="3_1gsbv"]
+[ext_resource type="Texture2D" uid="uid://bkqsrqh5oivlw" path="res://assets/images/spritesheets/creature-transceiver.png" id="4_hup5g"]
+[ext_resource type="PackedScene" uid="uid://bfdknr001mevw" path="res://scenes/objects/interactTrigger.tscn" id="5_1knc7"]
+[ext_resource type="Texture2D" uid="uid://c2jdguvcyc6gr" path="res://assets/images/spritesheets/creature-transceiver-main.png" id="7_t14vn"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_w101y"]
 texture = ExtResource("1_odtu7")
@@ -73,7 +79,10 @@ texture = ExtResource("1_odtu7")
 [sub_resource type="TileSet" id="TileSet_vp0mf"]
 sources/0 = SubResource("TileSetAtlasSource_w101y")
 
+[sub_resource type="CircleShape2D" id="CircleShape2D_7waxm"]
+
 [node name="4-1DesertLevel" type="Node2D"]
+script = ExtResource("1_lhhkh")
 
 [node name="TileMap" type="TileMap" parent="."]
 scale = Vector2(5, 5)
@@ -87,3 +96,160 @@ layer_2/name = "Path"
 layer_2/tile_data = PackedInt32Array(786437, 524288, 7, 196609, 524288, 7, 196620, 524288, 7, 458752, 393216, 6, 458753, 393216, 6, 458754, 393216, 6, 458755, 393216, 6, 524291, 393216, 6, 524292, 393216, 6, 393216, 393216, 5, 393217, 393216, 5, 393218, 393216, 5, 393219, 393216, 5, 393220, 458752, 5, 458756, 131072, 2, 458757, 458752, 5, 524293, 131072, 2, 524288, 393216, 7, 524289, 393216, 7, 524290, 65536, 3, 589826, 327680, 7, 589827, 393216, 7, 589828, 393216, 7, 589829, 393216, 7, 589830, 393216, 7, 589831, 393216, 7, 589832, 393216, 7, 589833, 458752, 7, 524294, 393216, 5, 524295, 393216, 5, 524296, 65536, 2, 524297, 131072, 3, 458760, 327680, 5, 458761, 65536, 2, 393225, 327680, 5, 458762, 393216, 6, 458763, 393216, 6, 458764, 393216, 6, 524298, 393216, 7, 524299, 393216, 7, 524300, 393216, 7, 393226, 393216, 5, 393227, 393216, 5, 393228, 393216, 5, 1048579, 524288, 7, 131096, 524288, 7, 65549, 524288, 7, 6, 524288, 7, 524301, 458752, 7, 458765, 131072, 3, 393229, 393216, 5, 393230, 458752, 5, 458766, 458752, 7, 524310, 393216, 6, 524311, 393216, 6, 589847, 393216, 6, 589848, 393216, 6, 524315, 393216, 6, 458780, 393216, 6, 524316, 393216, 6, 589854, 393216, 6, 655391, 393216, 6, 458773, 327680, 5, 458774, 393216, 5, 458775, 393216, 5, 458776, 458752, 5, 524312, 131072, 2, 524313, 393216, 5, 524314, 65536, 2, 458778, 327680, 5, 458779, 65536, 2, 393243, 327680, 5, 393244, 393216, 5, 393245, 458752, 5, 458781, 458752, 6, 524317, 131072, 2, 524318, 393216, 5, 524319, 458752, 5, 589855, 131072, 2, 589856, 458752, 5, 655392, 458752, 6, 720928, 458752, 7, 720927, 393216, 7, 655390, 65536, 3, 720926, 327680, 7, 655389, 327680, 7, 589853, 65536, 3, 589852, 393216, 7, 589851, 393216, 7, 589850, 393216, 7, 589849, 131072, 3, 655385, 458752, 7, 655384, 393216, 7, 655383, 393216, 7, 655382, 327680, 7, 589846, 65536, 3, 589845, 327680, 7, 524309, 327680, 6)
 layer_3/name = "Huts"
 layer_3/tile_data = PackedInt32Array(262150, 524288, 2, 327686, 524288, 3, 393222, 524288, 4, 262161, 196608, 1, 327697, 327680, 2, 393233, 327680, 3, 458769, 327680, 4, 262162, 524288, 2, 327698, 393216, 2, 393234, 393216, 3, 458770, 393216, 4, 262163, 458752, 1, 327699, 458752, 2, 393235, 458752, 3, 458771, 458752, 4, 262157, 196608, 1, 327693, 327680, 3, 262158, 393216, 1, 327694, 393216, 3, 262159, 458752, 1, 327695, 458752, 2, 720916, 196608, 2, 786452, 196608, 3, 720917, 262144, 2, 786453, 262144, 3, 851988, 327680, 4, 851989, 458752, 4, 786438, 196608, 3, 786439, 524288, 0, 720903, 262144, 1, 720902, 196608, 2, 327705, 262144, 2, 393241, 262144, 3, 327704, 196608, 1, 393240, 458752, 0, 131082, 196608, 2, 196618, 196608, 3, 131083, 262144, 2, 196619, 262144, 3, 262154, 458752, 0, 262155, 524288, 0)
+
+[node name="Player" parent="." instance=ExtResource("2_11f76")]
+z_index = 1
+position = Vector2(108, 571)
+scale = Vector2(5, 5)
+
+[node name="RemoteTransform2D" type="RemoteTransform2D" parent="Player"]
+remote_path = NodePath("../../MainCamera")
+
+[node name="MainCamera" type="Camera2D" parent="." node_paths=PackedStringArray("tilemap")]
+position = Vector2(108, 571)
+scale = Vector2(5, 5)
+limit_left = 0
+limit_top = 0
+script = ExtResource("3_1gsbv")
+tilemap = NodePath("../TileMap")
+
+[node name="NPC1" type="StaticBody2D" parent="."]
+position = Vector2(868, 399)
+rotation = -3.12303
+scale = Vector2(-4.96284, -4.73724)
+
+[node name="Sprite2D" type="Sprite2D" parent="NPC1"]
+scale = Vector2(1, 1)
+texture = ExtResource("4_hup5g")
+hframes = 12
+frame = 5
+
+[node name="InteractTrigger" parent="NPC1" instance=ExtResource("5_1knc7")]
+position = Vector2(0.142087, 8.02017)
+scale = Vector2(0.76904, 1.5357)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="NPC1"]
+z_index = 1
+shape = SubResource("CircleShape2D_7waxm")
+
+[node name="NPC2" type="StaticBody2D" parent="."]
+position = Vector2(602, 525)
+rotation = -3.12303
+scale = Vector2(-4.96284, -4.73724)
+
+[node name="InteractTrigger" parent="NPC2" instance=ExtResource("5_1knc7")]
+position = Vector2(0.115913, 6.54277)
+scale = Vector2(0.71064, 1.53694)
+
+[node name="Sprite2D" type="Sprite2D" parent="NPC2"]
+scale = Vector2(1, 1)
+texture = ExtResource("4_hup5g")
+hframes = 12
+frame = 5
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="NPC2"]
+z_index = 1
+shape = SubResource("CircleShape2D_7waxm")
+
+[node name="NPC3" type="StaticBody2D" parent="."]
+position = Vector2(1225, 499)
+rotation = -3.12303
+scale = Vector2(-4.96284, -4.73724)
+
+[node name="InteractTrigger" parent="NPC3" instance=ExtResource("5_1knc7")]
+position = Vector2(0.563708, 9.06763)
+scale = Vector2(1, 1.54875)
+
+[node name="Sprite2D" type="Sprite2D" parent="NPC3"]
+scale = Vector2(1, 1)
+texture = ExtResource("4_hup5g")
+hframes = 12
+frame = 5
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="NPC3"]
+z_index = 1
+shape = SubResource("CircleShape2D_7waxm")
+
+[node name="NPC4" type="StaticBody2D" parent="."]
+position = Vector2(1991, 563)
+rotation = -3.12303
+scale = Vector2(-4.96284, -4.73724)
+
+[node name="InteractTrigger" parent="NPC4" instance=ExtResource("5_1knc7")]
+position = Vector2(1.1494, 8.00059)
+scale = Vector2(1, 1.54938)
+
+[node name="Sprite2D" type="Sprite2D" parent="NPC4"]
+scale = Vector2(1, 1)
+texture = ExtResource("4_hup5g")
+hframes = 12
+frame = 5
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="NPC4"]
+z_index = 1
+shape = SubResource("CircleShape2D_7waxm")
+
+[node name="NPC5" type="StaticBody2D" parent="."]
+position = Vector2(676, 877)
+rotation = -3.12303
+scale = Vector2(-4.96284, -4.73724)
+
+[node name="InteractTrigger" parent="NPC5" instance=ExtResource("5_1knc7")]
+position = Vector2(0.898844, -6.14024)
+scale = Vector2(1, 1.40664)
+
+[node name="Sprite2D" type="Sprite2D" parent="NPC5"]
+scale = Vector2(1, 1)
+texture = ExtResource("4_hup5g")
+hframes = 12
+frame = 5
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="NPC5"]
+z_index = 1
+shape = SubResource("CircleShape2D_7waxm")
+
+[node name="NPC6" type="StaticBody2D" parent="."]
+position = Vector2(1565, 882)
+rotation = -3.12303
+scale = Vector2(-4.96284, -4.73724)
+
+[node name="InteractTrigger" parent="NPC6" instance=ExtResource("5_1knc7")]
+position = Vector2(0.294467, -6.12849)
+scale = Vector2(1, 1.89144)
+
+[node name="Sprite2D" type="Sprite2D" parent="NPC6"]
+scale = Vector2(1, 1)
+texture = ExtResource("4_hup5g")
+hframes = 12
+frame = 5
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="NPC6"]
+z_index = 1
+shape = SubResource("CircleShape2D_7waxm")
+
+[node name="NPC7" type="StaticBody2D" parent="."]
+position = Vector2(1480, 675)
+rotation = -3.12303
+scale = Vector2(-4.96284, -4.73724)
+
+[node name="InteractTrigger" parent="NPC7" instance=ExtResource("5_1knc7")]
+position = Vector2(-10.2671, 0.621889)
+scale = Vector2(-2.11243, 1.09654)
+
+[node name="Sprite2D" type="Sprite2D" parent="NPC7"]
+scale = Vector2(1, 1)
+texture = ExtResource("7_t14vn")
+hframes = 12
+frame = 5
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="NPC7"]
+z_index = 1
+shape = SubResource("CircleShape2D_7waxm")
+
+[connection signal="player_interact" from="NPC1/InteractTrigger" to="." method="_on_interact_trigger_player_interact"]
+[connection signal="player_interact" from="NPC2/InteractTrigger" to="." method="_on_interact_2_trigger_player_interact"]
+[connection signal="player_interact" from="NPC3/InteractTrigger" to="." method="_on_interact_3_trigger_player_interact"]
+[connection signal="player_interact" from="NPC4/InteractTrigger" to="." method="_on_interact_4_trigger_player_interact"]
+[connection signal="player_interact" from="NPC5/InteractTrigger" to="." method="_on_interact_5_trigger_player_interact"]
+[connection signal="player_interact" from="NPC6/InteractTrigger" to="." method="_on_interact_6_trigger_player_interact"]
+[connection signal="player_interact" from="NPC7/InteractTrigger" to="." method="_on_interact_main_trigger_player_interact"]

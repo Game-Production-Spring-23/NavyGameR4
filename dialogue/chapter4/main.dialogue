@@ -41,6 +41,7 @@ Ranger: The frequency is the number of cycles a wave in one second. [ID:t7bf59bc
 
 Scein: [#sprite=scein3] That’s not what I was talking about! [ID:tc67865b058] 
 do gameController.characterCanMove = true
+=> END!
 ~ chapter4_NPC_4
 Scein: [#sprite=scein4] Stop for a period and rest… [ID:td1fe336444] 
 
@@ -61,7 +62,7 @@ Ranger: It's not a place, It’s the speed at which the wave moves through a giv
 Scein: I guess??? [ID:t89c68ddf58]
 do gameController.characterCanMove = true
 => END!
-~ chapter5_NPC_6
+~ chapter4_NPC_6
 Scein: Did you know that in a perfect vacuum, the speed of any electromagnetic wave is equal to the speed of light, c=3x10^8 ms? This only can happen in a perfect vacuum, its slower anywhere else! [ID:t91b5e60efb] 
 
 Daria: What? [ID:tce021c6b96]
@@ -79,7 +80,7 @@ ROGER: Thats our transceiver! [ID:t11db46fbf6]
 Selco: Oh yeah? Prove it! If you can unlock my new safe, then I'll give it to you! [ID:t31d444062b]
 
 Ranger: Guess we don’t have a choice, hand it over! [ID:t50b432322e]
-do gameController.characterCanMove = true
+do gameController.changeScene("4-2_minigame4splash")
 => END!
 
 ~ chapter4_3
