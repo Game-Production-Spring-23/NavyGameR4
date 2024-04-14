@@ -5,6 +5,9 @@ extends Node2D
 	description: This script manages minigame 5
 """
 @onready var textureRect = $UI/Background
+@onready var gate1 = $UI/Background/gate1
+@onready var gate2 = $UI/Background/gate2
+@onready var gate3 = $UI/Background/gate3
 @onready var toggle128 = $UI/Background/HBoxContainer/Toggle128/TextureButton
 @onready var toggle64 = $UI/Background/HBoxContainer/Toggle64/TextureButton
 @onready var toggle32 = $UI/Background/HBoxContainer/Toggle32/TextureButton
@@ -17,6 +20,7 @@ extends Node2D
 var currentSum = 0
 var solutions = [5, 120, 255]
 
+var gateArray = []
 var binarySequence = []
 
 var step = 1
@@ -24,6 +28,13 @@ var step = 1
 func _ready():
 	for i in range(8):
 		binarySequence.append(0)
+	
+	gateArray.append(gate1)
+	gateArray.append(gate2)
+	gateArray.append(gate3)
+
+	for i in range(len(solutions)):
+		gateArray[i].text = str(solutions[i])
 
 	toggle128.toggled.connect(_on_button_toggled.bind(0));
 	toggle64.toggled.connect(_on_button_toggled.bind(1));
@@ -52,7 +63,8 @@ func calcBinary():
 	print(result)
 	if(step < 4 and result == solutions[step - 1]):
 		step += 1
-		textureRect.texture = load("res://assets/images/wip/m5step" + str(step) + ".png")
+		gateArray[step - 2].self_modulate = Color8(255, 200, 87)
+		textureRect.texture = load("res://assets/images/sprites/minigame_5/minigame5bg_step" + str(step) + ".png")
 
 	if(step >= 4):
 		finish_game()

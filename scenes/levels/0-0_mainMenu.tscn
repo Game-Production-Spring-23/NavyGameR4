@@ -58,6 +58,7 @@ grow_horizontal = 2
 grow_vertical = 2
 texture = ExtResource("2_i3icy")
 expand_mode = 3
+metadata/_edit_use_anchors_ = true
 
 [node name="BackgroundTexture" type="TextureRect" parent="UI/BackgroundTexture"]
 layout_mode = 1
@@ -92,6 +93,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+metadata/_edit_use_anchors_ = true
 
 [node name="Title" type="TextureRect" parent="UI/MainMenuScreen"]
 texture_filter = 1
@@ -182,6 +184,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+metadata/_edit_use_anchors_ = true
 
 [node name="Title" type="Label" parent="UI/ChapterSelectScreen"]
 layout_mode = 1
@@ -426,6 +429,7 @@ offset_right = 1.0
 offset_bottom = -11.0
 grow_horizontal = 2
 grow_vertical = 2
+metadata/_edit_use_anchors_ = true
 
 [node name="Title" type="Label" parent="UI/OptionsScreen"]
 layout_mode = 1
