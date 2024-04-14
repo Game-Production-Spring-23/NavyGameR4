@@ -1,9 +1,9 @@
 [gd_scene load_steps=10 format=3 uid="uid://ck57brmlctqwa"]
 
 [ext_resource type="Script" path="res://scripts/levels/5-3_minigame5.gd" id="1_cqec2"]
-[ext_resource type="Texture2D" uid="uid://ce626mbi7pybj" path="res://assets/images/wip/m5step1.png" id="2_kc6by"]
-[ext_resource type="Texture2D" uid="uid://dfospmj2j8o0c" path="res://assets/images/wip/amongOrange.png" id="3_n5qf8"]
-[ext_resource type="Texture2D" uid="uid://du2k6n0lnlmpf" path="res://assets/images/wip/amongRed.png" id="4_rwlbl"]
+[ext_resource type="Texture2D" uid="uid://r7hedwwh8h15" path="res://assets/images/sprites/minigame_5/minigame5bg_step1.png" id="2_1kch4"]
+[ext_resource type="Texture2D" uid="uid://bwfwshjhe3jtl" path="res://assets/images/sprites/minigame_5/flip_up.png" id="4_g2faa"]
+[ext_resource type="Texture2D" uid="uid://dsb87x4t4ifaj" path="res://assets/images/sprites/minigame_5/flip_down.png" id="5_ju5cv"]
 [ext_resource type="Texture2D" uid="uid://dhaj7ugamct2f" path="res://assets/images/dialogue/messageBox.png" id="5_oalp2"]
 [ext_resource type="Theme" uid="uid://dvij0s1xehu3a" path="res://assets/themes/subheaderTheme.tres" id="6_amcv1"]
 
@@ -56,185 +56,232 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("2_kc6by")
+texture = ExtResource("2_1kch4")
 
 [node name="HBoxContainer" type="HBoxContainer" parent="UI/Background"]
-layout_mode = 0
-offset_left = 142.0
-offset_top = 783.0
-offset_right = 1739.0
-offset_bottom = 1035.0
-theme_override_constants/separation = 48
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.099
+anchor_top = 0.732
+anchor_right = 0.904
+anchor_bottom = 0.944
+offset_left = -0.0800171
+offset_top = 0.439941
+offset_right = 0.319946
+offset_bottom = 0.479919
+theme_override_constants/separation = 40
 alignment = 1
 
 [node name="Toggle128" type="VBoxContainer" parent="UI/Background/HBoxContainer"]
 layout_mode = 2
+theme_override_constants/separation = -20
 alignment = 1
 
 [node name="Label" type="Label" parent="UI/Background/HBoxContainer/Toggle128"]
 layout_mode = 2
 theme = ExtResource("6_amcv1")
-theme_override_colors/font_color = Color(0, 0, 0, 1)
 text = "128"
 horizontal_alignment = 1
 
 [node name="TextureButton" type="TextureButton" parent="UI/Background/HBoxContainer/Toggle128"]
-custom_minimum_size = Vector2(150, 150)
+custom_minimum_size = Vector2(150, 175)
 layout_mode = 2
 size_flags_vertical = 2
 toggle_mode = true
-texture_normal = ExtResource("3_n5qf8")
-texture_pressed = ExtResource("4_rwlbl")
+texture_normal = ExtResource("4_g2faa")
+texture_pressed = ExtResource("5_ju5cv")
 ignore_texture_size = true
-stretch_mode = 0
 
 [node name="Toggle64" type="VBoxContainer" parent="UI/Background/HBoxContainer"]
 layout_mode = 2
+theme_override_constants/separation = -20
 alignment = 1
 
 [node name="Label" type="Label" parent="UI/Background/HBoxContainer/Toggle64"]
 layout_mode = 2
 theme = ExtResource("6_amcv1")
-theme_override_colors/font_color = Color(0, 0, 0, 1)
 text = "64
 "
 horizontal_alignment = 1
 
 [node name="TextureButton" type="TextureButton" parent="UI/Background/HBoxContainer/Toggle64"]
-custom_minimum_size = Vector2(150, 150)
+custom_minimum_size = Vector2(150, 175)
 layout_mode = 2
 size_flags_vertical = 2
 toggle_mode = true
-texture_normal = ExtResource("3_n5qf8")
-texture_pressed = ExtResource("4_rwlbl")
+texture_normal = ExtResource("4_g2faa")
+texture_pressed = ExtResource("5_ju5cv")
 ignore_texture_size = true
-stretch_mode = 0
 
 [node name="Toggle32" type="VBoxContainer" parent="UI/Background/HBoxContainer"]
 layout_mode = 2
+theme_override_constants/separation = -20
 alignment = 1
 
 [node name="Label" type="Label" parent="UI/Background/HBoxContainer/Toggle32"]
 layout_mode = 2
 theme = ExtResource("6_amcv1")
-theme_override_colors/font_color = Color(0, 0, 0, 1)
 text = "32"
 horizontal_alignment = 1
 
 [node name="TextureButton" type="TextureButton" parent="UI/Background/HBoxContainer/Toggle32"]
-custom_minimum_size = Vector2(150, 150)
+custom_minimum_size = Vector2(150, 175)
 layout_mode = 2
 size_flags_vertical = 2
 toggle_mode = true
-texture_normal = ExtResource("3_n5qf8")
-texture_pressed = ExtResource("4_rwlbl")
+texture_normal = ExtResource("4_g2faa")
+texture_pressed = ExtResource("5_ju5cv")
 ignore_texture_size = true
-stretch_mode = 0
 
 [node name="Toggle16" type="VBoxContainer" parent="UI/Background/HBoxContainer"]
 layout_mode = 2
+theme_override_constants/separation = -20
 alignment = 1
 
 [node name="Label" type="Label" parent="UI/Background/HBoxContainer/Toggle16"]
 layout_mode = 2
 theme = ExtResource("6_amcv1")
-theme_override_colors/font_color = Color(0, 0, 0, 1)
 text = "16"
 horizontal_alignment = 1
 
 [node name="TextureButton" type="TextureButton" parent="UI/Background/HBoxContainer/Toggle16"]
-custom_minimum_size = Vector2(150, 150)
+custom_minimum_size = Vector2(150, 175)
 layout_mode = 2
 size_flags_vertical = 2
 toggle_mode = true
-texture_normal = ExtResource("3_n5qf8")
-texture_pressed = ExtResource("4_rwlbl")
+texture_normal = ExtResource("4_g2faa")
+texture_pressed = ExtResource("5_ju5cv")
 ignore_texture_size = true
-stretch_mode = 0
 
 [node name="Toggle8" type="VBoxContainer" parent="UI/Background/HBoxContainer"]
 layout_mode = 2
+theme_override_constants/separation = -20
 alignment = 1
 
 [node name="Label" type="Label" parent="UI/Background/HBoxContainer/Toggle8"]
 layout_mode = 2
 theme = ExtResource("6_amcv1")
-theme_override_colors/font_color = Color(0, 0, 0, 1)
 text = "8"
 horizontal_alignment = 1
 
 [node name="TextureButton" type="TextureButton" parent="UI/Background/HBoxContainer/Toggle8"]
-custom_minimum_size = Vector2(150, 150)
+custom_minimum_size = Vector2(150, 175)
 layout_mode = 2
 size_flags_vertical = 2
 toggle_mode = true
-texture_normal = ExtResource("3_n5qf8")
-texture_pressed = ExtResource("4_rwlbl")
+texture_normal = ExtResource("4_g2faa")
+texture_pressed = ExtResource("5_ju5cv")
 ignore_texture_size = true
-stretch_mode = 0
 
 [node name="Toggle4" type="VBoxContainer" parent="UI/Background/HBoxContainer"]
 layout_mode = 2
+theme_override_constants/separation = -20
 alignment = 1
 
 [node name="Label" type="Label" parent="UI/Background/HBoxContainer/Toggle4"]
 layout_mode = 2
 theme = ExtResource("6_amcv1")
-theme_override_colors/font_color = Color(0, 0, 0, 1)
 text = "4"
 horizontal_alignment = 1
 
 [node name="TextureButton" type="TextureButton" parent="UI/Background/HBoxContainer/Toggle4"]
-custom_minimum_size = Vector2(150, 150)
+custom_minimum_size = Vector2(150, 175)
 layout_mode = 2
 size_flags_vertical = 2
 toggle_mode = true
-texture_normal = ExtResource("3_n5qf8")
-texture_pressed = ExtResource("4_rwlbl")
+texture_normal = ExtResource("4_g2faa")
+texture_pressed = ExtResource("5_ju5cv")
 ignore_texture_size = true
-stretch_mode = 0
 
 [node name="Toggle2" type="VBoxContainer" parent="UI/Background/HBoxContainer"]
 layout_mode = 2
+theme_override_constants/separation = -20
 alignment = 1
 
 [node name="Label" type="Label" parent="UI/Background/HBoxContainer/Toggle2"]
 layout_mode = 2
 theme = ExtResource("6_amcv1")
-theme_override_colors/font_color = Color(0, 0, 0, 1)
 text = "2"
 horizontal_alignment = 1
 
 [node name="TextureButton" type="TextureButton" parent="UI/Background/HBoxContainer/Toggle2"]
-custom_minimum_size = Vector2(150, 150)
+custom_minimum_size = Vector2(150, 175)
 layout_mode = 2
 size_flags_vertical = 2
 toggle_mode = true
-texture_normal = ExtResource("3_n5qf8")
-texture_pressed = ExtResource("4_rwlbl")
+texture_normal = ExtResource("4_g2faa")
+texture_pressed = ExtResource("5_ju5cv")
 ignore_texture_size = true
-stretch_mode = 0
 
 [node name="Toggle1" type="VBoxContainer" parent="UI/Background/HBoxContainer"]
 layout_mode = 2
+theme_override_constants/separation = -20
 alignment = 1
 
 [node name="Label" type="Label" parent="UI/Background/HBoxContainer/Toggle1"]
 layout_mode = 2
 theme = ExtResource("6_amcv1")
-theme_override_colors/font_color = Color(0, 0, 0, 1)
 text = "1"
 horizontal_alignment = 1
 
 [node name="TextureButton" type="TextureButton" parent="UI/Background/HBoxContainer/Toggle1"]
-custom_minimum_size = Vector2(150, 150)
+custom_minimum_size = Vector2(150, 175)
 layout_mode = 2
 size_flags_vertical = 2
 toggle_mode = true
-texture_normal = ExtResource("3_n5qf8")
-texture_pressed = ExtResource("4_rwlbl")
+texture_normal = ExtResource("4_g2faa")
+texture_pressed = ExtResource("5_ju5cv")
 ignore_texture_size = true
-stretch_mode = 0
+
+[node name="gate3" type="Label" parent="UI/Background"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.794
+anchor_top = 0.038
+anchor_right = 0.877
+anchor_bottom = 0.176
+offset_left = 0.519897
+offset_top = -0.0400009
+offset_right = 0.159912
+offset_bottom = -0.0800171
+theme = ExtResource("6_amcv1")
+theme_override_font_sizes/font_size = 64
+text = "255"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="gate2" type="Label" parent="UI/Background"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.094
+anchor_top = 0.176
+anchor_right = 0.177
+anchor_bottom = 0.315
+offset_left = -0.480011
+offset_top = 0.919983
+offset_right = -0.839996
+offset_bottom = -0.200043
+theme = ExtResource("6_amcv1")
+theme_override_font_sizes/font_size = 64
+text = "255"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="gate1" type="Label" parent="UI/Background"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.459
+anchor_top = 0.487
+anchor_right = 0.542
+anchor_bottom = 0.625
+offset_left = 0.719971
+offset_top = 0.039978
+offset_right = 0.359863
+theme = ExtResource("6_amcv1")
+theme_override_font_sizes/font_size = 64
+text = "255"
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [node name="Message" type="TextureRect" parent="UI"]
 anchors_preset = -1
