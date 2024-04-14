@@ -82,8 +82,9 @@ do gameController.minigame2Answer(true)
 ROGER: By writing it a love letter! That’s not right... [ID:tdbc18126e1]
 do gameController.minigame2Answer(false)
 => END
-
-
+~ chapter2_Game_End
+Travin: Wow! You seem to know a lot about this Geo... sorry, Control Unit. Here, since you said it was yours. [ID:t07baa8cb26]
+=> END!
 ~ chapter2_3
 ROGER: Alright! One part down! [ID:ta749e4c79d]
 Ranger: A couple more to go. Alright kid, where to next? [ID:t04cf9eff58]

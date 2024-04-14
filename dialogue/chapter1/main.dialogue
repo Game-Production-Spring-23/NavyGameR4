@@ -37,7 +37,7 @@ do gameController.characterCanMove = true
 => END!
 
 ~ minigameQuestion1
-What's radar? [ID:t81fcd0b612]
+Daria: What's radar? [ID:t81fcd0b612]
 - A radar detects surrounding objects using radio waves. [ID:t780dce65b4] 
 	do gameController.rootCall("answer", true)
 - A radar detects recently made cherry pie [ID:t9b1fd30216] 
