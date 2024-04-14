@@ -1,18 +1,4 @@
 keys,en
-tfd528a3855,Here we are! This is where the Trolums live.
-t97714956bf,Let’s ask around for any information the locals might have.
-t6a9719a5d0,"Excuse me, see anything unusual recently?"
-t78ea2b225e,I haven't seen anything. I was too busy mopping my doorway.
-t1a47a3b5ad,"Hey, see anything strange around?"
-t41f324b156,I heard a loud bang earlier; I think it was just the neighbors
-t383544819b,"Sorry to bother you, but have you seen anyone with a weird device?"
-tb55b87b074,"Well, Travin just came by saying that they found this weird Geode while scavenging. It was a square rock with these weird items on the right and a transparent rock on the left."
-te0a7cc9cf9,That must be the Control Unit! Where is Travin right now?
-tf142fb31bc,He runs a shop next door. It's hard to miss.
-t7254bb4e0e,Newcomers...Welcome in! I am Travin and this is my shop.
-tf9175e8dd6,"Hey there sir, we heard from somebody that you found some cool geode recently?"
-t0b52c820db,"OH, you're talking about my Geode. It looks beautiful, I would show you, but it's not for sale."
-t2372788ad5,"Actually, that geode you're talking about is a control unit for my radar, and its mine!"
 What are you talking about? I’m not going to give up this beautiful Geode...what’s a control unit?,What are you talking about? I’m not going to give up this beautiful Geode...what’s a control unit?
 "It controls the radars settings, its necessary to make sure the radar is functioning properly","It controls the radars settings, its necessary to make sure the radar is functioning properly"
 "It... well it...oh shoot, I forgot!","It... well it...oh shoot, I forgot!"
@@ -25,12 +11,6 @@ Take all the numbers and add them and then...wait that's not it...,Take all the 
 "You said it's for your radar, how does it work with that?","You said it's for your radar, how does it work with that?"
 The signal a radar receives is typically smaller than what is transmitted because of scattering and attenuation losses as waves travel through its medium.,The signal a radar receives is typically smaller than what is transmitted because of scattering and attenuation losses as waves travel through its medium.
 By writing it a love letter! That’s not right...,By writing it a love letter! That’s not right...
-ta749e4c79d,Alright! One part down!
-t04cf9eff58,"A couple more to go. Alright kid, where to next?"
-t80f0c69308,"Well, I hope you're good at climbing."
-t83ee6e3130,What do you mean?
-t66cfa0286e,We are about to climb Mt. Tenanan!
-t8c04363e04,Of course we are.
 What is a Control Unit?,What is a Control Unit?
 It refers to the electromagnetic wave that relates to the energy of the radar,It refers to the electromagnetic wave that relates to the energy of the radar
 "Incorrect, please try again","Incorrect, please try again"
@@ -45,3 +25,56 @@ The signal a radar receives is typically smaller than what is transmitted. Why?,
 Because of the noise bandwidth of the receiver,Because of the noise bandwidth of the receiver
 Because of the wave functions traveling through the air,Because of the wave functions traveling through the air
 Transmit Because of scattering and attenuation losses as waves travel through its medium.,Transmit Because of scattering and attenuation losses as waves travel through its medium.
+tfd528a3855,Here we are! This is where the Trolums live.
+t97714956bf,Let’s ask around for any information the locals might have.
+t6a9719a5d0,"Excuse me, see anything unusual recently?"
+t78ea2b225e,I haven't seen anything. I was too busy mopping my doorway.
+t1a47a3b5ad,"Hey, see anything strange around?"
+t41f324b156,I heard a loud bang earlier; I think it was just the neighbors
+t383544819b,"Sorry to bother you, but have you seen anyone with a weird device?"
+tb55b87b074,"Well, Travin just came by saying that they found this weird Geode while scavenging. It was a square rock with these weird items on the right and a transparent rock on the left."
+te0a7cc9cf9,That must be the Control Unit! Where is Travin right now?
+tf142fb31bc,He runs a shop next door. It's hard to miss.
+t7254bb4e0e,Newcomers...Welcome in! I am Travin and this is my shop.
+tf9175e8dd6,"Hey there sir, we heard from somebody that you found some cool geode recently?"
+t0b52c820db,"OH, you're talking about my Geode. It looks beautiful, I would show you, but it's not for sale."
+t2372788ad5,"Actually, that geode you're talking about is a control unit for my radar, and its mine!"
+tad5cd0417c,What are you talking about? I’m not going to give up this beautiful Geode...what’s a control unit?
+ta8988a849d,"It controls the radars settings, its necessary to make sure the radar is functioning properly"
+t7e81ae38cd,"It... well it...oh shoot, I forgot!"
+t1752d3989f,"Sure, it does, and how does it do that?"
+t5c43bca8e1,"Magic! No, that can’t be it..."
+tebfcbc59ad,"It does it with PT, or Transmit Power, which is the Average Transmit in Watts."
+t1eadbe062e,What do you mean by Average?
+t1f8bf1054a,Take all the numbers and add them and then...wait that's not it...
+td7d428d73f,"Depending on the size of the Radar, the power can range from milliwatts to even megawatts."
+t5795185631,"You said it's for your radar, how does it work with that?"
+t218a7a6249,The signal a radar receives is typically smaller than what is transmitted because of scattering and attenuation losses as waves travel through its medium.
+tdbc18126e1,By writing it a love letter! That’s not right...
+ta749e4c79d,Alright! One part down!
+t04cf9eff58,"A couple more to go. Alright kid, where to next?"
+t80f0c69308,"Well, I hope you're good at climbing."
+t83ee6e3130,What do you mean?
+t66cfa0286e,We are about to climb Mt. Tenanan!
+t8c04363e04,Of course we are.
+t7fe69c50e9,What is a Control Unit?
+t7996f49f00,It refers to the electromagnetic wave that relates to the energy of the radar
+t64effbd5d6,"Incorrect, please try again"
+tb5b9be4064,It stores information on the radar
+teb47787864,"Incorrect, please try again"
+t1a92776301,It controls the radars settings.
+tcadbc0dc1c,Correct!
+t177d0f086b,What is the PT?
+t1754030cd4,Transmit Power or the Average Transmit in Watts
+t2b7acce4c6,Correct!
+t93c58f2461,Is the speed at which the wave moves through a given medium
+t6a93b077de,"Incorrect, please try again"
+te7f7a77110,It refers to the electromagnetic wave that relates to the energy of said wave
+t7abdd26b5c,"Incorrect, please try again"
+tff69258c2e,The signal a radar receives is typically smaller than what is transmitted. Why?
+t366af07d06,Because of the noise bandwidth of the receiver
+t022d79e8e6,"Incorrect, please try again"
+te7bfbf4ed9,Because of the wave functions traveling through the air
+t651cc1bf35,"Incorrect, please try again"
+te752da4e69,Transmit Because of scattering and attenuation losses as waves travel through its medium.
+t604dbcf420,Correct!

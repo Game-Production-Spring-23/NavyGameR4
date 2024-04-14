@@ -32,54 +32,54 @@ do gameController.characterCanMove = true
 # MINIGAME STRUCTURE GOES HERE
 
 ~ minigameQuestion1
-Travin: What are you talking about? I’m not going to give up this beautiful Geode...what’s a control unit?
+Travin: What are you talking about? I’m not going to give up this beautiful Geode...what’s a control unit? [ID:tad5cd0417c]
 do gameController.triggerMinigame2()
 => END
 ~ minigameQuestion1_Right
-ROGER: It controls the radars settings, its necessary to make sure the radar is functioning properly
+ROGER: It controls the radars settings, its necessary to make sure the radar is functioning properly [ID:ta8988a849d]
 do gameController.minigame2Answer(true)
 => END!
 ~ minigameQuestion1_Wrong
-ROGER: It... well it...oh shoot, I forgot!
+ROGER: It... well it...oh shoot, I forgot! [ID:t7e81ae38cd]
 do gameController.minigame2Answer(false)
 => END!
 
 ~ minigameQuestion2
-Travin: Sure, it does, and how does it do that?
+Travin: Sure, it does, and how does it do that? [ID:t1752d3989f]
 do gameController.triggerMinigame2()
 => END!
 ~ minigameQuestion2_Wrong
-ROGER: Magic! No, that can’t be it...
+ROGER: Magic! No, that can’t be it... [ID:t5c43bca8e1]
 do gameController.minigame2Answer(false)
 => END!
 ~ minigameQuestion2_Right
-ROGER: It does it with PT, or Transmit Power, which is the Average Transmit in Watts.
+ROGER: It does it with PT, or Transmit Power, which is the Average Transmit in Watts. [ID:tebfcbc59ad]
 do gameController.minigame2Answer(true)
 => END
 
 ~ minigameQuestion3
-Travin: What do you mean by Average?
+Travin: What do you mean by Average? [ID:t1eadbe062e]
 do gameController.triggerMinigame2()
 => END!
 ~ minigameQuestion3_Wrong
-ROGER: Take all the numbers and add them and then...wait that's not it...
+ROGER: Take all the numbers and add them and then...wait that's not it... [ID:t1f8bf1054a]
 do gameController.minigame2Answer(false)
 => END!
 ~ minigameQuestion3_Right
-ROGER: Depending on the size of the Radar, the power can range from milliwatts to even megawatts.
+ROGER: Depending on the size of the Radar, the power can range from milliwatts to even megawatts. [ID:td7d428d73f]
 do gameController.minigame2Answer(true)
 => END
 
 ~ minigameQuestion4
-Travin: You said it's for your radar, how does it work with that?
+Travin: You said it's for your radar, how does it work with that? [ID:t5795185631]
 do gameController.triggerMinigame2()
 => END!
 ~ minigameQuestion4_Right
-ROGER: The signal a radar receives is typically smaller than what is transmitted because of scattering and attenuation losses as waves travel through its medium.
+ROGER: The signal a radar receives is typically smaller than what is transmitted because of scattering and attenuation losses as waves travel through its medium. [ID:t218a7a6249]
 do gameController.minigame2Answer(true)
 => END!
 ~ minigameQuestion4_Wrong
-ROGER: By writing it a love letter! That’s not right...
+ROGER: By writing it a love letter! That’s not right... [ID:tdbc18126e1]
 do gameController.minigame2Answer(false)
 => END
 
@@ -96,38 +96,38 @@ do endDialogue2()
 => END
 
 ~ reviewQuestion1
-ROGER: What is a Control Unit? 
-- It refers to the electromagnetic wave that relates to the energy of the radar 
-	ROGER: Incorrect, please try again
+ROGER: What is a Control Unit? [ID:t7fe69c50e9] 
+- It refers to the electromagnetic wave that relates to the energy of the radar [ID:t7996f49f00] 
+	ROGER: Incorrect, please try again [ID:t64effbd5d6]
 	do gameController.rootCall("answer", false)
-- It stores information on the radar 
-	ROGER: Incorrect, please try again
+- It stores information on the radar [ID:tb5b9be4064] 
+	ROGER: Incorrect, please try again [ID:teb47787864]
 	do gameController.rootCall("answer", false)
-- It controls the radars settings. 
-	ROGER: Correct!
+- It controls the radars settings. [ID:t1a92776301] 
+	ROGER: Correct! [ID:tcadbc0dc1c]
 	do gameController.rootCall("answer", true)
 => END
 ~ reviewQuestion2
-ROGER: What is the PT?
-- Transmit Power or the Average Transmit in Watts
-	ROGER: Correct!
+ROGER: What is the PT? [ID:t177d0f086b]
+- Transmit Power or the Average Transmit in Watts [ID:t1754030cd4]
+	ROGER: Correct! [ID:t2b7acce4c6]
 	do gameController.rootCall("answer", true)
-- Is the speed at which the wave moves through a given medium
-	ROGER: Incorrect, please try again
+- Is the speed at which the wave moves through a given medium [ID:t93c58f2461]
+	ROGER: Incorrect, please try again [ID:t6a93b077de]
 	do gameController.rootCall("answer", false)
-- It refers to the electromagnetic wave that relates to the energy of said wave  
-	ROGER: Incorrect, please try again
+- It refers to the electromagnetic wave that relates to the energy of said wave [ID:te7f7a77110]  
+	ROGER: Incorrect, please try again [ID:t7abdd26b5c]
 	do gameController.rootCall("answer", false)
 => END
 ~ reviewQuestion3
-ROGER: The signal a radar receives is typically smaller than what is transmitted. Why?
-- Because of the noise bandwidth of the receiver
-	ROGER: Incorrect, please try again
+ROGER: The signal a radar receives is typically smaller than what is transmitted. Why? [ID:tff69258c2e]
+- Because of the noise bandwidth of the receiver [ID:t366af07d06]
+	ROGER: Incorrect, please try again [ID:t022d79e8e6]
 	do gameController.rootCall("answer", false)
-- Because of the wave functions traveling through the air 
-	ROGER: Incorrect, please try again
+- Because of the wave functions traveling through the air [ID:te7bfbf4ed9] 
+	ROGER: Incorrect, please try again [ID:t651cc1bf35]
 	do gameController.rootCall("answer", false)
-- Transmit Because of scattering and attenuation losses as waves travel through its medium.
-	ROGER: Correct!
+- Transmit Because of scattering and attenuation losses as waves travel through its medium. [ID:te752da4e69]
+	ROGER: Correct! [ID:t604dbcf420]
 	do gameController.rootCall("answer", true)
 => END!  
