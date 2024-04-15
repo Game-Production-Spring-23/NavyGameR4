@@ -5,7 +5,7 @@ name: mainmenu.gd
 description: This script controls the functions and screens of the main menu
 """
 var menuScreens = []
-var busIndex = AudioServer.get_bus_index("Master")
+var busIndex = AudioServer.get_bus_index("Music")
 var voiceBus = AudioServer.get_bus_index("Voice")
 # SETUP FUNCTIONS
 # Called when the node enters the scene tree for the first time.

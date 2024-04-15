@@ -50,9 +50,11 @@ script = ExtResource("2_7r1b8")
 
 [node name="intro" type="AudioStreamPlayer" parent="music"]
 stream = ExtResource("3_2vvp4")
+bus = &"Music"
 
 [node name="body" type="AudioStreamPlayer" parent="music"]
 stream = ExtResource("4_xxu8g")
+bus = &"Music"
 
 [node name="ScreenTransition" type="CanvasLayer" parent="."]
 layer = 50
