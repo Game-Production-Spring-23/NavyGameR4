@@ -305,7 +305,7 @@ physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_3nh3d")
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ugdfw"]
-size = Vector2(29.0878, 26.3376)
+size = Vector2(29.0878, 24.7691)
 
 [node name="2-1PlainLevel" type="Node2D"]
 script = ExtResource("1_uuqhr")
@@ -324,7 +324,7 @@ layer_2/z_index = 4
 layer_2/tile_data = PackedInt32Array(393241, 393216, 6, 458777, 393216, 7, 524313, 393216, 8, 393242, 458752, 6, 458778, 458752, 7, 524314, 458752, 8, 393243, 524288, 6, 458779, 524288, 7, 524315, 524288, 8, 65557, 393216, 6, 131093, 393216, 7, 196629, 393216, 8, 65558, 458752, 6, 131094, 458752, 7, 196630, 458752, 8, 65559, 524288, 6, 131095, 524288, 7, 196631, 524288, 8, 524322, 393216, 6, 589858, 393216, 7, 655394, 393216, 8, 524323, 458752, 6, 589859, 458752, 7, 655395, 458752, 8, 524324, 524288, 6, 589860, 524288, 7, 655396, 524288, 8)
 
 [node name="Player" parent="." instance=ExtResource("2_dsmx7")]
-z_index = 3
+z_index = 99
 position = Vector2(1049, 648)
 scale = Vector2(5, 5)
 
@@ -349,7 +349,7 @@ texture = ExtResource("4_n5ahk")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="NPC1"]
 z_index = 1
-position = Vector2(0.506744, 0.843945)
+position = Vector2(0.506744, -2.51195)
 shape = SubResource("RectangleShape2D_ugdfw")
 
 [node name="InteractTrigger" parent="NPC1" instance=ExtResource("5_35rba")]
@@ -358,7 +358,7 @@ position = Vector2(-1.35135, 1.27389)
 scale = Vector2(2.21622, 2.12739)
 
 [node name="NPC2" type="StaticBody2D" parent="."]
-z_index = 2
+z_index = 1
 position = Vector2(2152, 311)
 scale = Vector2(5.92, 6.28)
 
@@ -368,12 +368,13 @@ texture = ExtResource("4_n5ahk")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="NPC2"]
 z_index = 1
+position = Vector2(0, 2.57166)
 shape = SubResource("RectangleShape2D_ugdfw")
 
 [node name="InteractTrigger" parent="NPC2" instance=ExtResource("5_35rba")]
 z_index = 1
 position = Vector2(0, 1.75159)
-scale = Vector2(2.31601, 2.201)
+scale = Vector2(2.31601, 3.02265)
 
 [node name="NPC3" type="StaticBody2D" parent="."]
 z_index = 2
