@@ -10,7 +10,7 @@ pip3 install ffmpeg-normalize
 
 * The main script was used to proof audio and use as guide on game flow QA.
 ** Word on IU OneDrive https://bit.ly/4cTngtd
-** Copy placed in 
+** Copy placed in GitHub readme folder
 ----------------------------------------------------------------------
 1) input script text pulled from main script in word => output script text with tabs removed (sed -e 's/^[ \t]*//g'), excess white space (sed 's/[[:space:]]\{2,\}/ /g'), and blank lines (sed  '/^$/d'), replace colon and open double quote with bar (sed 's/\: \“/\|/g'), remove closing double quotes (sed 's/\”//g'), put into new file with line numbers and bar delimiter
 
