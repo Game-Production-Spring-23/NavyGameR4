@@ -1,10 +1,11 @@
-[gd_scene load_steps=6 format=3 uid="uid://w5e6oldsbsf7"]
+[gd_scene load_steps=7 format=3 uid="uid://w5e6oldsbsf7"]
 
 [ext_resource type="Script" path="res://scripts/levels/7-4_credits.gd" id="1_1iqdt"]
 [ext_resource type="Texture2D" uid="uid://bl2a1xch1k2ou" path="res://assets/images/background/background-scrolling-stars.png" id="1_su8wb"]
 [ext_resource type="Texture2D" uid="uid://b4eh0x4b0j50m" path="res://assets/images/background/planet-125x.png" id="2_dv1a5"]
 [ext_resource type="Theme" uid="uid://bajr2k60ueqkc" path="res://assets/themes/headerTheme.tres" id="4_ltwnw"]
 [ext_resource type="Texture2D" uid="uid://lsbltly2fte4" path="res://assets/images/logo-title.png" id="4_w3a8q"]
+[ext_resource type="FontFile" uid="uid://bgsxfdq87axtb" path="res://assets/fonts/PixeloidSans-mLxMm.ttf" id="6_2rtr8"]
 
 [node name="7-4Credits" type="Node2D"]
 script = ExtResource("1_1iqdt")
@@ -91,6 +92,31 @@ Music Team:
 - Composer 3"
 horizontal_alignment = 1
 vertical_alignment = 1
+
+[node name="Label2" type="Label" parent="UI/BackgroundTexture/CreditsScroll"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("6_2rtr8")
+text = "
+Copyright (c) 2022-present Nathan Hoad and Dialogue Manager contributors.
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the \"Software\"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE."
+horizontal_alignment = 1
 
 [node name="ThankYou" type="Label" parent="UI/BackgroundTexture/CreditsScroll"]
 custom_minimum_size = Vector2(1920, 1080)
