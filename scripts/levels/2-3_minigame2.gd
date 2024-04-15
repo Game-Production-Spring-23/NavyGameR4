@@ -83,7 +83,7 @@ func answer(correct):
 			travin.texture = load("res://assets/images/sprites/minigame_2/shopkeep_sprite_happy.png")
 			travinAnim.current_animation = "hop"
 			#CHANGE ONCE PROPER SCENE IS ADDED vvv
-			gameController.changeScene("2-4_dialogue", "res://assets/audio/music/swamp-intro.ogg", "res://assets/audio/music/swamp-body.ogg")
+			gameController.triggerDialogue("chapter2", "chapter2_Game_End")
 	else:
 		#Makes the player lose progress (assuming there is progress to be lost)
 		if(progression > 0):

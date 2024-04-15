@@ -84,6 +84,7 @@ do gameController.minigame2Answer(false)
 => END
 ~ chapter2_Game_End
 Travin: Wow! You seem to know a lot about this Geo... sorry, Control Unit. Here, since you said it was yours. [ID:t07baa8cb26]
+do gameController.changeScene("2-4_dialogue")
 => END!
 ~ chapter2_3
 ROGER: Alright! One part down! [ID:ta749e4c79d]
