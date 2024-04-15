@@ -34,7 +34,9 @@ cat Area-3-Mt.-Tenanan.txt|sed -e 's/^[ \t]*//g'|sed 's/[[:space:]]\{2,\}/ /g'|s
 
 8) proof the files are in normalized folder. Import a character set of wav files into Audacity to check level with a master aup file.
 
-9) run for i in $(ls | grep wav); do /usr/bin/make-ogg.sh $i; done
+9) run 
+=> for i in $(ls | grep wav); do /usr/bin/make-ogg.sh $i; done
+Note: make-ogg.sh script defined at bottom of this file.
 
 10) fix names from .wav.ogg to .ogg with file rename
 
@@ -50,3 +52,16 @@ cat area3-main.dialogue|sed -e 's/^[ \t]*//g'|sed 's/[[:space:]]\{2,\}/ /g'|sed 
 16) Clean up ogg files by putting in pushed folder
 17) If there is an issue, always start with aup file => to wav => normalize => convert to ogg => push
 
+======================================================================
+
+a bash script to process multiple audio files 
+location 
+/usr/bin/make-ogg.sh
+----------------------------------------------------------------------
+#! /bin/bash
+echo make $1 an ogg
+ffmpeg -i $1  -acodec libvorbis $1.ogg
+----------------------------------------------------------------------
+
+and it used in this form to transform wav files shown above
+for i in $(ls | grep wav); do /usr/bin/make-ogg.sh $i; done
