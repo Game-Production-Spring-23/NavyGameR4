@@ -1,11 +1,11 @@
-[gd_scene load_steps=10 format=3 uid="uid://ehjpjvutjsgt"]
+[gd_scene load_steps=10 format=3 uid="uid://cjxvrnyejfev6"]
 
-[ext_resource type="Script" path="res://scripts/levels/1-0_swampSplash.gd" id="1_wpksr"]
-[ext_resource type="Texture2D" uid="uid://dpjbktuhq51cb" path="res://assets/images/background/swampenvironment.png" id="2_kfvj4"]
-[ext_resource type="Theme" uid="uid://dctbregm4ijln" path="res://assets/themes/buttonTheme.tres" id="3_ycpom"]
-[ext_resource type="Texture2D" uid="uid://7mk2r2g22pqx" path="res://assets/images/ui/button-blank.png" id="4_2tymc"]
-[ext_resource type="Texture2D" uid="uid://b43bp8hdog3co" path="res://assets/images/ui/button-blank_click.png" id="5_bf6gr"]
-[ext_resource type="Texture2D" uid="uid://dqeaxjc3n8x4" path="res://assets/images/ui/button-blank_hover.png" id="6_u6335"]
+[ext_resource type="Script" path="res://scripts/levels/4-0_desertSplash.gd" id="1_whemx"]
+[ext_resource type="Texture2D" uid="uid://dpjbktuhq51cb" path="res://assets/images/background/swampenvironment.png" id="2_nuv72"]
+[ext_resource type="Theme" uid="uid://dctbregm4ijln" path="res://assets/themes/buttonTheme.tres" id="3_b1pml"]
+[ext_resource type="Texture2D" uid="uid://7mk2r2g22pqx" path="res://assets/images/ui/button-blank.png" id="4_punud"]
+[ext_resource type="Texture2D" uid="uid://b43bp8hdog3co" path="res://assets/images/ui/button-blank_click.png" id="5_a5eg0"]
+[ext_resource type="Texture2D" uid="uid://dqeaxjc3n8x4" path="res://assets/images/ui/button-blank_hover.png" id="6_uku0b"]
 
 [sub_resource type="Animation" id="Animation_a5gqd"]
 resource_name = "Fade"
@@ -44,10 +44,8 @@ _data = {
 "RESET": SubResource("Animation_4hiwk")
 }
 
-[node name="IntroCutscene" type="Node2D" node_paths=PackedStringArray("textureRect", "timer")]
-script = ExtResource("1_wpksr")
-textureRect = NodePath("UI/TextureRect")
-timer = NodePath("UI/Timer")
+[node name="IntroCutscene" type="Node2D"]
+script = ExtResource("1_whemx")
 
 [node name="UI" type="CanvasLayer" parent="."]
 
@@ -57,7 +55,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("2_kfvj4")
+texture = ExtResource("2_nuv72")
 expand_mode = 1
 metadata/_edit_use_anchors_ = true
 
@@ -77,10 +75,10 @@ offset_left = -0.760132
 offset_top = 0.519997
 offset_right = 0.880005
 offset_bottom = -0.360008
-theme = ExtResource("3_ycpom")
-texture_normal = ExtResource("4_2tymc")
-texture_pressed = ExtResource("5_bf6gr")
-texture_hover = ExtResource("6_u6335")
+theme = ExtResource("3_b1pml")
+texture_normal = ExtResource("4_punud")
+texture_pressed = ExtResource("5_a5eg0")
+texture_hover = ExtResource("6_uku0b")
 stretch_mode = 0
 metadata/_edit_use_anchors_ = true
 
@@ -91,7 +89,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-theme = ExtResource("3_ycpom")
+theme = ExtResource("3_b1pml")
 theme_override_colors/font_color = Color(0.0901961, 0.0901961, 0.0941176, 1)
 text = "Skip
 "
