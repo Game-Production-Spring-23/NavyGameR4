@@ -6,6 +6,7 @@ description: This script controls the functions and screens of the main menu
 """
 var menuScreens = []
 var busIndex = AudioServer.get_bus_index("Master")
+var voiceBus = AudioServer.get_bus_index("Voice")
 # SETUP FUNCTIONS
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -82,3 +83,7 @@ func _on_faster_pressed():
 
 func _on_voice_slider_2_value_changed(value):
 	AudioServer.set_bus_volume_db(busIndex,value)
+
+
+func _on_voice_slider_value_changed(value):
+	AudioServer.set_bus_volume_db(voiceBus,value)

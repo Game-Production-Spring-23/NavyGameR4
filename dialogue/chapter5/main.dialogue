@@ -1,37 +1,129 @@
+~ chapter5_1
+Daria: Here we are! [ID:tebbb4f332e]
+
+Ranger: What do you mean? All I see is ocean. [ID:t49e3e45284]
+
+Daria: It's because there is an Ocean that is between the city and the Desert. We have one more place to go to before then... and it's inside the water. [ID:tc6f3fb576a]
+
+Ranger: Inside the water? [ID:tfa0d27ae72]
+
+Daria: Yes, there was a Lagnai in the footage, and they live in the Ocean. I have no idea how we are supposed to get to the underwater city...I was hoping you would have an idea! [ID:t520b14e65a]
+
+ROGER: Don’t worry, Ranger's suit has environmental adapting tech and can easily allow Ranger and anyone in the suit to survive underwater. [ID:t4fd3ae2466]
+
+Daria: What about me? Last time I checked I can’t breathe underwater. [ID:tf8a6cd8c55]
+
+ROGER: There should be enough space for you to fit in the suit. [ID:t852de8e2cd]
+
+Ranger: Wait, I don’t know about all that! [ID:td8ecd91e4a]
+
+Daria: It seems to be the only way. Make room Ranger, I'm coming in! [ID:t8c13364f72]
+
+Ranger: Cramped...Ok then, to the underwater city! [ID:t8c6e9e8452]
+do gameController.characterCanMove = true
+=> END!
+~ chapter5_2
+Ranger: Stop squirming so much! [ID:t86c3c06873]
+
+Daria: Sorry, I’m not used to being in such a tight space. [ID:tb096ced469]
+
+Ranger: My suit isn't exactly made to fit more than one creature. [ID:t5d721df46b]
+
+ROGER: Sir, there seems to be a radio signal nearby. [ID:te8572061d3]
+
+Ranger: A radio signal underwater? Try to tune into the broadcast, let’s see what it is. [ID:te1daa88a90]
+
+GoGo Babby: Welcome to the Processed Signal SGNL! Where we talk about Signal Processors all night long. [ID:t4dab8ad45e]
+
+Ranger: An entire radio show about Signal Processors? Thats new. [ID:t2a2cf48356]
+GoGo Babby: Welcome to everyone’s favorite segment, Qu-Qu-Qu-Question time! Where we’ll be answering questions coming in. It looks like we are already getting a caller! Who are we speaking to? [ID:t3b725be3ad]
+
+Daria: Hi, my name is Daria, and I am currently coming from my friend, Rangers, helmet. [ID:t5420a4bd40]
+
+Ranger: Wait, how are you-? [ID:tc552c784e6]
+
+GoGo Babby: Welcome Daria! What’s your question? [ID:tcb9ac31ff6]
+ 
+
+ 
+
+Daria: What is a Signal Processor? [ID:td1ece57f2b]
+
+GoGo Babby: A signal processor takes a signal, a wave function traveling through the air, and ingests & interprets it. [ID:t0ee31ca953] 
+
+ 
+
+Daria: What is it made of? [ID:tc3375bef61]
+
+GoGo Babby: Program and Data memory, which stores information. A compute Engine, which preforms the math processing. And an input and output, which connects the device to the outside of the signal Processor. [ID:t02b0715b2d]
+
+ 
+
+Daria: Neat! I can’t think of any more questions... [ID:tab245d7460]
+
+GoGo Babby: Well before you go, we have a little surprise for you: You are our 1000th caller! We have a prize waiting for you, and it rhymes with “Pringle Successor”. Just come down to the station to get your prize! [ID:ta502f80b79]
+
+ROGER: That must be our Signal Processor. Come on guys, let's go to the station! [ID:t474b31a832]
+do gameController.characterCanMove = true
+=> END!
+~ chapter5_3
+GoGo Babby: Wow, I thought you were kidding about the helmet thing. You must be Daria. [ID:t42d7cd4f9b]
+
+Daria: Yeah, I am, I am here to get my Pringle Successor. [ID:tfcfe0d8831]
+
+GoGo Babby: Well, before you do, you have a couple things to do to get your prize! [ID:t28b1709bf7]
+
+Ranger: Bring it on! [ID:t3585c7cd91]
+do gameController.characterCanMove = true
+=> END!
+~ chapter5_4
+GoGo Babby: Congratulations guys! Well, here is your Signal Processor. Before you leave, you can always come back for more challenges and prizes at SGNL. [ID:t21d0ffe89f]
+Ranger: Thanks! [ID:td9452ac7bd] 
+
+ROGER: All we need now is the Display, then we have all our parts for our Radar. [ID:tac6a2217ad]
+
+Daria: Hey, since we are here, can you direct us to which way the city is? [ID:t26b418ca36]
+
+GoGo Babby: Oh sure, the city's entrance should be ahead. [ID:t866ba195c7]
+
+Ranger: About time we got to that city. Let's go! [ID:tbe1c0b45a1]
+do endDialogue5()
+=> END!
+
 ~ reviewQuestion1
-ROGER: What connects the device to the Signal Processor? 
-- The Compute Engine 
-	ROGER: Incorrect, please try again
+ROGER: What connects the device to the Signal Processor? [ID:td0ad1dc823] 
+- The Compute Engine [ID:t53dbd632bd] 
+	ROGER: Incorrect, please try again [ID:t8b66b0a3bb]
 	do gameController.rootCall("answer", false)
-- The Input and Output
-	ROGER: Correct!
+- The Input and Output [ID:t7c6abad271]
+	ROGER: Correct! [ID:t6b4cef582e]
 	do gameController.rootCall("answer", true)
-- The Radio Signal 
-	ROGER: Incorrect, please try again
+- The Radio Signal [ID:tece3c44625] 
+	ROGER: Incorrect, please try again [ID:t390f562d65]
 	do gameController.rootCall("answer", false)
 => END
 ~ reviewQuestion2
-ROGER: What does the Signal Processor do?  
-- Transmit Takes a signal and Interprets it 
-	ROGER: Correct!
+ROGER: What does the Signal Processor do? [ID:t21924e444b]  
+- Transmit Takes a signal and Interprets it [ID:t75ecb179fa] 
+	ROGER: Correct! [ID:t525c804118]
 	do gameController.rootCall("answer", true)
-- Sends the signal out to other Radars 
-	ROGER: Incorrect, please try again
+- Sends the signal out to other Radars [ID:tef35bf5f9b] 
+	ROGER: Incorrect, please try again [ID:tfc8da0cbb6]
 	do gameController.rootCall("answer", false)
-- Produces the Signal 
-	ROGER: Incorrect, please try again
+- Produces the Signal [ID:t4d8af209d9] 
+	ROGER: Incorrect, please try again [ID:t1956b399ee]
 	do gameController.rootCall("answer", false)
 => END
 ~ reviewQuestion3
-ROGER: What is the Signal Processor made of? 
-- The Compute Engine, The Input and Output, and the Radio Signal 
-	ROGER: Incorrect, please try again
+ROGER: What is the Signal Processor made of? [ID:t8c6f485739] 
+- The Compute Engine, The Input and Output, and the Radio Signal [ID:tfd47a6f76c] 
+	ROGER: Incorrect, please try again [ID:t77d40e36eb]
 	do gameController.rootCall("answer", false)
-- Program and Data Memory, The Compute Engine, and the Input and Output 
-	ROGER: Correct!
+- Program and Data Memory, The Compute Engine, and the Input and Output [ID:teb12c67c1b] 
+	ROGER: Correct! [ID:t3d53581761]
 	do gameController.rootCall("answer", true)
-- Program and Data Memory, the Radio Signal, and The Input and Output 
+- Program and Data Memory, the Radio Signal, and The Input and Output [ID:t55334ad52a] 
 
-	ROGER: Incorrect, please try again
+	ROGER: Incorrect, please try again [ID:t231ba63290]
 	do gameController.rootCall("answer", false)
 => END!

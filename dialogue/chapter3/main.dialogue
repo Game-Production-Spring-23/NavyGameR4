@@ -1,90 +1,95 @@
 ~ chapter3_1
-Daria: Hey grumps, I’m getting a little tired.
+Daria: Hey grumps, I’m getting a little tired. [ID:t955b7a80f8]
 
-Ranger: Who are you calling Grumps?
+Ranger: Who are you calling Grumps? [ID:t14fb63d00f]
 
-Daria: You Grumps! Since you act like a bunch of Grumps!
+Daria: You Grumps! Since you act like a bunch of Grumps! [ID:tb8eea55b3d]
 
-ROGER: According to your wave patterns sir, she is correct.
+ROGER: According to your wave patterns sir, she is correct. [ID:ta30cae2722]
 
-Ranger: I didn't ask you ROGER. 
+Ranger: I didn't ask you ROGER. [ID:t3f9f20686b] 
 
-Daria: There is a rest stop nearby, we can take a little breather up there. There are typically a few people up there, they might know something about the next part!
+Daria: There is a rest stop nearby, we can take a little breather up there. There are typically a few people up there, they might know something about the next part! [ID:tc085242fc9]
 
-Ranger: Sounds good to me.
+Ranger: Sounds good to me. [ID:ta335a561ef]
+do gameController.characterCanMove = true
 => END
 ~ chapter3_2
-Tendra: Welcome to the Resting area before the peak of Mt. Tenanan! Home of the Tendra. I sadly do have some bad news though, due to uncertain circumstances, the gateway to the peak is closed.
+Tendra: Welcome to the Resting area before the peak of Mt. Tenanan! Home of the Tendra. I sadly do have some bad news though, due to uncertain circumstances, the gateway to the peak is closed. [ID:t534468ac08]
 
-Ranger: what do you mean closed?
+Ranger: what do you mean closed? [ID:t7691f7700a]
 
-Tendra: There has been an incident that includes our Antenna. It has been down for a while. We have a group of repair men trying to fix the Antenna as we speak.
+Tendra: There has been an incident that includes our Antenna. It has been down for a while. We have a group of repair men trying to fix the Antenna as we speak. [ID:t2dea4f09c7]
 
-Ranger: Did you say Antenna? Did one of them bring in a part to try and fix it? 
+Ranger: Did you say Antenna? Did one of them bring in a part to try and fix it? [ID:t3bd42c2c9d] 
 
-Tendra: As a matter of fact, one of them did, they thought it would be the ‘perfect piece.’ They said they found it in some kind of ship wreckage.
+Tendra: As a matter of fact, one of them did, they thought it would be the ‘perfect piece.’ They said they found it in some kind of ship wreckage. [ID:t90722e57ba]
 
-ROGER: That must be our Antenna.
+ROGER: That must be our Antenna. [ID:tbb0ab562a2]
 
-Ranger: Hey, I'm a technician myself, do you mind if I help?
+Ranger: Hey, I'm a technician myself, do you mind if I help? [ID:t1989f4ebf0]
 
-Tendra: Any help is major cool! I will give you passage.
+Tendra: Any help is major cool! I will give you passage. [ID:tc55e130a2d]
+do gameController.characterCanMove = true
 => END
 ~ chapter3_3
-ROGER: Looks like the gatekeeper was right; their antenna is having major issues. Try to see if you can help them out!
+ROGER: Looks like the gatekeeper was right; their antenna is having major issues. Try to see if you can help them out! [ID:t5127f37b76]
+do gameController.changeScene("3-2_minigame3splash")
 => END
 
 ~ chapter3_4
-Techra: Thank you so much for helping us fix the Antenna!
-Ranger: No problem.
-Daria: Hey Ranger, that looks to be your Antenna piece!
-Ranger: Yeah, it is. Since you don't need it anymore, you mind if I take my antenna back?
-Techra: Oh, this little thing? One of the guys found it near a wreckage and thought it would work, obviously, he was wrong. 
-ROGER: Yeah, you folks have a different type of Antenna up, ours is a Dipole Antenna, while yours is parabolic.
-Ranger: I am just happy I got the ship’s Antenna back! What's next Daria?
-Daria: Well, we gotta get down the mountain.
-Techra: Actually, to show our gratitude, let us help you glide down the mountain! We will be waiting at the end right here.
+Techra: Thank you so much for helping us fix the Antenna! [ID:t988ee97628]
+Ranger: No problem. [ID:t0707eddcd1]
+Daria: Hey Ranger, that looks to be your Antenna piece! [ID:t40d5e43589]
+Ranger: Yeah, it is. Since you don't need it anymore, you mind if I take my antenna back? [ID:t8d477cf28f]
+Techra: Oh, this little thing? One of the guys found it near a wreckage and thought it would work, obviously, he was wrong. [ID:t3dee045684] 
+ROGER: Yeah, you folks have a different type of Antenna up, ours is a Dipole Antenna, while yours is parabolic. [ID:tbf8acdd438]
+Ranger: I am just happy I got the ship’s Antenna back! What's next Daria? [ID:t8011af7508]
+Daria: Well, we gotta get down the mountain. [ID:tc89dc9e33d]
+Techra: Actually, to show our gratitude, let us help you glide down the mountain! We will be waiting at the end right here. [ID:ta1e4bb66dc]
+do gameController.characterCanMove = true
 do finish_game()
 => END
 
 ~ chapter3_5
-Daria: Wheeeeeeeeeeeeeee!
+Daria: Wheeeeeeeeeeeeeee! [ID:tf0e2d18a7b]
+do endDialogue3()
 => END!
 
 ~ reviewQuestion1
-ROGER: What equation is this for?
-- Gamma
-	ROGER: Incorrect, please try again
+ROGER: What equation is this for? [ID:t607b55ed5c]
+- Gamma [ID:t173992fd1d]
+	ROGER: Incorrect, please try again [ID:te72724f119]
 	do gameController.rootCall("answer", false)
-- Gain
+- Gain [ID:tf230693dd6]
 	do gainEquation.hide()
-	ROGER: Correct!
+	ROGER: Correct! [ID:t2c70222cca]
 	do gameController.rootCall("answer", true)
-- Growth
-	ROGER: Incorrect, please try again
+- Growth [ID:t69ed54ce28]
+	ROGER: Incorrect, please try again [ID:t067d9033de]
 	do gameController.rootCall("answer", false)
 => END
 ~ reviewQuestion2
-ROGER: What happens when gain is too high?
-- Transmit The shape becomes fixated in a position.
-	ROGER: Correct!
+ROGER: What happens when gain is too high? [ID:t1f376ca8b8]
+- Transmit The shape becomes fixated in a position. [ID:tc2deffa834]
+	ROGER: Correct! [ID:t335e98647b]
 	do gameController.rootCall("answer", true)
-- The shape is equaled out
-	ROGER: Incorrect, please try again
+- The shape is equaled out [ID:t1c7dc4d3fe]
+	ROGER: Incorrect, please try again [ID:ta320bab595]
 	do gameController.rootCall("answer", false)
-- The shape becomes more spaced out 
-	ROGER: Incorrect, please try again
+- The shape becomes more spaced out [ID:t2491f1c548] 
+	ROGER: Incorrect, please try again [ID:tee3a905b78]
 	do gameController.rootCall("answer", false)
 => END
 ~ reviewQuestion3
-ROGER: What happens when gain is too high?
-- The shape becomes fixated in a position.
-	ROGER: Incorrect, please try again
+ROGER: What happens when gain is too high? [ID:t55a6556022]
+- The shape becomes fixated in a position. [ID:t14e07eb8e5]
+	ROGER: Incorrect, please try again [ID:tbd35fa695d]
 	do gameController.rootCall("answer", false)
-- The shape is equaled out
-	ROGER: Incorrect, please try again
+- The shape is equaled out [ID:t492dd2e2e2]
+	ROGER: Incorrect, please try again [ID:t09d9fa5581]
 	do gameController.rootCall("answer", false)
-- Transmit The shape becomes more spaced out 
-	ROGER: Correct!
+- Transmit The shape becomes more spaced out [ID:te764f80b25] 
+	ROGER: Correct! [ID:t66c0970dc9]
 	do gameController.rootCall("answer", true)
 => END!

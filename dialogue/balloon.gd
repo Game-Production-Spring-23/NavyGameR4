@@ -45,18 +45,40 @@ var dialogue_line: DialogueLine:
 		dialogue_line = next_dialogue_line
 
 		character_label.visible = not dialogue_line.character.is_empty()
-		
-		if FileAccess.file_exists("res://assets/audio/voiceovers/"+dialogue_line.translation_key +".ogg"):
-			var stream = load("res://assets/audio/voiceovers/"+dialogue_line.translation_key +".ogg")
-
-			if stream != null:
+		var portrait_name = dialogue_line.character.to_lower();
+		var voiceBus = AudioServer.get_bus_index("voice")
+		#if the voice file exists in its own folder
+		if FileAccess.file_exists("res://assets/audio/voiceovers/"+ portrait_name + "/"+dialogue_line.translation_key +".ogg"):
+					#loads the voice line for other characters
+				var stream = load("res://assets/audio/voiceovers/" + portrait_name + "/"+dialogue_line.translation_key +".ogg")
 				print(dialogue_line.translation_key)
 				sound.stream = stream
 				sound.play()
+				print("FILE LOADED", portrait_name)
 		else:
-			print("No voiceover")
+			#No voicelines and Ranger 
+			if portrait_name == "ranger":
+			#if the voice is female
+				if gameController.player.voice == "voice1":
+					var stream_string = "res://assets/audio/voiceovers/female/"+dialogue_line.translation_key +".ogg"
+					var stream = load(stream_string)
+					if FileAccess.file_exists(stream_string):
+						print("FEMALE", dialogue_line.translation_key)
+						sound.stream = stream
+						sound.play()
+					
+				else:
+				# If the voice is male
+					print("NOT FEMALE" , dialogue_line.translation_key)
+					var stream = load("res://assets/audio/voiceovers/male/"+dialogue_line.translation_key +".ogg")
+					sound.stream = stream
+					sound.play()
+					print("NOT FEMALE FILE LOADED", portrait_name)
+			else:
+				#if a voiceline doesn't exist
+				print("no voice line")
 		
-		var portrait_name = dialogue_line.character.to_lower();
+
 		# Looks for image file path 
 		if FileAccess.file_exists("res://assets/images/dialogue/"+portrait_name+".png.import"):
 			# If roger is talking

@@ -1,0 +1,101 @@
+[gd_scene load_steps=6 format=3 uid="uid://w5e6oldsbsf7"]
+
+[ext_resource type="Script" path="res://scripts/levels/7-4_credits.gd" id="1_1iqdt"]
+[ext_resource type="Texture2D" uid="uid://bl2a1xch1k2ou" path="res://assets/images/background/background-scrolling-stars.png" id="1_su8wb"]
+[ext_resource type="Texture2D" uid="uid://b4eh0x4b0j50m" path="res://assets/images/background/planet-125x.png" id="2_dv1a5"]
+[ext_resource type="Theme" uid="uid://bajr2k60ueqkc" path="res://assets/themes/headerTheme.tres" id="4_ltwnw"]
+[ext_resource type="Texture2D" uid="uid://lsbltly2fte4" path="res://assets/images/logo-title.png" id="4_w3a8q"]
+
+[node name="7-4Credits" type="Node2D"]
+script = ExtResource("1_1iqdt")
+
+[node name="UI" type="CanvasLayer" parent="."]
+
+[node name="BackgroundTexture" type="TextureRect" parent="UI"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_su8wb")
+expand_mode = 3
+metadata/_edit_use_anchors_ = true
+
+[node name="BackgroundTexture" type="TextureRect" parent="UI/BackgroundTexture"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 59.0
+offset_top = 527.0
+offset_right = -1235.0
+offset_bottom = 73.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_dv1a5")
+
+[node name="ColorRect" type="ColorRect" parent="UI/BackgroundTexture"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.294118, 0.294118, 0.294118, 0.392157)
+metadata/_edit_use_anchors_ = true
+
+[node name="CreditsScroll" type="VBoxContainer" parent="UI/BackgroundTexture"]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 4019.0
+grow_horizontal = 2
+
+[node name="TitleScreen" type="CenterContainer" parent="UI/BackgroundTexture/CreditsScroll"]
+custom_minimum_size = Vector2(1920, 1080)
+layout_mode = 2
+
+[node name="Title" type="TextureRect" parent="UI/BackgroundTexture/CreditsScroll/TitleScreen"]
+texture_filter = 1
+custom_minimum_size = Vector2(920, 253.2)
+layout_mode = 2
+texture = ExtResource("4_w3a8q")
+
+[node name="Padding" type="Control" parent="UI/BackgroundTexture/CreditsScroll"]
+custom_minimum_size = Vector2(0, 128)
+layout_mode = 2
+
+[node name="Label" type="Label" parent="UI/BackgroundTexture/CreditsScroll"]
+layout_mode = 2
+theme = ExtResource("4_ltwnw")
+text = "Produced by: Your Company
+Directed by: Your Name
+
+Lead Developer: Your Name
+Lead Artist: Artist Name
+Lead Music Composer: Composer Name
+
+Programming Team:
+- Programmer 1
+- Programmer 2
+- Programmer 3
+
+Art Team:
+- Artist 1
+- Artist 2
+- Artist 3
+
+Music Team:
+- Composer 1
+- Composer 2
+- Composer 3"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ThankYou" type="Label" parent="UI/BackgroundTexture/CreditsScroll"]
+custom_minimum_size = Vector2(1920, 1080)
+layout_mode = 2
+theme = ExtResource("4_ltwnw")
+text = "And Thank You For Playing!"
+horizontal_alignment = 1
+vertical_alignment = 1

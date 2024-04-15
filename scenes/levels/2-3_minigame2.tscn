@@ -1,10 +1,13 @@
-[gd_scene load_steps=11 format=3 uid="uid://be6peh7k67yab"]
+[gd_scene load_steps=16 format=3 uid="uid://be6peh7k67yab"]
 
 [ext_resource type="Script" path="res://scripts/levels/2-3_minigame2.gd" id="1_u30vb"]
 [ext_resource type="Texture2D" uid="uid://cpeeoenygi4a7" path="res://assets/images/sprites/minigame_2/minigame2_background.png" id="2_j6854"]
 [ext_resource type="Texture2D" uid="uid://dgmpdpypp6cbp" path="res://assets/images/sprites/minigame_2/shopkeep_sprite_neutral.png" id="3_pl8fp"]
 [ext_resource type="Texture2D" uid="uid://dhaj7ugamct2f" path="res://assets/images/dialogue/messageBox.png" id="4_n1um6"]
 [ext_resource type="Theme" uid="uid://dvij0s1xehu3a" path="res://assets/themes/subheaderTheme.tres" id="5_8g2ky"]
+[ext_resource type="Texture2D" uid="uid://cn28sipgiqwfx" path="res://assets/images/sprites/minigame_2/basebar.png" id="6_ytk55"]
+[ext_resource type="Texture2D" uid="uid://cky470dilc115" path="res://assets/images/sprites/minigame_2/greenwide.png" id="7_a8xfn"]
+[ext_resource type="Texture2D" uid="uid://doj0uk36tsad8" path="res://assets/images/sprites/minigame_2/slider.png" id="8_02ghx"]
 
 [sub_resource type="Animation" id="Animation_l0iqu"]
 resource_name = "hop"
@@ -26,6 +29,21 @@ _data = {
 "hop": SubResource("Animation_l0iqu")
 }
 
+[sub_resource type="Animation" id="Animation_t1e7d"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+
 [sub_resource type="Animation" id="Animation_e3b3s"]
 resource_name = "fadeout"
 length = 5.0
@@ -42,31 +60,22 @@ tracks/0/keys = {
 "values": [Color(1, 1, 1, 1), Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
 }
 
-[sub_resource type="Animation" id="Animation_t1e7d"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath(".:modulate")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Color(1, 1, 1, 1)]
-}
-
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_61oh3"]
 _data = {
 "RESET": SubResource("Animation_t1e7d"),
 "fadeout": SubResource("Animation_e3b3s")
 }
 
-[node name="level2" type="Node2D" node_paths=PackedStringArray("travin", "travinAnim")]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4vea8"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_v8n1p"]
+
+[node name="minigame2" type="Node2D" node_paths=PackedStringArray("travin", "travinAnim", "baseBar", "movingBar")]
 script = ExtResource("1_u30vb")
 travin = NodePath("Travin")
 travinAnim = NodePath("Travin/AnimationPlayer")
+baseBar = NodePath("BaseBar")
+movingBar = NodePath("BaseBar/MovingBar")
 
 [node name="Background" type="TextureRect" parent="."]
 offset_right = 1920.0
@@ -114,3 +123,25 @@ libraries = {
 "": SubResource("AnimationLibrary_61oh3")
 }
 autoplay = "fadeout"
+
+[node name="BaseBar" type="Sprite2D" parent="."]
+position = Vector2(960, 900)
+texture = ExtResource("6_ytk55")
+
+[node name="GreenBar" type="Area2D" parent="BaseBar"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="BaseBar/GreenBar"]
+scale = Vector2(9.315, 15.9)
+shape = SubResource("RectangleShape2D_4vea8")
+
+[node name="Sprite2D" type="Sprite2D" parent="BaseBar/GreenBar"]
+texture = ExtResource("7_a8xfn")
+
+[node name="MovingBar" type="Area2D" parent="BaseBar"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="BaseBar/MovingBar"]
+scale = Vector2(1.185, 1)
+shape = SubResource("RectangleShape2D_v8n1p")
+
+[node name="Sprite2D" type="Sprite2D" parent="BaseBar/MovingBar"]
+texture = ExtResource("8_02ghx")

@@ -1,36 +1,94 @@
+~ chapter6_1
+ROGER: This city is beautiful! [ID:t998abe3be8]
+
+Ranger: And really bright. Wow, there are a lot of screens. [ID:t4ec0d94691]
+
+Daria: Welcome to Yaplisdapolis, the city of Screens & Dreams. [ID:t66a2b31ad7] 
+
+Ranger: It looks like the only place open right now is that, Cafe. Let's head there. [ID:t6d035f27dd] 
+=> END!
+~ chapter6_NPC_1
+Lagna: That Barista is gorgeous! That new necklace really puts the piece together. [ID:t75381c9ed7]
+do gameController.characterCanMove = true
+=> END!
+~ chapter6_NPC_2
+Lagna: The coffee here is to die for! [ID:teb9501478e]
+do gameController.characterCanMove = true
+=> END!
+~ chapter6_NPC_3
+Lagna: Yaplisdapolis and the Yappo sure love their screens. It's too bright for me. [ID:t2f5e42407b]
+do gameController.characterCanMove = true
+=> END!
+~ chapter6_3
+Yosie: Welcome to the 24 Hour Cafe! My name is Yosie. What can I get for you? [ID:t6aaccc3feb]
+
+Daria: Your necklace! I mean, it’s beautiful! [ID:t615fa3a293]
+
+Yosie: Oh, well... thank you very much. [ID:t069bcb6860]
+
+Ranger: Yes, it’s lovely, but don’t you think it... clashes with your feathers a bit? [ID:t53fd5e3a6a]
+
+Daria: Why, yes! Very clashy. Where did you get that weird old thing? [ID:taa51a4bbb5]
+
+Yosie: None of your business! how dare you...! [ID:tdd73cca79a]
+
+Ranger: In fact, I bet I can wear it even better than you can... [ID:te93a7c8228] 
+
+Lagnas: ca-caw! Ca-caw! [ID:tde75e43456]
+
+Yosie: You’re challenging me...!? [ID:ted5fdc5c0e]
+do gameController.characterCanMove = true
+=> END!
+~ chapter6_4
+Yosie: Wow, you were made for this! [ID:t39bd73c453]
+
+Ranger: Thank you, and I have to admit I had a lot of fun. [ID:t6e1014cdc4]
+
+Daria: It's nice seeing Ranger like this, I never thought Mr. Grumps would be so cool! [ID:t5044ce8acc]
+
+ROGER: We got all the parts for our Radar sir. It looks like we can get out of here. [ID:ta15212e127]
+
+Ranger: That's going to take a while, isn't it? [ID:ta4a2997528]
+
+Daria: Actually, no! The city is next to the Swamp where your ship is. We should be there in a Jiffy! [ID:tae2c77e134]
+
+Ranger: Lead the way, Daria! [ID:t5cd10e51ab]
+
+do endDialogue6()
+=> END!
 ~ reviewQuestion1
-ROGER: What is SNR (Signal to Noise Ratio)? 
-- The Measure of the data (signal) compared to the receiver antenna power(noise) received by the antenna. 
-	ROGER: Incorrect, please try again
+ROGER: What is SNR (Signal to Noise Ratio)? [ID:t0b268ba6f4] 
+- The Measure of the data (signal) compared to the receiver antenna power(noise) \n received by the antenna. [ID:tc7083e5268] 
+	ROGER: Incorrect, please try again [ID:tdbe6cc099e]
 	do gameController.rootCall("answer", false)
-- The Measure of the antenna (signal) compared to the amount of data (noise) received by the receiver. 
-	ROGER: Incorrect, please try again
+- The Measure of the antenna (signal) compared to the amount of data (noise) \n received by the receiver. [ID:t3dd5ee493a] 
+	ROGER: Incorrect, please try again [ID:t3d9aa60b69]
 	do gameController.rootCall("answer", false)
-- The Measure of the receiver antenna power (signal) compared to the amount of data (noise) received by the antenna. 
-	ROGER: Correct!
+- The Measure of the receiver antenna power (signal) compared to the amount of \n data (noise) received by the antenna. [ID:t0d3df3766a] 
+	ROGER: Correct! [ID:tdd233ccd3a]
 	do gameController.rootCall("answer", true)
 => END
 ~ reviewQuestion2
-ROGER: How is SNR measured? 
-- Decibels
-	ROGER: Correct!
+ROGER: How is SNR measured? [ID:tca99f8754c] 
+- Decibels [ID:t56747e680b]
+	ROGER: Correct! [ID:t1c132f386c]
 	do gameController.rootCall("answer", true)
-- Megawatts
-	ROGER: Incorrect, please try again
+- Megawatts [ID:te91832a817]
+	ROGER: Incorrect, please try again [ID:t7d7c880811]
 	do gameController.rootCall("answer", false)
-- Milliwatts
-	ROGER: Incorrect, please try again
+- Milliwatts [ID:tf29a281841]
+	ROGER: Incorrect, please try again [ID:t920f363a1c]
 	do gameController.rootCall("answer", false)
 => END
 ~ reviewQuestion3
-ROGER: What equation is used for SNR? 
-- 10 * log(p2/p1) 
-	ROGER: Incorrect, please try again
+ROGER: What equation is used for SNR? [ID:t0050919b16] 
+- 10 * log(p2/p1) [ID:t9eb8a0ca4e] 
+	ROGER: Incorrect, please try again [ID:t38dfe7c204]
 	do gameController.rootCall("answer", false)
-- k * T_s * B_n 
-	ROGER: Incorrect, please try again
+- k * T_s * B_n [ID:t74b09264d2] 
+	ROGER: Incorrect, please try again [ID:td698881920]
 	do gameController.rootCall("answer", false)
-- P_r / N 
-	ROGER: Correct!
+- P_r / N [ID:t773280b020] 
+	ROGER: Correct! [ID:t04e50d36e0]
 	do gameController.rootCall("answer", true)
 => END!

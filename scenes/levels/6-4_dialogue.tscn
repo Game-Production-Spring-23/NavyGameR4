@@ -1,0 +1,155 @@
+[gd_scene load_steps=11 format=3 uid="uid://eq5w3y8xjqjs"]
+
+[ext_resource type="Script" path="res://scripts/levels/6-4_dialogue.gd" id="1_jegkc"]
+[ext_resource type="Texture2D" uid="uid://dhaj7ugamct2f" path="res://assets/images/dialogue/messageBox.png" id="2_fcset"]
+[ext_resource type="Texture2D" uid="uid://bpxcl4sber3v1" path="res://assets/images/background/cityenvironment.png" id="2_tl63w"]
+[ext_resource type="Theme" uid="uid://bajr2k60ueqkc" path="res://assets/themes/headerTheme.tres" id="3_6tpjv"]
+
+[sub_resource type="Animation" id="Animation_xgc4e"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_4q0rf"]
+resource_name = "show"
+length = 2.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5, 2),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1), Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_e20r5"]
+_data = {
+"RESET": SubResource("Animation_xgc4e"),
+"show": SubResource("Animation_4q0rf")
+}
+
+[sub_resource type="Animation" id="Animation_a5gqd"]
+resource_name = "Fade"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:self_modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_4hiwk"]
+resource_name = "RESET"
+length = 0.1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:self_modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_rem3y"]
+_data = {
+"Fade": SubResource("Animation_a5gqd"),
+"RESET": SubResource("Animation_4hiwk")
+}
+
+[node name="6-4Dialogue" type="Node2D"]
+script = ExtResource("1_jegkc")
+
+[node name="Backgrounds" type="CanvasLayer" parent="."]
+
+[node name="Background" type="TextureRect" parent="Backgrounds"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -1.0
+offset_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_tl63w")
+expand_mode = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect" type="ColorRect" parent="Backgrounds"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.294118, 0.294118, 0.294118, 0.392157)
+metadata/_edit_use_anchors_ = true
+
+[node name="Message" type="TextureRect" parent="Backgrounds"]
+modulate = Color(1, 1, 1, 0)
+anchors_preset = -1
+anchor_left = 0.156
+anchor_top = 0.267
+anchor_right = 0.844
+anchor_bottom = 0.452
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_fcset")
+metadata/_edit_use_anchors_ = true
+
+[node name="Label" type="Label" parent="Backgrounds/Message"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("3_6tpjv")
+text = "DARIA JOINED THE PARTY"
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Backgrounds/Message"]
+libraries = {
+"": SubResource("AnimationLibrary_e20r5")
+}
+
+[node name="ScreenTransition" type="CanvasLayer" parent="."]
+layer = 50
+
+[node name="FadeScreen" type="ColorRect" parent="ScreenTransition"]
+self_modulate = Color(1, 1, 1, 0)
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0, 0, 0, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="ScreenTransition/FadeScreen"]
+libraries = {
+"": SubResource("AnimationLibrary_rem3y")
+}

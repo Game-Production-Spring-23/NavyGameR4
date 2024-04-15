@@ -12,7 +12,7 @@ do hasPlayerMovedOnce = false
 
 ~ tutorial2
 do darknessScreen.play("brighten")
-ROGER: DIAGNOSTICS COMPLETE. I have bad news Ranger: The ship is totally wrecked, and the radar is… [ID:t4413d98621]
+ROGER: DIAGNOSTICS COMPLETE. I have bad news Ranger. The ship is totally wrecked, and the radar is… [ID:t4413d98621]
 
 Ranger: Broken? No problem, I can fix that! [ID:t9225f0607b]
 
@@ -20,17 +20,17 @@ ROGER: [#mood=sad] Don’t interrupt me! It’s not broken, it’s completely mi
 
 Ranger: Missing? Unless it fell out of the ship during the crash, it must have been stolen...Check the CCTV footage, quickly. [ID:tddf5b00135]
 
-ROGER: tried doing that during my diagnostics, but I couldn’t access it. It seems like somebody is messing with my system in the main bay. Let me open the door and you go check it out. [ID:t39e146ed2d]
+ROGER: I tried doing that during my diagnostics, but I couldn’t access it. It seems like somebody is messing with my system in the main bay. Let me open the door and you go check it out. [ID:t39e146ed2d]
 do gameController.characterCanMove = true
 do hadPlayerTalkedToRoger = true
 
 => END
 ~ tutorial3
-Ranger: ROGER, what is that thing? [ID:t0c59c37dfc]
-???: [#sprite=daria] HEY! I'm not a thing, I'm a Daran! [ID:t54e55888c6]
+Ranger: ROGER, what is that thing over there? [ID:t0c59c37dfc]
+Daria: [#sprite=daria] HEY! I am not a thing; I am a Daran! [ID:t54e55888c6]
 Ranger: Well whatever you are, you must be the one messing with my ship! [ID:tef167cdaa1]
-???: [#sprite=daria] Uh Oh. [ID:t02b2426b9c] 
-Ranger: HEY! GET BACK HERE! [ID:tc7cb4d9e3d]
+Daria: [#sprite=daria] Uh Oh... [ID:t02b2426b9c] 
+Ranger: HEY! COME BACK HERE! [ID:tc7cb4d9e3d]
 do darknessScreen.play("darken")
 do daria.hide()
 do gameController.characterCanMove = true
@@ -90,6 +90,7 @@ Daria: Why does it bounce off an object? [ID:t5b960bb877]
 	do gameController.rootCall("answer", false)
 - It’s coated in bouncy juice [ID:t3ac8c6ee93] 
 	do gameController.rootCall("answer", false)
+=> END
 ~ minigameQuestion6
 Daria: How does the radar know where the object is? [ID:t95e74d146d] 
 - It looks at it with binoculars [ID:t6d59b9afe0] 
@@ -117,7 +118,7 @@ Daria: What if the object is moving? [ID:td97c1ea399]
 Daria: That sounds awesome, what does a Radar look like? [ID:tb9d56cc107]
 Ranger: What are you talking about, don’t you not have my radar? What were you doing on my ship? [ID:td4eaa52908]
 Daria: I heard an explosion and wanted to see what was going on. When I got here, I saw your friends running off, so I assumed everyone was gone. [ID:tc75bb9b9b9]
-Ranger: Friends? Unless ROGER grew some legs and ran off, no one else was on the [ID:t76cdc77037]
+Ranger: Friends? Unless ROGER grew some legs and ran off, no one else was on the ship but us two. [ID:t76cdc77037]
 Daria: What about the Scein? And the Trolum? Or the Yappo? The Tendra? And the...what were they called? Oh yeah, the Lagna! [ID:t73fee68bbd]
 Ranger: Sheiza, the aliens of this planet must have gotten on board while ROGER and I were out cold... [ID:t1cdab008fc]
 ROGER: Ranger, while you were playing catch up with your new friend, I got access to the CCTV footage. You should come take a look at this; I will be waiting in the Comms room. [ID:tae380d9e41]
@@ -131,11 +132,11 @@ ROGER: Sadly I cannot. Due to my reboot, most of my functionality was wiped clea
 Ranger: Dango! First my ship crashes, then my radar is stolen, and now ROGER? How am I going to get this done? [ID:tbba8c438c2]
 Daria: Perhaps I can help! [ID:t3c06e11e88] 
 #Daria enters
-Ranger: Oh yeah? Why would you help us?! I don’t even know your name... [ID:t10e94eb338]
+Ranger: Oh yeah? Why would you help us! I don’t even know your name... [ID:t10e94eb338]
 Daria: The name is Daria! I am a Daran, the native species of Hertzich! I had so much fun with you earlier, I thought I would see if you wanted to play more! Then I overheard your conversation, and it seems like you could use some help. [ID:t607f0b2f98]
 Ranger: And why should I trust you? [ID:tec0eb4c5b0]
 Daria: Do you have any other options? [ID:t35c54c8034]
-Ranger: Dango, you got a point there...Alright, and how exactly can you help? [ID:t6784b5943a]
+Ranger: Dango, you gotta point there...Alright, and how exactly can you help? [ID:t6784b5943a]
 Daria: I’ve lived here all my life and I know this planet like the back of my paw. The big city, Yaplisdapolis, would have somewhere to fix your ship. I can show you how to get there! [ID:t71c8e1bb89]
 Ranger: The city? I saw that earlier when we were falling into the atmosphere, I don’t think it’s too far...but what about the missing radar? I would be flying blind in deep space without it! [ID:td197291984]
 Daria: Well, all the nice people I saw earlier had pieces of something, I bet that was your missing radar! I know a path that would lead into each major village of the other species on the planet, with the biiiiiig city at the end! [ID:t9b3a08870b]

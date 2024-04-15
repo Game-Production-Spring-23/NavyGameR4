@@ -67,3 +67,12 @@ func rootCall(function, parameter):
 		get_tree().get_current_scene().call(function, parameter)
 	else:
 		get_tree().get_current_scene().call(function)
+
+#MINIGAME 2 SPECIFIC CODE vvvv
+#Triggers the click timing minigame in minigame 2 (Triggered after certain dialogs)
+func triggerMinigame2():
+	get_tree().get_current_scene().get_node("/root/minigame2").barAppear()
+
+#Triggers minigame 2 answer function from dialog
+func minigame2Answer(correct):
+	get_tree().get_current_scene().get_node("/root/minigame2").answer(correct)

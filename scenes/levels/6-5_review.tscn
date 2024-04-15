@@ -1,7 +1,7 @@
-[gd_scene load_steps=5 format=3 uid="uid://srkqfq0omf6n"]
+[gd_scene load_steps=5 format=3 uid="uid://bpgweijcb3dyl"]
 
 [ext_resource type="Script" path="res://scripts/levels/6-5_review.gd" id="1_gn334"]
-[ext_resource type="Texture2D" uid="uid://c2b175ahm88ie" path="res://assets/images/wip/placeholder.png" id="2_rsnoi"]
+[ext_resource type="Texture2D" uid="uid://bpxcl4sber3v1" path="res://assets/images/background/cityenvironment.png" id="2_rhtj3"]
 [ext_resource type="Texture2D" uid="uid://dhaj7ugamct2f" path="res://assets/images/dialogue/messageBox.png" id="3_etmcb"]
 [ext_resource type="Theme" uid="uid://bajr2k60ueqkc" path="res://assets/themes/headerTheme.tres" id="4_7lj3q"]
 
@@ -14,11 +14,14 @@ script = ExtResource("1_gn334")
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_top = -1.0
-offset_bottom = 1.0
+offset_left = -15.0
+offset_top = 3.0
+offset_right = -24.0
+offset_bottom = 31.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("2_rsnoi")
+texture = ExtResource("2_rhtj3")
+expand_mode = 1
 
 [node name="ColorRect" type="ColorRect" parent="Backgrounds"]
 anchors_preset = 15
