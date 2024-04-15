@@ -50,15 +50,3 @@ cat area3-main.dialogue|sed -e 's/^[ \t]*//g'|sed 's/[[:space:]]\{2,\}/ /g'|sed 
 16) Clean up ogg files by putting in pushed folder
 17) If there is an issue, always start with aup file => to wav => normalize => convert to ogg => push
 
-
-sed -n '/\[ID\:.*\]/p' main.dialogue |more
-sed -n 's/.*\(\[ID\:.*\]\).*/\1\n/p' main.dialogue 
-
-sed -n 's/.*\(\[ID\:.*\]\).*/\1/p' main.dialogue
-
-sed -n '/\[ID\:.*\]/p' main.dialogue|awk '{print}'|sed -n 's/.*\(\[ID\:.*\]\).*/\1/p'
-
-cat main.dialogue|sed -e 's/^[ \t]*//g'|sed 's/[[:space:]]\{2,\}/ /g'|sed -n 's/.*\(\[ID\:.*\]\).*/\1\0/p'
-
-=IF(REGEXMATCH(J19, G19), 1, 0)
-=SEARCH(G19, J19)
