@@ -27,7 +27,7 @@ Travin: Newcomers...Welcome in! I am Travin and this is my shop. [ID:t7254bb4e0e
 Daria: Hey there sir, we heard from somebody that you found some cool geode recently? [ID:tf9175e8dd6]
 Travin: OH, you're talking about my Geode. It looks beautiful, I would show you, but it's not for sale. [ID:t0b52c820db]
 Ranger: Actually, that geode you're talking about is a control unit for my radar, and its mine! [ID:t2372788ad5]
-do gameController.characterCanMove = true
+do gameController.changeScene("2-2_minigame2splash")
 => END
 # MINIGAME STRUCTURE GOES HERE
 

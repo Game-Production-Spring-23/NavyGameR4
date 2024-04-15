@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=3 uid="uid://3ag1ft5gec6h"]
+[gd_scene load_steps=12 format=3 uid="uid://dr3r3rfev3qeb"]
 
 [ext_resource type="Script" path="res://scripts/levels/6-3_minigame6.gd" id="1_6yxga"]
 [ext_resource type="Script" path="res://scripts/levels/6-3_equationPiece.gd" id="1_lk08s"]

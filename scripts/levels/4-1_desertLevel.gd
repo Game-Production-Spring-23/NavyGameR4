@@ -1,5 +1,7 @@
 extends Node2D
 
+func _ready():
+	gameController.triggerDialogue("chapter4", "chapter4_1")
 
 func _on_interact_trigger_player_interact():
 	gameController.triggerDialogue("chapter4", "chapter4_NPC_2")
