@@ -81,7 +81,7 @@ bg_color = Color(0.105882, 0.12549, 0.235294, 1)
 layer = 100
 script = ExtResource("1_36de5")
 
-[node name="Sound" type="AudioStreamPlayer2D" parent="."]
+[node name="Sound" type="AudioStreamPlayer" parent="."]
 bus = &"Voice"
 
 [node name="Balloon" type="Control" parent="."]

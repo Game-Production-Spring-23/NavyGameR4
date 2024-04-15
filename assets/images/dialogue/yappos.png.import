@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://clivycggqlagf"
-path="res://.godot/imported/lagna.png-1cb73a743af8b2604e1007d4abbbddbb.ctex"
+uid="uid://b4e2lw37mhcrp"
+path="res://.godot/imported/yappos.png-fc278163c48dece77e44e01c1f788443.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/images/dialogue/lagna.png"
-dest_files=["res://.godot/imported/lagna.png-1cb73a743af8b2604e1007d4abbbddbb.ctex"]
+source_file="res://assets/images/dialogue/yappos.png"
+dest_files=["res://.godot/imported/yappos.png-fc278163c48dece77e44e01c1f788443.ctex"]
 
 [params]
 
