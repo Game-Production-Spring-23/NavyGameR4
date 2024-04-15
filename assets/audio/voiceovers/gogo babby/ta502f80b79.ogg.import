@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://5gtcwtnoe6yd"
+path="res://.godot/imported/ta502f80b79.ogg-5458599b2584adc3e3103efb165fc627.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/audio/voiceovers/gogo babby/ta502f80b79.ogg"
+dest_files=["res://.godot/imported/ta502f80b79.ogg-5458599b2584adc3e3103efb165fc627.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
