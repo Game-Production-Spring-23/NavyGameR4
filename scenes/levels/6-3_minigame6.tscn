@@ -1,0 +1,772 @@
+[gd_scene load_steps=12 format=3 uid="uid://3ag1ft5gec6h"]
+
+[ext_resource type="Script" path="res://scripts/levels/6-3_minigame6.gd" id="1_6yxga"]
+[ext_resource type="Script" path="res://scripts/levels/6-3_equationPiece.gd" id="1_lk08s"]
+[ext_resource type="Theme" uid="uid://bajr2k60ueqkc" path="res://assets/themes/headerTheme.tres" id="2_7hvsg"]
+[ext_resource type="Script" path="res://scripts/levels/6-3_equationBox.gd" id="3_b8t1b"]
+[ext_resource type="Theme" uid="uid://dvij0s1xehu3a" path="res://assets/themes/subheaderTheme.tres" id="4_y74l6"]
+[ext_resource type="Texture2D" uid="uid://7mk2r2g22pqx" path="res://assets/images/ui/button-blank.png" id="5_i2gwg"]
+[ext_resource type="Texture2D" uid="uid://b43bp8hdog3co" path="res://assets/images/ui/button-blank_click.png" id="6_iwosr"]
+[ext_resource type="Texture2D" uid="uid://dqeaxjc3n8x4" path="res://assets/images/ui/button-blank_hover.png" id="7_grilf"]
+[ext_resource type="Theme" uid="uid://dctbregm4ijln" path="res://assets/themes/buttonTheme.tres" id="8_2sb7p"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_u1eyj"]
+size = Vector2(200, 199)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_yf80c"]
+size = Vector2(173, 162)
+
+[node name="6-3Minigame6" type="Node2D"]
+script = ExtResource("1_6yxga")
+
+[node name="Background" type="ColorRect" parent="."]
+offset_right = 1927.0
+offset_bottom = 1090.0
+mouse_filter = 1
+color = Color(0.219608, 0.372549, 0.160784, 1)
+
+[node name="EquationText" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 34.0
+offset_right = 74.0
+offset_bottom = 40.0
+mouse_filter = 1
+
+[node name="equals" type="RichTextLabel" parent="EquationText"]
+layout_mode = 0
+offset_left = 323.0
+offset_top = 17.0
+offset_right = 425.0
+offset_bottom = 210.0
+mouse_filter = 1
+theme = ExtResource("2_7hvsg")
+theme_override_font_sizes/normal_font_size = 200
+text = "="
+scroll_active = false
+
+[node name="divides" type="RichTextLabel" parent="EquationText"]
+layout_mode = 0
+offset_left = 692.0
+offset_top = 19.0
+offset_right = 846.0
+offset_bottom = 241.0
+mouse_filter = 1
+theme = ExtResource("2_7hvsg")
+theme_override_font_sizes/normal_font_size = 200
+text = "/"
+scroll_active = false
+
+[node name="multiply" type="RichTextLabel" parent="EquationText"]
+layout_mode = 0
+offset_left = 1100.0
+offset_top = 27.0
+offset_right = 1254.0
+offset_bottom = 249.0
+mouse_filter = 1
+theme = ExtResource("2_7hvsg")
+theme_override_font_sizes/normal_font_size = 200
+text = "*"
+scroll_active = false
+
+[node name="multiply2" type="RichTextLabel" parent="EquationText"]
+layout_mode = 0
+offset_left = 1449.0
+offset_top = 27.0
+offset_right = 1603.0
+offset_bottom = 249.0
+mouse_filter = 1
+theme = ExtResource("2_7hvsg")
+theme_override_font_sizes/normal_font_size = 200
+text = "*"
+scroll_active = false
+
+[node name="ColorRect" type="ColorRect" parent="EquationText"]
+layout_mode = 0
+offset_left = 1188.0
+offset_top = 298.0
+offset_right = 1802.0
+offset_bottom = 912.0
+color = Color(0, 0, 0, 1)
+
+[node name="EquationBoxes" type="Node2D" parent="."]
+position = Vector2(34, 0)
+
+[node name="equationBox1" type="StaticBody2D" parent="EquationBoxes" groups=["droppable"]]
+position = Vector2(160, 140)
+script = ExtResource("3_b8t1b")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="EquationBoxes/equationBox1"]
+shape = SubResource("RectangleShape2D_u1eyj")
+
+[node name="ColorRect" type="ColorRect" parent="EquationBoxes/equationBox1"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -100.0
+offset_top = -100.0
+offset_right = 100.0
+offset_bottom = 100.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 1
+color = Color(0.639216, 0.639216, 0.639216, 0.627451)
+
+[node name="equationBox2" type="StaticBody2D" parent="EquationBoxes" groups=["droppable"]]
+position = Vector2(547, 140)
+script = ExtResource("3_b8t1b")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="EquationBoxes/equationBox2"]
+shape = SubResource("RectangleShape2D_u1eyj")
+
+[node name="ColorRect" type="ColorRect" parent="EquationBoxes/equationBox2"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -100.0
+offset_top = -100.0
+offset_right = 100.0
+offset_bottom = 100.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 1
+color = Color(0.639216, 0.639216, 0.639216, 0.627451)
+
+[node name="equationBox3" type="StaticBody2D" parent="EquationBoxes" groups=["droppable"]]
+position = Vector2(950, 140)
+script = ExtResource("3_b8t1b")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="EquationBoxes/equationBox3"]
+shape = SubResource("RectangleShape2D_u1eyj")
+
+[node name="ColorRect" type="ColorRect" parent="EquationBoxes/equationBox3"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -100.0
+offset_top = -100.0
+offset_right = 100.0
+offset_bottom = 100.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 1
+color = Color(0.639216, 0.639216, 0.639216, 0.627451)
+
+[node name="equationBox4" type="StaticBody2D" parent="EquationBoxes" groups=["droppable"]]
+position = Vector2(1307, 140)
+script = ExtResource("3_b8t1b")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="EquationBoxes/equationBox4"]
+shape = SubResource("RectangleShape2D_u1eyj")
+
+[node name="ColorRect" type="ColorRect" parent="EquationBoxes/equationBox4"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -100.0
+offset_top = -100.0
+offset_right = 100.0
+offset_bottom = 100.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 1
+color = Color(0.639216, 0.639216, 0.639216, 0.627451)
+
+[node name="equationBox5" type="StaticBody2D" parent="EquationBoxes" groups=["droppable"]]
+position = Vector2(1649, 140)
+script = ExtResource("3_b8t1b")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="EquationBoxes/equationBox5"]
+shape = SubResource("RectangleShape2D_u1eyj")
+
+[node name="ColorRect" type="ColorRect" parent="EquationBoxes/equationBox5"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -100.0
+offset_top = -100.0
+offset_right = 100.0
+offset_bottom = 100.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 1
+color = Color(0.639216, 0.639216, 0.639216, 0.627451)
+
+[node name="Pieces" type="Node2D" parent="."]
+
+[node name="equationPiece" type="Area2D" parent="Pieces"]
+position = Vector2(200, 470)
+script = ExtResource("1_lk08s")
+correctPos = 3
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Pieces/equationPiece"]
+position = Vector2(-0.5, -1)
+shape = SubResource("RectangleShape2D_yf80c")
+
+[node name="ColorRect" type="ColorRect" parent="Pieces/equationPiece"]
+offset_left = -87.0
+offset_top = -83.0
+offset_right = 86.0
+offset_bottom = 80.0
+mouse_filter = 1
+color = Color(0.858824, 0.858824, 0.858824, 1)
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Pieces/equationPiece"]
+offset_left = -87.0
+offset_top = -37.0
+offset_right = 86.0
+offset_bottom = 80.0
+mouse_filter = 1
+theme = ExtResource("4_y74l6")
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/normal_font_size = 60
+bbcode_enabled = true
+text = "[center]K"
+scroll_active = false
+
+[node name="equationPiece2" type="Area2D" parent="Pieces"]
+position = Vector2(425, 492)
+script = ExtResource("1_lk08s")
+correctPos = -1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Pieces/equationPiece2"]
+position = Vector2(-0.5, -1)
+shape = SubResource("RectangleShape2D_yf80c")
+
+[node name="ColorRect" type="ColorRect" parent="Pieces/equationPiece2"]
+offset_left = -87.0
+offset_top = -83.0
+offset_right = 86.0
+offset_bottom = 80.0
+mouse_filter = 1
+color = Color(0.858824, 0.858824, 0.858824, 1)
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Pieces/equationPiece2"]
+offset_left = -87.0
+offset_top = -37.0
+offset_right = 86.0
+offset_bottom = 80.0
+mouse_filter = 1
+theme = ExtResource("4_y74l6")
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/normal_font_size = 60
+bbcode_enabled = true
+text = "[center]K "
+scroll_active = false
+
+[node name="RichTextLabel2" type="RichTextLabel" parent="Pieces/equationPiece2"]
+offset_left = -60.0
+offset_top = -44.0
+offset_right = 113.0
+offset_bottom = 73.0
+mouse_filter = 1
+theme = ExtResource("4_y74l6")
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/normal_font_size = 30
+bbcode_enabled = true
+text = "[center]2"
+scroll_active = false
+
+[node name="equationPiece3" type="Area2D" parent="Pieces"]
+position = Vector2(652, 438)
+script = ExtResource("1_lk08s")
+correctPos = -1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Pieces/equationPiece3"]
+position = Vector2(-0.5, -1)
+shape = SubResource("RectangleShape2D_yf80c")
+
+[node name="ColorRect" type="ColorRect" parent="Pieces/equationPiece3"]
+offset_left = -87.0
+offset_top = -83.0
+offset_right = 86.0
+offset_bottom = 80.0
+mouse_filter = 1
+color = Color(0.858824, 0.858824, 0.858824, 1)
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Pieces/equationPiece3"]
+offset_left = -87.0
+offset_top = -37.0
+offset_right = 86.0
+offset_bottom = 80.0
+mouse_filter = 1
+theme = ExtResource("4_y74l6")
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/normal_font_size = 60
+bbcode_enabled = true
+text = "[center]S/t"
+scroll_active = false
+
+[node name="equationPiece4" type="Area2D" parent="Pieces"]
+position = Vector2(882, 482)
+script = ExtResource("1_lk08s")
+correctPos = 1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Pieces/equationPiece4"]
+position = Vector2(-0.5, -1)
+shape = SubResource("RectangleShape2D_yf80c")
+
+[node name="ColorRect" type="ColorRect" parent="Pieces/equationPiece4"]
+offset_left = -87.0
+offset_top = -83.0
+offset_right = 86.0
+offset_bottom = 80.0
+mouse_filter = 1
+color = Color(0.858824, 0.858824, 0.858824, 1)
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Pieces/equationPiece4"]
+offset_left = -87.0
+offset_top = -37.0
+offset_right = 86.0
+offset_bottom = 80.0
+mouse_filter = 1
+theme = ExtResource("4_y74l6")
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/normal_font_size = 60
+bbcode_enabled = true
+text = "[center]S/N"
+scroll_active = false
+
+[node name="equationPiece5" type="Area2D" parent="Pieces"]
+position = Vector2(1088, 522)
+script = ExtResource("1_lk08s")
+correctPos = -1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Pieces/equationPiece5"]
+position = Vector2(-0.5, -1)
+shape = SubResource("RectangleShape2D_yf80c")
+
+[node name="ColorRect" type="ColorRect" parent="Pieces/equationPiece5"]
+offset_left = -87.0
+offset_top = -83.0
+offset_right = 86.0
+offset_bottom = 80.0
+mouse_filter = 1
+color = Color(0.858824, 0.858824, 0.858824, 1)
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Pieces/equationPiece5"]
+offset_left = -87.0
+offset_top = -37.0
+offset_right = 86.0
+offset_bottom = 80.0
+mouse_filter = 1
+theme = ExtResource("4_y74l6")
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/normal_font_size = 60
+bbcode_enabled = true
+text = "[center]S "
+scroll_active = false
+
+[node name="RichTextLabel2" type="RichTextLabel" parent="Pieces/equationPiece5"]
+offset_left = -60.0
+offset_top = -44.0
+offset_right = 113.0
+offset_bottom = 73.0
+mouse_filter = 1
+theme = ExtResource("4_y74l6")
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/normal_font_size = 30
+bbcode_enabled = true
+text = "[center]2"
+scroll_active = false
+
+[node name="equationPiece6" type="Area2D" parent="Pieces"]
+position = Vector2(189, 682)
+script = ExtResource("1_lk08s")
+correctPos = -1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Pieces/equationPiece6"]
+position = Vector2(-0.5, -1)
+shape = SubResource("RectangleShape2D_yf80c")
+
+[node name="ColorRect" type="ColorRect" parent="Pieces/equationPiece6"]
+offset_left = -87.0
+offset_top = -83.0
+offset_right = 86.0
+offset_bottom = 80.0
+mouse_filter = 1
+color = Color(0.858824, 0.858824, 0.858824, 1)
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Pieces/equationPiece6"]
+offset_left = -87.0
+offset_top = -37.0
+offset_right = 86.0
+offset_bottom = 80.0
+mouse_filter = 1
+theme = ExtResource("4_y74l6")
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/normal_font_size = 60
+bbcode_enabled = true
+text = "[center]P/r"
+scroll_active = false
+
+[node name="equationPiece7" type="Area2D" parent="Pieces"]
+position = Vector2(410, 720)
+script = ExtResource("1_lk08s")
+correctPos = -1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Pieces/equationPiece7"]
+position = Vector2(-0.5, -1)
+shape = SubResource("RectangleShape2D_yf80c")
+
+[node name="ColorRect" type="ColorRect" parent="Pieces/equationPiece7"]
+offset_left = -87.0
+offset_top = -83.0
+offset_right = 86.0
+offset_bottom = 80.0
+mouse_filter = 1
+color = Color(0.858824, 0.858824, 0.858824, 1)
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Pieces/equationPiece7"]
+offset_left = -87.0
+offset_top = -37.0
+offset_right = 86.0
+offset_bottom = 80.0
+mouse_filter = 1
+theme = ExtResource("4_y74l6")
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/normal_font_size = 60
+bbcode_enabled = true
+text = "[center]N_s"
+scroll_active = false
+
+[node name="equationPiece8" type="Area2D" parent="Pieces"]
+position = Vector2(638, 669)
+script = ExtResource("1_lk08s")
+correctPos = -1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Pieces/equationPiece8"]
+position = Vector2(-0.5, -1)
+shape = SubResource("RectangleShape2D_yf80c")
+
+[node name="ColorRect" type="ColorRect" parent="Pieces/equationPiece8"]
+offset_left = -87.0
+offset_top = -83.0
+offset_right = 86.0
+offset_bottom = 80.0
+mouse_filter = 1
+color = Color(0.858824, 0.858824, 0.858824, 1)
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Pieces/equationPiece8"]
+offset_left = -87.0
+offset_top = -37.0
+offset_right = 86.0
+offset_bottom = 80.0
+mouse_filter = 1
+theme = ExtResource("4_y74l6")
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/normal_font_size = 60
+bbcode_enabled = true
+text = "[center]N_b"
+scroll_active = false
+
+[node name="equationPiece9" type="Area2D" parent="Pieces"]
+position = Vector2(865, 726)
+script = ExtResource("1_lk08s")
+correctPos = 4
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Pieces/equationPiece9"]
+position = Vector2(-0.5, -1)
+shape = SubResource("RectangleShape2D_yf80c")
+
+[node name="ColorRect" type="ColorRect" parent="Pieces/equationPiece9"]
+offset_left = -87.0
+offset_top = -83.0
+offset_right = 86.0
+offset_bottom = 80.0
+mouse_filter = 1
+color = Color(0.858824, 0.858824, 0.858824, 1)
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Pieces/equationPiece9"]
+offset_left = -87.0
+offset_top = -37.0
+offset_right = 86.0
+offset_bottom = 80.0
+mouse_filter = 1
+theme = ExtResource("4_y74l6")
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/normal_font_size = 60
+bbcode_enabled = true
+text = "[center]T_s"
+scroll_active = false
+
+[node name="equationPiece10" type="Area2D" parent="Pieces"]
+position = Vector2(1063, 745)
+script = ExtResource("1_lk08s")
+correctPos = -1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Pieces/equationPiece10"]
+position = Vector2(-0.5, -1)
+shape = SubResource("RectangleShape2D_yf80c")
+
+[node name="ColorRect" type="ColorRect" parent="Pieces/equationPiece10"]
+offset_left = -87.0
+offset_top = -83.0
+offset_right = 86.0
+offset_bottom = 80.0
+mouse_filter = 1
+color = Color(0.858824, 0.858824, 0.858824, 1)
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Pieces/equationPiece10"]
+offset_left = -87.0
+offset_top = -37.0
+offset_right = 86.0
+offset_bottom = 80.0
+mouse_filter = 1
+theme = ExtResource("4_y74l6")
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/normal_font_size = 60
+bbcode_enabled = true
+text = "[center]N/s"
+scroll_active = false
+
+[node name="equationPiece11" type="Area2D" parent="Pieces"]
+position = Vector2(215, 934)
+script = ExtResource("1_lk08s")
+correctPos = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Pieces/equationPiece11"]
+position = Vector2(-0.5, -1)
+shape = SubResource("RectangleShape2D_yf80c")
+
+[node name="ColorRect" type="ColorRect" parent="Pieces/equationPiece11"]
+offset_left = -87.0
+offset_top = -83.0
+offset_right = 86.0
+offset_bottom = 80.0
+mouse_filter = 1
+color = Color(0.858824, 0.858824, 0.858824, 1)
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Pieces/equationPiece11"]
+offset_left = -87.0
+offset_top = -37.0
+offset_right = 86.0
+offset_bottom = 80.0
+mouse_filter = 1
+theme = ExtResource("4_y74l6")
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/normal_font_size = 60
+bbcode_enabled = true
+text = "[center]P_r"
+scroll_active = false
+
+[node name="equationPiece12" type="Area2D" parent="Pieces"]
+position = Vector2(449, 928)
+script = ExtResource("1_lk08s")
+correctPos = -1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Pieces/equationPiece12"]
+position = Vector2(-0.5, -1)
+shape = SubResource("RectangleShape2D_yf80c")
+
+[node name="ColorRect" type="ColorRect" parent="Pieces/equationPiece12"]
+offset_left = -87.0
+offset_top = -83.0
+offset_right = 86.0
+offset_bottom = 80.0
+mouse_filter = 1
+color = Color(0.858824, 0.858824, 0.858824, 1)
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Pieces/equationPiece12"]
+offset_left = -87.0
+offset_top = -37.0
+offset_right = 86.0
+offset_bottom = 80.0
+mouse_filter = 1
+theme = ExtResource("4_y74l6")
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/normal_font_size = 60
+bbcode_enabled = true
+text = "[center]R_p"
+scroll_active = false
+
+[node name="equationPiece13" type="Area2D" parent="Pieces"]
+position = Vector2(676, 911)
+script = ExtResource("1_lk08s")
+correctPos = -1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Pieces/equationPiece13"]
+position = Vector2(-0.5, -1)
+shape = SubResource("RectangleShape2D_yf80c")
+
+[node name="ColorRect" type="ColorRect" parent="Pieces/equationPiece13"]
+offset_left = -87.0
+offset_top = -83.0
+offset_right = 86.0
+offset_bottom = 80.0
+mouse_filter = 1
+color = Color(0.858824, 0.858824, 0.858824, 1)
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Pieces/equationPiece13"]
+offset_left = -87.0
+offset_top = -37.0
+offset_right = 86.0
+offset_bottom = 80.0
+mouse_filter = 1
+theme = ExtResource("4_y74l6")
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/normal_font_size = 60
+bbcode_enabled = true
+text = "[center]5/6"
+scroll_active = false
+
+[node name="equationPiece14" type="Area2D" parent="Pieces"]
+position = Vector2(880, 962)
+script = ExtResource("1_lk08s")
+correctPos = 5
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Pieces/equationPiece14"]
+position = Vector2(-0.5, -1)
+shape = SubResource("RectangleShape2D_yf80c")
+
+[node name="ColorRect" type="ColorRect" parent="Pieces/equationPiece14"]
+offset_left = -87.0
+offset_top = -83.0
+offset_right = 86.0
+offset_bottom = 80.0
+mouse_filter = 1
+color = Color(0.858824, 0.858824, 0.858824, 1)
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Pieces/equationPiece14"]
+offset_left = -87.0
+offset_top = -37.0
+offset_right = 86.0
+offset_bottom = 80.0
+mouse_filter = 1
+theme = ExtResource("4_y74l6")
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/normal_font_size = 60
+bbcode_enabled = true
+text = "[center]B_n"
+scroll_active = false
+
+[node name="equationPiece15" type="Area2D" parent="Pieces"]
+position = Vector2(1096, 945)
+script = ExtResource("1_lk08s")
+correctPos = -1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Pieces/equationPiece15"]
+position = Vector2(-0.5, -1)
+shape = SubResource("RectangleShape2D_yf80c")
+
+[node name="ColorRect" type="ColorRect" parent="Pieces/equationPiece15"]
+offset_left = -87.0
+offset_top = -83.0
+offset_right = 86.0
+offset_bottom = 80.0
+mouse_filter = 1
+color = Color(0.858824, 0.858824, 0.858824, 1)
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Pieces/equationPiece15"]
+offset_left = -87.0
+offset_top = -37.0
+offset_right = 86.0
+offset_bottom = 80.0
+mouse_filter = 1
+theme = ExtResource("4_y74l6")
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/normal_font_size = 60
+bbcode_enabled = true
+text = "[center]11"
+scroll_active = false
+
+[node name="submitButton" type="TextureButton" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 1313.0
+offset_top = 945.0
+offset_right = 1419.0
+offset_bottom = 972.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(4, 4)
+texture_normal = ExtResource("5_i2gwg")
+texture_pressed = ExtResource("6_iwosr")
+texture_hover = ExtResource("7_grilf")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="submitButton"]
+layout_mode = 0
+offset_left = -0.25
+offset_top = 1.75
+offset_right = 105.75
+offset_bottom = 28.75
+mouse_filter = 1
+theme = ExtResource("8_2sb7p")
+theme_override_font_sizes/normal_font_size = 20
+bbcode_enabled = true
+text = "[center]Submit"
+
+[connection signal="body_entered" from="Pieces/equationPiece" to="Pieces/equationPiece" method="_on_body_entered"]
+[connection signal="body_exited" from="Pieces/equationPiece" to="Pieces/equationPiece" method="_on_body_exited"]
+[connection signal="mouse_entered" from="Pieces/equationPiece" to="Pieces/equationPiece" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Pieces/equationPiece" to="Pieces/equationPiece" method="_on_mouse_exited"]
+[connection signal="body_entered" from="Pieces/equationPiece2" to="Pieces/equationPiece2" method="_on_body_entered"]
+[connection signal="body_exited" from="Pieces/equationPiece2" to="Pieces/equationPiece2" method="_on_body_exited"]
+[connection signal="mouse_entered" from="Pieces/equationPiece2" to="Pieces/equationPiece2" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Pieces/equationPiece2" to="Pieces/equationPiece2" method="_on_mouse_exited"]
+[connection signal="body_entered" from="Pieces/equationPiece3" to="Pieces/equationPiece3" method="_on_body_entered"]
+[connection signal="body_exited" from="Pieces/equationPiece3" to="Pieces/equationPiece3" method="_on_body_exited"]
+[connection signal="mouse_entered" from="Pieces/equationPiece3" to="Pieces/equationPiece3" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Pieces/equationPiece3" to="Pieces/equationPiece3" method="_on_mouse_exited"]
+[connection signal="body_entered" from="Pieces/equationPiece4" to="Pieces/equationPiece4" method="_on_body_entered"]
+[connection signal="body_exited" from="Pieces/equationPiece4" to="Pieces/equationPiece4" method="_on_body_exited"]
+[connection signal="mouse_entered" from="Pieces/equationPiece4" to="Pieces/equationPiece4" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Pieces/equationPiece4" to="Pieces/equationPiece4" method="_on_mouse_exited"]
+[connection signal="body_entered" from="Pieces/equationPiece5" to="Pieces/equationPiece5" method="_on_body_entered"]
+[connection signal="body_exited" from="Pieces/equationPiece5" to="Pieces/equationPiece5" method="_on_body_exited"]
+[connection signal="mouse_entered" from="Pieces/equationPiece5" to="Pieces/equationPiece5" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Pieces/equationPiece5" to="Pieces/equationPiece5" method="_on_mouse_exited"]
+[connection signal="body_entered" from="Pieces/equationPiece6" to="Pieces/equationPiece6" method="_on_body_entered"]
+[connection signal="body_exited" from="Pieces/equationPiece6" to="Pieces/equationPiece6" method="_on_body_exited"]
+[connection signal="mouse_entered" from="Pieces/equationPiece6" to="Pieces/equationPiece6" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Pieces/equationPiece6" to="Pieces/equationPiece6" method="_on_mouse_exited"]
+[connection signal="body_entered" from="Pieces/equationPiece7" to="Pieces/equationPiece7" method="_on_body_entered"]
+[connection signal="body_exited" from="Pieces/equationPiece7" to="Pieces/equationPiece7" method="_on_body_exited"]
+[connection signal="mouse_entered" from="Pieces/equationPiece7" to="Pieces/equationPiece7" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Pieces/equationPiece7" to="Pieces/equationPiece7" method="_on_mouse_exited"]
+[connection signal="body_entered" from="Pieces/equationPiece8" to="Pieces/equationPiece8" method="_on_body_entered"]
+[connection signal="body_exited" from="Pieces/equationPiece8" to="Pieces/equationPiece8" method="_on_body_exited"]
+[connection signal="mouse_entered" from="Pieces/equationPiece8" to="Pieces/equationPiece8" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Pieces/equationPiece8" to="Pieces/equationPiece8" method="_on_mouse_exited"]
+[connection signal="body_entered" from="Pieces/equationPiece9" to="Pieces/equationPiece9" method="_on_body_entered"]
+[connection signal="body_exited" from="Pieces/equationPiece9" to="Pieces/equationPiece9" method="_on_body_exited"]
+[connection signal="mouse_entered" from="Pieces/equationPiece9" to="Pieces/equationPiece9" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Pieces/equationPiece9" to="Pieces/equationPiece9" method="_on_mouse_exited"]
+[connection signal="body_entered" from="Pieces/equationPiece10" to="Pieces/equationPiece10" method="_on_body_entered"]
+[connection signal="body_exited" from="Pieces/equationPiece10" to="Pieces/equationPiece10" method="_on_body_exited"]
+[connection signal="mouse_entered" from="Pieces/equationPiece10" to="Pieces/equationPiece10" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Pieces/equationPiece10" to="Pieces/equationPiece10" method="_on_mouse_exited"]
+[connection signal="body_entered" from="Pieces/equationPiece11" to="Pieces/equationPiece11" method="_on_body_entered"]
+[connection signal="body_exited" from="Pieces/equationPiece11" to="Pieces/equationPiece11" method="_on_body_exited"]
+[connection signal="mouse_entered" from="Pieces/equationPiece11" to="Pieces/equationPiece11" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Pieces/equationPiece11" to="Pieces/equationPiece11" method="_on_mouse_exited"]
+[connection signal="body_entered" from="Pieces/equationPiece12" to="Pieces/equationPiece12" method="_on_body_entered"]
+[connection signal="body_exited" from="Pieces/equationPiece12" to="Pieces/equationPiece12" method="_on_body_exited"]
+[connection signal="mouse_entered" from="Pieces/equationPiece12" to="Pieces/equationPiece12" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Pieces/equationPiece12" to="Pieces/equationPiece12" method="_on_mouse_exited"]
+[connection signal="body_entered" from="Pieces/equationPiece13" to="Pieces/equationPiece13" method="_on_body_entered"]
+[connection signal="body_exited" from="Pieces/equationPiece13" to="Pieces/equationPiece13" method="_on_body_exited"]
+[connection signal="mouse_entered" from="Pieces/equationPiece13" to="Pieces/equationPiece13" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Pieces/equationPiece13" to="Pieces/equationPiece13" method="_on_mouse_exited"]
+[connection signal="body_entered" from="Pieces/equationPiece14" to="Pieces/equationPiece14" method="_on_body_entered"]
+[connection signal="body_exited" from="Pieces/equationPiece14" to="Pieces/equationPiece14" method="_on_body_exited"]
+[connection signal="mouse_entered" from="Pieces/equationPiece14" to="Pieces/equationPiece14" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Pieces/equationPiece14" to="Pieces/equationPiece14" method="_on_mouse_exited"]
+[connection signal="body_entered" from="Pieces/equationPiece15" to="Pieces/equationPiece15" method="_on_body_entered"]
+[connection signal="body_exited" from="Pieces/equationPiece15" to="Pieces/equationPiece15" method="_on_body_exited"]
+[connection signal="mouse_entered" from="Pieces/equationPiece15" to="Pieces/equationPiece15" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Pieces/equationPiece15" to="Pieces/equationPiece15" method="_on_mouse_exited"]
+[connection signal="pressed" from="submitButton" to="." method="_on_submit_button_pressed"]
