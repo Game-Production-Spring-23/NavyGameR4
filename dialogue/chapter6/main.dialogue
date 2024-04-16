@@ -5,7 +5,8 @@ Ranger: And really bright. Wow, there are a lot of screens. [ID:t4ec0d94691]
 
 Daria: Welcome to Yaplisdapolis, the city of Screens & Dreams. [ID:t66a2b31ad7] 
 
-Ranger: It looks like the only place open right now is that, Cafe. Let's head there. [ID:t6d035f27dd] 
+Ranger: It looks like the only place open right now is that, Cafe. Let's head there. [ID:t6d035f27dd]
+do gameController.characterCanMove = true 
 => END!
 ~ chapter6_NPC_1
 Yappo: That Barista is gorgeous! That new necklace really puts the piece together. [ID:t75381c9ed7]

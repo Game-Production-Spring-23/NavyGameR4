@@ -6,6 +6,7 @@ Ranger: Well Daria, we would be honored to have you! Although typically you have
 Daria: I'm 34 Ranger. [ID:t62eaf651ef] 
 Ranger: Really? Well, you can come with us then and we can get you to a recruiter. [ID:t64bcac4ef1]
 => END!
+
 # REVIEW QUESTIONS
 ~ reviewQuestion1
 ROGER: What does the antenna do? [ID:t401f76580f] 
@@ -229,7 +230,7 @@ ROGER: What equation is used for SNR? [ID:t0050919b16]
 => END!
 
 
-
+~
 
 
 
@@ -242,7 +243,24 @@ Ranger: Oh yeah ROGER, you had to be rebooted because of the crash. The radar be
 
 ROGER: Sheesh, seems like I missed a lot! I’ll get started on ship repairs! While I get that done, it seems you have some visitors outside. [ID:tb0c8a277be]
 => END!
-~ finalReview_3
+~ finalReview_3 
+Yosie: “Whoooaaaaaaaa. That ship is a beaut!” 
+
+Ranger: “Hey everyone, what are you all doing here?” 
+
+GoGo Babby: “Well, we heard you were leaving soon, and Daria invited us over to see the ship.” 
+
+Selco: “I have to say goodbye to my arch-rival after all.” 
+
+Techra: “We also wanted to thank you for everything you did for us!” 
+
+Travin: “And here I thought the Control Unit was complex. That ship must be something else.” 
+
+Ranger: “Since everyone is here, I can give you all a quick explanation about the Radar.” 
+
+Daria: “It could be good information for when I join the Ranger Corps. Please do!” 
+=> END!
+~ finalReview_4
 Ranger: Looks like everything is good here. ROGER, how's it looking? [ID:t8f1e10c031]
 
 ROGER: Everything is up and running sir. I have to say, it's been a while since I have seen you so relaxed. This adventure must've helped you out a lot. [ID:t7752f6390f]
