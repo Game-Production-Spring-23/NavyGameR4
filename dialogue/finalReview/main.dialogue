@@ -230,7 +230,7 @@ ROGER: What equation is used for SNR? [ID:t0050919b16]
 => END!
 
 
-~
+
 
 
 
@@ -244,21 +244,21 @@ Ranger: Oh yeah ROGER, you had to be rebooted because of the crash. The radar be
 ROGER: Sheesh, seems like I missed a lot! I’ll get started on ship repairs! While I get that done, it seems you have some visitors outside. [ID:tb0c8a277be]
 => END!
 ~ finalReview_3 
-Yosie: “Whoooaaaaaaaa. That ship is a beaut!” 
+Yosie: Whoooaaaaaaaa. That ship is a beaut! [ID:t01a16c277f]
 
-Ranger: “Hey everyone, what are you all doing here?” 
+Ranger: Hey everyone, what are you all doing here? [ID:tc96ebac397]
 
-GoGo Babby: “Well, we heard you were leaving soon, and Daria invited us over to see the ship.” 
+GoGo Babby: Well, we heard you were leaving soon, and Daria invited us over to see the ship. [ID:t0f9fc9fcb4]
 
-Selco: “I have to say goodbye to my arch-rival after all.” 
+Selco: I have to say goodbye to my arch-rival after all. [ID:ta79f13e131]
 
-Techra: “We also wanted to thank you for everything you did for us!” 
+Techra: We also wanted to thank you for everything you did for us! [ID:td656131f22]
 
-Travin: “And here I thought the Control Unit was complex. That ship must be something else.” 
+Travin: And here I thought the Control Unit was complex. That ship must be something else. [ID:t368d918226]
 
-Ranger: “Since everyone is here, I can give you all a quick explanation about the Radar.” 
+Ranger: Since everyone is here, I can give you all a quick explanation about the Radar. [ID:t949e637bc6]
 
-Daria: “It could be good information for when I join the Ranger Corps. Please do!” 
+Daria: It could be good information for when I join the Ranger Corps. Please do! [ID:t92d23d7edc]
 => END!
 ~ finalReview_4
 Ranger: Looks like everything is good here. ROGER, how's it looking? [ID:t8f1e10c031]
