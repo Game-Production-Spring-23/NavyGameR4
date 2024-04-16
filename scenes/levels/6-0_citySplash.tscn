@@ -1,7 +1,7 @@
 [gd_scene load_steps=10 format=3 uid="uid://ufrgocyonmho"]
 
 [ext_resource type="Script" path="res://scripts/levels/6-0_citySplash.gd" id="1_pnt3o"]
-[ext_resource type="Texture2D" uid="uid://dpjbktuhq51cb" path="res://assets/images/background/swampenvironment.png" id="2_ijr7h"]
+[ext_resource type="Texture2D" uid="uid://bpxcl4sber3v1" path="res://assets/images/background/cityenvironment.png" id="2_03kie"]
 [ext_resource type="Theme" uid="uid://dctbregm4ijln" path="res://assets/themes/buttonTheme.tres" id="3_g6icw"]
 [ext_resource type="Texture2D" uid="uid://7mk2r2g22pqx" path="res://assets/images/ui/button-blank.png" id="4_g54lr"]
 [ext_resource type="Texture2D" uid="uid://b43bp8hdog3co" path="res://assets/images/ui/button-blank_click.png" id="5_xt3ax"]
@@ -55,7 +55,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("2_ijr7h")
+texture = ExtResource("2_03kie")
 expand_mode = 1
 metadata/_edit_use_anchors_ = true
 
