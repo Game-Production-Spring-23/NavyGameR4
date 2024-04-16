@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=3 uid="uid://c12cbgk6idsxd"]
+[gd_scene load_steps=16 format=3 uid="uid://c12cbgk6idsxd"]
 
 [ext_resource type="Script" path="res://scripts/levels/4-1_desertLevel.gd" id="1_lhhkh"]
 [ext_resource type="Texture2D" uid="uid://bojjee0jxpkjt" path="res://assets/images/tilemaps/desert-tileset.png" id="1_odtu7"]
@@ -266,6 +266,44 @@ sources/2 = SubResource("TileSetAtlasSource_ev2tb")
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_7waxm"]
 
+[sub_resource type="Animation" id="Animation_54fop"]
+resource_name = "npc_animation"
+length = 2.6
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.3, 0.6, 0.9, 1.2, 1.5, 1.8, 2.1, 2.4),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 3, 4, 7, 8, 9, 10]
+}
+
+[sub_resource type="Animation" id="Animation_836wg"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_2dceu"]
+_data = {
+"RESET": SubResource("Animation_836wg"),
+"npc_animation": SubResource("Animation_54fop")
+}
+
 [node name="4-1DesertLevel" type="Node2D"]
 script = ExtResource("1_lhhkh")
 
@@ -281,10 +319,12 @@ layer_2/name = "Path"
 layer_2/tile_data = PackedInt32Array(786437, 524288, 7, 196609, 524288, 7, 196620, 524288, 7, 458752, 393216, 6, 458753, 393216, 6, 458754, 393216, 6, 458755, 393216, 6, 524291, 393216, 6, 524292, 393216, 6, 393216, 393216, 5, 393217, 393216, 5, 393218, 393216, 5, 393219, 393216, 5, 393220, 458752, 5, 458756, 131072, 2, 458757, 458752, 5, 524293, 131072, 2, 524288, 393216, 7, 524289, 393216, 7, 524290, 65536, 3, 589826, 327680, 7, 589827, 393216, 7, 589828, 393216, 7, 589829, 393216, 7, 589830, 393216, 7, 589831, 393216, 7, 589832, 393216, 7, 589833, 458752, 7, 524294, 393216, 5, 524295, 393216, 5, 524296, 65536, 2, 524297, 131072, 3, 458760, 327680, 5, 458761, 65536, 2, 393225, 327680, 5, 458762, 393216, 6, 458763, 393216, 6, 458764, 393216, 6, 524298, 393216, 7, 524299, 393216, 7, 524300, 393216, 7, 393226, 393216, 5, 393227, 393216, 5, 393228, 393216, 5, 1048579, 524288, 7, 131096, 524288, 7, 65549, 524288, 7, 6, 524288, 7, 524301, 458752, 7, 458765, 131072, 3, 393229, 393216, 5, 393230, 458752, 5, 458766, 458752, 7, 524310, 393216, 6, 524311, 393216, 6, 589847, 393216, 6, 589848, 393216, 6, 524315, 393216, 6, 458780, 393216, 6, 524316, 393216, 6, 589854, 393216, 6, 655391, 393216, 6, 458773, 327680, 5, 458774, 393216, 5, 458775, 393216, 5, 458776, 458752, 5, 524312, 131072, 2, 524313, 393216, 5, 524314, 65536, 2, 458778, 327680, 5, 458779, 65536, 2, 393243, 327680, 5, 393244, 393216, 5, 393245, 458752, 5, 458781, 458752, 6, 524317, 131072, 2, 524318, 393216, 5, 524319, 458752, 5, 589855, 131072, 2, 589856, 458752, 5, 655392, 458752, 6, 720928, 458752, 7, 720927, 393216, 7, 655390, 65536, 3, 720926, 327680, 7, 655389, 327680, 7, 589853, 65536, 3, 589852, 393216, 7, 589851, 393216, 7, 589850, 393216, 7, 589849, 131072, 3, 655385, 458752, 7, 655384, 393216, 7, 655383, 393216, 7, 655382, 327680, 7, 589846, 65536, 3, 589845, 327680, 7, 524309, 327680, 6)
 layer_3/name = "Huts"
 layer_3/z_index = 5
-layer_3/tile_data = PackedInt32Array(262150, 524288, 2, 327686, 524288, 3, 393222, 524288, 4, 262161, 196608, 1, 327697, 327680, 2, 393233, 327680, 3, 458769, 327680, 4, 262162, 524288, 2, 327698, 2, 0, 393234, 393216, 3, 458770, 393216, 4, 262163, 458752, 1, 327699, 458752, 2, 393235, 458752, 3, 458771, 458752, 4, 262157, 196608, 1, 327693, 327680, 3, 262158, 393216, 1, 327694, 393216, 3, 262159, 458752, 1, 327695, 458752, 2, 720916, 196608, 2, 786452, 196608, 3, 720917, 262144, 2, 786453, 262144, 3, 851988, 327680, 4, 851989, 458752, 4, 786438, 196608, 3, 786439, 524288, 0, 720903, 262144, 1, 720902, 196608, 2, 327705, 262144, 2, 393241, 262144, 3, 327704, 196608, 1, 393240, 458752, 0, 131082, 196608, 2, 196618, 196608, 3, 131083, 262144, 2, 196619, 262144, 3, 262154, 458752, 0, 262155, 524288, 0)
+layer_3/tile_data = PackedInt32Array(262150, 524288, 2, 327686, 524288, 3, 262161, 196608, 1, 327697, 327680, 2, 393233, 327680, 3, 458769, 327680, 4, 262162, 524288, 2, 327698, 2, 0, 393234, 393216, 3, 458770, 393216, 4, 262163, 458752, 1, 327699, 458752, 2, 393235, 458752, 3, 458771, 458752, 4, 262157, 196608, 1, 327693, 327680, 3, 262158, 393216, 1, 327694, 393216, 3, 262159, 458752, 1, 327695, 458752, 2, 720916, 196608, 2, 786452, 196608, 3, 720917, 262144, 2, 786453, 262144, 3, 851988, 327680, 4, 851989, 458752, 4, 786438, 196608, 3, 786439, 524288, 0, 720903, 262144, 1, 720902, 196608, 2, 327705, 262144, 2, 393241, 262144, 3, 327704, 196608, 1, 393240, 458752, 0, 131082, 196608, 2, 196618, 196608, 3, 131083, 262144, 2, 196619, 262144, 3, 262154, 458752, 0, 262155, 524288, 0)
+layer_4/name = "Huts2"
+layer_4/tile_data = PackedInt32Array(393222, 524288, 4)
 
 [node name="Player" parent="." instance=ExtResource("2_11f76")]
-z_index = 1
+z_index = 2
 position = Vector2(108, 571)
 scale = Vector2(5, 5)
 
@@ -426,11 +466,16 @@ scale = Vector2(-2.11243, 1.09654)
 [node name="Sprite2D" type="Sprite2D" parent="NPC7"]
 texture = ExtResource("7_t14vn")
 hframes = 12
-frame = 5
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="NPC7"]
 z_index = 1
 shape = SubResource("CircleShape2D_7waxm")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="NPC7"]
+libraries = {
+"": SubResource("AnimationLibrary_2dceu")
+}
+autoplay = "npc_animation"
 
 [connection signal="player_interact" from="NPC1/InteractTrigger" to="." method="_on_interact_trigger_player_interact"]
 [connection signal="player_interact" from="NPC2/InteractTrigger" to="." method="_on_interact_2_trigger_player_interact"]
