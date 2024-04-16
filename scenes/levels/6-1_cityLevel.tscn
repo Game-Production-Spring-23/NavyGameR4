@@ -1,8 +1,11 @@
-[gd_scene load_steps=6 format=3 uid="uid://bct1ihjf3i7sx"]
+[gd_scene load_steps=10 format=3 uid="uid://bct1ihjf3i7sx"]
 
+[ext_resource type="Script" path="res://scripts/levels/6-1_cityLevel.gd" id="1_bq3j4"]
 [ext_resource type="Texture2D" uid="uid://hy36qnreirkt" path="res://assets/images/tilemaps/city-tileset.png" id="1_t2y7p"]
 [ext_resource type="PackedScene" uid="uid://dtolugbyxj6gu" path="res://scenes/objects/playerCharacter.tscn" id="2_awo73"]
 [ext_resource type="Script" path="res://scripts/player/followCam.gd" id="3_5op4w"]
+[ext_resource type="Texture2D" uid="uid://bqjkmkgd6mnh6" path="res://assets/images/spritesheets/creature-display.png" id="5_j6m6n"]
+[ext_resource type="PackedScene" uid="uid://bfdknr001mevw" path="res://scenes/objects/interactTrigger.tscn" id="6_bpx07"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_5e12b"]
 texture = ExtResource("1_t2y7p")
@@ -341,7 +344,10 @@ texture = ExtResource("1_t2y7p")
 physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_5e12b")
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_xr8iq"]
+
 [node name="6-1_CityLevel" type="Node2D"]
+script = ExtResource("1_bq3j4")
 
 [node name="TileMap" type="TileMap" parent="."]
 scale = Vector2(5, 5)
@@ -371,3 +377,75 @@ limit_left = 0
 limit_top = 0
 script = ExtResource("3_5op4w")
 tilemap = NodePath("../TileMap")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+position = Vector2(1380, 360)
+scale = Vector2(4.13535, 4.33639)
+
+[node name="Sprite2D" type="Sprite2D" parent="StaticBody2D"]
+texture = ExtResource("5_j6m6n")
+region_enabled = true
+region_rect = Rect2(82.0941, 32.718, 28.7271, 33.0361)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+shape = SubResource("RectangleShape2D_xr8iq")
+
+[node name="InteractTrigger" parent="StaticBody2D" instance=ExtResource("6_bpx07")]
+position = Vector2(-17.4109, 0)
+scale = Vector2(2.8765, 1)
+
+[node name="StaticBody2D4" type="StaticBody2D" parent="."]
+position = Vector2(610, 466)
+scale = Vector2(4.13535, 4.33639)
+
+[node name="Sprite2D" type="Sprite2D" parent="StaticBody2D4"]
+texture = ExtResource("5_j6m6n")
+region_enabled = true
+region_rect = Rect2(48.1005, 23.3012, 33.5149, 43.33)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D4"]
+shape = SubResource("RectangleShape2D_xr8iq")
+
+[node name="InteractTrigger" parent="StaticBody2D4" instance=ExtResource("6_bpx07")]
+position = Vector2(-0.241863, 20.9852)
+rotation = -1.55795
+scale = Vector2(1.77248, 1)
+
+[node name="StaticBody2D3" type="StaticBody2D" parent="."]
+position = Vector2(1191, 887)
+scale = Vector2(4.13535, 4.33639)
+
+[node name="Sprite2D" type="Sprite2D" parent="StaticBody2D3"]
+texture = ExtResource("5_j6m6n")
+region_enabled = true
+region_rect = Rect2(0, 33.1968, 30.3855, 30.8032)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D3"]
+shape = SubResource("RectangleShape2D_xr8iq")
+
+[node name="InteractTrigger" parent="StaticBody2D3" instance=ExtResource("6_bpx07")]
+position = Vector2(15.9599, 0.922427)
+scale = Vector2(2.8765, 1)
+
+[node name="StaticBody2D2" type="StaticBody2D" parent="."]
+position = Vector2(2639, 653)
+scale = Vector2(4.13535, 4.33639)
+
+[node name="Sprite2D" type="Sprite2D" parent="StaticBody2D2"]
+position = Vector2(0.664505, 0)
+scale = Vector2(1.03592, 1)
+texture = ExtResource("5_j6m6n")
+region_enabled = true
+region_rect = Rect2(82.7505, 0, 29.2495, 32.9481)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D2"]
+shape = SubResource("RectangleShape2D_xr8iq")
+
+[node name="InteractTrigger" parent="StaticBody2D2" instance=ExtResource("6_bpx07")]
+position = Vector2(-17.4109, 0)
+scale = Vector2(2.8765, 1)
+
+[connection signal="player_interact" from="StaticBody2D/InteractTrigger" to="." method="_on_interact_NPC_1_trigger_player_interact"]
+[connection signal="player_interact" from="StaticBody2D4/InteractTrigger" to="." method="_on_interact_NPC_2_trigger_player_interact"]
+[connection signal="player_interact" from="StaticBody2D3/InteractTrigger" to="." method="_on_interact_NPC_3_trigger_player_interact"]
+[connection signal="player_interact" from="StaticBody2D2/InteractTrigger" to="." method="_on_interact_Yosie_trigger_player_interact"]
