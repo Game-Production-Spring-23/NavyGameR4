@@ -14,6 +14,7 @@ func _ready():
 	menuScreens.append(get_node("UI/MainMenuScreen"))
 	menuScreens.append(get_node("UI/ChapterSelectScreen"))
 	menuScreens.append(get_node("UI/OptionsScreen"))
+	
 
 	# Gets each button in main menu and connects it to on_button_pressed
 	for button in get_tree().get_nodes_in_group("MainMenuButtons"):

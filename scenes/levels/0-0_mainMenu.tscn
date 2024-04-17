@@ -475,6 +475,7 @@ theme_override_icons/grabber_highlight = ExtResource("21_esw23")
 theme_override_styles/slider = SubResource("StyleBoxTexture_fompn")
 min_value = -50.0
 max_value = 0.0
+value = -15.0
 
 [node name="VoiceVolume" type="Label" parent="UI/OptionsScreen/Options"]
 layout_mode = 2

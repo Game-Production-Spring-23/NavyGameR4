@@ -5,6 +5,12 @@ var textSpeed = 1
 var characterCanMove = true
 @onready var animationPlayer = $ScreenTransition/FadeScreen/AnimationPlayer
 
+var busIndex = AudioServer.get_bus_index("Music")
+
+func _ready():
+	#set music volume lower
+	AudioServer.set_bus_volume_db(busIndex,-15)
+
 func changeScene(scenePath, intro = null, body = null):
 	#play the fade out animation, then switch scene and fade back in
 	animationPlayer.play("Fade")
