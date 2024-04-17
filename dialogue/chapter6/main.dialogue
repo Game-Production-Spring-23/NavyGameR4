@@ -38,7 +38,7 @@ Ranger: In fact, I bet I can wear it even better than you can... [ID:te93a7c8228
 Yappos: ca-caw! Ca-caw! [ID:tde75e43456]
 
 Yosie: You’re challenging me...!? [ID:ted5fdc5c0e]
-do gameController.characterCanMove = true
+do gameController.changeScene("6-2_minigame6splash")
 => END!
 ~ chapter6_4
 Yosie: Wow, you were made for this! [ID:t39bd73c453]

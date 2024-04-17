@@ -16,4 +16,4 @@ func _on_submit_button_pressed():
 			correctEquation = false
 		pos += 1
 	if(correctEquation):
-		print("Wow!")
+		gameController.changeScene("6-4_dialogue")
