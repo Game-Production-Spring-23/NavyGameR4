@@ -20,7 +20,7 @@ func answer(correct):
 			question()
 		else:
 		# If the player reaches the last question
-			gameController.changeScene("3-0_mountainSplash", "res://assets/audio/music/swamp-intro.ogg", "res://assets/audio/music/swamp-body.ogg")
+			gameController.changeScene("3-0_mountainSplash")
 	else:
 		question()  
 

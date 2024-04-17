@@ -16,10 +16,9 @@ scale = Vector2(5, 5)
 [node name="RemoteTransform2D" type="RemoteTransform2D" parent="Player"]
 remote_path = NodePath("../../MainCamera")
 
-[node name="MainCamera" type="Camera2D" parent="." node_paths=PackedStringArray("tilemap")]
+[node name="MainCamera" type="Camera2D" parent="."]
 position = Vector2(108, 571)
 scale = Vector2(5, 5)
 limit_left = 0
 limit_top = 0
 script = ExtResource("2_tqa4n")
-tilemap = NodePath("")

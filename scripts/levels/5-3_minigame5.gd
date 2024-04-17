@@ -70,4 +70,4 @@ func calcBinary():
 		finish_game()
 
 func finish_game():
-	gameController.changeScene("testEnd", "res://assets/audio/music/swamp-intro.ogg", "res://assets/audio/music/swamp-body.ogg")
+	gameController.changeScene("testEnd")

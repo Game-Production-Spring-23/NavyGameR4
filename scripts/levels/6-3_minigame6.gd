@@ -16,4 +16,4 @@ func _on_submit_button_pressed():
 			correctEquation = false
 		pos += 1
 	if(correctEquation):
-		gameController.changeScene("6-4_dialogue")
+		gameController.changeScene("6-4_dialogue", null, "res://assets/audio/music/city-body.ogg")

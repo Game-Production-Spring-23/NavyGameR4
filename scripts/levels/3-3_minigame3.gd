@@ -64,4 +64,4 @@ func swap_tiles(pos):
 			gameController.triggerDialogue("chapter3", "chapter3_4")
 
 func finish_game():
-	gameController.changeScene("3-4_dialogue", "res://assets/audio/music/swamp-intro.ogg", "res://assets/audio/music/swamp-body.ogg")
+	gameController.changeScene("3-4_dialogue", "res://assets/audio/music/mountain-intro.ogg", "res://assets/audio/music/mountain-body.ogg")
