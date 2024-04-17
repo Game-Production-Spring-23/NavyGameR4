@@ -62,7 +62,7 @@ var dialogue_line: DialogueLine:
 				if gameController.player.voice == "voice1":
 					var stream_string = "res://assets/audio/voiceovers/female/"+dialogue_line.translation_key +".ogg"
 					var stream = load(stream_string)
-					if FileAccess.file_exists(stream_string):
+					if ResourceLoader.exists(stream_string):
 						print("FEMALE", dialogue_line.translation_key)
 						sound.stream = stream
 						sound.play()
