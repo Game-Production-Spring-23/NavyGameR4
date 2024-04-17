@@ -16,4 +16,4 @@ func _on_timer_timeout():
 #Skips intro cutscene when button pressed		
 func _on_button_pressed():
 	gameController.playSound("res://assets/audio/sfx/gui-confirmation.ogg")
-	gameController.changeScene("1-3_minigame1", null, "res://assets/audio/music/minigame.ogg")
+	gameController.changeScene("6-2_minigame6", null, "res://assets/audio/music/minigame.ogg")
