@@ -16,7 +16,7 @@ func _on_timer_timeout():
 #Skips intro cutscene when button pressed		
 func _on_button_pressed():
 	gameController.playSound("res://assets/audio/sfx/gui-confirmation.ogg")
-	gameController.changeScene("4-0_desertSplash.tscn", "res://assets/audio/music/desert-intro.ogg", "res://assets/audio/music/desert-body.ogg")
+	gameController.changeScene("4-1_desertLevel", "res://assets/audio/music/desert-intro.ogg", "res://assets/audio/music/desert-body.ogg")
 		
 	
 	
