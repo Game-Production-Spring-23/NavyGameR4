@@ -1,8 +1,8 @@
 [gd_scene load_steps=11 format=3 uid="uid://cb1ssghotdpls"]
 
-[ext_resource type="Texture2D" uid="uid://c2b175ahm88ie" path="res://assets/images/wip/placeholder.png" id="1_13mcn"]
 [ext_resource type="Script" path="res://scripts/levels/4-4_dialogue.gd" id="1_28to1"]
 [ext_resource type="Texture2D" uid="uid://dhaj7ugamct2f" path="res://assets/images/dialogue/messageBox.png" id="2_g4ar5"]
+[ext_resource type="Texture2D" uid="uid://c870m0qtoyyo7" path="res://assets/images/background/desertenvironment.png" id="2_q3vcu"]
 [ext_resource type="Theme" uid="uid://bajr2k60ueqkc" path="res://assets/themes/headerTheme.tres" id="3_o0xhc"]
 
 [sub_resource type="Animation" id="Animation_xgc4e"]
@@ -92,7 +92,7 @@ offset_top = -1.0
 offset_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("1_13mcn")
+texture = ExtResource("2_q3vcu")
 expand_mode = 1
 metadata/_edit_use_anchors_ = true
 

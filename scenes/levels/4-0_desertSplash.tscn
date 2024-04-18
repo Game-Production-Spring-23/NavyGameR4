@@ -1,7 +1,7 @@
 [gd_scene load_steps=10 format=3 uid="uid://cjxvrnyejfev6"]
 
 [ext_resource type="Script" path="res://scripts/levels/4-0_desertSplash.gd" id="1_whemx"]
-[ext_resource type="Texture2D" uid="uid://dpjbktuhq51cb" path="res://assets/images/background/swampenvironment.png" id="2_nuv72"]
+[ext_resource type="Texture2D" uid="uid://c870m0qtoyyo7" path="res://assets/images/background/desertenvironment.png" id="2_xo8vr"]
 [ext_resource type="Theme" uid="uid://dctbregm4ijln" path="res://assets/themes/buttonTheme.tres" id="3_b1pml"]
 [ext_resource type="Texture2D" uid="uid://7mk2r2g22pqx" path="res://assets/images/ui/button-blank.png" id="4_punud"]
 [ext_resource type="Texture2D" uid="uid://b43bp8hdog3co" path="res://assets/images/ui/button-blank_click.png" id="5_a5eg0"]
@@ -55,7 +55,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("2_nuv72")
+texture = ExtResource("2_xo8vr")
 expand_mode = 1
 metadata/_edit_use_anchors_ = true
 
