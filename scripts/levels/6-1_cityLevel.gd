@@ -17,3 +17,7 @@ func _on_interact_NPC_3_trigger_player_interact():
 
 func _on_interact_Yosie_trigger_player_interact():
 	gameController.triggerDialogue("chapter6","chapter6_3")
+
+
+func _on_area_trigger_player_interact():
+	gameController.changeScene("6-1-2_cafeLevel")
