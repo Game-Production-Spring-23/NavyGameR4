@@ -74,7 +74,7 @@ Daria: Yeah, I am, I am here to get my Pringle Successor. [ID:tfcfe0d8831]
 GoGo Babby: Well, before you do, you have a couple things to do to get your prize! [ID:t28b1709bf7]
 
 Ranger: Bring it on! [ID:t3585c7cd91]
-do gameController.characterCanMove = true
+do gameController.changeScene("5-2_minigame5splash")
 => END!
 ~ chapter5_4
 GoGo Babby: Well, here is your Signal Processor. Before you leave, you can always come back for more challenges and prizes at SGNL. [ID:t21d0ffe89f]
