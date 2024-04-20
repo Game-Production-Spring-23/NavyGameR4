@@ -70,4 +70,4 @@ func calcBinary():
 		finish_game()
 
 func finish_game():
-	gameController.changeScene("testEnd")
+	gameController.changeScene("5-4_dialogue")
