@@ -5,8 +5,8 @@
 [ext_resource type="PackedScene" uid="uid://dtolugbyxj6gu" path="res://scenes/objects/playerCharacter.tscn" id="2_dsmx7"]
 [ext_resource type="Texture2D" uid="uid://d2g24tu31vymg" path="res://assets/images/tilemaps/plains-tileset.png" id="3_2yk54"]
 [ext_resource type="Script" path="res://scripts/player/followCam.gd" id="4_0dfch"]
-[ext_resource type="Texture2D" uid="uid://vkulg0ycxmpr" path="res://assets/images/sprites/chapter2/control-unit-sprite.png" id="4_n5ahk"]
 [ext_resource type="PackedScene" uid="uid://bfdknr001mevw" path="res://scenes/objects/interactTrigger.tscn" id="5_35rba"]
+[ext_resource type="Texture2D" uid="uid://bslc8188j44fk" path="res://assets/images/spritesheets/creature-controlunit.png" id="6_wbodm"]
 [ext_resource type="PackedScene" uid="uid://dab15f8h7doq8" path="res://scenes/objects/areaTrigger.tscn" id="7_owykj"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_3nh3d"]
@@ -686,7 +686,9 @@ scale = Vector2(5.92, 6.28)
 [node name="Sprite2D" type="Sprite2D" parent="NPC1"]
 z_index = 2
 position = Vector2(0.337838, 0)
-texture = ExtResource("4_n5ahk")
+texture = ExtResource("6_wbodm")
+region_enabled = true
+region_rect = Rect2(15.7496, 0, 16.8874, 16)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="NPC1"]
 z_index = 1
@@ -705,7 +707,9 @@ scale = Vector2(5.92, 6.28)
 
 [node name="Sprite2D" type="Sprite2D" parent="NPC2"]
 z_index = 2
-texture = ExtResource("4_n5ahk")
+texture = ExtResource("6_wbodm")
+region_enabled = true
+region_rect = Rect2(15.1123, 0, 17.2061, 16)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="NPC2"]
 z_index = 1
@@ -724,7 +728,9 @@ scale = Vector2(5.92, 6.28)
 
 [node name="Sprite2D" type="Sprite2D" parent="NPC3"]
 z_index = 2
-texture = ExtResource("4_n5ahk")
+texture = ExtResource("6_wbodm")
+region_enabled = true
+region_rect = Rect2(16.3868, 0, 15.9315, 16)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="NPC3"]
 shape = SubResource("RectangleShape2D_ugdfw")
