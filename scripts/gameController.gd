@@ -4,8 +4,11 @@ var textSpeed = 1
 @onready var player = oPlayer.new(["she", "her", "hers"], "voice1", "purple")
 var characterCanMove = true
 @onready var animationPlayer = $ScreenTransition/FadeScreen/AnimationPlayer
-
 var busIndex = AudioServer.get_bus_index("Music")
+
+var chapterSelect
+var chapterIntro
+var chapterBody
 
 func _ready():
 	#set music volume lower
@@ -22,6 +25,25 @@ func changeScene(scenePath, intro = null, body = null):
 		changeMusic(intro, body)
 	elif(body):
 		changeMusic(intro, body)
+	else:
+		pauseMusic()
+
+func setChangeChapter(select, intro =  null, body = null):
+	chapterSelect = select
+	chapterIntro = intro
+	chapterBody = body
+
+func changeChapter():
+	#play the fade out animation, then switch scene and fade back in
+	animationPlayer.play("Fade")
+	await animationPlayer.animation_finished
+	get_tree().change_scene_to_file("res://scenes/levels/" + chapterSelect + ".tscn")
+	animationPlayer.play_backwards("Fade")
+	#checks if the changeScene() call provides both music paths or at least the body, plays it if yes and simply pauses it if not
+	if(chapterIntro and chapterBody):
+		changeMusic(chapterIntro, chapterBody)
+	elif(chapterBody):
+		changeMusic(chapterIntro, chapterBody)
 	else:
 		pauseMusic()
 

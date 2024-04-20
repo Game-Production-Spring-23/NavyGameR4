@@ -99,4 +99,4 @@ func on_appearance_button_pressed(button_pressed):
 func on_character_creation_confirm():
 	gameController.playSound("res://assets/audio/sfx/gui-confirmation.ogg")
 	gameController.player = oPlayer.new(pronouns, voice, color)
-	gameController.changeScene("0-3_shipInterior", null, "res://assets/audio/sfx/ship-ambience.ogg")
+	gameController.changeChapter()

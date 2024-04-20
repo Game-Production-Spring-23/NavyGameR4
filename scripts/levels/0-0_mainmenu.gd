@@ -29,10 +29,35 @@ func _ready():
 func on_button_pressed(button_pressed):
 	if(button_pressed.name == "startButton"): # Loads the options cutscene
 		gameController.playSound("res://assets/audio/sfx/gui-confirmation.ogg")
+		gameController.setChangeChapter("0-3_shipInterior", null, "res://assets/audio/sfx/ship-ambience.ogg")
 		gameController.changeScene("0-1_introCutscene", null, "res://assets/audio/sfx/space-ambience.ogg")
 	elif(button_pressed.name == "chapterSelectButton"): # Displays the chapter select screen
 		gameController.playSound("res://assets/audio/sfx/gui-select.ogg")
 		displayMenuScreen(1)
+	elif(button_pressed.name == "swampDarra"): # Loads chapter 1
+		gameController.playSound("res://assets/audio/sfx/gui-confirmation.ogg")
+		gameController.setChangeChapter("1-1_swampLevel", "res://assets/audio/music/swamp-intro.ogg", "res://assets/audio/music/swamp-body.ogg")
+		gameController.changeScene("0-2_characterCreation", "res://assets/audio/music/menu-theme-intro.ogg", "res://assets/audio/music/menu-theme-body.ogg")
+	elif(button_pressed.name == "plainTrolonc"): # Loads chapter 2
+		gameController.playSound("res://assets/audio/sfx/gui-confirmation.ogg")
+		gameController.setChangeChapter("2-1_plainLevel", null, "res://assets/audio/music/plains-body.ogg")
+		gameController.changeScene("0-2_characterCreation", "res://assets/audio/music/menu-theme-intro.ogg", "res://assets/audio/music/menu-theme-body.ogg")
+	elif(button_pressed.name == "mtTenanan"): # Loads chapter 3
+		gameController.playSound("res://assets/audio/sfx/gui-confirmation.ogg")
+		gameController.setChangeChapter("3-1_snowLevel", "res://assets/audio/music/mountain-intro.ogg", "res://assets/audio/music/mountain-body.ogg")
+		gameController.changeScene("0-2_characterCreation", "res://assets/audio/music/menu-theme-intro.ogg", "res://assets/audio/music/menu-theme-body.ogg")
+	elif(button_pressed.name == "desertSceivnarter"): # Loads chapter 4
+		gameController.playSound("res://assets/audio/sfx/gui-confirmation.ogg")
+		gameController.setChangeChapter("4-1_desertLevel", "res://assets/audio/music/desert-intro.ogg", "res://assets/audio/music/desert-body.ogg")
+		gameController.changeScene("0-2_characterCreation", "res://assets/audio/music/menu-theme-intro.ogg", "res://assets/audio/music/menu-theme-body.ogg")
+	elif(button_pressed.name == "lagnisOcean"): # Loads chapter 5
+		gameController.playSound("res://assets/audio/sfx/gui-confirmation.ogg")
+		gameController.setChangeChapter("5-1_oceanLevel", "res://assets/audio/music/underwater-intro.ogg", "res://assets/audio/music/underwater-body.ogg")
+		gameController.changeScene("0-2_characterCreation", "res://assets/audio/music/menu-theme-intro.ogg", "res://assets/audio/music/menu-theme-body.ogg")
+	elif(button_pressed.name == "yaplisdapolis"): # Loads chapter 6
+		gameController.playSound("res://assets/audio/sfx/gui-confirmation.ogg")
+		gameController.setChangeChapter("6-1_cityLevel", null, "res://assets/audio/music/city-body.ogg")
+		gameController.changeScene("0-2_characterCreation", "res://assets/audio/music/menu-theme-intro.ogg", "res://assets/audio/music/menu-theme-body.ogg")
 	elif(button_pressed.name == "optionButton"): # Displays the options screen
 		gameController.playSound("res://assets/audio/sfx/gui-select.ogg")
 		displayMenuScreen(2)
@@ -52,15 +77,6 @@ func displayMenuScreen(screenNum):
 
 	# Displays the correct screen
 	menuScreens[screenNum].show()
-
-
-
-
-
-
-
-
-
 
 func _on_slow_pressed():
 	gameController.playSound("res://assets/audio/sfx/gui-select.ogg")
