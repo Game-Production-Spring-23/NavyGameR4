@@ -1,7 +1,7 @@
 [gd_scene load_steps=10 format=3 uid="uid://cf2qx0nnv1xng"]
 
 [ext_resource type="Script" path="res://scripts/levels/3-2_minigame3splash.gd" id="1_5aa44"]
-[ext_resource type="Texture2D" uid="uid://c3jucg3f5ffi5" path="res://assets/images/background/MinigameCard.png" id="2_78r6r"]
+[ext_resource type="Texture2D" uid="uid://bxrf0mtgew70t" path="res://assets/images/ui/Minigame3splash.png" id="2_1d5va"]
 [ext_resource type="Theme" uid="uid://dctbregm4ijln" path="res://assets/themes/buttonTheme.tres" id="3_8mvg4"]
 [ext_resource type="Texture2D" uid="uid://7mk2r2g22pqx" path="res://assets/images/ui/button-blank.png" id="4_pgf1q"]
 [ext_resource type="Texture2D" uid="uid://b43bp8hdog3co" path="res://assets/images/ui/button-blank_click.png" id="5_taauw"]
@@ -55,7 +55,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("2_78r6r")
+texture = ExtResource("2_1d5va")
 
 [node name="Timer" type="Timer" parent="UI"]
 wait_time = 5.0
