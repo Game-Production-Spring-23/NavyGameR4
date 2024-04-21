@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://d3qqotkpo8y7m"]
+[gd_scene load_steps=13 format=3 uid="uid://d3qqotkpo8y7m"]
 
 [ext_resource type="Texture2D" uid="uid://c3cpxy6bmy3xh" path="res://assets/images/tilemaps/mountain-tileset.png" id="1_o0bm2"]
 [ext_resource type="Script" path="res://scripts/levels/3-1_snowLevel.gd" id="1_won3p"]
@@ -7,6 +7,7 @@
 [ext_resource type="PackedScene" uid="uid://bfdknr001mevw" path="res://scenes/objects/interactTrigger.tscn" id="4_wwm0k"]
 [ext_resource type="Texture2D" uid="uid://dur204sxmtucf" path="res://assets/images/spritesheets/creature-antenna.png" id="6_2psga"]
 [ext_resource type="PackedScene" uid="uid://dab15f8h7doq8" path="res://scenes/objects/areaTrigger.tscn" id="7_4bj48"]
+[ext_resource type="Texture2D" uid="uid://fcrugqistvbo" path="res://assets/images/spritesheets/creature-antenna-outfit.png" id="8_je4y7"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ryee7"]
 texture = ExtResource("1_o0bm2")
@@ -347,6 +348,9 @@ sources/0 = SubResource("TileSetAtlasSource_ryee7")
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_qgp72"]
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ftmxl"]
+size = Vector2(65, 63)
+
 [node name="3-1SnowLevel" type="Node2D"]
 script = ExtResource("1_won3p")
 
@@ -399,6 +403,20 @@ frame = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D"]
 shape = SubResource("RectangleShape2D_qgp72")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+position = Vector2(1348, 518)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(1, -1.5)
+shape = SubResource("RectangleShape2D_ftmxl")
+
+[node name="Sprite2D" type="Sprite2D" parent="StaticBody2D"]
+position = Vector2(-1.4782e-05, -3.00001)
+scale = Vector2(3.39706, 3)
+texture = ExtResource("8_je4y7")
+region_enabled = true
+region_rect = Rect2(15.0781, 0, 17.5247, 20)
 
 [connection signal="player_interact" from="InteractTrigger" to="." method="_on_interact_trigger_player_interact"]
 [connection signal="player_interact" from="Sprite2D/AreaTrigger" to="." method="_on_area_trigger_player_interact"]

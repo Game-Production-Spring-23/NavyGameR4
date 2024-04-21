@@ -71,4 +71,4 @@ func calcBinary():
 
 func finish_game():
 	await get_tree().create_timer(3.0).timeout
-	gameController.changeScene("testEnd")
+	gameController.changeScene("5-4_dialogue")
