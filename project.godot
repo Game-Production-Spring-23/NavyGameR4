@@ -10,10 +10,11 @@ config_version=5
 
 [application]
 
-config/name="NavyGameR4"
+config/name="Ranger & Roger's Radar Rescue"
 run/main_scene="res://scenes/levels/0-0_mainMenu.tscn"
 config/features=PackedStringArray("4.2", "Forward Plus")
-config/icon="res://icon.svg"
+config/icon="res://roger_128.png"
+config/windows_native_icon="res://assets/images/roger.ico"
 
 [autoload]
 
