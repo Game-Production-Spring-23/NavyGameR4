@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://nnvbw3dtq435"]
 
 [ext_resource type="Script" path="res://scripts/levels/7-3_ending.gd" id="1_thih5"]
-[ext_resource type="Texture2D" uid="uid://c2b175ahm88ie" path="res://assets/images/wip/placeholder.png" id="2_it5e5"]
+[ext_resource type="Texture2D" uid="uid://b1l2bbhdwydyn" path="res://assets/images/intro-cutscene/EndingCutscene1.png" id="2_icdok"]
 
 [node name="Ending" type="Node2D"]
 script = ExtResource("1_thih5")
@@ -14,7 +14,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("2_it5e5")
+texture = ExtResource("2_icdok")
 expand_mode = 1
 metadata/_edit_use_anchors_ = true
 
