@@ -66,33 +66,87 @@ texture = ExtResource("4_w3a8q")
 custom_minimum_size = Vector2(0, 128)
 layout_mode = 2
 
-[node name="Label" type="Label" parent="UI/BackgroundTexture/CreditsScroll"]
+[node name="Label" type="RichTextLabel" parent="UI/BackgroundTexture/CreditsScroll"]
+custom_minimum_size = Vector2(1920, 0)
 layout_mode = 2
 theme = ExtResource("4_ltwnw")
-text = "Produced by: Your Company
-Directed by: Your Name
+bbcode_enabled = true
+text = "[center][font_size=80][u]Art Team:[/u][/font_size]
+Imani Peters
+Art Team Lead, Artist, Voice Actor, Game Designer
+imani.peters3@gmail.com
 
-Lead Developer: Your Name
-Lead Artist: Artist Name
-Lead Music Composer: Composer Name
+Amanda Reising
+Artist, Creature Design Lead, Voice Actor
+am.reising@yahoo.com
 
-Programming Team:
-- Programmer 1
-- Programmer 2
-- Programmer 3
-- Jacob Garwood
+Kylee Dicken
+Pixel Artist
+k@dicken.in
 
-Art Team:
-- Artist 1
-- Artist 2
-- Artist 3
+Regan Pope
+Environment Artist
+reganpope01@yahoo.com
 
-Music Team:
-- Composer 1
-- Composer 2
-- Composer 3"
-horizontal_alignment = 1
-vertical_alignment = 1
+[font_size=80][u]Writing Team:[/u][/font_size]
+Sam Barks
+Writing Team Lead, Voice Acting Team Lead, Game Designer
+sambarks@iu.edu
+	
+Alli Johnson
+Writer, UI/UX Designer, Voice Actor, Game Designer
+allisonrmj@gmail.com
+
+Mohsin Siddiqui
+Writer, Voice Actor, Game Designer
+blazeninjasep04@gmail.com
+
+[font_size=80][u]Programming Team:[/u][/font_size]
+Andrew Choi
+Programming Team Lead, Programmer
+acbay612@gmail.com
+
+CJ Eilenstine
+Animator, Level Designer, Programmer
+cj.eilenstine@gmail.com	
+
+Logan Douglass
+Musician, Sound Designer, Programmer, Voice Actor
+logcdoug@gmail.com
+
+Jacob Garwood 
+Programmer
+garwoodj22@gmail.com
+	
+Zach Dicken 
+Programmer
+zcdicken@gmail.com
+
+Pierce Issah
+Programmer
+pierce_issah@live.com, pissah@iu.edu
+
+[font_size=80][u]Quality Assurance Team:[/u][/font_size]
+Inés Rivera 
+Quality Assurance Tester
+inesmrr3@gmail.com
+	
+John Blue
+Audio mechanic and Quality Assurance Tester
+iam@johnblue.me	
+
+[font_size=80][u]Advisors:[/u][/font_size]
+Mathew A. Powers 
+Art and Writing Team Advisor, Professional Disk Jockey
+matapowe@iu.edu
+
+Todd Shelton
+Programming Team Advisor
+trshelto@iupui.edu
+[/center]
+"
+fit_content = true
+autowrap_mode = 2
 
 [node name="Label2" type="Label" parent="UI/BackgroundTexture/CreditsScroll"]
 layout_mode = 2

@@ -677,7 +677,6 @@ scale = Vector2(5, 5)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
 position = Vector2(4.70001, 0)
-scale = Vector2(1, 1)
 shape = SubResource("RectangleShape2D_yk5js")
 
 [connection signal="player_interact" from="AreaTrigger" to="." method="_on_area_trigger_player_interact"]
