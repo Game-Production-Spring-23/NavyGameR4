@@ -70,4 +70,5 @@ func calcBinary():
 		finish_game()
 
 func finish_game():
+	await get_tree().create_timer(3.0).timeout
 	gameController.changeScene("testEnd")

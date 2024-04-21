@@ -2,6 +2,7 @@ extends Node2D
 
 var isDragging = false
 @onready var boxes = $EquationBoxes.get_children();
+@onready var radar = $Radar/Line2D
 
 func _on_submit_button_pressed():
 	var pos = 1
@@ -16,4 +17,9 @@ func _on_submit_button_pressed():
 			correctEquation = false
 		pos += 1
 	if(correctEquation):
-		gameController.changeScene("6-4_dialogue", null, "res://assets/audio/music/city-body.ogg")
+		end_minigame()
+
+func end_minigame():
+	radar.enableRadar()
+	await get_tree().create_timer(3.0).timeout
+	gameController.changeScene("6-4_dialogue", null, "res://assets/audio/music/city-body.ogg")

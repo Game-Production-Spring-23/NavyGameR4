@@ -64,4 +64,5 @@ func swap_tiles(pos):
 			gameController.triggerDialogue("chapter3", "chapter3_4")
 
 func finish_game():
+	await get_tree().create_timer(3.0).timeout
 	gameController.changeScene("3-4_dialogue", "res://assets/audio/music/mountain-intro.ogg", "res://assets/audio/music/mountain-body.ogg")
