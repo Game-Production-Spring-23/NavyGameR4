@@ -1,10 +1,10 @@
 ~ finalReview_1
 Ranger: Now that we have all the pieces, I can put the radar back together! Time to show y'all how a radar technician does it! [ID:te02d4d1946]
-
 Daria: Hey grumps, I would like to say thanks for letting me help you through this journey. You’ve inspired me, I would love to be a ranger like you! [ID:t4f29e28100]
 Ranger: Well Daria, we would be honored to have you! Although typically you have to be an adult... [ID:t4f60aff62f]
 Daria: I'm 34 Ranger. [ID:t62eaf651ef] 
 Ranger: Really? Well, you can come with us then and we can get you to a recruiter. [ID:t64bcac4ef1]
+do loadFinalReview()
 => END!
 
 # REVIEW QUESTIONS
@@ -44,8 +44,7 @@ ROGER: What kind of waves does the radar use? [ID:t0eb693354c]
 - Microwaves. [ID:t4ec936e578] 
 	ROGER: Correct! [ID:t1fba75170b]
 	do gameController.rootCall("answer", true)
-=> END!
-
+=> END
 ~ reviewQuestion4
 ROGER: What is a Control Unit? [ID:ta12405df9c] 
 - It refers to the electromagnetic wave that relates to the energy of the radar [ID:tfb44e1949e] 
@@ -81,7 +80,7 @@ ROGER: The signal a radar receives is typically smaller than what is transmitted
 - Transmit Because of scattering and attenuation losses as waves travel through its medium. [ID:t648addbeef]
 	ROGER: Correct! [ID:ta8944f1a0a]
 	do gameController.rootCall("answer", true)
-=> END!  
+=> END
 ~ reviewQuestion7
 ROGER: What equation is this for? [ID:t607b55ed5c]
 - Gamma [ID:t173992fd1d]
@@ -118,8 +117,7 @@ ROGER: What happens when gain is too high? [ID:t55a6556022]
 - Transmit The shape becomes more spaced out [ID:te764f80b25] 
 	ROGER: Correct! [ID:t66c0970dc9]
 	do gameController.rootCall("answer", true)
-=> END!
-
+=> END
 ~ reviewQuestion10
 ROGER: What Three Properties affect waves? [ID:td2d25a9e64] 
 - Amplitude, Frequency, and Wavelength [ID:t5d181a53f6]
@@ -188,10 +186,9 @@ ROGER: What is the Signal Processor made of? [ID:t8c6f485739]
 	ROGER: Correct! [ID:t3d53581761]
 	do gameController.rootCall("answer", true)
 - Program and Data Memory, the Radio Signal, and The Input and Output [ID:t55334ad52a] 
-
 	ROGER: Incorrect, please try again [ID:t231ba63290]
 	do gameController.rootCall("answer", false)
-=> END!
+=> END
 ~ reviewQuestion16
 ROGER: What is SNR (Signal to Noise Ratio)? [ID:t0b268ba6f4] 
 - The Measure of the data (signal) compared to the receiver antenna power(noise) \n received by the antenna. [ID:tc7083e5268] 
@@ -230,44 +227,31 @@ ROGER: What equation is used for SNR? [ID:t0050919b16]
 => END!
 
 
-
-
-
-
 ~ finalReview_2
 Ranger: That should do it. [ID:tb424377ee6]
-
 ROGER: Ranger? What's going on- WHAT HAPPENED! [ID:ta1360ac25a]
-
 Ranger: Oh yeah ROGER, you had to be rebooted because of the crash. The radar being rebuilt must've brought everything back. [ID:ta869f14eb2]
-
 ROGER: Sheesh, seems like I missed a lot! I’ll get started on ship repairs! While I get that done, it seems you have some visitors outside. [ID:tb0c8a277be]
+do loadFinalDialogue_pt3()
 => END!
+
 ~ finalReview_3 
 Yosie: Whoooaaaaaaaa. That ship is a beaut! [ID:t01a16c277f]
-
 Ranger: Hey everyone, what are you all doing here? [ID:tc96ebac397]
-
 GoGo Babby: Well, we heard you were leaving soon, and Daria invited us over to see the ship. [ID:t0f9fc9fcb4]
-
 Selco: I have to say goodbye to my arch-rival after all. [ID:ta79f13e131]
-
 Techra: We also wanted to thank you for everything you did for us! [ID:td656131f22]
-
 Travin: And here I thought the Control Unit was complex. That ship must be something else. [ID:t368d918226]
-
 Ranger: Since everyone is here, I can give you all a quick explanation about the Radar. [ID:t949e637bc6]
-
 Daria: It could be good information for when I join the Ranger Corps. Please do! [ID:t92d23d7edc]
+do loadFinalDialogue_pt4()
 => END!
+
 ~ finalReview_4
 Ranger: Looks like everything is good here. ROGER, how's it looking? [ID:t8f1e10c031]
-
 ROGER: Everything is up and running sir. I have to say, it's been a while since I have seen you so relaxed. This adventure must've helped you out a lot. [ID:t7752f6390f]
-
 Ranger: As much as I love this place, work doesn't stop for anyone. ROGER, set a route back to IUI! [ID:t4c7dffdfea]
-
 ROGER: Affirmative! [ID:t8064cafd86]
-
 Daria: Let's goooo! [ID:t001c6517a4]
+do loadEnding()
 => END!
