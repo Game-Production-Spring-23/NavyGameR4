@@ -104,7 +104,7 @@ ROGER: What connects the device to the Signal Processor? [ID:td0ad1dc823]
 => END
 ~ reviewQuestion2
 ROGER: What does the Signal Processor do? [ID:t21924e444b]  
-- Transmit Takes a signal and Interprets it [ID:t75ecb179fa] 
+-  Takes a signal and Interprets it [ID:t75ecb179fa] 
 	ROGER: Correct! [ID:t525c804118]
 	do gameController.rootCall("answer", true)
 - Sends the signal out to other Radars [ID:tef35bf5f9b] 
