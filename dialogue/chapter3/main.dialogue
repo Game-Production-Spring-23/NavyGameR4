@@ -71,7 +71,7 @@ ROGER: What equation is this for? [ID:t607b55ed5c]
 => END
 ~ reviewQuestion2
 ROGER: What happens when gain is too high? [ID:t1f376ca8b8]
-- Transmit The shape becomes fixated in a position. [ID:tc2deffa834]
+- The shape becomes fixated in a position. [ID:tc2deffa834]
 	ROGER: Correct! [ID:t335e98647b]
 	do gameController.rootCall("answer", true)
 - The shape is equaled out [ID:t1c7dc4d3fe]
@@ -89,7 +89,7 @@ ROGER: What happens when gain is too low? [ID:t55a6556022]
 - The shape is equaled out [ID:t492dd2e2e2]
 	ROGER: Incorrect, please try again [ID:t09d9fa5581]
 	do gameController.rootCall("answer", false)
-- Transmit The shape becomes more spaced out [ID:te764f80b25] 
+- The shape becomes more spaced out [ID:te764f80b25] 
 	ROGER: Correct! [ID:t66c0970dc9]
 	do gameController.rootCall("answer", true)
 => END!
