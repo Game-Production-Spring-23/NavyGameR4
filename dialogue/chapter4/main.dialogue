@@ -109,7 +109,7 @@ ROGER: What Three Properties affect waves? [ID:td2d25a9e64]
 => END
 ~ reviewQuestion2
 ROGER: What is Velocity? [ID:t8d19140274] 
-- Transmit The speed at which the wave moves through a given medium [ID:tdbf00c20a9] 
+- The speed at which the wave moves through a given medium [ID:tdbf00c20a9] 
 	ROGER: Correct! [ID:t5f5f282d8f]
 	do gameController.rootCall("answer", true)
 - the time it takes for the wave to go through one cycle [ID:t64c001666b] 

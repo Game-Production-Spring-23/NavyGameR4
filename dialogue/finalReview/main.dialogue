@@ -77,7 +77,7 @@ ROGER: The signal a radar receives is typically smaller than what is transmitted
 - Because of the wave functions traveling through the air [ID:t70efeea5da] 
 	ROGER: Incorrect, please try again [ID:t0e9c64fe4c]
 	do gameController.rootCall("answer", false)
-- Transmit Because of scattering and attenuation losses as waves travel through its medium. [ID:t648addbeef]
+- Because of scattering and attenuation losses as waves travel through its medium. [ID:t648addbeef]
 	ROGER: Correct! [ID:ta8944f1a0a]
 	do gameController.rootCall("answer", true)
 => END
@@ -96,7 +96,7 @@ ROGER: What equation is this for? [ID:t607b55ed5c]
 => END
 ~ reviewQuestion8
 ROGER: What happens when gain is too high? [ID:t1f376ca8b8]
-- Transmit The shape becomes fixated in a position. [ID:tc2deffa834]
+- The shape becomes fixated in a position. [ID:tc2deffa834]
 	ROGER: Correct! [ID:t335e98647b]
 	do gameController.rootCall("answer", true)
 - The shape is equaled out [ID:t1c7dc4d3fe]
@@ -132,7 +132,7 @@ ROGER: What Three Properties affect waves? [ID:td2d25a9e64]
 => END
 ~ reviewQuestion11
 ROGER: What is Velocity? [ID:t8d19140274] 
-- Transmit The speed at which the wave moves through a given medium [ID:tdbf00c20a9] 
+-  The speed at which the wave moves through a given medium [ID:tdbf00c20a9] 
 	ROGER: Correct! [ID:t5f5f282d8f]
 	do gameController.rootCall("answer", true)
 - the time it takes for the wave to go through one cycle [ID:t64c001666b] 
@@ -167,7 +167,7 @@ ROGER: What connects the device to the Signal Processor? [ID:td0ad1dc823]
 => END
 ~ reviewQuestion14
 ROGER: What does the Signal Processor do? [ID:t21924e444b]  
-- Transmit Takes a signal and Interprets it [ID:t75ecb179fa] 
+-  Takes a signal and Interprets it [ID:t75ecb179fa] 
 	ROGER: Correct! [ID:t525c804118]
 	do gameController.rootCall("answer", true)
 - Sends the signal out to other Radars [ID:tef35bf5f9b] 
