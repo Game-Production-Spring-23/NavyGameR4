@@ -36,7 +36,7 @@ t21d0ffe89f,"Well, here is your Signal Processor. Before you leave, you can alwa
 td9452ac7bd,Thanks!
 tac6a2217ad,"All we need now is the Display, then we have all our parts for our Radar."
 t26b418ca36,"Hey, since we are here, can you direct us to which way the city is?"
-t866ba195c7,"Oh sure, the city's entrance should be ahead."
+t866ba195c7,"Oh sure, the city's entrance is right ahead."
 tbe1c0b45a1,About time we got to that city. Let's go!
 td0ad1dc823,What connects the device to the Signal Processor?
 t53dbd632bd,The Compute Engine
@@ -46,7 +46,7 @@ t6b4cef582e,Correct!
 tece3c44625,The Radio Signal
 t390f562d65,"Incorrect, please try again"
 t21924e444b,What does the Signal Processor do?
-t75ecb179fa,Transmit Takes a signal and Interprets it
+t75ecb179fa,Takes a signal and Interprets it
 t525c804118,Correct!
 tef35bf5f9b,Sends the signal out to other Radars
 tfc8da0cbb6,"Incorrect, please try again"
