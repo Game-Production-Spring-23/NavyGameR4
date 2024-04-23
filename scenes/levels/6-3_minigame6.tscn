@@ -17,7 +17,7 @@
 [ext_resource type="Texture2D" uid="uid://dhaj7ugamct2f" path="res://assets/images/dialogue/messageBox.png" id="14_s6s2r"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_u1eyj"]
-size = Vector2(120, 120)
+size = Vector2(60, 60)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_yf80c"]
 size = Vector2(120, 120)
@@ -267,7 +267,7 @@ shape = SubResource("RectangleShape2D_u1eyj")
 [node name="Pieces" type="Node2D" parent="."]
 
 [node name="equationPiece" type="Area2D" parent="Pieces"]
-position = Vector2(470, 488)
+position = Vector2(470, 526)
 script = ExtResource("1_lk08s")
 correctPos = 3
 
@@ -280,6 +280,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+tooltip_text = "Correct?"
 texture = ExtResource("8_ycvcu")
 stretch_mode = 2
 
@@ -299,7 +300,7 @@ horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="equationPiece2" type="Area2D" parent="Pieces"]
-position = Vector2(615, 480)
+position = Vector2(626, 525)
 script = ExtResource("1_lk08s")
 correctPos = -1
 
@@ -312,6 +313,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+tooltip_text = "Wrong"
 texture = ExtResource("8_ycvcu")
 stretch_mode = 2
 
@@ -348,40 +350,8 @@ text = "2"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="equationPiece3" type="Area2D" parent="Pieces"]
-position = Vector2(756, 484)
-script = ExtResource("1_lk08s")
-correctPos = -1
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Pieces/equationPiece3"]
-shape = SubResource("RectangleShape2D_yf80c")
-
-[node name="ColorRect" type="TextureRect" parent="Pieces/equationPiece3"]
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-texture = ExtResource("8_ycvcu")
-stretch_mode = 2
-
-[node name="RichTextLabel" type="Label" parent="Pieces/equationPiece3/ColorRect"]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-mouse_filter = 1
-theme = ExtResource("4_y74l6")
-theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_font_sizes/font_size = 40
-text = "S/t"
-horizontal_alignment = 1
-vertical_alignment = 1
-
 [node name="equationPiece4" type="Area2D" parent="Pieces"]
-position = Vector2(906, 486)
+position = Vector2(769, 511)
 script = ExtResource("1_lk08s")
 correctPos = 1
 
@@ -394,6 +364,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+tooltip_text = "Correct?"
 texture = ExtResource("8_ycvcu")
 stretch_mode = 2
 
@@ -413,7 +384,7 @@ horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="equationPiece5" type="Area2D" parent="Pieces"]
-position = Vector2(1058, 488)
+position = Vector2(921, 522)
 script = ExtResource("1_lk08s")
 correctPos = -1
 
@@ -426,6 +397,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+tooltip_text = "Wrong"
 texture = ExtResource("8_ycvcu")
 stretch_mode = 2
 
@@ -463,7 +435,7 @@ horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="equationPiece6" type="Area2D" parent="Pieces"]
-position = Vector2(475, 618)
+position = Vector2(1059, 519)
 script = ExtResource("1_lk08s")
 correctPos = -1
 
@@ -476,6 +448,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+tooltip_text = "Wrong"
 texture = ExtResource("8_ycvcu")
 stretch_mode = 2
 
@@ -494,72 +467,8 @@ text = "P/r"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="equationPiece7" type="Area2D" parent="Pieces"]
-position = Vector2(622, 620)
-script = ExtResource("1_lk08s")
-correctPos = -1
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Pieces/equationPiece7"]
-shape = SubResource("RectangleShape2D_yf80c")
-
-[node name="ColorRect" type="TextureRect" parent="Pieces/equationPiece7"]
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-texture = ExtResource("8_ycvcu")
-stretch_mode = 2
-
-[node name="RichTextLabel" type="Label" parent="Pieces/equationPiece7/ColorRect"]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-mouse_filter = 1
-theme = ExtResource("4_y74l6")
-theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_font_sizes/font_size = 40
-text = "N_s"
-horizontal_alignment = 1
-vertical_alignment = 1
-
-[node name="equationPiece8" type="Area2D" parent="Pieces"]
-position = Vector2(760, 621)
-script = ExtResource("1_lk08s")
-correctPos = -1
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Pieces/equationPiece8"]
-shape = SubResource("RectangleShape2D_yf80c")
-
-[node name="ColorRect" type="TextureRect" parent="Pieces/equationPiece8"]
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-texture = ExtResource("8_ycvcu")
-stretch_mode = 2
-
-[node name="RichTextLabel" type="Label" parent="Pieces/equationPiece8/ColorRect"]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-mouse_filter = 1
-theme = ExtResource("4_y74l6")
-theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_font_sizes/font_size = 40
-text = "N_b"
-horizontal_alignment = 1
-vertical_alignment = 1
-
 [node name="equationPiece9" type="Area2D" parent="Pieces"]
-position = Vector2(905, 620)
+position = Vector2(476, 696)
 script = ExtResource("1_lk08s")
 correctPos = 4
 
@@ -572,6 +481,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+tooltip_text = "Correct?"
 texture = ExtResource("8_ycvcu")
 stretch_mode = 2
 
@@ -590,40 +500,8 @@ text = "T_s"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="equationPiece10" type="Area2D" parent="Pieces"]
-position = Vector2(1065, 621)
-script = ExtResource("1_lk08s")
-correctPos = -1
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Pieces/equationPiece10"]
-shape = SubResource("RectangleShape2D_yf80c")
-
-[node name="ColorRect" type="TextureRect" parent="Pieces/equationPiece10"]
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-texture = ExtResource("8_ycvcu")
-stretch_mode = 2
-
-[node name="RichTextLabel" type="Label" parent="Pieces/equationPiece10/ColorRect"]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-mouse_filter = 1
-theme = ExtResource("4_y74l6")
-theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_font_sizes/font_size = 40
-text = "N/s"
-horizontal_alignment = 1
-vertical_alignment = 1
-
 [node name="equationPiece11" type="Area2D" parent="Pieces"]
-position = Vector2(469, 760)
+position = Vector2(628, 710)
 script = ExtResource("1_lk08s")
 correctPos = 2
 
@@ -636,6 +514,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+tooltip_text = "Correct?"
 texture = ExtResource("8_ycvcu")
 stretch_mode = 2
 
@@ -654,40 +533,8 @@ text = "P_r"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="equationPiece12" type="Area2D" parent="Pieces"]
-position = Vector2(627, 764)
-script = ExtResource("1_lk08s")
-correctPos = -1
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Pieces/equationPiece12"]
-shape = SubResource("RectangleShape2D_yf80c")
-
-[node name="ColorRect" type="TextureRect" parent="Pieces/equationPiece12"]
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-texture = ExtResource("8_ycvcu")
-stretch_mode = 2
-
-[node name="RichTextLabel" type="Label" parent="Pieces/equationPiece12/ColorRect"]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-mouse_filter = 1
-theme = ExtResource("4_y74l6")
-theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_font_sizes/font_size = 40
-text = "R_p"
-horizontal_alignment = 1
-vertical_alignment = 1
-
 [node name="equationPiece13" type="Area2D" parent="Pieces"]
-position = Vector2(767, 765)
+position = Vector2(767, 703)
 script = ExtResource("1_lk08s")
 correctPos = -1
 
@@ -700,6 +547,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+tooltip_text = "Wrong"
 texture = ExtResource("8_ycvcu")
 stretch_mode = 2
 
@@ -719,7 +567,7 @@ horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="equationPiece14" type="Area2D" parent="Pieces"]
-position = Vector2(920, 765)
+position = Vector2(920, 703)
 script = ExtResource("1_lk08s")
 correctPos = 5
 
@@ -732,6 +580,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+tooltip_text = "Correct?"
 texture = ExtResource("8_ycvcu")
 stretch_mode = 2
 
@@ -751,7 +600,7 @@ horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="equationPiece15" type="Area2D" parent="Pieces"]
-position = Vector2(1056, 769)
+position = Vector2(1056, 707)
 script = ExtResource("1_lk08s")
 correctPos = -1
 
@@ -764,6 +613,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+tooltip_text = "Wrong"
 texture = ExtResource("8_ycvcu")
 stretch_mode = 2
 
@@ -854,10 +704,6 @@ autoplay = "fadeout"
 [connection signal="body_exited" from="Pieces/equationPiece2" to="Pieces/equationPiece2" method="_on_body_exited"]
 [connection signal="mouse_entered" from="Pieces/equationPiece2" to="Pieces/equationPiece2" method="_on_mouse_entered"]
 [connection signal="mouse_exited" from="Pieces/equationPiece2" to="Pieces/equationPiece2" method="_on_mouse_exited"]
-[connection signal="body_entered" from="Pieces/equationPiece3" to="Pieces/equationPiece3" method="_on_body_entered"]
-[connection signal="body_exited" from="Pieces/equationPiece3" to="Pieces/equationPiece3" method="_on_body_exited"]
-[connection signal="mouse_entered" from="Pieces/equationPiece3" to="Pieces/equationPiece3" method="_on_mouse_entered"]
-[connection signal="mouse_exited" from="Pieces/equationPiece3" to="Pieces/equationPiece3" method="_on_mouse_exited"]
 [connection signal="body_entered" from="Pieces/equationPiece4" to="Pieces/equationPiece4" method="_on_body_entered"]
 [connection signal="body_exited" from="Pieces/equationPiece4" to="Pieces/equationPiece4" method="_on_body_exited"]
 [connection signal="mouse_entered" from="Pieces/equationPiece4" to="Pieces/equationPiece4" method="_on_mouse_entered"]
@@ -870,30 +716,14 @@ autoplay = "fadeout"
 [connection signal="body_exited" from="Pieces/equationPiece6" to="Pieces/equationPiece6" method="_on_body_exited"]
 [connection signal="mouse_entered" from="Pieces/equationPiece6" to="Pieces/equationPiece6" method="_on_mouse_entered"]
 [connection signal="mouse_exited" from="Pieces/equationPiece6" to="Pieces/equationPiece6" method="_on_mouse_exited"]
-[connection signal="body_entered" from="Pieces/equationPiece7" to="Pieces/equationPiece7" method="_on_body_entered"]
-[connection signal="body_exited" from="Pieces/equationPiece7" to="Pieces/equationPiece7" method="_on_body_exited"]
-[connection signal="mouse_entered" from="Pieces/equationPiece7" to="Pieces/equationPiece7" method="_on_mouse_entered"]
-[connection signal="mouse_exited" from="Pieces/equationPiece7" to="Pieces/equationPiece7" method="_on_mouse_exited"]
-[connection signal="body_entered" from="Pieces/equationPiece8" to="Pieces/equationPiece8" method="_on_body_entered"]
-[connection signal="body_exited" from="Pieces/equationPiece8" to="Pieces/equationPiece8" method="_on_body_exited"]
-[connection signal="mouse_entered" from="Pieces/equationPiece8" to="Pieces/equationPiece8" method="_on_mouse_entered"]
-[connection signal="mouse_exited" from="Pieces/equationPiece8" to="Pieces/equationPiece8" method="_on_mouse_exited"]
 [connection signal="body_entered" from="Pieces/equationPiece9" to="Pieces/equationPiece9" method="_on_body_entered"]
 [connection signal="body_exited" from="Pieces/equationPiece9" to="Pieces/equationPiece9" method="_on_body_exited"]
 [connection signal="mouse_entered" from="Pieces/equationPiece9" to="Pieces/equationPiece9" method="_on_mouse_entered"]
 [connection signal="mouse_exited" from="Pieces/equationPiece9" to="Pieces/equationPiece9" method="_on_mouse_exited"]
-[connection signal="body_entered" from="Pieces/equationPiece10" to="Pieces/equationPiece10" method="_on_body_entered"]
-[connection signal="body_exited" from="Pieces/equationPiece10" to="Pieces/equationPiece10" method="_on_body_exited"]
-[connection signal="mouse_entered" from="Pieces/equationPiece10" to="Pieces/equationPiece10" method="_on_mouse_entered"]
-[connection signal="mouse_exited" from="Pieces/equationPiece10" to="Pieces/equationPiece10" method="_on_mouse_exited"]
 [connection signal="body_entered" from="Pieces/equationPiece11" to="Pieces/equationPiece11" method="_on_body_entered"]
 [connection signal="body_exited" from="Pieces/equationPiece11" to="Pieces/equationPiece11" method="_on_body_exited"]
 [connection signal="mouse_entered" from="Pieces/equationPiece11" to="Pieces/equationPiece11" method="_on_mouse_entered"]
 [connection signal="mouse_exited" from="Pieces/equationPiece11" to="Pieces/equationPiece11" method="_on_mouse_exited"]
-[connection signal="body_entered" from="Pieces/equationPiece12" to="Pieces/equationPiece12" method="_on_body_entered"]
-[connection signal="body_exited" from="Pieces/equationPiece12" to="Pieces/equationPiece12" method="_on_body_exited"]
-[connection signal="mouse_entered" from="Pieces/equationPiece12" to="Pieces/equationPiece12" method="_on_mouse_entered"]
-[connection signal="mouse_exited" from="Pieces/equationPiece12" to="Pieces/equationPiece12" method="_on_mouse_exited"]
 [connection signal="body_entered" from="Pieces/equationPiece13" to="Pieces/equationPiece13" method="_on_body_entered"]
 [connection signal="body_exited" from="Pieces/equationPiece13" to="Pieces/equationPiece13" method="_on_body_exited"]
 [connection signal="mouse_entered" from="Pieces/equationPiece13" to="Pieces/equationPiece13" method="_on_mouse_entered"]

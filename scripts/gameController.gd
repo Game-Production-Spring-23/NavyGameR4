@@ -5,6 +5,7 @@ var textSpeed = 1
 var characterCanMove = true
 @onready var animationPlayer = $ScreenTransition/FadeScreen/AnimationPlayer
 var busIndex = AudioServer.get_bus_index("Music")
+@onready var radarAnimationPlayer = $ScreenTransition/Radar/AnimationPlayer
 
 var chapterSelect
 var chapterIntro
@@ -62,6 +63,20 @@ func changeMusic(intro, body):
 	else:
 		playBody()
 	
+func radarPartCollected(parts):
+	radarAnimationPlayer.play("RESET")
+	radarAnimationPlayer.play("show")
+	await radarAnimationPlayer.animation_finished
+	if(parts <= 5 and parts > 0):
+		radarAnimationPlayer.play("part" + str(parts))
+		await radarAnimationPlayer.animation_finished
+	elif(parts >= 6):
+		for i in range(5):
+			radarAnimationPlayer.play("part" + str(i + 1))
+			await radarAnimationPlayer.animation_finished
+	await get_tree().create_timer(3.0).timeout
+	radarAnimationPlayer.play_backwards("show")
+
 
 #slightly inelegant - possible to take the playback time when it is paused and pass it back in to start at the time it was paused
 func playIntro():

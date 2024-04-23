@@ -22,6 +22,7 @@ func loadCommsDialogue():
 	animationPlayer.play("Fade")
 	await animationPlayer.animation_finished
 	animationPlayer.play_backwards("Fade")
+	gameController.radarPartCollected(0)
 	gameController.triggerDialogue("chapter1", "tutorial5")
 
 # Loads review 1

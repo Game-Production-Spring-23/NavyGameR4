@@ -22,6 +22,7 @@ func answer(correct):
 			question()
 		else:
 		# If the player reaches the last question
+			await gameController.radarPartCollected(2)
 			gameController.changeScene("4-0_desertSplash")
 	else:
 		question()  

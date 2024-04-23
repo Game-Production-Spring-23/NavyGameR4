@@ -54,6 +54,7 @@ func loadFinalDialogue_pt2():
 	animationPlayer.play("Fade")
 	await animationPlayer.animation_finished
 	animationPlayer.play_backwards("Fade")
+	await gameController.radarPartCollected(6)
 	gameController.triggerDialogue("finalReview", "finalReview_2")
 
 # Loads dialouge after part 2

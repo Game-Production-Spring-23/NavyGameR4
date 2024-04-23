@@ -20,6 +20,7 @@ func answer(correct):
 			question()
 		else:
 		# If the player reaches the last question
+			await gameController.radarPartCollected(1)
 			gameController.changeScene("3-0_mountainSplash")
 	else:
 		question()  
