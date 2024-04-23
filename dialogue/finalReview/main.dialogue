@@ -107,7 +107,7 @@ ROGER: What happens when gain is too high? [ID:t1f376ca8b8]
 	do gameController.rootCall("answer", false)
 => END
 ~ reviewQuestion9
-ROGER: What happens when gain is too high? [ID:t55a6556022]
+ROGER: What happens when gain is too low? [ID:t55a6556022]
 - The shape becomes fixated in a position. [ID:t14e07eb8e5]
 	ROGER: Incorrect, please try again [ID:tbd35fa695d]
 	do gameController.rootCall("answer", false)
