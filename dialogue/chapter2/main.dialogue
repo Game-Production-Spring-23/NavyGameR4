@@ -16,7 +16,7 @@ do gameController.characterCanMove = true
 ~ chapter2_NPC_3
 Daria: Sorry to bother you, but have you seen anyone with a weird device? [ID:t383544819b]
 
-Trolum: [#type = trolum3] Well, Travin just came by saying that they found this weird Geode while scavenging. It was a square rock with these weird items on the right and a transparent rock on the left. [ID:tb55b87b074] 
+Trolum: [#type = trolum3] Well, Travin just came by saying that they found some weird Geode while scavenging. It was a square rock with these weird items on the right and a transparent rock on the left. [ID:tb55b87b074] 
 
 Ranger: That must be the Control Unit! Where is Travin right now? [ID:te0a7cc9cf9]
 Trolum: [#type = trolum3] He runs a shop next door. It's hard to miss. [ID:tf142fb31bc]
