@@ -1,26 +1,29 @@
-[gd_scene load_steps=21 format=3 uid="uid://dr3r3rfev3qeb"]
+[gd_scene load_steps=28 format=3 uid="uid://c066sishnvldq"]
 
-[ext_resource type="Script" path="res://scripts/levels/6-3_minigame6.gd" id="1_6yxga"]
-[ext_resource type="Script" path="res://scripts/levels/6-3_equationPiece.gd" id="1_lk08s"]
-[ext_resource type="Texture2D" uid="uid://cfvehvkju1pa1" path="res://assets/images/sprites/minigame_6/Minigame6Background.png" id="3_15cqq"]
-[ext_resource type="Script" path="res://scripts/levels/6-3_equationBox.gd" id="3_b8t1b"]
-[ext_resource type="FontFile" uid="uid://bgsxfdq87axtb" path="res://assets/fonts/PixeloidSans-mLxMm.ttf" id="3_pkofn"]
-[ext_resource type="Texture2D" uid="uid://dd2eoy4d1ygwj" path="res://assets/images/sprites/minigame_6/Minigame6_Radar.png" id="3_yskcq"]
-[ext_resource type="Script" path="res://scripts/player/radarLine.gd" id="4_a8utj"]
-[ext_resource type="Theme" uid="uid://dvij0s1xehu3a" path="res://assets/themes/subheaderTheme.tres" id="4_y74l6"]
-[ext_resource type="Texture2D" uid="uid://bh82s8bjutkd8" path="res://assets/images/sprites/minigame_6/Minigame6_EquationSquare.png" id="5_grpx1"]
-[ext_resource type="Texture2D" uid="uid://bxs1vo28etr24" path="res://assets/images/sprites/minigame_6/Minigame6_WhiteSquare.png" id="8_ycvcu"]
-[ext_resource type="Texture2D" uid="uid://56gnlhh1xqn4" path="res://assets/images/sprites/minigame_6/Minigame6_SubmitButton.png" id="10_lpe5n"]
-[ext_resource type="Texture2D" uid="uid://bjm48hp8o7fqr" path="res://assets/images/sprites/minigame_6/Minigame6_SubmitButtonPressed.png" id="11_sr0gf"]
-[ext_resource type="FontFile" uid="uid://blpf7l45pndyk" path="res://assets/fonts/Retro Gaming.ttf" id="12_6onxo"]
-[ext_resource type="Texture2D" uid="uid://d0rvvmo1pjc4l" path="res://assets/images/sprites/minigame_6/Minigame6_SubmitButtonHover.png" id="12_aygpy"]
-[ext_resource type="Texture2D" uid="uid://dhaj7ugamct2f" path="res://assets/images/dialogue/messageBox.png" id="14_s6s2r"]
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_u1eyj"]
-size = Vector2(60, 60)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_yf80c"]
-size = Vector2(120, 120)
+[ext_resource type="Script" path="res://scripts/levels/6-3_minigame6.gd" id="1_xy8q8"]
+[ext_resource type="Texture2D" uid="uid://dd2eoy4d1ygwj" path="res://assets/images/sprites/minigame_6/Minigame6_Radar.png" id="2_8qphm"]
+[ext_resource type="Script" path="res://scripts/player/radarLine.gd" id="3_olrg5"]
+[ext_resource type="Texture2D" uid="uid://cfvehvkju1pa1" path="res://assets/images/sprites/minigame_6/Minigame6Background.png" id="4_l6nuq"]
+[ext_resource type="FontFile" uid="uid://bgsxfdq87axtb" path="res://assets/fonts/PixeloidSans-mLxMm.ttf" id="5_4gwkx"]
+[ext_resource type="Script" path="res://scripts/levels/6-3_equationPiece.gd" id="5_5kpma"]
+[ext_resource type="Script" path="res://scripts/levels/6-3_equationData.gd" id="6_2tyu2"]
+[ext_resource type="Texture2D" uid="uid://bh82s8bjutkd8" path="res://assets/images/sprites/minigame_6/Minigame6_EquationSquare.png" id="7_e5n35"]
+[ext_resource type="Texture2D" uid="uid://dyj5bwi307ffd" path="res://assets/images/sprites/minigame_6/Minigame6_Piece01.png" id="7_x4qd5"]
+[ext_resource type="Texture2D" uid="uid://cch21k0rjf32e" path="res://assets/images/sprites/minigame_6/Minigame6_Piece02.png" id="8_4kpwf"]
+[ext_resource type="Texture2D" uid="uid://c3ejbc0goi3e2" path="res://assets/images/sprites/minigame_6/Minigame6_Piece03.png" id="9_sajm1"]
+[ext_resource type="Texture2D" uid="uid://dqfunue1bfft8" path="res://assets/images/sprites/minigame_6/Minigame6_Piece04.png" id="10_47d8c"]
+[ext_resource type="Theme" uid="uid://dvij0s1xehu3a" path="res://assets/themes/subheaderTheme.tres" id="10_jbh8b"]
+[ext_resource type="Texture2D" uid="uid://56gnlhh1xqn4" path="res://assets/images/sprites/minigame_6/Minigame6_SubmitButton.png" id="11_0r2x3"]
+[ext_resource type="Texture2D" uid="uid://c0v1qua65oo7b" path="res://assets/images/sprites/minigame_6/Minigame6_Piece05.png" id="11_5d8wh"]
+[ext_resource type="Texture2D" uid="uid://ckradayfd02m7" path="res://assets/images/sprites/minigame_6/Minigame6_Piece06.png" id="12_b3swi"]
+[ext_resource type="Texture2D" uid="uid://bjm48hp8o7fqr" path="res://assets/images/sprites/minigame_6/Minigame6_SubmitButtonPressed.png" id="12_r6web"]
+[ext_resource type="Texture2D" uid="uid://nwowjqxnn465" path="res://assets/images/sprites/minigame_6/Minigame6_Piece07.png" id="13_jr2i7"]
+[ext_resource type="Texture2D" uid="uid://d0rvvmo1pjc4l" path="res://assets/images/sprites/minigame_6/Minigame6_SubmitButtonHover.png" id="13_tbg7m"]
+[ext_resource type="FontFile" uid="uid://blpf7l45pndyk" path="res://assets/fonts/Retro Gaming.ttf" id="14_d0b4m"]
+[ext_resource type="Texture2D" uid="uid://bblebd0wc81u" path="res://assets/images/sprites/minigame_6/Minigame6_Piece08.png" id="14_w1bu3"]
+[ext_resource type="Texture2D" uid="uid://dhaj7ugamct2f" path="res://assets/images/dialogue/messageBox.png" id="15_jhqph"]
+[ext_resource type="Texture2D" uid="uid://2wdy0epsilc2" path="res://assets/images/sprites/minigame_6/Minigame6_Piece09.png" id="15_vxj2n"]
+[ext_resource type="Texture2D" uid="uid://bp5jy1dty2pdy" path="res://assets/images/sprites/minigame_6/Minigame6_Piece10.png" id="16_m3jjc"]
 
 [sub_resource type="Animation" id="Animation_t1e7d"]
 length = 0.001
@@ -60,579 +63,296 @@ _data = {
 }
 
 [node name="6-3Minigame6" type="Node2D"]
-script = ExtResource("1_6yxga")
+script = ExtResource("1_xy8q8")
 
 [node name="Radar" type="TextureRect" parent="."]
 offset_right = 1927.0
 offset_bottom = 1090.0
-texture = ExtResource("3_yskcq")
+texture = ExtResource("2_8qphm")
 
 [node name="Line2D" type="Line2D" parent="Radar"]
 position = Vector2(1353, 407)
 points = PackedVector2Array(0, 0, 0, -400)
 width = 3.0
 default_color = Color(0.0352941, 1, 0.490196, 1)
-script = ExtResource("4_a8utj")
+script = ExtResource("3_olrg5")
 
 [node name="Background" type="TextureRect" parent="."]
 offset_right = 1927.0
 offset_bottom = 1090.0
-texture = ExtResource("3_15cqq")
+texture = ExtResource("4_l6nuq")
 
-[node name="EquationSymbols" type="Control" parent="."]
-layout_mode = 3
-anchor_left = 0.207
-anchor_top = 0.241
-anchor_right = 0.595
-anchor_bottom = 0.365
-offset_left = 393.0
-offset_top = 255.0
-offset_right = 393.324
-offset_bottom = 255.0
-mouse_filter = 1
-
-[node name="equal" type="Label" parent="EquationSymbols"]
+[node name="Equation" type="HBoxContainer" parent="Background"]
 layout_mode = 1
 anchors_preset = -1
-anchor_left = 0.167
-anchor_right = 0.209
-anchor_bottom = 0.956
-offset_left = 132.946
-offset_top = 45.0
-offset_right = 150.932
-offset_bottom = 94.0
-theme_override_fonts/font = ExtResource("3_pkofn")
+anchor_left = 0.211
+anchor_top = 0.234
+anchor_right = 0.591
+anchor_bottom = 0.344
+offset_left = 0.402985
+offset_top = -0.0600128
+offset_right = -0.857056
+offset_bottom = 0.039978
+
+[node name="EquationSlot1" type="TextureRect" parent="Background/Equation"]
+custom_minimum_size = Vector2(120, 120)
+layout_mode = 2
+texture = ExtResource("7_e5n35")
+script = ExtResource("5_5kpma")
+
+[node name="TextureRect" type="TextureRect" parent="Background/Equation/EquationSlot1" groups=["m6_position"]]
+custom_minimum_size = Vector2(120, 120)
+layout_mode = 2
+offset_right = 120.0
+offset_bottom = 120.0
+expand_mode = 1
+script = ExtResource("6_2tyu2")
+
+[node name="equal" type="Label" parent="Background/Equation"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("5_4gwkx")
 theme_override_font_sizes/font_size = 40
 text = "="
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="divides" type="Label" parent="EquationSymbols"]
-layout_mode = 1
-anchors_preset = -1
-anchor_left = 0.366
-anchor_right = 0.413
-anchor_bottom = 0.933
-offset_left = 276.881
-offset_top = 45.0
-offset_right = 303.866
-offset_bottom = 94.0
-theme_override_fonts/font = ExtResource("3_pkofn")
+[node name="EquationSlot2" type="TextureRect" parent="Background/Equation"]
+custom_minimum_size = Vector2(120, 120)
+layout_mode = 2
+texture = ExtResource("7_e5n35")
+script = ExtResource("5_5kpma")
+
+[node name="TextureRect" type="TextureRect" parent="Background/Equation/EquationSlot2" groups=["m6_position"]]
+custom_minimum_size = Vector2(120, 120)
+layout_mode = 2
+offset_right = 120.0
+offset_bottom = 120.0
+expand_mode = 1
+script = ExtResource("6_2tyu2")
+
+[node name="divides" type="Label" parent="Background/Equation"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("5_4gwkx")
 theme_override_font_sizes/font_size = 40
 text = "/"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="multiply1" type="Label" parent="EquationSymbols"]
-layout_mode = 1
-anchors_preset = -1
-anchor_left = 0.572
-anchor_top = 0.052
-anchor_right = 0.618
-anchor_bottom = 0.963
-offset_left = 430.815
-offset_top = 43.0
-offset_right = 457.8
-offset_bottom = 92.0
-theme_override_fonts/font = ExtResource("3_pkofn")
+[node name="EquationSlot3" type="TextureRect" parent="Background/Equation"]
+custom_minimum_size = Vector2(120, 120)
+layout_mode = 2
+texture = ExtResource("7_e5n35")
+script = ExtResource("5_5kpma")
+
+[node name="TextureRect" type="TextureRect" parent="Background/Equation/EquationSlot3" groups=["m6_position"]]
+custom_minimum_size = Vector2(120, 120)
+layout_mode = 2
+offset_right = 120.0
+offset_bottom = 120.0
+expand_mode = 1
+script = ExtResource("6_2tyu2")
+
+[node name="multiply1" type="Label" parent="Background/Equation"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("5_4gwkx")
 theme_override_font_sizes/font_size = 40
 text = "x"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="multiply2" type="Label" parent="EquationSymbols"]
-layout_mode = 1
-anchors_preset = -1
-anchor_left = 0.783
-anchor_right = 0.82
-anchor_bottom = 1.0
-offset_left = 585.746
-offset_top = 42.0
-offset_right = 612.734
-offset_bottom = 91.0
-theme_override_fonts/font = ExtResource("3_pkofn")
+[node name="EquationSlot4" type="TextureRect" parent="Background/Equation"]
+custom_minimum_size = Vector2(120, 120)
+layout_mode = 2
+texture = ExtResource("7_e5n35")
+script = ExtResource("5_5kpma")
+
+[node name="TextureRect" type="TextureRect" parent="Background/Equation/EquationSlot4" groups=["m6_position"]]
+custom_minimum_size = Vector2(120, 120)
+layout_mode = 2
+offset_right = 120.0
+offset_bottom = 120.0
+expand_mode = 1
+script = ExtResource("6_2tyu2")
+
+[node name="multiply2" type="Label" parent="Background/Equation"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("5_4gwkx")
 theme_override_font_sizes/font_size = 40
 text = "x"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="EquationBoxes" type="Node2D" parent="."]
+[node name="EquationSlot5" type="TextureRect" parent="Background/Equation"]
+custom_minimum_size = Vector2(120, 120)
+layout_mode = 2
+texture = ExtResource("7_e5n35")
+script = ExtResource("5_5kpma")
 
-[node name="equationBox1" type="StaticBody2D" parent="EquationBoxes" groups=["droppable"]]
-position = Vector2(457, 317)
-script = ExtResource("3_b8t1b")
+[node name="TextureRect" type="TextureRect" parent="Background/Equation/EquationSlot5" groups=["m6_position"]]
+custom_minimum_size = Vector2(120, 120)
+layout_mode = 2
+offset_right = 120.0
+offset_bottom = 120.0
+expand_mode = 1
+script = ExtResource("6_2tyu2")
 
-[node name="ColorRect" type="TextureRect" parent="EquationBoxes/equationBox1"]
+[node name="Pieces" type="GridContainer" parent="Background"]
+layout_mode = 1
 anchors_preset = -1
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -58.0
-offset_top = -58.0
-offset_right = 59.0
-offset_bottom = 62.0
-grow_horizontal = 2
-grow_vertical = 2
-texture = ExtResource("5_grpx1")
-stretch_mode = 2
+anchor_left = 0.213
+anchor_top = 0.427
+anchor_right = 0.591
+anchor_bottom = 0.676
+offset_left = -0.451019
+offset_top = -0.430023
+offset_right = -608.857
+offset_bottom = -151.84
+theme_override_constants/h_separation = 32
+theme_override_constants/v_separation = 32
+columns = 5
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="EquationBoxes/equationBox1"]
-shape = SubResource("RectangleShape2D_u1eyj")
+[node name="EquationPiece" type="PanelContainer" parent="Background/Pieces"]
+self_modulate = Color(10, 10, 10, 0.4)
+layout_mode = 2
+tooltip_text = "riGht?"
+script = ExtResource("5_5kpma")
 
-[node name="equationBox2" type="StaticBody2D" parent="EquationBoxes" groups=["droppable"]]
-position = Vector2(607, 316)
-script = ExtResource("3_b8t1b")
-
-[node name="ColorRect" type="TextureRect" parent="EquationBoxes/equationBox2"]
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -58.0
-offset_top = -58.0
-offset_right = 59.0
-offset_bottom = 62.0
-grow_horizontal = 2
-grow_vertical = 2
-texture = ExtResource("5_grpx1")
-stretch_mode = 2
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="EquationBoxes/equationBox2"]
-shape = SubResource("RectangleShape2D_u1eyj")
-
-[node name="equationBox3" type="StaticBody2D" parent="EquationBoxes" groups=["droppable"]]
-position = Vector2(758, 317)
-script = ExtResource("3_b8t1b")
-
-[node name="ColorRect" type="TextureRect" parent="EquationBoxes/equationBox3"]
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_left = -58.0
-offset_top = -58.0
-offset_right = 59.0
-offset_bottom = 62.0
-grow_horizontal = 2
-grow_vertical = 2
-texture = ExtResource("5_grpx1")
-stretch_mode = 2
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="EquationBoxes/equationBox3"]
-shape = SubResource("RectangleShape2D_u1eyj")
-
-[node name="equationBox4" type="StaticBody2D" parent="EquationBoxes" groups=["droppable"]]
-position = Vector2(914, 316)
-script = ExtResource("3_b8t1b")
-
-[node name="ColorRect" type="TextureRect" parent="EquationBoxes/equationBox4"]
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -58.0
-offset_top = -58.0
-offset_right = 142.0
-offset_bottom = 142.0
-grow_horizontal = 2
-grow_vertical = 2
-texture = ExtResource("5_grpx1")
-stretch_mode = 2
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="EquationBoxes/equationBox4"]
-shape = SubResource("RectangleShape2D_u1eyj")
-
-[node name="equationBox5" type="StaticBody2D" parent="EquationBoxes" groups=["droppable"]]
-position = Vector2(1067, 315)
-script = ExtResource("3_b8t1b")
-
-[node name="ColorRect" type="TextureRect" parent="EquationBoxes/equationBox5"]
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -58.0
-offset_top = -58.0
-offset_right = 142.0
-offset_bottom = 142.0
-grow_horizontal = 2
-grow_vertical = 2
-texture = ExtResource("5_grpx1")
-stretch_mode = 2
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="EquationBoxes/equationBox5"]
-shape = SubResource("RectangleShape2D_u1eyj")
-
-[node name="Pieces" type="Node2D" parent="."]
-
-[node name="equationPiece" type="Area2D" parent="Pieces"]
-position = Vector2(470, 526)
-script = ExtResource("1_lk08s")
+[node name="TextureRect" type="TextureRect" parent="Background/Pieces/EquationPiece" groups=["m6_position"]]
+custom_minimum_size = Vector2(120, 120)
+layout_mode = 2
+texture = ExtResource("7_x4qd5")
+expand_mode = 1
+script = ExtResource("6_2tyu2")
 correctPos = 3
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Pieces/equationPiece"]
-shape = SubResource("RectangleShape2D_yf80c")
+[node name="EquationPiece2" type="PanelContainer" parent="Background/Pieces"]
+self_modulate = Color(10, 10, 10, 0.4)
+layout_mode = 2
+tooltip_text = "wrong"
+script = ExtResource("5_5kpma")
 
-[node name="ColorRect" type="TextureRect" parent="Pieces/equationPiece"]
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-tooltip_text = "Correct?"
-texture = ExtResource("8_ycvcu")
-stretch_mode = 2
-
-[node name="RichTextLabel" type="Label" parent="Pieces/equationPiece/ColorRect"]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-mouse_filter = 1
-theme = ExtResource("4_y74l6")
-theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_font_sizes/font_size = 40
-text = "K"
-horizontal_alignment = 1
-vertical_alignment = 1
-
-[node name="equationPiece2" type="Area2D" parent="Pieces"]
-position = Vector2(626, 525)
-script = ExtResource("1_lk08s")
+[node name="TextureRect" type="TextureRect" parent="Background/Pieces/EquationPiece2" groups=["m6_position"]]
+custom_minimum_size = Vector2(120, 120)
+layout_mode = 2
+texture = ExtResource("8_4kpwf")
+expand_mode = 1
+script = ExtResource("6_2tyu2")
 correctPos = -1
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Pieces/equationPiece2"]
-shape = SubResource("RectangleShape2D_yf80c")
+[node name="EquationPiece3" type="PanelContainer" parent="Background/Pieces"]
+self_modulate = Color(10, 10, 10, 0.4)
+layout_mode = 2
+tooltip_text = "Right?"
+script = ExtResource("5_5kpma")
 
-[node name="ColorRect" type="TextureRect" parent="Pieces/equationPiece2"]
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-tooltip_text = "Wrong"
-texture = ExtResource("8_ycvcu")
-stretch_mode = 2
-
-[node name="RichTextLabel" type="Label" parent="Pieces/equationPiece2/ColorRect"]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-mouse_filter = 1
-theme = ExtResource("4_y74l6")
-theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_font_sizes/font_size = 40
-text = "K"
-horizontal_alignment = 1
-vertical_alignment = 1
-
-[node name="RichTextLabel2" type="Label" parent="Pieces/equationPiece2/ColorRect"]
-layout_mode = 1
-anchors_preset = 1
-anchor_left = 1.0
-anchor_right = 1.0
-offset_left = -51.0
-offset_top = 8.5
-offset_right = -14.0
-offset_bottom = 70.5
-grow_horizontal = 0
-mouse_filter = 1
-theme = ExtResource("4_y74l6")
-theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_font_sizes/font_size = 24
-text = "2"
-horizontal_alignment = 1
-vertical_alignment = 1
-
-[node name="equationPiece4" type="Area2D" parent="Pieces"]
-position = Vector2(769, 511)
-script = ExtResource("1_lk08s")
+[node name="TextureRect" type="TextureRect" parent="Background/Pieces/EquationPiece3" groups=["m6_position"]]
+custom_minimum_size = Vector2(120, 120)
+layout_mode = 2
+texture = ExtResource("9_sajm1")
+expand_mode = 1
+script = ExtResource("6_2tyu2")
 correctPos = 1
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Pieces/equationPiece4"]
-shape = SubResource("RectangleShape2D_yf80c")
+[node name="EquationPiece4" type="PanelContainer" parent="Background/Pieces"]
+self_modulate = Color(10, 10, 10, 0.4)
+layout_mode = 2
+tooltip_text = "wrong"
+script = ExtResource("5_5kpma")
 
-[node name="ColorRect" type="TextureRect" parent="Pieces/equationPiece4"]
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-tooltip_text = "Correct?"
-texture = ExtResource("8_ycvcu")
-stretch_mode = 2
-
-[node name="RichTextLabel" type="Label" parent="Pieces/equationPiece4/ColorRect"]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-mouse_filter = 1
-theme = ExtResource("4_y74l6")
-theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_font_sizes/font_size = 40
-text = "S/N"
-horizontal_alignment = 1
-vertical_alignment = 1
-
-[node name="equationPiece5" type="Area2D" parent="Pieces"]
-position = Vector2(921, 522)
-script = ExtResource("1_lk08s")
+[node name="TextureRect" type="TextureRect" parent="Background/Pieces/EquationPiece4" groups=["m6_position"]]
+custom_minimum_size = Vector2(120, 120)
+layout_mode = 2
+texture = ExtResource("10_47d8c")
+expand_mode = 1
+script = ExtResource("6_2tyu2")
 correctPos = -1
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Pieces/equationPiece5"]
-shape = SubResource("RectangleShape2D_yf80c")
+[node name="EquationPiece5" type="PanelContainer" parent="Background/Pieces"]
+self_modulate = Color(10, 10, 10, 0.4)
+layout_mode = 2
+tooltip_text = "rIght?"
+script = ExtResource("5_5kpma")
 
-[node name="ColorRect" type="TextureRect" parent="Pieces/equationPiece5"]
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-tooltip_text = "Wrong"
-texture = ExtResource("8_ycvcu")
-stretch_mode = 2
-
-[node name="RichTextLabel" type="Label" parent="Pieces/equationPiece5/ColorRect"]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-mouse_filter = 1
-theme = ExtResource("4_y74l6")
-theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_font_sizes/font_size = 40
-text = "S "
-horizontal_alignment = 1
-vertical_alignment = 1
-
-[node name="RichTextLabel2" type="Label" parent="Pieces/equationPiece5/ColorRect"]
-layout_mode = 1
-anchors_preset = 1
-anchor_left = 1.0
-anchor_right = 1.0
-offset_left = -51.0
-offset_top = 8.5
-offset_right = -14.0
-offset_bottom = 70.5
-grow_horizontal = 0
-mouse_filter = 1
-theme = ExtResource("4_y74l6")
-theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_font_sizes/font_size = 24
-text = "2"
-horizontal_alignment = 1
-vertical_alignment = 1
-
-[node name="equationPiece6" type="Area2D" parent="Pieces"]
-position = Vector2(1059, 519)
-script = ExtResource("1_lk08s")
-correctPos = -1
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Pieces/equationPiece6"]
-shape = SubResource("RectangleShape2D_yf80c")
-
-[node name="ColorRect" type="TextureRect" parent="Pieces/equationPiece6"]
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-tooltip_text = "Wrong"
-texture = ExtResource("8_ycvcu")
-stretch_mode = 2
-
-[node name="RichTextLabel" type="Label" parent="Pieces/equationPiece6/ColorRect"]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-mouse_filter = 1
-theme = ExtResource("4_y74l6")
-theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_font_sizes/font_size = 40
-text = "P/r"
-horizontal_alignment = 1
-vertical_alignment = 1
-
-[node name="equationPiece9" type="Area2D" parent="Pieces"]
-position = Vector2(476, 696)
-script = ExtResource("1_lk08s")
-correctPos = 4
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Pieces/equationPiece9"]
-shape = SubResource("RectangleShape2D_yf80c")
-
-[node name="ColorRect" type="TextureRect" parent="Pieces/equationPiece9"]
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-tooltip_text = "Correct?"
-texture = ExtResource("8_ycvcu")
-stretch_mode = 2
-
-[node name="RichTextLabel" type="Label" parent="Pieces/equationPiece9/ColorRect"]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-mouse_filter = 1
-theme = ExtResource("4_y74l6")
-theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_font_sizes/font_size = 40
-text = "T_s"
-horizontal_alignment = 1
-vertical_alignment = 1
-
-[node name="equationPiece11" type="Area2D" parent="Pieces"]
-position = Vector2(628, 710)
-script = ExtResource("1_lk08s")
+[node name="TextureRect" type="TextureRect" parent="Background/Pieces/EquationPiece5" groups=["m6_position"]]
+custom_minimum_size = Vector2(120, 120)
+layout_mode = 2
+texture = ExtResource("11_5d8wh")
+expand_mode = 1
+script = ExtResource("6_2tyu2")
 correctPos = 2
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Pieces/equationPiece11"]
-shape = SubResource("RectangleShape2D_yf80c")
+[node name="EquationPiece6" type="PanelContainer" parent="Background/Pieces"]
+self_modulate = Color(10, 10, 10, 0.4)
+layout_mode = 2
+tooltip_text = "rigHt?"
+script = ExtResource("5_5kpma")
 
-[node name="ColorRect" type="TextureRect" parent="Pieces/equationPiece11"]
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-tooltip_text = "Correct?"
-texture = ExtResource("8_ycvcu")
-stretch_mode = 2
+[node name="TextureRect" type="TextureRect" parent="Background/Pieces/EquationPiece6" groups=["m6_position"]]
+custom_minimum_size = Vector2(120, 120)
+layout_mode = 2
+texture = ExtResource("12_b3swi")
+expand_mode = 1
+script = ExtResource("6_2tyu2")
+correctPos = 4
 
-[node name="RichTextLabel" type="Label" parent="Pieces/equationPiece11/ColorRect"]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-mouse_filter = 1
-theme = ExtResource("4_y74l6")
-theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_font_sizes/font_size = 40
-text = "P_r"
-horizontal_alignment = 1
-vertical_alignment = 1
+[node name="EquationPiece7" type="PanelContainer" parent="Background/Pieces"]
+self_modulate = Color(10, 10, 10, 0.4)
+layout_mode = 2
+tooltip_text = "wrong"
+script = ExtResource("5_5kpma")
 
-[node name="equationPiece13" type="Area2D" parent="Pieces"]
-position = Vector2(767, 703)
-script = ExtResource("1_lk08s")
+[node name="TextureRect" type="TextureRect" parent="Background/Pieces/EquationPiece7" groups=["m6_position"]]
+custom_minimum_size = Vector2(120, 120)
+layout_mode = 2
+texture = ExtResource("13_jr2i7")
+expand_mode = 1
+script = ExtResource("6_2tyu2")
 correctPos = -1
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Pieces/equationPiece13"]
-shape = SubResource("RectangleShape2D_yf80c")
+[node name="EquationPiece8" type="PanelContainer" parent="Background/Pieces"]
+self_modulate = Color(10, 10, 10, 0.4)
+layout_mode = 2
+tooltip_text = "wrong"
+script = ExtResource("5_5kpma")
 
-[node name="ColorRect" type="TextureRect" parent="Pieces/equationPiece13"]
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-tooltip_text = "Wrong"
-texture = ExtResource("8_ycvcu")
-stretch_mode = 2
+[node name="TextureRect" type="TextureRect" parent="Background/Pieces/EquationPiece8" groups=["m6_position"]]
+custom_minimum_size = Vector2(120, 120)
+layout_mode = 2
+texture = ExtResource("14_w1bu3")
+expand_mode = 1
+script = ExtResource("6_2tyu2")
+correctPos = -1
 
-[node name="RichTextLabel" type="Label" parent="Pieces/equationPiece13/ColorRect"]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-mouse_filter = 1
-theme = ExtResource("4_y74l6")
-theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_font_sizes/font_size = 40
-text = "5/6"
-horizontal_alignment = 1
-vertical_alignment = 1
+[node name="EquationPiece9" type="PanelContainer" parent="Background/Pieces"]
+self_modulate = Color(10, 10, 10, 0.4)
+layout_mode = 2
+tooltip_text = "righT?"
+script = ExtResource("5_5kpma")
 
-[node name="equationPiece14" type="Area2D" parent="Pieces"]
-position = Vector2(920, 703)
-script = ExtResource("1_lk08s")
+[node name="TextureRect" type="TextureRect" parent="Background/Pieces/EquationPiece9" groups=["m6_position"]]
+custom_minimum_size = Vector2(120, 120)
+layout_mode = 2
+texture = ExtResource("15_vxj2n")
+expand_mode = 1
+script = ExtResource("6_2tyu2")
 correctPos = 5
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Pieces/equationPiece14"]
-shape = SubResource("RectangleShape2D_yf80c")
+[node name="EquationPiece10" type="PanelContainer" parent="Background/Pieces"]
+self_modulate = Color(10, 10, 10, 0.4)
+layout_mode = 2
+tooltip_text = "wrong"
+script = ExtResource("5_5kpma")
 
-[node name="ColorRect" type="TextureRect" parent="Pieces/equationPiece14"]
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-tooltip_text = "Correct?"
-texture = ExtResource("8_ycvcu")
-stretch_mode = 2
-
-[node name="RichTextLabel" type="Label" parent="Pieces/equationPiece14/ColorRect"]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-mouse_filter = 1
-theme = ExtResource("4_y74l6")
-theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_font_sizes/font_size = 40
-text = "B_n"
-horizontal_alignment = 1
-vertical_alignment = 1
-
-[node name="equationPiece15" type="Area2D" parent="Pieces"]
-position = Vector2(1056, 707)
-script = ExtResource("1_lk08s")
+[node name="TextureRect" type="TextureRect" parent="Background/Pieces/EquationPiece10" groups=["m6_position"]]
+custom_minimum_size = Vector2(120, 120)
+layout_mode = 2
+texture = ExtResource("16_m3jjc")
+expand_mode = 1
+script = ExtResource("6_2tyu2")
 correctPos = -1
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Pieces/equationPiece15"]
-shape = SubResource("RectangleShape2D_yf80c")
-
-[node name="ColorRect" type="TextureRect" parent="Pieces/equationPiece15"]
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-tooltip_text = "Wrong"
-texture = ExtResource("8_ycvcu")
-stretch_mode = 2
-
-[node name="RichTextLabel" type="Label" parent="Pieces/equationPiece15/ColorRect"]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-mouse_filter = 1
-theme = ExtResource("4_y74l6")
-theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_font_sizes/font_size = 40
-text = "11"
-horizontal_alignment = 1
-vertical_alignment = 1
-
 [node name="submitButton" type="TextureButton" parent="."]
+texture_filter = 1
 custom_minimum_size = Vector2(90, 40)
 anchors_preset = -1
 anchor_left = 0.609
@@ -644,13 +364,14 @@ offset_top = 630.0
 offset_right = 1263.0
 offset_bottom = 670.0
 scale = Vector2(4, 4)
-texture_normal = ExtResource("10_lpe5n")
-texture_pressed = ExtResource("11_sr0gf")
-texture_hover = ExtResource("12_aygpy")
+texture_normal = ExtResource("11_0r2x3")
+texture_pressed = ExtResource("12_r6web")
+texture_hover = ExtResource("13_tbg7m")
 ignore_texture_size = true
 stretch_mode = 5
 
 [node name="RichTextLabel" type="Label" parent="submitButton"]
+texture_filter = 3
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -658,7 +379,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 mouse_filter = 1
-theme_override_fonts/font = ExtResource("12_6onxo")
+theme_override_fonts/font = ExtResource("14_d0b4m")
 text = "Submit"
 horizontal_alignment = 1
 vertical_alignment = 1
@@ -675,7 +396,7 @@ offset_right = 1792.0
 offset_bottom = 230.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("14_s6s2r")
+texture = ExtResource("15_jhqph")
 
 [node name="Label" type="Label" parent="Message"]
 layout_mode = 1
@@ -684,7 +405,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-theme = ExtResource("4_y74l6")
+theme = ExtResource("10_jbh8b")
 text = "Objective: Fill in the blanks to display the radar"
 horizontal_alignment = 1
 vertical_alignment = 1
@@ -696,44 +417,4 @@ libraries = {
 }
 autoplay = "fadeout"
 
-[connection signal="body_entered" from="Pieces/equationPiece" to="Pieces/equationPiece" method="_on_body_entered"]
-[connection signal="body_exited" from="Pieces/equationPiece" to="Pieces/equationPiece" method="_on_body_exited"]
-[connection signal="mouse_entered" from="Pieces/equationPiece" to="Pieces/equationPiece" method="_on_mouse_entered"]
-[connection signal="mouse_exited" from="Pieces/equationPiece" to="Pieces/equationPiece" method="_on_mouse_exited"]
-[connection signal="body_entered" from="Pieces/equationPiece2" to="Pieces/equationPiece2" method="_on_body_entered"]
-[connection signal="body_exited" from="Pieces/equationPiece2" to="Pieces/equationPiece2" method="_on_body_exited"]
-[connection signal="mouse_entered" from="Pieces/equationPiece2" to="Pieces/equationPiece2" method="_on_mouse_entered"]
-[connection signal="mouse_exited" from="Pieces/equationPiece2" to="Pieces/equationPiece2" method="_on_mouse_exited"]
-[connection signal="body_entered" from="Pieces/equationPiece4" to="Pieces/equationPiece4" method="_on_body_entered"]
-[connection signal="body_exited" from="Pieces/equationPiece4" to="Pieces/equationPiece4" method="_on_body_exited"]
-[connection signal="mouse_entered" from="Pieces/equationPiece4" to="Pieces/equationPiece4" method="_on_mouse_entered"]
-[connection signal="mouse_exited" from="Pieces/equationPiece4" to="Pieces/equationPiece4" method="_on_mouse_exited"]
-[connection signal="body_entered" from="Pieces/equationPiece5" to="Pieces/equationPiece5" method="_on_body_entered"]
-[connection signal="body_exited" from="Pieces/equationPiece5" to="Pieces/equationPiece5" method="_on_body_exited"]
-[connection signal="mouse_entered" from="Pieces/equationPiece5" to="Pieces/equationPiece5" method="_on_mouse_entered"]
-[connection signal="mouse_exited" from="Pieces/equationPiece5" to="Pieces/equationPiece5" method="_on_mouse_exited"]
-[connection signal="body_entered" from="Pieces/equationPiece6" to="Pieces/equationPiece6" method="_on_body_entered"]
-[connection signal="body_exited" from="Pieces/equationPiece6" to="Pieces/equationPiece6" method="_on_body_exited"]
-[connection signal="mouse_entered" from="Pieces/equationPiece6" to="Pieces/equationPiece6" method="_on_mouse_entered"]
-[connection signal="mouse_exited" from="Pieces/equationPiece6" to="Pieces/equationPiece6" method="_on_mouse_exited"]
-[connection signal="body_entered" from="Pieces/equationPiece9" to="Pieces/equationPiece9" method="_on_body_entered"]
-[connection signal="body_exited" from="Pieces/equationPiece9" to="Pieces/equationPiece9" method="_on_body_exited"]
-[connection signal="mouse_entered" from="Pieces/equationPiece9" to="Pieces/equationPiece9" method="_on_mouse_entered"]
-[connection signal="mouse_exited" from="Pieces/equationPiece9" to="Pieces/equationPiece9" method="_on_mouse_exited"]
-[connection signal="body_entered" from="Pieces/equationPiece11" to="Pieces/equationPiece11" method="_on_body_entered"]
-[connection signal="body_exited" from="Pieces/equationPiece11" to="Pieces/equationPiece11" method="_on_body_exited"]
-[connection signal="mouse_entered" from="Pieces/equationPiece11" to="Pieces/equationPiece11" method="_on_mouse_entered"]
-[connection signal="mouse_exited" from="Pieces/equationPiece11" to="Pieces/equationPiece11" method="_on_mouse_exited"]
-[connection signal="body_entered" from="Pieces/equationPiece13" to="Pieces/equationPiece13" method="_on_body_entered"]
-[connection signal="body_exited" from="Pieces/equationPiece13" to="Pieces/equationPiece13" method="_on_body_exited"]
-[connection signal="mouse_entered" from="Pieces/equationPiece13" to="Pieces/equationPiece13" method="_on_mouse_entered"]
-[connection signal="mouse_exited" from="Pieces/equationPiece13" to="Pieces/equationPiece13" method="_on_mouse_exited"]
-[connection signal="body_entered" from="Pieces/equationPiece14" to="Pieces/equationPiece14" method="_on_body_entered"]
-[connection signal="body_exited" from="Pieces/equationPiece14" to="Pieces/equationPiece14" method="_on_body_exited"]
-[connection signal="mouse_entered" from="Pieces/equationPiece14" to="Pieces/equationPiece14" method="_on_mouse_entered"]
-[connection signal="mouse_exited" from="Pieces/equationPiece14" to="Pieces/equationPiece14" method="_on_mouse_exited"]
-[connection signal="body_entered" from="Pieces/equationPiece15" to="Pieces/equationPiece15" method="_on_body_entered"]
-[connection signal="body_exited" from="Pieces/equationPiece15" to="Pieces/equationPiece15" method="_on_body_exited"]
-[connection signal="mouse_entered" from="Pieces/equationPiece15" to="Pieces/equationPiece15" method="_on_mouse_entered"]
-[connection signal="mouse_exited" from="Pieces/equationPiece15" to="Pieces/equationPiece15" method="_on_mouse_exited"]
 [connection signal="pressed" from="submitButton" to="." method="_on_submit_button_pressed"]
